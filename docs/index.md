@@ -13,4 +13,4 @@ This site is aimed at providing a high level technical information about Puhuri 
 
 ## Contacts
 
-Please contact XYZ.
+Please see https://neic.no/puhuri/ for contact details.
