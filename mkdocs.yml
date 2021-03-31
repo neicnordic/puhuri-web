@@ -1,3 +1,5 @@
 site_name: Puhuri Documentation
 theme:
   name: material
+markdown_extensions:
+  - attr_list

@@ -1,7 +1,10 @@
 # Welcome to Puhuri documentation web site!
 
+
 Puhuri platform is a set of integrated services for managing access to shared resources in a federated manner.
 This site is aimed at providing a high level technical information about Puhuri service for target stakeholders.
+
+
 
 ## Outline
 
@@ -10,7 +13,10 @@ This site is aimed at providing a high level technical information about Puhuri 
 - [Identity Providers](identity-providers.md) is aimed at organization providing information about users' identities.
 - [Service Providers](service-providers.md) is aimed at organizations hosting shared resources.
 - [Documents](documents.md) contains document templates that parties are expected to agree and sign.
+- [Environments](environments.md) contains descriptions of development and production environments.
 
 ## Contacts
 
-Please see https://neic.no/puhuri/ for contact details.
+![Placeholder](assets/logo.png){ align=right }
+
+Please see [https://neic.no/puhuri/](https://neic.no/puhuri/).
