@@ -1,6 +1,6 @@
 # Service providers
 
-# Operations
+## Operations
 - Getting a list of resource allocations.
 - Updating resource allocation with local reference (setting `backend_id` field).
 - Providing additional access detail for resource allocation.
