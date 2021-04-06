@@ -1,6 +1,7 @@
 # Authentication
 
-Waldur MasterMind exposes REST API for all of its operations. Below are examples of typical operations performed against APIs. To run the examples, we are using a [HTTPie](https://httpie.org/).
+Puhuri Core exposes REST API for all of its operations. Below are examples of typical operations performed against APIs.
+To run the examples, we are using a [HTTPie](https://httpie.org/).
 
 Almost all of the operations with API require an authentication token. Below we list two methods on how to get it.
 
