@@ -38,6 +38,10 @@ def generate_templates():
         'generate_username_password_authentication': f'http -v POST {WALDUR_BASE}api-auth/password/ username={WALDUR_USERNAME} password={WALDUR_PASSWORD}',
         'generate_project_update': f'http --pretty=format -v PUT {WALDUR_BASE}api/projects/{WALDUR_PROJECT}/ name="Another unique string"',
         'generate_project_listing': f'http --pretty=format -v {WALDUR_BASE}api/projects/',
+        'generate_mapping_aai_to_core_getting': f'',
+        'generate_members_permissions_creation': f'http --pretty=format -v POST {WALDUR_BASE}api/project-permissions/ Authorization:"Token {WALDUR_TOKEN}"'
+                                                 f'role=developer project={WALDUR_PROJECT} user={WALDUR_USERNAME}',
+        'generate_project_members_removal': f'http --pretty=format -v DELETE {WALDUR_BASE}api/project-permissions/1/ Authorization:"Token {WALDUR_TOKEN}"',
     }
 
 
@@ -47,7 +51,7 @@ def get_bash_md(command, result):
 $ %s
 %s
 ```
-    """ % (command, result)
+""" % (command, result)
 
 
 def parse_arguments():
@@ -63,6 +67,7 @@ def parse_arguments():
     WALDUR_BASE = args.url
     WALDUR_USERNAME = args.username
     WALDUR_PASSWORD = args.password
+
 
 def main():
     parse_arguments()

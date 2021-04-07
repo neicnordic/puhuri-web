@@ -43,12 +43,12 @@ use a different naming than agreed in Puhuri. Below is a mapping to reduce confu
 
 ## Project membership management
 
-- Getting a mapping of Puhuri AAI user CUID to Puhuri Core user.
+- [Getting a mapping of Puhuri AAI user CUID to Puhuri Core user](API guide/project-permissions.md#getting-a-mapping-of-AAI-user-to-Core-user)
     - explain why is needed
     - explain what exceptions can happen
-- Allocation of members to a project
+- [Allocation of members to a project](API guide/project-permissions.md#project-members-permissions-allocation)
     - Puhuri AAI reference + project + project role => permission link
-- Removal of members from a project
+- [Removal of members from a project](API guide/project-permissions.md#removal-of-members-from-a-project)
     - Deletion of a permission link
 
 ## Resource allocation management
