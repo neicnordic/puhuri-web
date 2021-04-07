@@ -1,5 +1,5 @@
 # Resource allocators
-Allocators are external parties that are entitled to manage projects and resource allocations in Puhuri Core. 
+Allocators are external parties that are entitled to manage projects and resource allocations in Puhuri Core.
 In the scope of Puhuri, resource allocators are typically organizations operating national portals or research communities.
 
 Resource allocator is expected to:
@@ -26,22 +26,18 @@ use a different naming than agreed in Puhuri. Below is a mapping to reduce confu
 
 ## Project management
 
-### Creation of a project
-
-To create a project, allocator must first decide on the "
-
 - [Customer lookup](API guide/project.md#lookup-allocator-customers-available-to-a-user)
 
-- Creation of a project
+- [Creation of a project](API guide/project.md#create-a-new-project)
     - selection of the allocator's organization aka Puhuri Core customer
     - uniqueness expectations
         - active projects per allocator
     - Name + description + backend_id. Implementation: [link](https://github.com/waldur/waldur-mastermind/blob/7b2eba62e1e0dab945845f05030c7935e57f0d9c/src/waldur_mastermind/marketplace_remote/processors.py#L13).
 
-- Update of a project
+- [Update of a project](API guide/project.md#update-an-existing-project)
     - Name + description. Implementation: [link](https://github.com/waldur/waldur-mastermind/blob/7b2eba62e1e0dab945845f05030c7935e57f0d9c/src/waldur_mastermind/marketplace_remote/processors.py#L13).
 
-- Listing and filtering of projects
+- [Listing and filtering of projects](API guide/project.md#list-projects-with-pissible-fintering)
     - by name
     - by backend_id
 
@@ -49,7 +45,7 @@ To create a project, allocator must first decide on the "
 
 - Getting a mapping of Puhuri AAI user CUID to Puhuri Core user.
     - explain why is needed
-    - explain what exceptions can happen 
+    - explain what exceptions can happen
 - Allocation of members to a project
     - Puhuri AAI reference + project + project role => permission link
 - Removal of members from a project
