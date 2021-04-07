@@ -52,10 +52,11 @@ X-XSS-Protection: 1; mode=block
 
 ## Authentication Token management
 
-The easiest way to get your token is via Waldur HomePort. Go to user workspace by selecting 'Manage' in the user drop-down.
+You are also able to get token from the Puhuri Core web interface. Go to user workspace by selecting 'Manage' in the
+user drop-down.
 
-![side-bar](assets/side-bar.png){: style="height:288px;width:220px"}
+![side-bar](../assets/side-bar.png){: style="height:288px;width:220px"}
 
 Scroll down to the Current API token field and click on the 'eye' icon to display the token.
 
-![api-token](assets/api-token.png)
+![api-token](../assets/api-token.png)
