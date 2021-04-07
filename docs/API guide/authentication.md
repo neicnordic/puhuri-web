@@ -8,7 +8,7 @@ Almost all of the operations with API require an authentication token. Below we 
 ## Authentication with username/password
 If your account is allowed to use username/password and the method is enabled (e.g. in dev environment), you can get a new token by submitting a username/password as JSON to a specific endpoint.
 
-<!-- {generate_username_password_authentication} -->
+{generate_username_password_authentication}
 
 ## Authentication Token management
 

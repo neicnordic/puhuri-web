@@ -8,6 +8,7 @@ WALDUR_TOKEN = 'SECRET_TOKEN'
 WALDUR_USERNAME = 'username'
 WALDUR_PASSWORD = 'password'
 WALDUR_PROJECT = 'UUID_OF_A_PROJECT'
+WALDUR_REMOTE_API = 'TODO'
 
 def get_list_of_md_files(dir_name):
     # create a list of file and sub directories
@@ -42,6 +43,11 @@ def generate_templates():
         'generate_members_permissions_creation': f'http --pretty=format -v POST {WALDUR_BASE}api/project-permissions/ Authorization:"Token {WALDUR_TOKEN}"'
                                                  f'role=developer project={WALDUR_PROJECT} user={WALDUR_USERNAME}',
         'generate_project_members_removal': f'http --pretty=format -v DELETE {WALDUR_BASE}api/project-permissions/1/ Authorization:"Token {WALDUR_TOKEN}"',
+        # TODO:
+        'generate_offerings_getting': f'http --pretty=format -v POST {WALDUR_BASE}api/remote-waldur-api/shared_offerings/ Authorization:"Token {WALDUR_TOKEN}" api_url=',
+        'generate_resource_creation': f'http --pretty=format -v POST {WALDUR_BASE}',
+        'generate_resource_modification': f'http --pretty=format -v POST {WALDUR_BASE}',
+        'generate_resource_termination': f'http --pretty=format -v POST {WALDUR_BASE}api/remote-waldur-api/remote_customers/',
     }
 
 

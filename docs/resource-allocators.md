@@ -53,14 +53,13 @@ use a different naming than agreed in Puhuri. Below is a mapping to reduce confu
 
 ## Resource allocation management
 
-
-- Getting a list of offerings available for allocation
+- [Getting a list of offerings available for allocation](API guide/resource-allocation-management.md#getting-a-list-of-offerings)
     - List of offerings accessible for a specific allocator. Implementation: [link](https://github.com/waldur/waldur-mastermind/blob/7b2eba62e1e0dab945845f05030c7935e57f0d9c/src/waldur_mastermind/marketplace_remote/views.py#L45).
-- Creation of a resource allocation
+- [Creation of a resource allocation](API guide/resource-allocation-management.md#creation-of-a-resource-allocation)
     - Project + offering (Resource Component) + requested parameters => Resource allocation. Implementation: [link](https://github.com/waldur/waldur-mastermind/blob/7b2eba62e1e0dab945845f05030c7935e57f0d9c/src/waldur_mastermind/marketplace_remote/processors.py#L37).
-- Modification of a resource allocation
+- [Modification of a resource allocation](API guide/resource-allocation-management.md#modification-of-a-resource-allocation)
     - Changing of allocated limits. Implementation: [link](https://github.com/waldur/waldur-mastermind/blob/7b2eba62e1e0dab945845f05030c7935e57f0d9c/src/waldur_mastermind/marketplace_remote/processors.py#L53).
-- Termination of a resource allocation
+- [Termination of a resource allocation](API guide/resource-allocation-management.md#termination-of-a-resource-allocation)
     - Deletion of a resource allocation. Implementation: [link](https://github.com/waldur/waldur-mastermind/blob/7b2eba62e1e0dab945845f05030c7935e57f0d9c/src/waldur_mastermind/marketplace_remote/processors.py#L64).
 
 ### Advanced
