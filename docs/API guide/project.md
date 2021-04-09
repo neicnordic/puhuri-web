@@ -8,11 +8,11 @@ Projects are always created in the context of a specific customer, so as a first
 customer you want to use. Customer is a stable entity, so it's URL / UUID can be cached.
 
 ```bash
-$ http --pretty=format -v https://puhuri-core-demo.neic.no/api/customers/ field==url field==name Authorization:"Token 123"
+$ http --pretty=format -v https://puhuri-core-demo.neic.no/api/customers/ field==url field==name Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811"
 GET /api/customers/?field=url&field=name HTTP/1.1
 Accept: */*
 Accept-Encoding: gzip, deflate
-Authorization: Token 123
+Authorization: Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811
 Connection: keep-alive
 Host: puhuri-core-demo.neic.no
 User-Agent: HTTPie/2.4.0
@@ -91,11 +91,11 @@ In order to create a new project in an organization, user needs to provide the f
 - `type` - UUID of a project type
 
 ```bash
-$ http --pretty=format -v POST https://puhuri-core-demo.neic.no/api/projects/ Authorization:"Token 123" customer=https://puhuri-core-demo.neic.no/api/customers/d42a18b6b8ba4c2bb0591b3ff8fb181d/ name="Project name" description="Project description" backend_id="My unique string"
+$ http --pretty=format -v POST https://puhuri-core-demo.neic.no/api/projects/ Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811" customer=https://puhuri-core-demo.neic.no/api/customers/d42a18b6b8ba4c2bb0591b3ff8fb181d/ name="Project name" description="Project description" backend_id="My unique string"
 POST /api/projects/ HTTP/1.1
 Accept: application/json, */*;q=0.5
 Accept-Encoding: gzip, deflate
-Authorization: Token 123
+Authorization: Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811
 Connection: keep-alive
 Content-Length: 192
 Content-Type: application/json
@@ -160,11 +160,11 @@ User can update the following field of a project:
 - `type`
 
 ```bash
-$ http --pretty=format -v PUT https://puhuri-core-demo.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/ Authorization:"Token 123" name="New project name" customer=https://puhuri-core-demo.neic.no/api/customers/d42a18b6b8ba4c2bb0591b3ff8fb181d/
+$ http --pretty=format -v PUT https://puhuri-core-demo.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/ Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811" name="New project name" customer=https://puhuri-core-demo.neic.no/api/customers/d42a18b6b8ba4c2bb0591b3ff8fb181d/
 PUT /api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/ HTTP/1.1
 Accept: application/json, */*;q=0.5
 Accept-Encoding: gzip, deflate
-Authorization: Token 123
+Authorization: Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811
 Connection: keep-alive
 Content-Length: 124
 Content-Type: application/json
@@ -229,11 +229,11 @@ User can list projects and filter them by the following query params:
 
 
 ```bash
-$ http --pretty=format -v https://puhuri-core-demo.neic.no/api/projects/ Authorization:"Token 123"
+$ http --pretty=format -v https://puhuri-core-demo.neic.no/api/projects/ Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811"
 GET /api/projects/ HTTP/1.1
 Accept: */*
 Accept-Encoding: gzip, deflate
-Authorization: Token 123
+Authorization: Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811
 Connection: keep-alive
 Host: puhuri-core-demo.neic.no
 User-Agent: HTTPie/2.4.0

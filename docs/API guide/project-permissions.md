@@ -21,11 +21,11 @@ The list of possible roles:
 - `member`
 
 ```bash
-$ http --pretty=format -v POST https://puhuri-core-demo.neic.no/api/project-permissions/ Authorization:"Token 123" role=member project=https://puhuri-core-demo.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/ user=https://puhuri-core-demo.neic.no/api/users/3f2cadfbb2b145fd8cf18d549dcd7329/
+$ http --pretty=format -v POST https://puhuri-core-demo.neic.no/api/project-permissions/ Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811" role=member project=https://puhuri-core-demo.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/ user=https://puhuri-core-demo.neic.no/api/users/3f2cadfbb2b145fd8cf18d549dcd7329/
 POST /api/project-permissions/ HTTP/1.1
 Accept: application/json, */*;q=0.5
 Accept-Encoding: gzip, deflate
-Authorization: Token 123
+Authorization: Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811
 Connection: keep-alive
 Content-Length: 200
 Content-Type: application/json
@@ -94,11 +94,11 @@ Possible query params for filtering:
 - `user_url` - a user's URL
 
 ```bash
-$ http --pretty=format -v https://puhuri-core-demo.neic.no/api/project-permissions/ project==4475ac77fa3a491aacb3fb3a6dfadadf Authorization:"Token 123"
+$ http --pretty=format -v https://puhuri-core-demo.neic.no/api/project-permissions/ project==4475ac77fa3a491aacb3fb3a6dfadadf Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811"
 GET /api/project-permissions/?project=4475ac77fa3a491aacb3fb3a6dfadadf HTTP/1.1
 Accept: */*
 Accept-Encoding: gzip, deflate
-Authorization: Token 123
+Authorization: Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811
 Connection: keep-alive
 Host: puhuri-core-demo.neic.no
 User-Agent: HTTPie/2.4.0
@@ -152,11 +152,11 @@ X-XSS-Protection: 1; mode=block
 User can remove the permissions by its `id` specified as a path variable.
 
 ```bash
-$ http --pretty=format -v DELETE https://puhuri-core-demo.neic.no/api/project-permissions/10/ Authorization:"Token 123"
+$ http --pretty=format -v DELETE https://puhuri-core-demo.neic.no/api/project-permissions/10/ Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811"
 DELETE /api/project-permissions/10/ HTTP/1.1
 Accept: */*
 Accept-Encoding: gzip, deflate
-Authorization: Token 123
+Authorization: Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811
 Connection: keep-alive
 Content-Length: 0
 Host: puhuri-core-demo.neic.no

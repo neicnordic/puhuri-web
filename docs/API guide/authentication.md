@@ -21,7 +21,7 @@ Content-Type: application/json
 Content-Length: 52
 Host: puhuri-core-demo.neic.no
 
-{"username": "user", "password": "password"}
+{"username": "admin", "password": "puhuridemoadmin"}
 
 HTTP/1.1 200 OK
 Date: Fri, 09 Apr 2021 09:28:41 GMT
@@ -42,7 +42,7 @@ X-XSS-Protection: 1; mode=block
 Referrer-Policy: no-referrer-when-downgrade
 Content-Security-Policy: report-uri csp.hpc.ut.ee; form-action 'self';
 
-{"token":"123"}
+{"token":"787de6b7c581ab6d9d42fe9ec12ac9f1811c5811"}
 ```
 
 ## Authentication Token management
