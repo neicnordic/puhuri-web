@@ -384,7 +384,48 @@ If a token belongs to staff user, the order item can be approved automatically. 
 ### TODO: add order item acceptation example
 
 ## Modification of a resource allocation
-<!-- {generate_resource_modification} -->
+
+```bash
+$ http --pretty=format -v PUT https://puhuri-core-demo.neic.no/api/marketplace-resources/b97e82d0fc2445d493cf5659a3085608/ Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811" name="New resource name" description="New resource description"
+PUT /api/marketplace-resources/b97e82d0fc2445d493cf5659a3085608/ HTTP/1.1
+Accept: application/json, */*;q=0.5
+Accept-Encoding: gzip, deflate
+Authorization: Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811
+Connection: keep-alive
+Content-Length: 72
+Content-Type: application/json
+Host: puhuri-core-demo.neic.no
+User-Agent: HTTPie/2.4.0
+
+{
+    "description": "New resource description",
+    "name": "New resource name"
+}
+
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Accept-Encoding, Authorization, Content-Type, Origin, User-Agent, X-CSRFToken, X-Requested-With
+Access-Control-Allow-Methods: DELETE, GET, OPTIONS, PATCH, POST, PUT
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Link, X-Result-Count
+Allow: GET, PUT, PATCH, DELETE, HEAD, OPTIONS
+Content-Language: en
+Content-Length: 69
+Content-Security-Policy: report-uri csp.hpc.ut.ee; form-action 'self';
+Content-Type: application/json
+Date: Fri, 09 Apr 2021 15:21:23 GMT
+Referrer-Policy: no-referrer-when-downgrade
+Strict-Transport-Security: max-age=31536000; preload
+Vary: Accept-Language, Cookie
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+
+{
+    "description": "New resource description",
+    "name": "New resource name"
+}
+```
 
 ## Termination of a resource allocation
 <!-- {generate_resource_termination} -->
