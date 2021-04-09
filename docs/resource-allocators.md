@@ -42,6 +42,7 @@ use a different naming than agreed in Puhuri. Below is a mapping to reduce confu
     - by backend_id
 
 ## Project membership management
+**NB**: Project permissions can be viewed and modified only by customer owners and staff users.
 
 - [Getting a mapping of Puhuri AAI user CUID to Puhuri Core user](API guide/project-permissions.md#getting-a-mapping-of-AAI-user-to-Core-user)
     - explain why is needed

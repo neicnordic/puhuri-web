@@ -7,8 +7,6 @@ possible that the same account is used for allocating different shares, e.g. nat
 Projects are always created in the context of a specific customer, so as a first thing you need to lookup a specific
 customer you want to use. Customer is a stable entity, so it's URL / UUID can be cached.
 
-<!-- {generate_customer_list} -->
-
 ```bash
 $ http --pretty=format -v https://puhuri-core-demo.neic.no/api/customers/ field==url field==name Authorization:"Token 123"
 GET /api/customers/?field=url&field=name HTTP/1.1
@@ -84,9 +82,13 @@ X-XSS-Protection: 1; mode=block
 
 ## Create a new project
 
-In order to create a new project in an organization, user need to provide project `name`, `description`, and possible `backend_id`
+In order to create a new project in an organization, user needs to provide the following fields:
 
-<!-- {generate_project_creation} -->
+- **`customer`** - project's organization
+- **`name`** - project's name
+- `description` - project's description
+- `backend_id` - project's backend id
+- `type` - UUID of a project type
 
 ```bash
 $ http --pretty=format -v POST https://puhuri-core-demo.neic.no/api/projects/ Authorization:"Token 123" customer=https://puhuri-core-demo.neic.no/api/customers/d42a18b6b8ba4c2bb0591b3ff8fb181d/ name="Project name" description="Project description" backend_id="My unique string"
@@ -150,9 +152,12 @@ X-XSS-Protection: 1; mode=block
 ```
 
 ## Update an existing project
-User can update `name`, `description`, and `type` fields of selected project. The `customer` (uuid) field is required.
+User can update the following field of a project:
 
-<!-- {generate_project_update} -->
+- **`name`**
+- **`customer`** (uuid)
+- `description`
+- `type`
 
 ```bash
 $ http --pretty=format -v PUT https://puhuri-core-demo.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/ Authorization:"Token 123" name="New project name" customer=https://puhuri-core-demo.neic.no/api/customers/d42a18b6b8ba4c2bb0591b3ff8fb181d/
@@ -213,10 +218,15 @@ X-XSS-Protection: 1; mode=block
 ```
 
 
-## List projects with pissible fintering
-User can list projects and filter them by `name`, `customer` (uuid, name, native name, abbreviation), `description`, `name_exact` and `backend_id`.
+## List projects
+User can list projects and filter them by the following query params:
 
-<!-- {generate_project_listing} -->
+- `name` - project's name (can be not exact)
+- `name_exact` - project's exact name
+- `customer` (uuid, name, native name, abbreviation) - project's customer
+- `description` - project's description
+- `backend_id` - project's backend id
+
 
 ```bash
 $ http --pretty=format -v https://puhuri-core-demo.neic.no/api/projects/ Authorization:"Token 123"
