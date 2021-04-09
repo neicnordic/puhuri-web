@@ -238,7 +238,150 @@ X-XSS-Protection: 1; mode=block
 ```
 
 ## Creation of a resource allocation
-<!-- {generate_resource_creation} -->
+User can create an order item including requiested allocation parameters.
+
+- **`project`** - project's UUID
+- **`items`** - list of requieted allocations including:
+    - **`offering`** - respectful offering's URL
+    - **`attributes`** - specific attributes for the offering
+    - **`plan`** - plan's URL (if offering is billable)
+    - **`limits`** - a set of resource limits for an allocation
+
+```bash
+$ http --pretty=format -v POST https://puhuri-core-demo.neic.no/api/marketplace-orders/ Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811" <<< '{
+    "project": "https://puhuri-core-demo.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/",
+    "items": [
+            {
+            "offering": "https://puhuri-core-demo.neic.no/api/marketplace-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
+            "attributes": {
+                "name": "Resource allocation",
+                "nationality": "Some nationality",
+                "oecd_science_domain_configuration": "1.1 Mathematics"
+            },
+            "plan": "https://puhuri-core-demo.neic.no/api/marketplace-plans/c0fb33c79e9b48f69fcb6da26db5a28b/",
+            "limits": {
+                "gb_k_hours": 1,
+                "gpu_k_hours": 2,
+                "cpu_k_hours": 3
+            }
+        }
+    ]
+}'
+
+POST /api/marketplace-orders/ HTTP/1.1
+Accept: application/json, */*;q=0.5
+Accept-Encoding: gzip, deflate
+Authorization: Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811
+Connection: keep-alive
+Content-Length: 729
+Content-Type: application/json
+Host: puhuri-core-demo.neic.no
+User-Agent: HTTPie/2.4.0
+
+{
+    "items": [
+        {
+            "attributes": {
+                "name": "Resource allocation",
+                "nationality": "Some nationality",
+                "oecd_science_domain_configuration": "1.1 Mathematics"
+            },
+            "limits": {
+                "cpu_k_hours": 3,
+                "gb_k_hours": 1,
+                "gpu_k_hours": 2
+            },
+            "offering": "https://puhuri-core-demo.neic.no/api/marketplace-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
+            "plan": "https://puhuri-core-demo.neic.no/api/marketplace-plans/c0fb33c79e9b48f69fcb6da26db5a28b/"
+        }
+    ],
+    "project": "https://puhuri-core-demo.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/"
+}
+
+HTTP/1.1 201 Created
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Accept-Encoding, Authorization, Content-Type, Origin, User-Agent, X-CSRFToken, X-Requested-With
+Access-Control-Allow-Methods: DELETE, GET, OPTIONS, PATCH, POST, PUT
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Link, X-Result-Count
+Allow: GET, POST, HEAD, OPTIONS
+Content-Language: en
+Content-Length: 2113
+Content-Security-Policy: report-uri csp.hpc.ut.ee; form-action 'self';
+Content-Type: application/json
+Date: Fri, 09 Apr 2021 14:24:39 GMT
+Location: https://puhuri-core-demo.neic.no/api/marketplace-orders/138bbf5f56e64945bfce5eb4cfce0c23/
+Referrer-Policy: no-referrer-when-downgrade
+Strict-Transport-Security: max-age=31536000; preload
+Vary: Accept-Language, Cookie
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+
+{
+    "approved_at": "2021-04-09T14:24:39.425358Z",
+    "approved_by": "https://puhuri-core-demo.neic.no/api/users/3f2cadfbb2b145fd8cf18d549dcd7329/",
+    "approved_by_full_name": "Demo Staff",
+    "approved_by_username": "admin",
+    "created": "2021-04-09T14:24:39.379527Z",
+    "created_by": "https://puhuri-core-demo.neic.no/api/users/3f2cadfbb2b145fd8cf18d549dcd7329/",
+    "created_by_full_name": "Demo Staff",
+    "created_by_username": "admin",
+    "customer_uuid": "d42a18b6b8ba4c2bb0591b3ff8fb181d",
+    "file": "https://puhuri-core-demo.neic.no/api/marketplace-orders/138bbf5f56e64945bfce5eb4cfce0c23/pdf/",
+    "items": [
+        {
+            "attributes": {
+                "name": "Resource allocation",
+                "nationality": "Some nationality",
+                "oecd_science_domain_configuration": "1.1 Mathematics"
+            },
+            "category_title": "HPC",
+            "category_uuid": "5b61d0811cfe4ed6a004119795a4c532",
+            "cost": "1.3010000000",
+            "created": "2021-04-09T14:24:39.396873Z",
+            "error_message": "",
+            "error_traceback": "",
+            "limits": {
+                "cpu_k_hours": 3,
+                "gb_k_hours": 1,
+                "gpu_k_hours": 2
+            },
+            "modified": "2021-04-09T14:24:39.396873Z",
+            "offering": "https://puhuri-core-demo.neic.no/api/marketplace-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
+            "offering_billable": true,
+            "offering_description": "LUMI share of Denmark",
+            "offering_name": "LUMI Denmark",
+            "offering_shared": true,
+            "offering_terms_of_service": "",
+            "offering_thumbnail": null,
+            "offering_type": "Marketplace.Basic",
+            "offering_uuid": "073a0ddd6eba4ff4a90b943ae3e1b7c9",
+            "output": "",
+            "plan": "https://puhuri-core-demo.neic.no/api/marketplace-plans/c0fb33c79e9b48f69fcb6da26db5a28b/",
+            "plan_description": "Default plan for all LUMI",
+            "plan_name": "LUMI Common",
+            "plan_unit": "month",
+            "plan_uuid": "c0fb33c79e9b48f69fcb6da26db5a28b",
+            "provider_name": "Danish e-Infrastructure Cooperation",
+            "provider_uuid": "d42a18b6b8ba4c2bb0591b3ff8fb181d",
+            "state": "pending",
+            "type": "Create",
+            "uuid": "cf0522b37dd44979a6448a6457ec1acd"
+        }
+    ],
+    "project": "https://puhuri-core-demo.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/",
+    "project_uuid": "4475ac77fa3a491aacb3fb3a6dfadadf",
+    "state": "executing",
+    "total_cost": "1.3010000000",
+    "url": "https://puhuri-core-demo.neic.no/api/marketplace-orders/138bbf5f56e64945bfce5eb4cfce0c23/",
+    "uuid": "138bbf5f56e64945bfce5eb4cfce0c23"
+}
+```
+
+If a token belongs to staff user, the order item can be approved automatically. Otherwise, there is additional need for manual acceptance.
+
+### TODO: add order item acceptation example
 
 ## Modification of a resource allocation
 <!-- {generate_resource_modification} -->
