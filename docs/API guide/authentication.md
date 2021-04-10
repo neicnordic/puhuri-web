@@ -8,46 +8,41 @@ Almost all of the operations with API require an authentication token. Below we 
 ## Authentication with username/password
 If your account is allowed to use username/password and the method is enabled (e.g. in dev environment), you can get a new token by submitting a username/password as JSON to a specific endpoint.
 
+<!-- {generate_username_password_authentication} -->
 
 ```bash
-$ http -v POST https://puhuri-core.neic.no/api-auth/password/ username=user password=password
-
+$ http -v POST https://puhuri-core-demo.neic.no/api-auth/password/ username=admin password=puhuridemoadmin
 POST /api-auth/password/ HTTP/1.1
-Accept: application/json, */*;q=0.5
+User-Agent: HTTPie/2.4.0
 Accept-Encoding: gzip, deflate
+Accept: application/json, */*;q=0.5
 Connection: keep-alive
-Content-Length: 52
 Content-Type: application/json
-Host: puhuri-core.neic.no
-User-Agent: HTTPie/2.3.0
+Content-Length: 52
+Host: puhuri-core-demo.neic.no
 
-{
-    "password": "user",
-    "username": "password"
-}
+{"username": "admin", "password": "puhuridemoadmin"}
 
 HTTP/1.1 200 OK
+Date: Fri, 09 Apr 2021 09:28:41 GMT
+Content-Type: application/json
+Content-Length: 52
+Allow: POST, OPTIONS
+X-Frame-Options: SAMEORIGIN
+Vary: Accept-Language, Cookie
+Content-Language: en
 Access-Control-Allow-Credentials: true
 Access-Control-Allow-Headers: Accept, Accept-Encoding, Authorization, Content-Type, Origin, User-Agent, X-CSRFToken, X-Requested-With
 Access-Control-Allow-Methods: DELETE, GET, OPTIONS, PATCH, POST, PUT
 Access-Control-Allow-Origin: *
 Access-Control-Expose-Headers: Link, X-Result-Count
-Allow: POST, OPTIONS
-Content-Language: en
-Content-Length: 52
-Content-Security-Policy: report-uri csp.hpc.ut.ee; form-action 'self';
-Content-Type: application/json
-Date: Mon, 05 Apr 2021 14:37:55 GMT
-Referrer-Policy: no-referrer-when-downgrade
 Strict-Transport-Security: max-age=31536000; preload
-Vary: Accept-Language, Cookie
 X-Content-Type-Options: nosniff
-X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: report-uri csp.hpc.ut.ee; form-action 'self';
 
-{
-    "token": "65b4c4f5e25f0cadb3e11c181be4ffa3881741f8"
-}
+{"token":"787de6b7c581ab6d9d42fe9ec12ac9f1811c5811"}
 ```
 
 ## Authentication Token management
