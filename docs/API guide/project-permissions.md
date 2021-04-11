@@ -7,19 +7,6 @@
 ## Project members permissions allocation
 User create a role for a user in a project.
 
-The list of fields for creation:
-
-- **`user`** - a user's URL
-- **`project`** - a projects's URL
-- **`role`** - a selected role
-- `expiration_time` - a time for a permission expiration
-
-The list of possible roles:
-
-- `administrator`
-- `manager`
-- `member`
-
 ```bash
 $ http --pretty=format -v POST https://puhuri-core-demo.neic.no/api/project-permissions/ Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811" role=member project=https://puhuri-core-demo.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/ user=https://puhuri-core-demo.neic.no/api/users/3f2cadfbb2b145fd8cf18d549dcd7329/
 POST /api/project-permissions/ HTTP/1.1
@@ -79,19 +66,6 @@ X-XSS-Protection: 1; mode=block
 ```
 
 ## List project permissions
-User can list permissions for all project of for a selected one. In the latter case, user is required to provide a `project` query parameter.
-
-Possible query params for filtering:
-
-- `project` - a projects's UUID
-- `project_url` - a projects's URL
-- `user` - a user's UUID
-- `user_url` - a user's URL
-- `username` - a user's login name
-- `full_name` - a user's full name
-- `custome` - an organization's UUID
-- `role` - a role's name
-- `user_url` - a user's URL
 
 ```bash
 $ http --pretty=format -v https://puhuri-core-demo.neic.no/api/project-permissions/ project==4475ac77fa3a491aacb3fb3a6dfadadf Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811"
@@ -149,7 +123,7 @@ X-XSS-Protection: 1; mode=block
 ```
 
 ## Removal of members from a project
-User can remove the permissions by its `id` specified as a path variable.
+User can remove the permissions calling DELETE verb on permission's URL.
 
 ```bash
 $ http --pretty=format -v DELETE https://puhuri-core-demo.neic.no/api/project-permissions/10/ Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811"

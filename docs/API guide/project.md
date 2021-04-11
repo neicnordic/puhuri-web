@@ -82,14 +82,6 @@ X-XSS-Protection: 1; mode=block
 
 ## Create a new project
 
-In order to create a new project in an organization, user needs to provide the following fields:
-
-- **`customer`** - project's organization
-- **`name`** - project's name
-- `description` - project's description
-- `backend_id` - project's backend id
-- `type` - UUID of a project type
-
 ```bash
 $ http --pretty=format -v POST https://puhuri-core-demo.neic.no/api/projects/ Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811" customer=https://puhuri-core-demo.neic.no/api/customers/d42a18b6b8ba4c2bb0591b3ff8fb181d/ name="Project name" description="Project description" backend_id="My unique string"
 POST /api/projects/ HTTP/1.1
@@ -152,12 +144,6 @@ X-XSS-Protection: 1; mode=block
 ```
 
 ## Update an existing project
-User can update the following field of a project:
-
-- **`name`**
-- **`customer`** (uuid)
-- `description`
-- `type`
 
 ```bash
 $ http --pretty=format -v PUT https://puhuri-core-demo.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/ Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811" name="New project name" customer=https://puhuri-core-demo.neic.no/api/customers/d42a18b6b8ba4c2bb0591b3ff8fb181d/
@@ -219,15 +205,6 @@ X-XSS-Protection: 1; mode=block
 
 
 ## List projects
-User can list projects and filter them by the following query params:
-
-- `name` - project's name (can be not exact)
-- `name_exact` - project's exact name
-- `customer` (uuid, name, native name, abbreviation) - project's customer
-- `description` - project's description
-- `backend_id` - project's backend id
-
-
 ```bash
 $ http --pretty=format -v https://puhuri-core-demo.neic.no/api/projects/ Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811"
 GET /api/projects/ HTTP/1.1
