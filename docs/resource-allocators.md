@@ -129,7 +129,7 @@ Possible query params for filtering:
 - `user_url` - a user's URL
 - `username` - a user's username (aka CUID)
 - `full_name` - a user's full name
-- `custome` - an organization's UUID
+- `customer` - an organization's UUID
 - `role` - a role's name
 
 Examples:
