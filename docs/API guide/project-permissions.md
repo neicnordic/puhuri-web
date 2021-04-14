@@ -1,8 +1,92 @@
 # Project permissions
 
 ## Getting a mapping of AAI user to Core user
-<!-- {generate_mapping_aai_to_core_getting} -->
-### TODO
+
+To get Puhuri Core User UUID mapping from Puhuri AAI CUID, service providers should pass CUID as a parameter to the endpoint below. 
+
+```bash
+http POST https://puhuri-core-demo.neic.no/api-auth/remote-eduteams/ Authorization:"Token 32e7682378fa394b0f8b2538c444b60129ebfb47" cuid="01cfb7d6b76d400d12b8c8e0e33e36c5ef4562c1@acc.researcher-access.org"
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Accept-Encoding, Authorization, Content-Type, Origin, User-Agent, X-CSRFToken, X-Requested-With
+Access-Control-Allow-Methods: DELETE, GET, OPTIONS, PATCH, POST, PUT
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Link, X-Result-Count
+Allow: POST, OPTIONS
+Content-Language: en
+Content-Length: 43
+Content-Security-Policy: report-uri csp.hpc.ut.ee; form-action 'self';
+Content-Type: application/json
+Date: Wed, 14 Apr 2021 09:32:37 GMT
+Referrer-Policy: no-referrer-when-downgrade
+Strict-Transport-Security: max-age=31536000; preload
+Vary: Accept-Language, Cookie
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+
+{
+    "uuid": "bc9db26ff9984f8fa972fc071bfd008e"
+}
+
+```
+
+Example of error message if user information could not have been retrieved.
+
+```bash
+http POST https://puhuri-core-demo.neic.no/api-auth/remote-eduteams/ Authorization:"Token 32e7682378fa394b0f8b2538c444b60129ebfb47" cuid="asdasd"
+HTTP/1.1 401 Unauthorized
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Accept-Encoding, Authorization, Content-Type, Origin, User-Agent, X-CSRFToken, X-Requested-With
+Access-Control-Allow-Methods: DELETE, GET, OPTIONS, PATCH, POST, PUT
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Link, X-Result-Count
+Allow: POST, OPTIONS
+Content-Language: en
+Content-Length: 53
+Content-Security-Policy: report-uri csp.hpc.ut.ee; form-action 'self';
+Content-Type: application/json
+Date: Wed, 14 Apr 2021 09:31:40 GMT
+Referrer-Policy: no-referrer-when-downgrade
+Strict-Transport-Security: max-age=31536000; preload
+Vary: Accept-Language, Cookie
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+
+{
+    "detail": "Eduteams error: Unable to get user info."
+}
+
+
+```
+
+The calls to the mapping endpoint are only allowed to users with identity manager role!
+
+```bash
+$ http POST https://puhuri-core-demo.neic.no/api-auth/remote-eduteams/ Authorization:"Token 32e7682378fa394b0f8b2538c444b60129ebfb47"
+HTTP/1.1 403 Forbidden
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Accept-Encoding, Authorization, Content-Type, Origin, User-Agent, X-CSRFToken, X-Requested-With
+Access-Control-Allow-Methods: DELETE, GET, OPTIONS, PATCH, POST, PUT
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Link, X-Result-Count
+Allow: POST, OPTIONS
+Content-Language: en
+Content-Length: 56
+Content-Security-Policy: report-uri csp.hpc.ut.ee; form-action 'self';
+Content-Type: application/json
+Date: Wed, 14 Apr 2021 09:28:05 GMT
+Referrer-Policy: no-referrer-when-downgrade
+Strict-Transport-Security: max-age=31536000; preload
+Vary: Accept-Language, Cookie
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+
+"Only identity manager is allowed to sync remote users."
+
+```
 
 ## Project members permissions allocation
 User create a role for a user in a project.
