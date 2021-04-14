@@ -381,7 +381,7 @@ X-XSS-Protection: 1; mode=block
 
 If a token belongs to staff user, the order item can be approved automatically. Otherwise, there is additional need for manual acceptance.
 
-### TODO: add order item acceptation example
+### TODO: add order item acceptance example
 
 ## Modification of a resource allocation
 
@@ -428,4 +428,43 @@ X-XSS-Protection: 1; mode=block
 ```
 
 ## Termination of a resource allocation
-<!-- {generate_resource_termination} -->
+
+Termination uses a special short-cut action ``/terminate`` and returns UUID of a generated order. 
+
+```bash
+$ http -v POST https://puhuri-core-demo.neic.no/api/marketplace-resources/8887243fa8d0458c970eeb6be28ff4f7/terminate/ Authorization:"Token 32e7682378fa394b0f8b2538c444b60129ebfb47"
+POST /api/marketplace-resources/8887243fa8d0458c970eeb6be28ff4f7/terminate/ HTTP/1.1
+Accept: */*
+Accept-Encoding: gzip, deflate
+Authorization: Token 32e7682378fa394b0f8b2538c444b60129ebfb47
+Connection: keep-alive
+Content-Length: 0
+Host: puhuri-core-demo.neic.no
+User-Agent: HTTPie/2.4.0
+
+
+
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Accept-Encoding, Authorization, Content-Type, Origin, User-Agent, X-CSRFToken, X-Requested-With
+Access-Control-Allow-Methods: DELETE, GET, OPTIONS, PATCH, POST, PUT
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Link, X-Result-Count
+Allow: POST, OPTIONS
+Content-Language: en
+Content-Length: 49
+Content-Security-Policy: report-uri csp.hpc.ut.ee; form-action 'self';
+Content-Type: application/json
+Date: Wed, 14 Apr 2021 22:28:07 GMT
+Referrer-Policy: no-referrer-when-downgrade
+Strict-Transport-Security: max-age=31536000; preload
+Vary: Accept-Language, Cookie
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+
+{
+    "order_uuid": "7c73504611d741749b3a3a538979e74a"
+}
+
+```
