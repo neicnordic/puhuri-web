@@ -39,10 +39,21 @@ Service Account|syn. Robot Account - A User Account which is not representing a 
 User ID| A user is the entity (a real person or a machine) that uses the Resource. A User can belong to zero, one, or more Projects. |  
 
 
-Regarding some terms, there is difference between Puhuri and Waldur/API:
+## Terminology mapping between Puhuri and Waldur/API
+Puhuri Core and Portal are based on the Waldur platform, there are some differences in words used for Puhuri terminology:
 
 **Puhuri Term** | **Waldur/API Term** |
 --- | --- |
-Allocation | Resource | 
-Resource | Offering | 
-Resource component | Offering component | 
+Allocation | Resource |
+Resource | Offering |
+Resource component | Offering component |
+
+## Terminology mapping between Puhuri and Puhuri AAI
+Puhuri AAI is based on eduTeams/OIDC, there are some differences in words used for Puhuri terminology:
+
+**Puhuri Term** | **eduTeams/OIDC** |
+--- | --- |
+National Portal | Client |
+Puhuri Portal | Client of Puhuri AAI|
+Puhuri Core | Client of Researcher Access|
+Member | User |
