@@ -24,7 +24,7 @@ use a different naming than agreed in Puhuri. Below is a mapping to reduce confu
 
 Almost all operations require authentication. Authentication process is a two-step:
 1. Generation of authentication token using [Authentication API](API guide/authentication.md).
-2. Passing that token in Authorization header along with all other REST API calls.
+2. Passing that token in the Authorization header along with all other REST API calls.
 
 Please note that all of the responses to the listing are paginated, by default up to 10 elements are returned.
 You can request more by passing `page_size=<number>` argument, number up to 200 will be respected. Information
@@ -34,12 +34,12 @@ to see how a full traversal can be done.
 ## Project management
 
 ### Customer lookup
-Puhuri Core implementes a multi-tenant model to allow different organizations to allocate shared resources simultaneously
+Puhuri Core implements a multi-tenant model to allow different organizations to allocate shared resources simultaneously
 and independently from each other. Each such organizaton is a customer of Puhuri Core and is able to create its own
-projects. Project allows to create new allocations as well as connect users with the project.
+projects. Project allows us to create new allocations as well as connect users with the project.
 
 Hence, to create a project, one needs first to have a reference to the customer. The reference is a stable one and
-can be cached by REST API client.
+can be cached by a REST API client.
 
 Customers are created by Puhuri Core support team. Please reach out to [support@hpc.ut.ee](mailto:support@hpc.ut.ee)
 if you think you should have one.
@@ -55,8 +55,12 @@ In order to create a new project in an organization, user needs to provide the f
 - **`customer`** - URL of the project's organization
 - **`name`** - project's name
 - `description` - description of a project description
+- `end_date` - optional date when the project is  
+
 - `backend_id` - optional identifier, which is intended to be unique in the resource allocator's project list. Can be 
-  used for connecting Puhuri Core projects with client's project registry. 
+  used for connecting Puhuri Core projects with the client's project registry. 
+
+Please note that the project becomes active at the moment of creation!
 
 Examples:
 
@@ -76,8 +80,8 @@ User can list projects and filter them using the following query parameters:
 
 - `name` - project's name (uses 'contains' logic for lookup)
 - `name_exact` - project's exact name
-- `description` - project's description
-- `backend_id` - project's backend id
+- `description` - project's description (uses 'contains' logic for lookup)
+- `backend_id` - project's exact backend ID
 
 In case API user has access to more than one customer, extra filter by customer properties can be added:
 
@@ -107,7 +111,8 @@ Examples:
 
 ### Membership management 
 
-Creating a membership for a user means creating a permission link. 
+Creating a membership for a user means creating a permission link. While multiple roles of a user per project are allowed,
+we recommed for clarity to have one active project role per user in a project.
 
 The list of fields for creation are:
 
@@ -118,8 +123,8 @@ The list of fields for creation are:
 Each permission has a unique URL. To remove the permission, REST API client needs to send a DELETE HTTP request
 to that URL.
 
-It is also possible to list available project permissions along with a various filters. User can list permissions for
-all project in her visibility range. To limit the permission set to a specific project
+It is also possible to list available project permissions along with a various filters. Users can list permissions for
+all projects in their visibility range. To limit the permission set to a specific project
 or user, the following filters are supported:
 
 Possible query params for filtering:
@@ -134,21 +139,49 @@ Possible query params for filtering:
 - `role` - a role's name
 
 Examples:
-- [Allocation of members to a project](API guide/project-permissions.md#project-members-permissions-allocation)
-- [Removal of members from a project](API guide/project-permissions.md#removal-of-members-from-a-project)
-- [Listing project permissions](API guide/project-permissions.md#project-members-permissions-allocation)
+
+- [API call for allocatimg members to a project](API guide/project-permissions.md#project-members-permissions-allocation)
+- [API call for removing members from a project](API guide/project-permissions.md#removal-of-members-from-a-project)
+- [API call to listing project permissions](API guide/project-permissions.md#project-members-permissions-allocation)
 
 
 ## Resource allocation management
 
+Creating and managing resource allocations in Puhuri Core follows ordering logic.
+
+All operations on resources, which lead to changes in allocations - e.g. creation, modification of allocated limits
+or termination - are wrapped in an order. It is possible to have multiple actions of the same type in one order.
+Such actions are called Order items.
+
+To create a new Allocation, one must first choose a specific Offering from available. Offering corresponds to a specific
+part of a shared resource that Resource Allocator can allocate. For example, it can be a national share of LUMI resources.
+
+User can fetch offerings and filter them by the following fields:
+
+- `name` - offering's name
+- `name_exact` - offering's exact name
+- `customer` - organization's URL
+- `customer_uuid` - organization's UUID
+
+Generally Offering has a stable UUID, which can be used in Puhuri Core client configuration. Offering defines inputs
+that are required to provision an instance of the offering, available accounting plans (at least one should be present)
+as well as attributes that can or should be provided with each request.
+
+API examples:
+
 - [Getting a list of offerings available for allocation](API guide/resource-allocation-management.md#getting-a-list-of-offerings)
-    - List of offerings accessible for a specific allocator. Implementation: [link](https://github.com/waldur/waldur-mastermind/blob/7b2eba62e1e0dab945845f05030c7935e57f0d9c/src/waldur_mastermind/marketplace_remote/views.py#L45).
 - [Creation of a resource allocation](API guide/resource-allocation-management.md#creation-of-a-resource-allocation)
-    - Project + offering (Resource Component) + requested parameters => Resource allocation. Implementation: [link](https://github.com/waldur/waldur-mastermind/blob/7b2eba62e1e0dab945845f05030c7935e57f0d9c/src/waldur_mastermind/marketplace_remote/processors.py#L37).
 - [Modification of a resource allocation](API guide/resource-allocation-management.md#modification-of-a-resource-allocation)
-    - Changing of allocated limits. Implementation: [link](https://github.com/waldur/waldur-mastermind/blob/7b2eba62e1e0dab945845f05030c7935e57f0d9c/src/waldur_mastermind/marketplace_remote/processors.py#L53).
+- TODO: Modification of resource allocation limits
 - [Termination of a resource allocation](API guide/resource-allocation-management.md#termination-of-a-resource-allocation)
-    - Deletion of a resource allocation. Implementation: [link](https://github.com/waldur/waldur-mastermind/blob/7b2eba62e1e0dab945845f05030c7935e57f0d9c/src/waldur_mastermind/marketplace_remote/processors.py#L64).
+
+Example integrations:
+
+- [Lookup of available offerings in Puhuri Portal](https://github.com/waldur/waldur-mastermind/blob/7b2eba62e1e0dab945845f05030c7935e57f0d9c/src/waldur_mastermind/marketplace_remote/views.py#L45).
+- [Creation of a resource in Puhuri Portal](https://github.com/waldur/waldur-mastermind/blob/7b2eba62e1e0dab945845f05030c7935e57f0d9c/src/waldur_mastermind/marketplace_remote/processors.py#L37).
+- [Changing allocated limits in Puhuri Portal](https://github.com/waldur/waldur-mastermind/blob/7b2eba62e1e0dab945845f05030c7935e57f0d9c/src/waldur_mastermind/marketplace_remote/processors.py#L53).
+- [Deletion of a resource allocation in Puhuri Portal](https://github.com/waldur/waldur-mastermind/blob/7b2eba62e1e0dab945845f05030c7935e57f0d9c/src/waldur_mastermind/marketplace_remote/processors.py#L64).
+
 
 ### Advanced
 Information about Puhuri resources in Puhuri Core can change over time, for example, new components could be added.
