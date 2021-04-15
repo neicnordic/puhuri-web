@@ -7,3 +7,8 @@
 - Getting a list of members in a project with active resource allocations.
     - TODO: consider exposing `/team` endpoint for each resource.
 - Reporting usage for a resource allocation.
+
+
+## LUMI Use-case
+
+![Positioning](assets/lumi-vs-puhuri.png){ align=right }
