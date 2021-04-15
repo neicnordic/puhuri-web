@@ -39,7 +39,7 @@ Service Account|syn. Robot Account - A User Account which is not representing a 
 User ID| A user is the entity (a real person or a machine) that uses the Resource. A User can belong to zero, one, or more Projects. |  
 
 
-Some terms will differ between Puhuri and Waldur/API:
+Regarding some terms, there is difference between Puhuri and Waldur/API:
 
 **Puhuri Term** | **Waldur/API Term** |
 --- | --- |
