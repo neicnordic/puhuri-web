@@ -167,6 +167,13 @@ Generally Offering has a stable UUID, which can be used in Puhuri Core client co
 that are required to provision an instance of the offering, available accounting plans (at least one should be present)
 as well as attributes that can or should be provided with each request.
 
+Allocation creation consists of the following steps:
+
+1. Order creation with corresponding order items
+2. Order processing:
+    1. Order approval
+    2. Resource creation (asynchronously): an actual resource allocation and a marketplace wrapper
+
 API examples:
 
 - [Getting a list of offerings available for allocation](API guide/resource-allocation-management.md#getting-a-list-of-offerings)

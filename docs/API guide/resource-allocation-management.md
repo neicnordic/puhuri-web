@@ -238,7 +238,7 @@ X-XSS-Protection: 1; mode=block
 ```
 
 ## Creation of a resource allocation
-User can create an order item including requiested allocation parameters.
+User can create an order item including requested allocation parameters.
 
 - **`project`** - project's UUID
 - **`items`** - list of requieted allocations including:
