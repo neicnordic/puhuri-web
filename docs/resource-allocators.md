@@ -167,6 +167,8 @@ Generally Offering has a stable UUID, which can be used in Puhuri Core client co
 that are required to provision an instance of the offering, available accounting plans (at least one should be present)
 as well as attributes that can or should be provided with each request.
 
+### Resource creation
+#### Order
 Allocation creation consists of an order creation with corresponding items and their further processing. 
 Order has status, which is `REQUESTED FOR APPROVAL` after creation. 
 It means that all interested parties are notified via email that order should be either approved or rejected. 
@@ -174,8 +176,16 @@ Once order is approved, it is switched to `EXECUTING` status, otherwise it is ma
 Then each order item is processed by backend: API method for provisioning resource is called. 
 Once all resources are provisioned, order is marked as `DONE`. Otherwise it is marked as `ERRED`.
 
-The order life-cycle is shown below.
+The order life-cycle diagram is shown below.
 ![order-life-cycle](assets/order-life-cycle.png)
+
+#### Resource
+After order processing, a corresponding resource created for each order item.
+Resource has status too, which is `CREATING` right after its creation.
+If creation is succeed, the status turns to `OK` and to `ERRED` if creation is failed.
+
+The resource creation flow is shown below.
+![resource-provisioning-flow](assets/resource-provisioning-flow.png)
 
 API examples:
 
