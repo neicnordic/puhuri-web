@@ -382,7 +382,7 @@ X-XSS-Protection: 1; mode=block
 If a token belongs to a staff user, the order can be approved automatically.
 Otherwise, there is additional need for manual approval.
 
-After that, order item should be pulled until resource uuid is fetched (`marketplace_resource_uuid` field).
+After that, order item should be pulled until resource UUID is present (`marketplace_resource_uuid` field).
 
 ```bash
 $ http --pretty=format -v https://puhuri-core-demo.neic.no/api/marketplace-order-items/f980c6ae5dc746c5bf5bbf1e31ff7d7e/ Authorization:"Token 32e7682378fa394b0f8b2538c444b60129ebfb47"
