@@ -167,6 +167,34 @@ Generally Offering has a stable UUID, which can be used in Puhuri Core client co
 that are required to provision an instance of the offering, available accounting plans (at least one should be present)
 as well as attributes that can or should be provided with each request.
 
+### Order
+Allocation management consists of an order creation with corresponding items and their further processing.
+Order has status, which is `REQUESTED FOR APPROVAL` after creation.
+Once order is auto-approved, it is switched to `EXECUTING` status, otherwise it is marked as `REJECTED`.
+Then each order item is processed by backend: API method for provisioning resource is called.
+Once all resources are provisioned, order is marked as `DONE`. Otherwise it is marked as `ERRED`.
+
+The order life-cycle diagram is shown below.
+![order-life-cycle](assets/order-life-cycle.png)
+
+After order processing, corresponding resources are changed for each order item.
+An order item includes resource UUID (`marketplace_resource_uuid` field) to get information about resource itself.
+
+Resource has status too, which is `CREATING` right after its creation.
+If the operation is succeed, the status turns to `OK` and to `ERRED` in case of failure.
+
+### Resource creation
+The resource creation flow is shown below.
+![resource-provisioning-flow](assets/resource-provisioning-flow.png)
+
+### Resource termination
+The resource termination flow is shown below.
+![resource-termination-flow](assets/resource-termination-flow.png)
+
+### Resource updating
+The resource plan changing flow is shown below.
+![resource-update-flow](assets/resource-update-flow.png)
+
 API examples:
 
 - [Getting a list of offerings available for allocation](API guide/resource-allocation-management.md#getting-a-list-of-offerings)
