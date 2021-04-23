@@ -15,6 +15,11 @@ This site is aimed at providing a high level technical information about Puhuri 
 - [Documents](documents.md) contains document templates that parties are expected to agree and sign.
 - [Environments](environments.md) contains descriptions of development and production environments.
 
+
+## Introduction
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSm0gNavR8AIqfe_FQwDCWFXwGReX8NeIMbN-RFQo2IV1QPeq5oG-2ESb3S2Sq5ipyDoMwg7RALB3Q9/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 ## Contacts
 
 ![Placeholder](assets/logo.png){ align=right }

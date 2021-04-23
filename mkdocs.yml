@@ -1,6 +1,7 @@
 site_name: Puhuri Documentation
 theme:
   name: material
+  favicon: assets/favicon.png
 markdown_extensions:
   - attr_list
   - pymdownx.highlight:
