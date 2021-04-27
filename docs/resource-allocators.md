@@ -20,6 +20,10 @@ use a different naming than agreed in Puhuri. Below is a mapping to reduce confu
 | Allocation  | Resource        |
 
 
+## Puhuri Core SDK
+
+Puhuri Core is based on Waldur, which exposes REST API. If you are integrating a python-based application, you might find useful a [python wrapper](https://github.com/waldur/ansible-waldur-module/blob/develop/waldur_client.py) for typical operations. 
+
 ## Common operations
 
 Almost all operations require authentication. Authentication process is a two-step:
