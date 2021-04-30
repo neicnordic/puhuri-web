@@ -9,7 +9,7 @@ Puhuri logo:
 
 Puhuri logo (negative):
 
-![Puhuri logo](assets/Puhuri_neic_negative_transparent-back_example.png)
+![Puhuri logo](assets/Puhur_neic_negative_transparent-back_example.png)
 [Download here](https://puhuri.neic.no/assets/Puhuri_neic_negative_transparent-back.png)
 
 Puhuri Portal logo for light background:
