@@ -1,6 +1,6 @@
 # Branding
 
-## Graphical Guidelines
+## Logos
 
 Puhuri logo:
 
@@ -25,3 +25,7 @@ Puhuri Core logo for dark background:
 Puhuri Core logo for light background:
 
 ![Portal Dark](assets/Puhuri_Core_black.png)
+
+## Logo guideline
+
+Coming soon!
