@@ -2,10 +2,10 @@
 
 ## Getting a mapping of AAI user to Core user
 
-To get Puhuri Core User UUID mapping from Puhuri AAI CUID, service providers should pass CUID as a parameter to the endpoint below. 
+To get Puhuri Core User UUID mapping from Puhuri AAI CUID, service providers should pass CUID as a parameter to the endpoint below.
 
 ```bash
-http POST https://puhuri-core-demo.neic.no/api-auth/remote-eduteams/ Authorization:"Token 32e7682378fa394b0f8b2538c444b60129ebfb47" cuid="01cfb7d6b76d400d12b8c8e0e33e36c5ef4562c1@acc.researcher-access.org"
+http POST https://puhuri-core-demo.neic.no/api/remote-eduteams/ Authorization:"Token 32e7682378fa394b0f8b2538c444b60129ebfb47" cuid="01cfb7d6b76d400d12b8c8e0e33e36c5ef4562c1@acc.researcher-access.org"
 HTTP/1.1 200 OK
 Access-Control-Allow-Credentials: true
 Access-Control-Allow-Headers: Accept, Accept-Encoding, Authorization, Content-Type, Origin, User-Agent, X-CSRFToken, X-Requested-With
@@ -34,7 +34,7 @@ X-XSS-Protection: 1; mode=block
 Example of error message if user information could not have been retrieved.
 
 ```bash
-http POST https://puhuri-core-demo.neic.no/api-auth/remote-eduteams/ Authorization:"Token 32e7682378fa394b0f8b2538c444b60129ebfb47" cuid="asdasd"
+http POST https://puhuri-core-demo.neic.no/api/remote-eduteams/ Authorization:"Token 32e7682378fa394b0f8b2538c444b60129ebfb47" cuid="asdasd"
 HTTP/1.1 401 Unauthorized
 Access-Control-Allow-Credentials: true
 Access-Control-Allow-Headers: Accept, Accept-Encoding, Authorization, Content-Type, Origin, User-Agent, X-CSRFToken, X-Requested-With
@@ -64,7 +64,7 @@ X-XSS-Protection: 1; mode=block
 The calls to the mapping endpoint are only allowed to users with identity manager role!
 
 ```bash
-$ http POST https://puhuri-core-demo.neic.no/api-auth/remote-eduteams/ Authorization:"Token 32e7682378fa394b0f8b2538c444b60129ebfb47"
+$ http POST https://puhuri-core-demo.neic.no/api/remote-eduteams/ Authorization:"Token 32e7682378fa394b0f8b2538c444b60129ebfb47"
 HTTP/1.1 403 Forbidden
 Access-Control-Allow-Credentials: true
 Access-Control-Allow-Headers: Accept, Accept-Encoding, Authorization, Content-Type, Origin, User-Agent, X-CSRFToken, X-Requested-With
