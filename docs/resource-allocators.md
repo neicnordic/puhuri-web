@@ -107,7 +107,7 @@ carrying also information about the role name.
 A mapping from the Puhuri AAI CUID is implemented as a separate call. Resource allocator is able to send the CUID,
 which would return a link to Puhuri Core user identity or error message, if this was not possible (e.g. CUID is
 incorrect or connection with Puhuri AAI user registry has failed). Note that endpoint returns UUID, full URL of the user
-is constructed as Puhuri Core URL + ``/api/users/USER_UUID``.
+is constructed as Puhuri Core URL + ``/api/users/USER_UUID/``.
 
 Examples:
 
