@@ -144,7 +144,7 @@ Possible query params for filtering:
 
 Examples:
 
-- [API call for allocatimg members to a project](API guide/project-permissions.md#project-members-permissions-allocation)
+- [API call for allocating members to a project](API guide/project-permissions.md#project-members-permissions-allocation)
 - [API call for removing members from a project](API guide/project-permissions.md#removal-of-members-from-a-project)
 - [API call to listing project permissions](API guide/project-permissions.md#project-members-permissions-allocation)
 
