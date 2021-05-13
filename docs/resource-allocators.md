@@ -171,6 +171,13 @@ Generally Offering has a stable UUID, which can be used in Puhuri Core client co
 that are required to provision an instance of the offering, available accounting plans (at least one should be present)
 as well as attributes that can or should be provided with each request.
 
+### Selecting an offering (LUMI specific)
+
+offering_types = ['Extreme Scale Access', 'Regular Access', 'Benchmark Access', 'Development Access',
+                  'Fast Track Access for Academia', 'Fast Track Access for Industry Access']
+
+
+
 ### Order
 Allocation management consists of an order creation with corresponding items and their further processing.
 Order has status, which is `REQUESTED FOR APPROVAL` after creation.
@@ -188,8 +195,12 @@ Resource has status too, which is `CREATING` right after its creation.
 If the operation is succeed, the status turns to `OK` and to `ERRED` in case of failure.
 
 ### Resource creation
+- TODO: Allow setting separate limits
+- TODO: Do not validate against usage! Rely on the backend to handle it. Consider a separate endpoint ?check
+
 The resource creation flow is shown below.
 ![resource-provisioning-flow](assets/resource-provisioning-flow.png)
+
 
 ### Resource termination
 The resource termination flow is shown below.
