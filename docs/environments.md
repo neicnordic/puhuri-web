@@ -58,6 +58,7 @@ Puhuri Portal exposes services on encrypted endpoints, for HTTPS to validate wit
 the domain name.
 
 Currently two options are supported:
+
 - Getting certificates using Letsencrypt and http01 validation schema;
 - Using custom certificates provided by the organization. Please reach out to support@hpc.ut.ee for details on secure
   transfer of credentials.
