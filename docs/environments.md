@@ -38,6 +38,22 @@ TODO: Add link to the ToS documents.
 
 ## Customizing managed Puhuri Portal
 
+### Custom languages
+
+In addition to English, Puhuri Portal can be used in additional languages. Currently available options are:
+- Czech
+- Danish
+- Dutch
+- Dutch
+- Estonian
+- French
+- Italian
+- Lithuanian
+- Norwegian
+- Spanish
+
+We try to maintain translations, but feedback from domain specialists and native speakers is very welcome.
+
 ### Custom DNS
 If you want to use a custom domain for your Puhuri Portal, e.g. lumi.myorganization.eu, you need to set the DNS
 records to point to the deployment in University of Tartu.
