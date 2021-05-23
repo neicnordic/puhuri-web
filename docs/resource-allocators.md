@@ -59,8 +59,7 @@ In order to create a new project in an organization, user needs to provide the f
 - **`customer`** - URL of the project's organization
 - **`name`** - project's name
 - `description` - description of a project description
-- `end_date` - optional date when the project is  
-
+- `end_date` - optional date when the project and all allocations it contains will be scheduled for termination.
 - `backend_id` - optional identifier, which is intended to be unique in the resource allocator's project list. Can be 
   used for connecting Puhuri Core projects with the client's project registry. 
 
@@ -157,8 +156,12 @@ All operations on resources, which lead to changes in allocations - e.g. creatio
 or termination - are wrapped in an order. It is possible to have multiple actions of the same type in one order.
 Such actions are called Order items.
 
+### Listing offerings
+
 To create a new Allocation, one must first choose a specific Offering from available. Offering corresponds to a specific
 part of a shared resource that Resource Allocator can allocate. For example, it can be a national share of LUMI resources.
+Offerings can be visible to multiple allocators, however in the first iteration we plan to limit allocators with
+access to only their owned shares.
 
 User can fetch offerings and filter them by the following fields:
 
@@ -171,51 +174,100 @@ Generally Offering has a stable UUID, which can be used in Puhuri Core client co
 that are required to provision an instance of the offering, available accounting plans (at least one should be present)
 as well as attributes that can or should be provided with each request.
 
-### Selecting an offering (LUMI specific)
-
-offering_types = ['Extreme Scale Access', 'Regular Access', 'Benchmark Access', 'Development Access',
-                  'Fast Track Access for Academia', 'Fast Track Access for Industry Access']
-
-
-
-### Order
-Allocation management consists of an order creation with corresponding items and their further processing.
-Order has status, which is `REQUESTED FOR APPROVAL` after creation.
-Once order is auto-approved, it is switched to `EXECUTING` status, otherwise it is marked as `REJECTED`.
-Then each order item is processed by backend: API method for provisioning resource is called.
-Once all resources are provisioned, order is marked as `DONE`. Otherwise it is marked as `ERRED`.
-
-The order life-cycle diagram is shown below.
-![order-life-cycle](assets/order-life-cycle.png)
-
-After order processing, corresponding resources are changed for each order item.
-An order item includes resource UUID (`marketplace_resource_uuid` field) to get information about resource itself.
-
-Resource has status too, which is `CREATING` right after its creation.
-If the operation is succeed, the status turns to `OK` and to `ERRED` in case of failure.
-
-### Resource creation
-- TODO: Allow setting separate limits
-- TODO: Do not validate against usage! Rely on the backend to handle it. Consider a separate endpoint ?check
-
-The resource creation flow is shown below.
-![resource-provisioning-flow](assets/resource-provisioning-flow.png)
-
-
-### Resource termination
-The resource termination flow is shown below.
-![resource-termination-flow](assets/resource-termination-flow.png)
-
-### Resource updating
-The resource plan changing flow is shown below.
-![resource-update-flow](assets/resource-update-flow.png)
+Each Offering contains one or more plans, you will need to provide a reference (URL) to the plan when creating an
+allocation. 
 
 API examples:
 
 - [Getting a list of offerings available for allocation](API guide/resource-allocation-management.md#getting-a-list-of-offerings)
+
+
+### Selecting an offering (LUMI specific)
+
+In case of LUMI allocation, there are several offerings available for each allocator corresponding to the
+access types defined by EuroHPC JU.
+
+Offerings types are:
+
+- Extreme Scale Access
+- Regular Access
+- Benchmark Access
+- Development Access
+- Fast Track Access for Academia
+- Fast Track Access for Industry Access
+
+During the integration period for convenience we use the following convention for offering names:
+``LUMI <Country name> / <access type>``, e.g. ``LUMI Sweden / Extreme Scale Access`` or ``LUMI Finland / Regular Access``.
+Each of the offering will include a single plan.
+
+Full details of the Offering contain expected attributes that should be passed when creating an allocation.
+
+### Orders, order items and resources.
+To create a new allocation, an order must be created contain order item with requested attributes: project
+as well as details about the allocations.
+
+Order might require additional approval - in this case upon creation its status will be `REQUESTED FOR APPROVAL`, which
+can transition to `REJECTED` if order is rejected.
+Otherwise it will be switched to `EXECUTING`, ending either in `DONE` if all is good or `ERRED`, if error happens during the processing.
+
+Within an order, an order item is expected correspondingly to a single allocation to be created.
+You can provide multiple order items within a single order, but all of them have to be of the same type,
+i.e. `CREATE`, `UPDATE` or `TERMINATE`.
+
+As a result of successful processing of order item by Puhuri Core, it will create a new Resource. Its UUID will
+be available as a `marketplace_resource_uuid` field of the creation order item.
+
+In additipon, ``accepting_terms_of_service`` flag must be provided as a lightweight confirmation that allocator is
+aware and agreeing with Terms of services of a specific Offering.
+
+Example of the order payload sent with `POST` to ``https://puhuri-core-demo.neic.no/api/marketplace-orders/``:
+
+```json
+
+{
+   "project": "https://puhuri-core-demo.neic.no/api/projects/72fff2b5f09643bdb1fa30684427336b/",
+   "items": [
+      {
+         "offering": "https://puhuri-core-demo.neic.no/api/marketplace-offerings/0980e9426d5247a0836ccfd64769d900/",
+         "attributes": {
+            "name": "test20",
+            "oecd_science_domain_configuration": "1.1 Mathematics"
+         },
+         "limits":{
+            "gb_k_hours": 30,
+            "cpu_k_hours": 1,
+            "gpu_k_hours": 20
+         },
+         "plan": "https://puhuri-core-demo.neic.no/api/marketplace-plans/14b28e3a1cbe44b395bad48de9f934d8/",
+         "accepting_terms_of_service": true
+      }
+   ]
+}
+```
+
+
+### Change resource limits
+Send ``POST`` request to ``https://puhuri-core-demo.neic.no/api/marketplace-resources/<UUID_OF_A_RESOURCE>/update_limits/`` providing
+the new values of limits, for example:
+
+```json
+{
+   "limits": {
+      "gb_k_hours": 35,
+      "cpu_k_hours": 6,
+      "gpu_k_hours": 200
+   }
+}
+```
+
+### Resource termination
+
+Send ``POST`` request to ``https://puhuri-core-demo.neic.no/api/marketplace-resources/<UUID_OF_A_RESOURCE>/terminate/``.
+
+API examples:
+
 - [Creation of a resource allocation](API guide/resource-allocation-management.md#creation-of-a-resource-allocation)
 - [Modification of a resource allocation](API guide/resource-allocation-management.md#modification-of-a-resource-allocation)
-- TODO: Modification of resource allocation limits
 - [Termination of a resource allocation](API guide/resource-allocation-management.md#termination-of-a-resource-allocation)
 
 Example integrations:
@@ -235,4 +287,5 @@ If you have questions, we will be happy to help out! Please reach out to support
 
 
 ## Reporting
-- Usage collection for each allocation.
+- Usage collection for each allocation - provided as Resource attributes
+- Aggregate reporting data
