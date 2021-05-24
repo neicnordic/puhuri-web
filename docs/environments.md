@@ -41,6 +41,7 @@ TODO: Add link to the ToS documents.
 ### Custom languages
 
 In addition to English, Puhuri Portal can be used in additional languages. Currently available options are:
+
 - Czech
 - Danish
 - Dutch
