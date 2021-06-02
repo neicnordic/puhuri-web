@@ -1,4 +1,4 @@
-## Portal notifications
+# Puhuri Portal notifications
 | Notification type | Content | Initiator | Target group |
 --- | --- | --- | --- |
 | email | Project submission | Project PI | Allocator |
