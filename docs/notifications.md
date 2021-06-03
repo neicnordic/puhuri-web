@@ -11,7 +11,7 @@
 | email | Project member removal | Project PI / co-PI  | Removed project member |
 | email | Project PI replacement | Project PI / co-PI | Project members, new project PI |
 | email | Project quota is full | Portal (auto-notification) | Project PI / co-PI |
-| email |  |  |  |
+| email | 95% of the project quota is used | Portal (auto-notification) | Project PI / co-PI |
 | email |  |  |  |
 | email |  |  |  |
 | email |  |  |  |
