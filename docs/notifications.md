@@ -3,7 +3,6 @@
 --- | --- | --- | --- |
 | email | Project submission | Project PI | Allocator |
 | email | Project acceptance by allocator | Allocator | Project members |
-| email | Changes in project data | Project PI / co-PI | Project members |
 | email | Portal maintenance/upgrades | Portal operator | Project members, allocator |
 | email | Project ending in 30 days | Portal (auto-notification) | Project members |
 | email | Project ending in 15 days | Portal (auto-notification) | Project members |
@@ -14,9 +13,4 @@
 | email | 95% of the allocation quota is used | Portal (auto-notification) | Project PI / co-PI |
 | email | Allocation ending in 30 days | Portal (auto-notification) | Project members |
 | email | Allocation ending in 15 days | Portal (auto-notification) | Project members |
-| email |  |  |  |
-| email |  |  |  |
-| email |  |  |  |
-| email |  |  |  |
-| email |  |  |  |
 
