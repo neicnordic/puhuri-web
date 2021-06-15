@@ -38,12 +38,14 @@ Access to services connected to PUHURI is allowed only with use of identities th
 
 Requirements are defined for two aspects of identity assurance: 
 
-- Identifier uniqueness to ensure unambiguous identification of users
-- Identity proofing and credential issuance, renewal, and replacement to ensure that identity trustworthy represents right natural person 
+- Identifier uniqueness to ensure unambiguous identification of users;
+- Identity proofing and credential issuance, renewal, and replacement to ensure that identity trustworthy represents
+  right natural person.
 
 Level of assurance for an identity issued to a user is expressed at the time of user authentication by the IdP sending eduPersonAssurance attribute with following values: 
-  -   https://refeds.org/assurance/ID/UNIQUE; or https://refeds.org/assurance/ID/eppn-unique-no-reassign, and
-  -   https://refeds.org/assurance/IAP/medium or https://refeds.org/assurance/IAP/high
+
+- https://refeds.org/assurance/ID/UNIQUE; or https://refeds.org/assurance/ID/eppn-unique-no-reassign, and
+- https://refeds.org/assurance/IAP/medium or https://refeds.org/assurance/IAP/high
 
 ## Entity categories
 

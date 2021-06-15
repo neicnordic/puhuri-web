@@ -50,5 +50,5 @@ Requirements are defined for two aspects of identity assurance:
 
 Level of assurance for an identity issued to a user is expressed at the time of user authentication by the IdP sending eduPersonAssurance attribute with following values:
 
-https://refeds.org/assurance/ID/UNIQUE; or https://refeds.org/assurance/ID/eppn-unique-no-reassign, and
-https://refeds.org/assurance/IAP/medium or https://refeds.org/assurance/IAP/high
+- https://refeds.org/assurance/ID/UNIQUE; or https://refeds.org/assurance/ID/eppn-unique-no-reassign, and
+- https://refeds.org/assurance/IAP/medium or https://refeds.org/assurance/IAP/high
