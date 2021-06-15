@@ -27,8 +27,8 @@ nav:
     - 'notifications.md'
     - IdP Integration:
         - 'idp_integration/index.md'
+        - eduGain integration: idp_integration/requirements-edugain.md
         - Direct integration: idp_integration/requirements-direct.md
-        - EduGain integration: idp_integration/requirements-edugain.md
         - Attributes: idp_integration/attributes.md
     - 'service-providers.md'
 
