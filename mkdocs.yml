@@ -9,6 +9,7 @@ markdown_extensions:
   - pymdownx.highlight:
       linenums: true
   - pymdownx.superfences
+  - admonition
 nav:
     - 'index.md'
     - About:
@@ -24,7 +25,9 @@ nav:
           - 'API guide/project.md'
           - 'API guide/project-permissions.md'
           - 'API guide/resource-allocation-management.md'
-    - 'notifications.md'
+    - Puhuri Portal:
+      - 'puhuri_portal/user_guide.md'
+      - 'puhuri_portal/notifications.md'
     - IdP Integration:
         - 'idp_integration/index.md'
         - eduGAIN integration: idp_integration/requirements-edugain.md
