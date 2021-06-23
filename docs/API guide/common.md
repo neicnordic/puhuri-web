@@ -1,8 +1,9 @@
+Generic API usage
+
 # Pagination 
 
 All responses from Puhuri Core / Portal APIs are paginated. By default, 10 responses are returned.
 You can request more by passing ``page_size=XXX`` as query attribute. XXX can go up to 200.
-
 
 Pagination information is provided in Link headers.
 

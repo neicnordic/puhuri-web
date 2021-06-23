@@ -21,6 +21,7 @@ nav:
     - Resource Allocators:
       - 'resource-allocators.md'
       - API Guide:
+          - 'API guide/common.md'
           - 'API guide/authentication.md'
           - 'API guide/project.md'
           - 'API guide/project-permissions.md'
