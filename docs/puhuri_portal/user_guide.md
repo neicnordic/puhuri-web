@@ -52,12 +52,12 @@ Meaning == assignment of users that are eligible to create a project and allocat
 Project creation is only allowed for project Principal Investigators (PIs).
 
 Prerequisites for creating projects:
-* User must have a Puhuri account (logged in to Puhuri Portal using myAccessID)
+* User must have a Puhuri account (logged in to Puhuri Portal using MyAccessID)
 * Allocator must set PI role to the user in certain organization
 
 
 For creating project:
-1. Login to Puhuri Portal
+1. Login to Puhuri Portal using MyAccessID
 2. Select your home organization
 3. Click on "Add project"
 4. Fill the necessary fields (fields marked with * are mandatory)
@@ -70,11 +70,13 @@ For creating project:
 
 Project team contains users with different roles:
 * Principal Investigator (PI) - The lead researcher and primary contact for the project.
-* Co-PI: An individual recognized by the prime institution and the principal investigator (PI) as someone who shares scientific and administrative leadership responsibilities for a project with the PI.
-* Member - individuals who work on one or more phases of the project and involved in doing assigned tasks.
+* Co-Principal Investigator (Co-PI): An individual recognized by the prime institution and the principal investigator (PI) as someone who shares scientific and administrative leadership responsibilities for a project with the PI.
+* Member - Users who work on one or more phases of the project and involved in doing assigned tasks.
+* Guest - Users who are only able to see project related data, not able to modify it.
+
 
 #### Adding project members
-If user already has Puhuri account, then:
+If user already has Puhuri account connected with the organization, then:
 1. Open project in Puhuri portal
 2. Click on "Add member"
 3. Select user
