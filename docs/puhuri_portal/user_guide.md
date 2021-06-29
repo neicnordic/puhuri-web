@@ -49,9 +49,44 @@ Meaning == assignment of users that are eligible to create a project and allocat
 
 ### Creation of projects
 
-- fields, meaning
+Project creation is only allowed for project Principal Investigators (PIs).
 
+Prerequisites for creating projects:
+* User must have a Puhuri account (logged in to Puhuri Portal using myAccessID)
+* Allocator must set PI role to the user in certain organization
+
+
+For creating project:
+1. Login to Puhuri Portal
+2. Select your home organization
+3. Click on "Add project"
+4. Fill the necessary fields (fields marked with * are mandatory)
+    1. Project name - The original title of the project
+    2. Project description - A brief description about the project
+    3. End date - this is the end date for using the computational resources
+
+    
 ### Management of project team
+
+Project team contains users with different roles:
+* Principal Investigator (PI) - The lead researcher and primary contact for the project.
+* Co-PI: An individual recognized by the prime institution and the principal investigator (PI) as someone who shares scientific and administrative leadership responsibilities for a project with the PI.
+* Member - individuals who work on one or more phases of the project and involved in doing assigned tasks.
+
+#### Adding project members
+If user already has Puhuri account, then:
+1. Open project in Puhuri portal
+2. Click on "Add member"
+3. Select user
+4. Set role and expiration date if necessary.
+5. Finally, click on "Add"
+
+If user does not have Puhuri account, then:
+1. Select correct organization
+2. Click on "Invite team member"
+3. Insert user's email and set the role and project for the new user.
+4. Click "Invite user"
+
 
 - delegation
 - addition of PIs
