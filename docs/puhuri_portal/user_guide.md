@@ -82,12 +82,12 @@ For creating project:
 
 5.Select "Service catalog" from the left menu and then correct LUMI project type:
 
-1. Extreme Scale Access
-2. Regular Access
-3. Benchmark Access
-4. Development Access
-5. Fast Track Access for Academia
-6. Fast Track Access for Industry
+- Extreme Scale Access
+- Regular Access
+- Benchmark Access
+- Development Access
+- Fast Track Access for Academia
+- Fast Track Access for Industry
     
 ![Project details](../assets/Service%20catalog.PNG)
 ![Project details](../assets/LUMI%20resource.PNG)
