@@ -96,8 +96,11 @@ For creating project:
 ![Project details](../assets/Resource%20config.PNG)
 
 7.Select correct plan (LUMI common) and write needed allocation quota (CPU, GPU and Storage).
+
 8.Write short description (optional) and choose correct science field (mandatory).
+
 9.Click on the "Add to cart".
+
 10.Check once more and click on "Request an approval"
 
 ![Project details](../assets/Approval%20request.PNG)
