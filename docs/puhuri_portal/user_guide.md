@@ -52,6 +52,7 @@ Meaning == assignment of users that are eligible to create a project and allocat
 Project creation is only allowed for project Principal Investigators (PIs).
 
 Prerequisites for creating projects:
+
 - User must have a Puhuri account (logged in to Puhuri Portal using MyAccessID)
 - Allocator must set PI role to the user in certain organization
 
