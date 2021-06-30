@@ -57,14 +57,29 @@ Prerequisites for creating projects:
 
 
 For creating project:
-1. Login to Puhuri Portal using MyAccessID
-2. Select your home organization
-3. Click on "Add project"
-4. Fill the necessary fields (fields marked with * are mandatory)
-    1. Project name - The original title of the project
-    2. Project description - A brief description about the project
-    3. End date - this is the end date for using the computational resources
+1. Login to Puhuri Portal using MyAccessID.
+2. Select your home organization.
+3. Click on "Add project".
+4. Fill the necessary fields (fields marked with * are mandatory).
+    1. Project name - The original title of the project.
+    2. Project description - A brief description about the project.
+    3. End date - this is the end date for using the computational resources.
+    
+5. Select "Service catalog" from the left menu and then correct LUMI project type:
+    1. Extreme Scale Access
+    2. Regular Access
+    3. Benchmark Access
+    4. Development Access
+    5. Fast Track Access for Academia
+    6. Fast Track Access for Industry
+    
+6. Write the name for the resource allocation (NOTE: This name will be visible in accounting data.).
+7. Select correct plan (LUMI common) and write needed allocation quota (CPU, GPU and Storage).
+8. Write short description (optional) and choose correct science field (mandatory).
+9. Click on the "Add to cart".
+10. Check once more and click on "Request an approval"
 
+Now national allocator will receive notification about new project request and it can be approved or rejected.
     
 ### Management of project team
 
