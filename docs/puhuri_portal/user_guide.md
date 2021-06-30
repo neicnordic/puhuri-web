@@ -73,9 +73,10 @@ For creating project:
 ![Add project](../assets/Add%20project.PNG)
 
 4.Fill the necessary fields (fields marked with * are mandatory).
-    1. Project name - The original title of the project.
-    2. Project description - A brief description about the project.
-    3. End date - this is the end date for using the computational resources.
+
+- Project name - The original title of the project.
+- Project description - A brief description about the project.
+- End date - this is the end date for using the computational resources.
     
 ![Project details](../assets/Project%20details.PNG)
 
