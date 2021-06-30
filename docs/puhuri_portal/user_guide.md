@@ -109,19 +109,20 @@ Now national allocator will receive notification about new project request and i
 Project team contains users with different roles:
 
 - Principal Investigator (PI) - The lead researcher and primary contact for the project.
-- Co-Principal Investigator (Co-PI): An individual recognized by the prime institution and the principal investigator (PI) as someone who shares scientific and administrative leadership responsibilities for a project with the PI.
+- Co-Principal Investigator (Co-PI) - An individual recognized by the prime institution and the principal investigator (PI) as someone who shares scientific and administrative leadership responsibilities for a project with the PI.
 - Member - Users who work on one or more phases of the project and involved in doing assigned tasks.
 - Guest - Users who are only able to see project related data, not able to modify it.
 
 
 #### Adding project members
-If user already has Puhuri account connected with the organization, then:
+##### If user already has Puhuri account connected with the organization, then:
 
 1.Login to Puhuri Portal with MyAccessID.
    
 ![Login](../assets/Login.PNG)
 
 2.Open project in Puhuri Portal.
+
 3.Select "Team" from left menu and click on "Add member".
    
 ![Select organization](../assets/Team.PNG)
@@ -132,9 +133,10 @@ If user already has Puhuri account connected with the organization, then:
 ![Add user](../assets/Add%20user.PNG)
 
 6.Finally, click on "Add".
+
 7.User now will get invitation email with the acceptance link.
 
-If user does not have Puhuri account, then:
+##### If user does not have Puhuri account, then:
 
 1.Login to Puhuri Portal with MyAccessID.
    
@@ -154,6 +156,7 @@ If user does not have Puhuri account, then:
 ![Invite user](../assets/Invite%20user.PNG)
 
 5.Click "Invite user".
+
 6.User now will get invitation email with the acceptance link.
 
 
