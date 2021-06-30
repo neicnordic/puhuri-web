@@ -80,6 +80,7 @@ For creating project:
 ![Project details](../assets/Project%20details.PNG)
 
 5.Select "Service catalog" from the left menu and then correct LUMI project type:
+
     1. Extreme Scale Access
     2. Regular Access
     3. Benchmark Access
