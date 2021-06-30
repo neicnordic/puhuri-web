@@ -52,27 +52,32 @@ Meaning == assignment of users that are eligible to create a project and allocat
 Project creation is only allowed for project Principal Investigators (PIs).
 
 Prerequisites for creating projects:
-* User must have a Puhuri account (logged in to Puhuri Portal using MyAccessID)
-* Allocator must set PI role to the user in certain organization
+- User must have a Puhuri account (logged in to Puhuri Portal using MyAccessID)
+- Allocator must set PI role to the user in certain organization
 
 
 For creating project:
+
 1. Login to Puhuri Portal using MyAccessID.
    
 ![Login](../assets/Login.PNG)
+
 2. Select your home organization.
    
 ![Select organization](../assets/Select%20workspace.PNG)
 ![Select organization](../assets/Select%20workspace_1.PNG)
+
 3. Click on "Add project".
    
 ![Add project](../assets/Add%20project.PNG)
+
 4. Fill the necessary fields (fields marked with * are mandatory).
     1. Project name - The original title of the project.
     2. Project description - A brief description about the project.
     3. End date - this is the end date for using the computational resources.
     
 ![Project details](../assets/Project%20details.PNG)
+
 5. Select "Service catalog" from the left menu and then correct LUMI project type:
     1. Extreme Scale Access
     2. Regular Access
@@ -84,9 +89,11 @@ For creating project:
 ![Project details](../assets/Service%20catalog.PNG)
 ![Project details](../assets/LUMI%20resource.PNG)
 ![Project details](../assets/Available%20resources.PNG)
+
 6. Write the name for the resource allocation (NOTE: This name will be visible in accounting data.).
 
 ![Project details](../assets/Resource%20config.PNG)
+
 7. Select correct plan (LUMI common) and write needed allocation quota (CPU, GPU and Storage).
 8. Write short description (optional) and choose correct science field (mandatory).
 9. Click on the "Add to cart".
@@ -107,14 +114,17 @@ Project team contains users with different roles:
 
 #### Adding project members
 If user already has Puhuri account connected with the organization, then:
+
 1. Login to Puhuri Portal with MyAccessID.
    
 ![Login](../assets/Login.PNG)
+
 2. Open project in Puhuri Portal.
 3. Select "Team" from left menu and click on "Add member".
    
 ![Select organization](../assets/Team.PNG)
 ![Select organization](../assets/Add%20member.PNG)
+
 4. Select correct user, set the role and expiration date if necessary.
    
 ![Add user](../assets/Add%20user.PNG)
@@ -123,19 +133,24 @@ If user already has Puhuri account connected with the organization, then:
 7. User now will get invitation email with the acceptance link.
 
 If user does not have Puhuri account, then:
+
 1. Login to Puhuri Portal with MyAccessID.
    
 ![Login](../assets/Login.PNG)
+
 2. Select your organization.
    
 ![Select organization](../assets/Select%20workspace.PNG)
 ![Select organization](../assets/Select%20workspace_1.PNG)
+
 3. Click on "Invite team member".
    
 ![Invite team member](../assets/Organization%20overview.PNG)
+
 4. Insert user's email (civil code is optional field for additional validation, can be used, if IdP will release this attribute) and set the role and project for the new user.
    
 ![Invite user](../assets/Invite%20user.PNG)
+
 5. Click "Invite user".
 6. User now will get invitation email with the acceptance link.
 
