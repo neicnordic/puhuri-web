@@ -26,7 +26,7 @@ use a different naming than agreed in Puhuri. Below is a mapping to reduce confu
 ## Puhuri Core SDK
 
 Puhuri Core is based on Waldur, which exposes REST API. If you are integrating a python-based application, you might
-find useful a [python wrapper](https://github.com/waldur/ansible-waldur-module/blob/develop/waldur_client.py) for typical operations. 
+find useful a [python wrapper](https://github.com/waldur/ansible-waldur-module/blob/develop/waldur_client.py) for typical operations.
 
 It is packaged as a Python module and published in PyPI, so you can install it with standard tools like:
 
@@ -70,8 +70,9 @@ In order to create a new project in an organization, user needs to provide the f
 - **`name`** - project's name
 - `description` - description of a project description
 - `end_date` - optional date when the project and all allocations it contains will be scheduled for termination.
-- `backend_id` - optional identifier, which is intended to be unique in the resource allocator's project list. Can be 
-  used for connecting Puhuri Core projects with the client's project registry. 
+- `backend_id` - optional identifier, which is intended to be unique in the resource allocator's project list. Can be
+  used for connecting Puhuri Core projects with the client's project registry.
+- `oecd_fos_2007_code` - optional OECD Field of Science code. A code is represented by a string with two numbers separated by dot for a corresponding field of science. For example `"1.1"` is code for Mathematics. More information can be found [here](https://joinup.ec.europa.eu/collection/eu-semantic-interoperability-catalogue/solution/field-science-and-technology-classification/about).
 
 Please note that the project becomes active at the moment of creation!
 
@@ -98,7 +99,7 @@ User can list projects and filter them using the following query parameters:
 
 In case API user has access to more than one customer, extra filter by customer properties can be added:
 
-- `customer` - exact filter by customer UUID 
+- `customer` - exact filter by customer UUID
 - `customer_name` - filter by partial match of the full name of a customer
 - `abbreviation` - filter by partial match of the abbreviation of a customer
 
@@ -122,7 +123,7 @@ Examples:
 
 - [API call for getting a mapping of Puhuri AAI user CUID to Puhuri Core user](API guide/project-permissions.md#getting-a-mapping-of-AAI-user-to-Core-user)
 
-### Membership management 
+### Membership management
 
 Creating a membership for a user means creating a permission link. While multiple roles of a user per project are allowed,
 we recommed for clarity to have one active project role per user in a project.
@@ -185,7 +186,7 @@ that are required to provision an instance of the offering, available accounting
 as well as attributes that can or should be provided with each request.
 
 Each Offering contains one or more plans, you will need to provide a reference (URL) to the plan when creating an
-allocation. 
+allocation.
 
 API examples:
 
