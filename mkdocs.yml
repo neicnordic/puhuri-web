@@ -34,5 +34,6 @@ nav:
         - eduGAIN integration: idp_integration/requirements-edugain.md
         - Direct integration: idp_integration/requirements-direct.md
         - Attributes: idp_integration/attributes.md
-    - 'service-providers.md'
+    - Service Providers:
+      - 'service-providers.md'
 
