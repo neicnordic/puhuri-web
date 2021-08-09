@@ -25,14 +25,7 @@ use a different naming than agreed in Puhuri. Below is a mapping to reduce confu
 
 ## Puhuri Core SDK
 
-Puhuri Core is based on Waldur, which exposes REST API. If you are integrating a python-based application, you might
-find useful a [python wrapper](https://github.com/waldur/ansible-waldur-module/blob/develop/waldur_client.py) for typical operations.
-
-It is packaged as a Python module and published in PyPI, so you can install it with standard tools like:
-
-```sh
-pip install ansible-waldur-module
-```
+If you are integrating a python-based application, you might find useful a [python wrapper](SDK Guide) for typical operations.
 
 ## Common operations
 

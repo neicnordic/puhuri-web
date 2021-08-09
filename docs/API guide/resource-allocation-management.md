@@ -241,7 +241,7 @@ X-XSS-Protection: 1; mode=block
 User can create an order item including requested allocation parameters.
 
 - **`project`** - project's UUID
-- **`items`** - list of requieted allocations including:
+- **`items`** - list of required allocations including:
     - **`offering`** - respectful offering's URL
     - **`attributes`** - specific attributes for the offering
     - **`plan`** - plan's URL (if offering is billable)
@@ -525,7 +525,7 @@ X-XSS-Protection: 1; mode=block
 
 ## Termination of a resource allocation
 
-Termination uses a special short-cut action ``/terminate`` and returns UUID of a generated order. 
+Termination uses a special short-cut action ``/terminate`` and returns UUID of a generated order.
 
 ```bash
 $ http -v POST https://puhuri-core-demo.neic.no/api/marketplace-resources/8887243fa8d0458c970eeb6be28ff4f7/terminate/ Authorization:"Token 32e7682378fa394b0f8b2538c444b60129ebfb47"
