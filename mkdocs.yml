@@ -20,8 +20,17 @@ nav:
       - "environments.md"
   - Resource Allocators:
       - "resource-allocators.md"
+      - API Guide:
+        - "API guide/common.md"
+        - "API guide/authentication.md"
+        - "API guide/project.md"
+        - "API guide/project-permissions.md"
+        - "API guide/resource-allocation-management.md"
   - Service Providers:
       - "service-providers.md"
+      - SDK Guide:
+        - "SDK guide/common.md"
+        - "SDK guide/resource-allocation-management-sp.md"
   - Puhuri Portal:
       - "puhuri_portal/user_guide.md"
       - "puhuri_portal/notifications.md"
@@ -30,12 +39,3 @@ nav:
       - eduGAIN integration: idp_integration/requirements-edugain.md
       - Direct integration: idp_integration/requirements-direct.md
       - Attributes: idp_integration/attributes.md
-  - API Guide:
-      - "API guide/common.md"
-      - "API guide/authentication.md"
-      - "API guide/project.md"
-      - "API guide/project-permissions.md"
-      - "API guide/resource-allocation-management.md"
-  - SDK Guide:
-      - "SDK guide/common.md"
-      - "SDK guide/resource-allocation-management-sp.md"
