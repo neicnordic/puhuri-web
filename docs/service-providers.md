@@ -1,11 +1,51 @@
 # API Guide
 
-## Operations
- <!-- TODO: Add guide for WaldurClient setup -->
+A service provider can operate over offerings as well as manage resources requested by other organizations. Usually, an organization creates an allocation order, which gets approved or rejected by the service provider.
 
-###  Getting a list of resource allocations
+This documentation page provides description for resource allocation management methods performed via Waldur SDK for Python 3.
+
+## Operations
+
+This section includes description and examples of several operations for resource management.
+
+### Prerequisites
+
+In order to perform the operations, a user needs to use `WaldurClient` from Waldur SDK. For proper usage, an instance of WaldurClient class should be created:
+
 ```python
-result = client.list_marketplace_resources(provider_uuid='<provider-uuid>')
+client = WaldurClient('<api-url>', '<api-token>')
+```
+
+This instance will be used across the examples below.
+
+### Getting a list of resource allocations
+
+`list_marketplace_resources` method is used to fetch resources related to offerings, which belong to user's service provider.
+
+Possible filter options for allocations (each one is optional):
+
+- `provider_uuid` - UUID of a service provider organization;
+- `state` - current state of a resource; valid values: `Creating`, `OK`, `Erred`, `Updating`, `Terminating`, `Terminated`;
+- `offering_uuid` - UUID of a related offering;
+- `fields` - list of fields to return.
+
+```python
+result = client.list_marketplace_resources(
+    provider_uuid='f1353afe1dae4bcf94a5256c5612a189',
+    state='Creating',
+    offering_uuid='cf4eb9c29fc74af4ade667fcb53633d5',
+    fields=['name', 'offering', 'state', 'limits', 'plan', 'project', 'url']
+)
+
+# result => {
+#   'limits': {'cpu_k_hours': 1000, 'gb_k_hours': 3000, 'gpu_k_hours': 1000},
+#   'name': 'Sample resource',
+#   'offering': 'https://puhuri-core-demo.neic.no/api/marketplace-offerings/cf4eb9c29fc74af4ade667fcb53633d5/',
+#   'plan': 'https://puhuri-core-demo.neic.no/api/marketplace-plans/1537de6e94f9427cafb74cb63fa21c72/',
+#   'project': 'https://puhuri-core-demo.neic.no/api/projects/8a158ebf1abf4c74a431b9c65a0d7829/',
+#   'state': 'Creating',
+#   'url': 'https://puhuri-core-demo.neic.no/api/marketplace-resources/a1916bd53fd04b1ab1a4e700c926607b/'
+# }
 ```
 
 ### Approving/rejecting allocations in status "CREATING"
