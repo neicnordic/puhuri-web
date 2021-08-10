@@ -38,6 +38,24 @@ result = client.list_marketplace_resources(
 
 ## Approving/rejecting allocations in status "CREATING"
 
+Each allocation has some state depending on actions made to it. The default value after allocation creation is `CREATING`. A service provider can manually change it to `OK` (created successfully), `Erred` (not created due to some error) and `Terminated` (creation is rejected). Only service provider owners and managers can perform this action.
+
+The responsible method for this transitions is `marketplace_resource_set_state`, which requires the following arguments:
+
+- **`resource_uuid`** - UUID of a resource;
+- **`state`** - final resource state; valid values: `ok`, `erred`, `terminated`.
+
+```python
+result = client.marketplace_resource_set_state(
+    '6ccfa59429964d8884a59c97165ed647',
+    'ok',
+)
+
+# result => {
+# {'status': 'Resource state has been changed.'}
+#}
+```
+
 ## Updating resource allocation with local reference (setting `backend_id` field).
 
 ## Providing additional access detail for resource allocation ("report")
