@@ -75,10 +75,37 @@ result = client.marketplace_resource_set_backend_id(
 # }
 ```
 
-## Providing additional access detail for resource allocation ("report")
+## Providing additional access detail for resource allocation
+
+For additional details related to allocation access, `report` field is used.
+In order to provide this information, owners and managers can use `marketplace_resource_submit_report` method. It requires the following arguments:
+
+- **`resource_uuid`** - UUID of a resource allocation;
+- **`report`** - list with the structure:
+
+    ```python
+    [{
+        'header': '<Section-header>',
+        'body': '<Section-body>',
+    }]
+    ```
+
+```python
+result = client.marketplace_resource_submit_report(
+    '6ccfa59429964d8884a59c97165ed647',
+    [
+        {'header': 'Header1', 'body': 'Body1'},
+        {'header': 'Header2', 'body': 'Body2'}
+    ]
+)
+
+# result => {
+#   'status': 'Report is submitted'
+# }
+```
 
 ## Getting a list of members in a project with active resource allocations.
 
-## TODO: consider exposing `/team` endpoint for each resource.
+<!-- TODO: consider exposing `/team` endpoint for each resource. -->
 
 ## Reporting usage for a resource allocation.
