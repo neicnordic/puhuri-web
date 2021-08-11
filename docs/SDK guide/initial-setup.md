@@ -7,7 +7,7 @@ Puhuri Core is based on Waldur, which exposes REST API. Puhuri Core SDK is a [py
 It is packaged as a Python module and published in PyPI, so you can install it with standard tools like:
 
 ```sh
-pip install ansible-waldur-module
+pip install git+https://github.com/waldur/ansible-waldur-module.git@develop
 ```
 
 In order to perform operations, a user needs to create an instance of `WaldurClient` class:
@@ -24,6 +24,7 @@ This instance provides interface for further interaction with Puhuri Core and wi
 
 If the client fails to perform an operation, it raises `WaldurClientException`. This can be handles using `try...except` block.
 Example:
+
 ```python
 from waldur_client import WaldurClient, WaldurClientException
 import pprint
