@@ -104,8 +104,97 @@ result = client.marketplace_resource_submit_report(
 # }
 ```
 
-## Getting a list of members in a project with active resource allocations.
+## Getting a list of members in a project with active resource allocations
 
-<!-- TODO: consider exposing `/team` endpoint for each resource. -->
+Service provider owners and managers can list project members using a resource allocation with `marketplace_resource_get_team` method.
+It requires the following arguments:
 
-## Reporting usage for a resource allocation.
+- **`resource_uuid`** - UUID of a resource allocation.
+
+```python
+result = client.marketplace_resource_get_team(
+    '6ccfa59429964d8884a59c97165ed647'
+)
+
+# result => {
+# [
+#  {'email': 'CSC_api_user@example.com',
+#   'expiration_time': None,
+#   'full_name': 'Integration user (CSC)',
+#   'permission': 'https://puhuri-core-demo.neic.no/api/project-permissions/10/',
+#   'role': 'admin',
+#   'url': 'https://puhuri-core-demo.neic.no/api/users/bb235c67dcb44470a45d4e0f94e0ed00/',
+#   'username': 'CSC_api_user',
+#   'uuid': 'bb235c67dcb44470a45d4e0f94e0ed00'},
+#  {'email': 'ETAIS_api_user@example.com',
+#   'expiration_time': None,
+#   'full_name': 'Integration user (ETAIS)',
+#   'permission': 'https://puhuri-core-demo.neic.no/api/project-permissions/3/',
+#   'role': 'member',
+#   'url': 'https://puhuri-core-demo.neic.no/api/users/0cc72de4ebb840d98fef133e4433ec9a/',
+#   'username': 'ETAIS_api_user',
+#   'uuid': '0cc72de4ebb840d98fef133e4433ec9a'}]
+# }
+```
+
+## Reporting usage for a resource allocation
+
+A usage of a resource allocation can be submitted by a corresponding service provider.
+For this, the following methods are used:
+
+- `get_marketplace_offering` - getting offering with components info.
+  Arguments:
+
+    - **`offering_uuid`** - UUID of an offering
+
+- `marketplace_resource_get_plan_periods` - getting current plan periods for resource allocation. Arguments:
+
+    - **`resource_uuid`** - UUID of a resource
+
+- `create_component_usages` - creating or updating components usage for the current plan
+
+    - **`plan_period_uuid`** - UUID of a plan period
+    - **`usages`** - list of ComponentUsage instances
+
+```python
+from waldur_client import WaldurClient, ComponentUsage
+
+offering = client.get_marketplace_offering('<offering-uuid>')
+component_types = [component['type'] for component in offering['components']]
+plan_periods = client.marketplace_resource_get_plan_periods('<resource-uuid>')
+
+if len(plan_periods) > 0:
+    plan_period = plan_periods[0]
+
+    client.create_component_usages(
+        plan_period['uuid'],
+        [ComponentUsage(component_type=comp_type, amount=10, description='Usage') for comp_type in component_types]
+    )
+
+result = client.marketplace_resource_get_plan_periods('<resource-uuid>')
+
+# result => {
+# [{'components': [{'created': '2021-08-11T15:36:45.562440Z',
+#                   'date': '2021-08-11T15:37:30.556830Z',
+#                   'description': 'Usage',
+#                   'measured_unit': 'units',
+#                   'name': 'CPU',
+#                   'type': 'cpu',
+#                   'usage': 10,
+#                   'uuid': '080066bebf9547d5ad3279f7c353b023'},
+#                  {'created': '2021-08-11T15:36:45.842385Z',
+#                   'date': '2021-08-11T15:37:30.556830Z',
+#                   'description': 'Usage',
+#                   'measured_unit': 'units',
+#                   'name': 'GPU',
+#                   'type': 'gpu',
+#                   'usage': 10,
+#                   'uuid': 'e8d745049bff4410b60f517e56daf421'}],
+#   'end': None,
+#   'plan_name': 'sample-plan',
+#   'plan_uuid': '9f7b1d113f464214bb195db38c217cf9',
+#   'start': '2021-08-11T15:20:25.762775Z',
+#   'uuid': 'fb36ce56e53b43e59b3d963354d0467c'}]
+# }
+
+```
