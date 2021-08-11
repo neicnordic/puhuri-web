@@ -11,28 +11,31 @@ markdown_extensions:
   - pymdownx.superfences
   - admonition
 nav:
-    - 'index.md'
-    - About:
-      - 'architecture.md'
-      - 'branding.md'
-      - 'documents.md'
-      - 'terminology.md'
-      - 'environments.md'
-    - Resource Allocators:
-      - 'resource-allocators.md'
+  - "index.md"
+  - About:
+      - "architecture.md"
+      - "branding.md"
+      - "documents.md"
+      - "terminology.md"
+      - "environments.md"
+  - Resource Allocators:
+      - "resource-allocators.md"
       - API Guide:
-          - 'API guide/common.md'
-          - 'API guide/authentication.md'
-          - 'API guide/project.md'
-          - 'API guide/project-permissions.md'
-          - 'API guide/resource-allocation-management.md'
-    - Puhuri Portal:
-      - 'puhuri_portal/user_guide.md'
-      - 'puhuri_portal/notifications.md'
-    - IdP Integration:
-        - 'idp_integration/index.md'
-        - eduGAIN integration: idp_integration/requirements-edugain.md
-        - Direct integration: idp_integration/requirements-direct.md
-        - Attributes: idp_integration/attributes.md
-    - 'service-providers.md'
-
+          - "API guide/common.md"
+          - "API guide/authentication.md"
+          - "API guide/project.md"
+          - "API guide/project-permissions.md"
+          - "API guide/resource-allocation-management.md"
+  - Service Providers:
+      - "service-providers.md"
+      - SDK Guide:
+          - "SDK guide/initial-setup.md"
+          - "SDK guide/allocation-management-sp.md"
+  - Puhuri Portal:
+      - "puhuri_portal/user_guide.md"
+      - "puhuri_portal/notifications.md"
+  - IdP Integration:
+      - "idp_integration/index.md"
+      - eduGAIN integration: idp_integration/requirements-edugain.md
+      - Direct integration: idp_integration/requirements-direct.md
+      - Attributes: idp_integration/attributes.md

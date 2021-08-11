@@ -1,14 +1,8 @@
-# Service providers
+# Integration Guide
 
-## Operations
-- Getting a list of resource allocations.
-- Approving/rejecting allocations in status "CREATING"
-- Updating resource allocation with local reference (setting `backend_id` field).
-- Providing additional access detail for resource allocation ("report")
-- Getting a list of members in a project with active resource allocations.
-    - TODO: consider exposing `/team` endpoint for each resource.
-- Reporting usage for a resource allocation.
+A Service Provider (SP) can operate over resources as well as manage resource allocations requested by other organizations. Usually, an organization creates an allocation in 'Creating' state. Such allocation gets approved or rejected by the service provider.
 
+[SDK Guide](SDK guide/resource-allocation-management-sp.md) provides description for resource allocation management methods performed via Python 3 SDK for Puhuri Coreqgcqq.
 
 ## LUMI Use-case
 
