@@ -20,9 +20,9 @@ Possible filter options for allocations (each one is optional):
 
 ```python
 result = client.list_marketplace_resources(
-    provider_uuid='f1353afe1dae4bcf94a5256c5612a189',
+    provider_uuid='<provider-uuid>',
     state='Creating',
-    offering_uuid='cf4eb9c29fc74af4ade667fcb53633d5',
+    offering_uuid='<offering-uuid>',
     fields=['name', 'offering', 'state', 'limits', 'plan', 'project', 'url']
 )
 
@@ -48,8 +48,8 @@ The method for triggering this transition is `marketplace_resource_set_state`, w
 
 ```python
 result = client.marketplace_resource_set_state(
-    '6ccfa59429964d8884a59c97165ed647',
-    'ok',
+    resource_uuid='<resource-uuid>',
+    state='ok',
 )
 
 # result => {
@@ -66,8 +66,8 @@ Each allocation can have a link to a service provider's internal reference using
 
 ```python
 result = client.marketplace_resource_set_backend_id(
-    '6ccfa59429964d8884a59c97165ed647',
-    'some-backend-id'
+    resource_uuid='<resource-uuid>',
+    backend_id='<some-backend-id>'
 )
 
 # result => {
@@ -92,8 +92,8 @@ In order to provide this information, owners and managers can use `marketplace_r
 
 ```python
 result = client.marketplace_resource_submit_report(
-    '6ccfa59429964d8884a59c97165ed647',
-    [
+    resource_uuid='<resource-uuid>',
+    report=[
         {'header': 'Header1', 'body': 'Body1'},
         {'header': 'Header2', 'body': 'Body2'}
     ]
@@ -113,7 +113,7 @@ It requires the following arguments:
 
 ```python
 result = client.marketplace_resource_get_team(
-    '6ccfa59429964d8884a59c97165ed647'
+    resource_uuid='<resource-uuid>'
 )
 
 # result => {
@@ -159,16 +159,16 @@ For this, the following methods are used:
 ```python
 from waldur_client import WaldurClient, ComponentUsage
 
-offering = client.get_marketplace_offering('<offering-uuid>')
+offering = client.get_marketplace_offering(offering_uuid='<offering-uuid>')
 component_types = [component['type'] for component in offering['components']]
-plan_periods = client.marketplace_resource_get_plan_periods('<resource-uuid>')
+plan_periods = client.marketplace_resource_get_plan_periods(resource_uuid='<resource-uuid>')
 
 if len(plan_periods) > 0:
     plan_period = plan_periods[0]
 
     client.create_component_usages(
-        plan_period['uuid'],
-        [ComponentUsage(component_type=comp_type, amount=10, description='Usage') for comp_type in component_types]
+        plan_period_uuid=plan_period['uuid'],
+        usages=[ComponentUsage(component_type=comp_type, amount=10, description='Usage') for comp_type in component_types]
     )
 
 result = client.marketplace_resource_get_plan_periods('<resource-uuid>')
