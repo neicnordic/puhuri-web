@@ -44,12 +44,14 @@ The default state value after allocation creation is `CREATING`. A service provi
 The method for triggering this transition is `marketplace_resource_set_state`, which requires the following arguments:
 
 - **`resource_uuid`** - UUID of a resource allocation;
-- **`state`** - target resource state; valid values: `ok`, `erred`, `terminated`.
+- **`state`** - target resource state from `ResourceState` enum.
 
 ```python
+from waldur_client import WaldurClient, ResourceState
+
 result = client.marketplace_resource_set_state(
     resource_uuid='<resource-uuid>',
-    state='ok',
+    state=ResourceState.OK,
 )
 
 # result => {
@@ -81,21 +83,16 @@ For additional details related to allocation access, `report` field is used.
 In order to provide this information, owners and managers can use `marketplace_resource_submit_report` method. It requires the following arguments:
 
 - **`resource_uuid`** - UUID of a resource allocation;
-- **`report`** - list with the structure:
-
-    ```python
-    [{
-        'header': '<Section-header>',
-        'body': '<Section-body>',
-    }]
-    ```
+- **`report`** - list of `ResourceReportRecord` instances.
 
 ```python
+from waldur_client import WaldurClient, ResourceReportRecord
+
 result = client.marketplace_resource_submit_report(
     resource_uuid='<resource-uuid>',
     report=[
-        {'header': 'Header1', 'body': 'Body1'},
-        {'header': 'Header2', 'body': 'Body2'}
+        ResourceReportRecord(header='Header1', body='Body1'),
+        ResourceReportRecord(header='Header2', body='Body2')
     ]
 )
 
@@ -154,7 +151,7 @@ For this, the following methods are used:
 - `create_component_usages` - creating or updating components usage for the current plan
 
     - **`plan_period_uuid`** - UUID of a plan period
-    - **`usages`** - list of ComponentUsage instances
+    - **`usages`** - list of `ComponentUsage` instances
 
 ```python
 from waldur_client import WaldurClient, ComponentUsage
