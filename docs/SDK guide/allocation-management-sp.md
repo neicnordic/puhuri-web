@@ -77,6 +77,22 @@ result = client.marketplace_resource_set_backend_id(
 # }
 ```
 
+In case if SDK usage is not possible, HTTP request can be sent:
+
+```http
+POST <API-URL>/marketplace-resources/<resource-uuid>/
+
+{
+    "backend_id": "<some-backend-id>"
+}
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+{
+    "status": "Resource backend_id has been changed."
+}
+```
+
 ## Providing additional access detail for resource allocation
 
 For additional details related to allocation access, `report` field is used.
