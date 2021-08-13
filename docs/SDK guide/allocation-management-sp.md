@@ -222,3 +222,27 @@ result = client.create_remote_offering_user(
 #  'username': 'abc'
 # }
 ```
+
+In case if SDK usage is not possible, HTTP request can be sent:
+
+```http
+POST <API-URL>/marketplace-offering-users/
+
+{
+    "offering": "<offering-uuid-or-url>",
+    "user": "<user-uuid-or-url>",
+    "username": "<username>"
+}
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+{
+    "created": "2021-08-12T15:22:18.993586Z",
+    "offering": "http://localhost:8000/api/marketplace-offerings/d47ca5bce71144579df29da3c290027e/",
+    "offering_name": "Remote offering (really)",
+    "offering_uuid": "d47ca5bce71144579df29da3c290027e",
+    "user": "http://localhost:8000/api/users/db157a5cf7f247eba161cd90eba9ac63/",
+    "user_uuid": "db157a5cf7f247eba161cd90eba9ac63",
+    "username": "abc"
+}
+```
