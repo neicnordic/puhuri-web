@@ -195,3 +195,30 @@ result = client.marketplace_resource_get_plan_periods('<resource-uuid>')
 # }
 
 ```
+
+## Granting user access to resource
+
+An access to a resource can be granted by service provider for a particular user.
+For this purpose, `create_remote_offering_user` should be invoked. This method requires the following arguments:
+
+- **`offering`** - UUID or URL of a target offering;
+- **`user`** - UUID or URL of a target user;
+- `username` - optional username.
+
+```python
+result = client.create_remote_offering_user(
+    offering='<offering-uuid-or-url>',
+    user='<user-uuid-or-url>',
+    username='<optional-username>'
+)
+
+# result => {
+#  'created': '2021-08-12T15:22:18.993586Z',
+#  'offering': 'http://localhost:8000/api/marketplace-offerings/d47ca5bce71144579df29da3c290027e/',
+#  'offering_name': 'Remote offering (really)',
+#  'offering_uuid': 'd47ca5bce71144579df29da3c290027e',
+#  'user': 'http://localhost:8000/api/users/db157a5cf7f247eba161cd90eba9ac63/',
+#  'user_uuid': 'db157a5cf7f247eba161cd90eba9ac63',
+#  'username': 'abc'
+# }
+```
