@@ -10,7 +10,6 @@ A typical flow of operations is as follows:
 
 [SDK Guide](SDK guide/allocation-management-sp.md) provides description for resource allocation management methods performed via Python 3 SDK for Puhuri Core.
 
-
 ## LUMI Use-case
 
 TODO: Add interactions between components.
