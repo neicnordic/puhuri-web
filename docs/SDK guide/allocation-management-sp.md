@@ -203,13 +203,13 @@ For this purpose, `create_remote_offering_user` should be invoked. This method r
 
 - **`offering`** - UUID or URL of a target offering;
 - **`user`** - UUID or URL of a target user;
-- `username` - optional username.
+- `username` - username for the user.
 
 ```python
 result = client.create_remote_offering_user(
     offering='<offering-uuid-or-url>',
     user='<user-uuid-or-url>',
-    username='<optional-username>'
+    username='<username>'
 )
 
 # result => {
