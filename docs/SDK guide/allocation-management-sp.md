@@ -7,6 +7,67 @@ This page describes operations to be performed by service provider.
 Please, read [initial setup for Puhuri Core SDK](initial-setup.md) and
 please reach out to [support email](mailto:support@hpc.ut.ee) to get credentials for Puhuri Core.
 
+
+## Getting a list of users
+
+`list_users` method is used to fetch all users in Puhuri Core.
+
+```python
+result = client.list_users()
+
+# result =>[
+# {'affiliations': [],
+#   'agreement_date': None,
+#   'civil_number': None,
+#   'competence': '',
+#   'customer_permissions': [],
+#   'date_joined': '2021-06-23T07:59:59.511681Z',
+#   'description': '',
+#   'email': 'arto.tuomi@csc.fi',
+#   'first_name': 'PUHURI',
+#   'full_name': 'PUHURI Test User 100',
+#   'is_active': True,
+#   'is_staff': False,
+#   'is_support': False,
+#   'job_title': '',
+#   'last_name': 'Test User 100',
+#   'native_name': '',
+#   'organization': '',
+#   'phone_number': '',
+#   'preferred_language': '',
+#   'project_permissions': [{'customer_name': 'IT CENTER FOR SCIENCE LTD',
+#                            'pk': 9,
+#                            'project_name': 'Project from CSC',
+#                            'project_uuid': 'c3be1c35f36448068cb57e278b788318',
+#                            'role': 'manager',
+#                            'url': 'https://puhuri-core-demo.neic.no/api/project-permissions/9/'}],
+#   'registration_method': 'eduteams',
+#   'requested_email': None,
+#   'url': 'https://puhuri-core-demo.neic.no/api/users/f8347a45f2f4409ea6be2034edc5e91b/',
+#   'username': '01cfb7d6b76d400d12b8c8e0e33e36c5ef4562c1@acc.researcher-access.org',
+#   'uuid': 'f8347a45f2f4409ea6be2034edc5e91b'}]
+```
+
+## Getting a list of SSH keys
+
+`list_ssh_keys` method is used to fetch all SSH keys in Puhuri Core.
+
+```python
+result = client.list_ssh_keys()
+
+# result =>
+[{'fingerprint': '...',
+  'is_shared': False,
+  'name': 'new key',
+  'public_key': '... '
+                '...'
+                '...',
+  'type': 'ssh-ed25519',
+  'url': '...',
+  'user_uuid': '31165878c7a04a4197f282924c1a2418',
+  'uuid': '8ae5c9bdbafd44c78250bc98c9783fad'},
+```
+
 ## Getting a list of resource allocations
 
 `list_marketplace_resources` method is used to fetch resources related to offerings, which belong to user's service provider.
