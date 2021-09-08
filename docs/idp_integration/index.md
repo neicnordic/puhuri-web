@@ -27,5 +27,5 @@ Contact person for additional information: marina at sunet.se.
 
 ## Technical details
 
-- Puhuri AAI: https://proxy.prod.puhuri.eduteams.org/.well-known/openid-configuration
-- MyAccessID AAI: https://proxy.myaccessid.org/.well-known/openid-configuration
+- [Puhuri AAI](https://proxy.prod.puhuri.eduteams.org/.well-known/openid-configuration)
+- [MyAccessID AAI](https://proxy.myaccessid.org/.well-known/openid-configuration)
