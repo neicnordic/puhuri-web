@@ -98,25 +98,32 @@ result = client.list_marketplace_resources(
 # }
 ```
 
-## Approving/rejecting allocations in status "CREATING"
+## Approving/rejecting order items for allocations
 
-The default state value after allocation creation is `CREATING`. A service provider can change it to `OK` (created successfully), `Erred` (not created due to some error) and `Terminated` (creation rejected). Only users with service provider owner and manager roles can perform this action.
+A consumer can request allocation creation, update or termination using `OrderItem` entity.
+The service provider can either approve or reject it using
+`marketplace_order_item_approve` and `marketplace_order_item_reject` correspondingly.
+Both methods obtain **`order_item_uuid`** - UUID of an order item for the allocation.
+Only users with service provider owner and manager roles can perform these actions.
 
-The method for triggering this transition is `marketplace_resource_set_state`, which requires the following arguments:
-
-- **`resource_uuid`** - UUID of a resource allocation;
-- **`state`** - target resource state from `ResourceState` enum.
+For example, a consumer requested an allocation using `OrderItem` with `CREATE` type. After that, an empty allocation with `CREATING` state was appeared.
+A service provider can change the state to `OK` (created successfully) using `marketplace_order_item_approve` or
+`Terminated` (creation rejected) using `marketplace_order_item_reject`.
+In order to get a proper order item, SP owner can use `list_order_items` method. This action is for order item listing and supports filtering by state and allocation.
 
 ```python
-from waldur_client import WaldurClient, ResourceState
+from waldur_client import WaldurClient
 
-result = client.marketplace_resource_set_state(
-    resource_uuid='<resource-uuid>',
-    state=ResourceState.OK,
+order_items = client.list_order_items({'state': 'executing', 'resource_uuid': '<allocation-uuid>'})
+
+order_item = order_items[0]
+
+result = client.marketplace_order_item_approve(
+    resource_uuid=order_item['uuid'],
 )
 
 # result => {
-#   'status': 'Resource state has been changed.'
+#   'details': 'Order item has been approved.'
 #}
 ```
 
