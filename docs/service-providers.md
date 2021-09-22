@@ -10,6 +10,26 @@ A typical flow of operations is as follows:
 
 [SDK Guide](SDK guide/allocation-management-sp.md) provides description for resource allocation management methods performed via Python 3 SDK for Puhuri Core.
 
+## Management of Resource Allocators
+
+Service Provider is in charge of managing Resource Allocators for its resources.
+Representative of the Service Provider should submit initial list as well as updates to the support channel
+of Puhuri Core operator: [support@hpc.ut.ee](mailto:support@hpc.ut.ee).
+
+The following information must be provided or each Resource Allocator:
+
+1. Name
+2. Abbreviation
+3. Subnet in CIDR format from where access to Puhuri Core will be done
+4. Contact email
+5. Contact phone
+5. URL of organization
+
+Contact email will be used for establishing a communication channel from operator to allocator for providing
+and managing integration accounts. Contact phone will be used for emergencies only. URL of organization is
+optional and will be used for better understanding of the background of allocator.
+
+
 ## LUMI Use-case
 
 TODO: Add interactions between components.
