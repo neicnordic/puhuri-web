@@ -19,8 +19,7 @@ Before sending in the application for registration, please make sure that applic
 
 - **`Organization`** - If it is not prefilled, please enter the name of your organization. This can be different from the organization / legal entity providing the service
 
-![Requester Details](../assets/spreg_requester_details.png)
-<img src="../assets/spreg_requester_details.png" width=200 align=center>
+<img src="../assets/spreg_requester_details.png" width=600 align=center>
 
 ## Organization Information - Legal entity responsible for the service
 
@@ -28,7 +27,7 @@ Before sending in the application for registration, please make sure that applic
 
 - **`Organization Website`** - The website of the organization responsible for the service. This information will be visible to the end users.
 
-![Organisation Information](../assets/spreg_organisation_information.png)
+<img src="../assets/spreg_organisation_information.png" width=600 align=center>
 
 ## Service Details
 
@@ -40,13 +39,13 @@ Before sending in the application for registration, please make sure that applic
 
 - **`Service Description`** - Brief description of the service. This information will be visible to the end users.
 
-![Service Details](../assets/spreg_service_details.png )
+<img src="../assets/spreg_service_details.png" width=600 align=center>
 
 ## Contact Information
 
 Email addresses for administrative, security and technical contacts or teams responsible for the service. This information will be visible to the end users.
 
-![Contact Information](../assets/spreg_contact_information.png )
+<img src="../assets/spreg_contact_information.png" width=600 align=center>
 
 ## Service Provider Policies
 
@@ -86,7 +85,7 @@ Email addresses for administrative, security and technical contacts or teams res
 
     - **`OIDC Redirect URLs`** - Enter one or more OIDC redirect URLs for your service
 
-![OIDC Config](../assets/spreg_oidc_config.png)
+<img src="../assets/spreg_oidc_config.png" width=600 align=center>
 
 ## Form submission
 
