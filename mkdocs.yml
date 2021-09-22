@@ -20,6 +20,7 @@ nav:
       - "environments.md"
   - Resource Allocators:
       - "resource-allocators.md"
+      - "integration-with-puhuri-aai.md"
       - API Guide:
           - "API guide/common.md"
           - "API guide/authentication.md"
@@ -28,11 +29,9 @@ nav:
           - "API guide/resource-allocation-management.md"
   - Service Providers:
       - "service-providers.md"
-      - "service_providers/integration_with_puhuri.md"
       - SDK Guide:
           - "SDK guide/initial-setup.md"
           - "SDK guide/allocation-management-sp.md"
-  - National Portals: "national_portals/integration.md"
   - Puhuri Portal:
       - "puhuri_portal/user_guide.md"
       - "puhuri_portal/notifications.md"
@@ -41,3 +40,5 @@ nav:
       - eduGAIN integration: idp_integration/requirements-edugain.md
       - Direct integration: idp_integration/requirements-direct.md
       - Attributes: idp_integration/attributes.md
+      - Use cases:
+          - National Portal and LUMI: idp_integration/use-cases/national-portal-integration.md

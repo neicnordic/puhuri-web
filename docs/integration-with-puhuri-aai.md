@@ -1,12 +1,13 @@
-# Integration of Service with Puhuri AAI Proxy
+# Registering with Puhuri AAI Proxy
 
 ## Overview
 
-This document describes the process of registering a Service with the Puhuri AAI Proxy.
+This article describes the process of registering a service with the Puhuri AAI Proxy.
 
-To do so, you will need to fill in the service registration form at: 
-- https://webapp.prod.puhuri.eduteams.org/sp_request (for production environment )
-- https://webapp.acc.puhuri.eduteams.org/sp_request (for acceptance environment)
+To do so, you will need to fill in the service registration form at:
+
+- [https://webapp.prod.puhuri.eduteams.org/sp_request](https://webapp.prod.puhuri.eduteams.org/sp_request) (for production environment )
+- [https://webapp.acc.puhuri.eduteams.org/sp_request](https://webapp.acc.puhuri.eduteams.org/sp_request) (for acceptance environment)
 
 Before sending in the application for registration, please make sure that application is complete or else the registration will not be approved.
 
