@@ -8,12 +8,12 @@ When the project and resource allocation of LUMI resources is approved, the proj
  
 ## Overview
  
-To integrate your National Portal with Puhuri, several steps ARE needed: 
+To integrate your National Portal with Puhuri, several steps are needed: 
 - Record MyAccessID User Identifier within the user profile in the National Portal. This entails: 
-  -  **Registration of National Portal with Puhuri AAI proxy** as an OIDC client
-  - **Implementation of user flow where National Portal UI asks user to link MyAccessID Identity** (and gets the MyAccessID User Identifier to store in your National Portal)
-  - **Implement OIDC flow that enables sharing of MyAccessID User Identifier between MyAccessID and your National Portal**
-  - Record the MyAccessID User Identifier within the user profile of user at your National Portal 
+    - **Registration of National Portal with Puhuri AAI proxy** as an OIDC client
+    - **Implementation of user flow where National Portal UI asks user to link MyAccessID Identity** (and gets the MyAccessID User Identifier to store in your National Portal)
+    - **Implement OIDC flow that enables sharing of MyAccessID User Identifier between MyAccessID and your National Portal**
+- Record the MyAccessID User Identifier within the user profile of user at your National Portal 
 - **Push the allocation and project membership information to Puhuri Core**
 
 Some of these are described in the following. 
