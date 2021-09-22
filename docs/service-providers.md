@@ -13,7 +13,7 @@ A typical flow of operations is as follows:
 ## Management of Resource Allocators
 
 Service Provider is in charge of managing Resource Allocators for its resources.
-Representative of the Service Provider should submit initial list as well as updates to the support channel
+Representative of the Service Provider should submit the initial list as well as updates to the support channel
 of Puhuri Core operator: [support@hpc.ut.ee](mailto:support@hpc.ut.ee).
 
 The following information must be provided for each Resource Allocator:
@@ -27,7 +27,7 @@ The following information must be provided for each Resource Allocator:
 
 Contact email will be used for establishing a communication channel from operator to allocator for providing
 and managing integration accounts. Contact phone will be used for emergencies only. URL of organization is
-optional and will be used for better understanding of the background of allocator.
+optional and will be used for better understanding of the background of the allocator.
 
 
 ## LUMI Use-case
