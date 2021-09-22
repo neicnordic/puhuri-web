@@ -1,6 +1,6 @@
 # Integration of National Portals
 
-## Introduction
+ ## Introduction
 
 National Portals are handling allocation of computing resources via national processes. Po maintains a local database of users, their roles in the approved projects and the resource allocations of the projects. 
 
