@@ -1,12 +1,12 @@
 # Integration of National Portals
 
- ## Introduction
+## Introduction
 
 National Portals are handling allocation of computing resources via national processes. Po maintains a local database of users, their roles in the approved projects and the resource allocations of the projects. 
 
 When the project and resource allocation of LUMI resources is approved, the project with one or more users and their roles within the project needs to be shared with Puhuri Core database. Puhuri Core and National Portal must share the same user identifier, and this is MyAccessID User Identifier.
  
- ## Overview
+## Overview
  
 To integrate your National Portal with Puhuri, several steps ARE needed: 
 - Record MyAccessID User Identifier within the user profile in the National Portal. This entails: 
@@ -33,7 +33,7 @@ In order to support the account linking at your National Portal, you will need t
 
 For example implementation of the UI, you can refer to the implementation at Swedish National Portal SUPR. 
 
-... Marina to add ScreenShoots
+...to add ScreenShoots .. 
 
 ## Implement OIDC flow that enables sharing of MyAccessID User Identifier between MyAccessID and your National Portal
 
