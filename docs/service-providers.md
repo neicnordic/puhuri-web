@@ -16,7 +16,7 @@ Service Provider is in charge of managing Resource Allocators for its resources.
 Representative of the Service Provider should submit initial list as well as updates to the support channel
 of Puhuri Core operator: [support@hpc.ut.ee](mailto:support@hpc.ut.ee).
 
-The following information must be provided or each Resource Allocator:
+The following information must be provided for each Resource Allocator:
 
 1. Name
 2. Abbreviation
