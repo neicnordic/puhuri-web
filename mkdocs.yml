@@ -32,7 +32,7 @@ nav:
       - SDK Guide:
           - "SDK guide/initial-setup.md"
           - "SDK guide/allocation-management-sp.md"
-  - "national_portal/integration.md"
+  - National Portals: "national_portals/integration.md"
   - Puhuri Portal:
       - "puhuri_portal/user_guide.md"
       - "puhuri_portal/notifications.md"
