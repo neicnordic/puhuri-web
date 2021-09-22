@@ -20,6 +20,7 @@ Before sending in the application for registration, please make sure that applic
 - **`Organization`** - If it is not prefilled, please enter the name of your organization. This can be different from the organization / legal entity providing the service
 
 ![Requester Details](../assets/spreg_requester_details.png)
+<img src="../assets/spreg_requester_details.png" width=200 align=center>
 
 ## Organization Information - Legal entity responsible for the service
 
