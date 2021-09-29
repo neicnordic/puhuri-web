@@ -5,13 +5,25 @@ This page introduces the Puhuri components and high level architecture.
 ## Puhuri Components
 ![Components](assets/puhuri-components.png)
 
-In the image is high level architecture of Puhuri. User either uses a National portal or an instance of a Puhuri Portal for the Project Application and the Project membership management. The User is using MyAccessID to register Puhuri User Account and to login (authenticate) to the Resources. The Registration creates a unique identifier (Community Unique Identifier, CUID) for the User, which is used for referencing and linking user identity across the different components. 
+The diagram above shows a high level architecture of Puhuri. Puhuri links together Users with strong digital identity
+with Resources in a seamless way.
 
-The identity provider releases the attributes about User’s identity and affiliation, which is important for the resource providers to know. F  User can also provide additional information such as SSH public keys and to define other email address than what was returned from the Idp. That email will be verified. 
+Puhuri is using MyAccessID AAI for user registration that can be started from National Portal of Resource Allocators
+or from Puhuri Portal, which is provided as a reference solution. The registration process creates a unique identifier
+(Community Unique Identifier, CUID) for the user, which is used for referencing and linking user identity across the
+different components.
 
-Puhuri Core is the database storing Projects and their Members as well as Allocation, Accounting and related Resource information. A Resource provider (in Figure 1 LUMI) uses APIs to import the active allocation and project membership information from the Puhuri Core. 
+The identity provider releases the attributes about User’s identity and affiliation, which is important for the
+resource providers to know. User can also register SSH public keys for easier access to the Linux-based systems that
+are accessible in Puhuri. 
 
-The Resources receive User related information via Puhuri AAI from User’s Identity provider (IdP), when a User authenticates using home organisation’s credentials. 
+Puhuri Core is an API service for Resource Allocators that allows to manage Projects, Members (using CUID of Puhuri users)
+as well as Resource Allocations. A Resource provider (in Figure above - LUMI) then imports the allocation and project
+membership information from the Puhuri Core and sets up the services for access using MyAccessID user account. Resource
+provider also reports on the usage of resource allocations as well as provides additional data, like Linux usernames, that
+user might need in order to access the Resource.
+
+Puhuri Core has an offline access to MyAccessID user registry and uses it for keeping user information up to date.
 
 ## Puhuri roles
 ![Roles](assets/puhuri-roles.png)
