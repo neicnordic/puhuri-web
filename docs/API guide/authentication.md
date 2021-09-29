@@ -11,7 +11,7 @@ If your account is allowed to use username/password and the method is enabled (e
 <!-- {generate_username_password_authentication} -->
 
 ```bash
-$ http -v POST https://puhuri-core-demo.neic.no/api-auth/password/ username=admin password=puhuridemoadmin
+$ http -v POST https://puhuri-core-beta.neic.no/api-auth/password/ username=admin password=puhuridemoadmin
 POST /api-auth/password/ HTTP/1.1
 User-Agent: HTTPie/2.4.0
 Accept-Encoding: gzip, deflate
@@ -19,7 +19,7 @@ Accept: application/json, */*;q=0.5
 Connection: keep-alive
 Content-Type: application/json
 Content-Length: 52
-Host: puhuri-core-demo.neic.no
+Host: puhuri-core-beta.neic.no
 
 {"username": "admin", "password": "puhuridemoadmin"}
 

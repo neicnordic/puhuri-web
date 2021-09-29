@@ -40,10 +40,10 @@ result = client.list_users()
 #                            'project_name': 'Project from CSC',
 #                            'project_uuid': 'c3be1c35f36448068cb57e278b788318',
 #                            'role': 'manager',
-#                            'url': 'https://puhuri-core-demo.neic.no/api/project-permissions/9/'}],
+#                            'url': 'https://puhuri-core-beta.neic.no/api/project-permissions/9/'}],
 #   'registration_method': 'eduteams',
 #   'requested_email': None,
-#   'url': 'https://puhuri-core-demo.neic.no/api/users/f8347a45f2f4409ea6be2034edc5e91b/',
+#   'url': 'https://puhuri-core-beta.neic.no/api/users/f8347a45f2f4409ea6be2034edc5e91b/',
 #   'username': '01cfb7d6b76d400d12b8c8e0e33e36c5ef4562c1@acc.researcher-access.org',
 #   'uuid': 'f8347a45f2f4409ea6be2034edc5e91b'}]
 ```
@@ -90,11 +90,11 @@ result = client.list_marketplace_resources(
 # result => {
 #   'limits': {'cpu_k_hours': 1000, 'gb_k_hours': 3000, 'gpu_k_hours': 1000},
 #   'name': 'Sample resource',
-#   'offering': 'https://puhuri-core-demo.neic.no/api/marketplace-offerings/cf4eb9c29fc74af4ade667fcb53633d5/',
-#   'plan': 'https://puhuri-core-demo.neic.no/api/marketplace-plans/1537de6e94f9427cafb74cb63fa21c72/',
-#   'project': 'https://puhuri-core-demo.neic.no/api/projects/8a158ebf1abf4c74a431b9c65a0d7829/',
+#   'offering': 'https://puhuri-core-beta.neic.no/api/marketplace-offerings/cf4eb9c29fc74af4ade667fcb53633d5/',
+#   'plan': 'https://puhuri-core-beta.neic.no/api/marketplace-plans/1537de6e94f9427cafb74cb63fa21c72/',
+#   'project': 'https://puhuri-core-beta.neic.no/api/projects/8a158ebf1abf4c74a431b9c65a0d7829/',
 #   'state': 'Creating',
-#   'url': 'https://puhuri-core-demo.neic.no/api/marketplace-resources/a1916bd53fd04b1ab1a4e700c926607b/'
+#   'url': 'https://puhuri-core-beta.neic.no/api/marketplace-resources/a1916bd53fd04b1ab1a4e700c926607b/'
 # }
 ```
 
@@ -202,17 +202,17 @@ result = client.marketplace_resource_get_team(
 #  {'email': 'CSC_api_user@example.com',
 #   'expiration_time': None,
 #   'full_name': 'Integration user (CSC)',
-#   'permission': 'https://puhuri-core-demo.neic.no/api/project-permissions/10/',
+#   'permission': 'https://puhuri-core-beta.neic.no/api/project-permissions/10/',
 #   'role': 'admin',
-#   'url': 'https://puhuri-core-demo.neic.no/api/users/bb235c67dcb44470a45d4e0f94e0ed00/',
+#   'url': 'https://puhuri-core-beta.neic.no/api/users/bb235c67dcb44470a45d4e0f94e0ed00/',
 #   'username': 'CSC_api_user',
 #   'uuid': 'bb235c67dcb44470a45d4e0f94e0ed00'},
 #  {'email': 'ETAIS_api_user@example.com',
 #   'expiration_time': None,
 #   'full_name': 'Integration user (ETAIS)',
-#   'permission': 'https://puhuri-core-demo.neic.no/api/project-permissions/3/',
+#   'permission': 'https://puhuri-core-beta.neic.no/api/project-permissions/3/',
 #   'role': 'member',
-#   'url': 'https://puhuri-core-demo.neic.no/api/users/0cc72de4ebb840d98fef133e4433ec9a/',
+#   'url': 'https://puhuri-core-beta.neic.no/api/users/0cc72de4ebb840d98fef133e4433ec9a/',
 #   'username': 'ETAIS_api_user',
 #   'uuid': '0cc72de4ebb840d98fef133e4433ec9a'}]
 # }

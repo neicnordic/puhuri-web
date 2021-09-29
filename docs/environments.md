@@ -7,7 +7,7 @@ TBA
 Puhuri provides several environments for the resource allocators:
 
 - Development https://puhuri-core-dev.neic.no/api/
-- Demo: https://puhuri-core-demo.neic.no/api/
+- Demo: https://puhuri-core-beta.neic.no/api/
 - Production: https://puhuri-core.neic.no/api/
 
 ### Accounts

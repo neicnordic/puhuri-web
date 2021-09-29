@@ -224,15 +224,15 @@ be available as a `marketplace_resource_uuid` field of the creation order item.
 In additipon, ``accepting_terms_of_service`` flag must be provided as a lightweight confirmation that allocator is
 aware and agreeing with Terms of services of a specific Offering.
 
-Example of the order payload sent with `POST` to ``https://puhuri-core-demo.neic.no/api/marketplace-orders/``:
+Example of the order payload sent with `POST` to ``https://puhuri-core-beta.neic.no/api/marketplace-orders/``:
 
 ```json
 
 {
-   "project": "https://puhuri-core-demo.neic.no/api/projects/72fff2b5f09643bdb1fa30684427336b/",
+   "project": "https://puhuri-core-beta.neic.no/api/projects/72fff2b5f09643bdb1fa30684427336b/",
    "items": [
       {
-         "offering": "https://puhuri-core-demo.neic.no/api/marketplace-offerings/0980e9426d5247a0836ccfd64769d900/",
+         "offering": "https://puhuri-core-beta.neic.no/api/marketplace-offerings/0980e9426d5247a0836ccfd64769d900/",
          "attributes": {
             "name": "test20",
             "oecd_science_domain_configuration": "1.1 Mathematics"
@@ -242,7 +242,7 @@ Example of the order payload sent with `POST` to ``https://puhuri-core-demo.neic
             "cpu_k_hours": 1,
             "gpu_k_hours": 20
          },
-         "plan": "https://puhuri-core-demo.neic.no/api/marketplace-plans/14b28e3a1cbe44b395bad48de9f934d8/",
+         "plan": "https://puhuri-core-beta.neic.no/api/marketplace-plans/14b28e3a1cbe44b395bad48de9f934d8/",
          "accepting_terms_of_service": true
       }
    ]
@@ -251,7 +251,7 @@ Example of the order payload sent with `POST` to ``https://puhuri-core-demo.neic
 
 
 ### Change resource limits
-Send ``POST`` request to ``https://puhuri-core-demo.neic.no/api/marketplace-resources/<UUID_OF_A_RESOURCE>/update_limits/`` providing
+Send ``POST`` request to ``https://puhuri-core-beta.neic.no/api/marketplace-resources/<UUID_OF_A_RESOURCE>/update_limits/`` providing
 the new values of limits, for example:
 
 ```json
@@ -266,7 +266,7 @@ the new values of limits, for example:
 
 ### Resource termination
 
-Send ``POST`` request to ``https://puhuri-core-demo.neic.no/api/marketplace-resources/<UUID_OF_A_RESOURCE>/terminate/``.
+Send ``POST`` request to ``https://puhuri-core-beta.neic.no/api/marketplace-resources/<UUID_OF_A_RESOURCE>/terminate/``.
 
 API examples:
 
