@@ -27,5 +27,12 @@ Contact person for additional information: marina at sunet.se.
 
 ## Technical details
 
-- [Puhuri AAI](https://proxy.prod.puhuri.eduteams.org/.well-known/openid-configuration)
-- [MyAccessID AAI](https://proxy.myaccessid.org/.well-known/openid-configuration)
+- [Puhuri AAI - Production Environment](https://proxy.prod.puhuri.eduteams.org/.well-known/openid-configuration)
+- [Puhuri AAI - Acceptance Environment](https://proxy.acc.puhuri.eduteams.org/.well-known/openid-configuration)
+- [MyAccessID AAI - Production Environment](https://proxy.myaccessid.org/.well-known/openid-configuration)
+- [MyAccessID AAI - Acceptance Environment](https://proxy.acc.myaccessid.org/.well-known/openid-configuration)
+- [GEANT Support](mailto:support+puhuri@eduteams.org)
+
+# Puhuri CORE specifics
+
+- [A miniscript for getting refresh token](../assets/get_tokens.sh). Replace client_id / client_secret with actual values.
