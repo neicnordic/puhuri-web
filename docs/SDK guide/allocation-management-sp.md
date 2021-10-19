@@ -119,7 +119,7 @@ order_items = client.list_order_items({'state': 'executing', 'resource_uuid': '<
 order_item = order_items[0]
 
 result = client.marketplace_order_item_approve(
-    resource_uuid=order_item['uuid'],
+    order_item_uuid=order_item['uuid'],
 )
 
 # result => {
