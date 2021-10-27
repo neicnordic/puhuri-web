@@ -292,7 +292,7 @@ For this purpose, `create_remote_offering_user` should be invoked. This method r
 
 ```python
 result = client.create_remote_offering_user(
-    offering='<resource-uuid-or-url>',
+    offering='<offering-uuid-or-url>',
     user='<user-uuid-or-url>',
     username='<username>'
 )
