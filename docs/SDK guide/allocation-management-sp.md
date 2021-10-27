@@ -282,7 +282,8 @@ result = client.marketplace_resource_get_plan_periods('<resource-uuid>')
 
 ## Granting user access to resource
 
-An access to a resource can be granted by service provider for a particular user.
+An access to a resource can be granted by service provider for a particular user with specification of username.
+A result is represented by triplet [user, resource, username].
 For this purpose, `create_remote_offering_user` should be invoked. This method requires the following arguments:
 
 - **`offering`** - UUID or URL of a target offering;
@@ -291,7 +292,7 @@ For this purpose, `create_remote_offering_user` should be invoked. This method r
 
 ```python
 result = client.create_remote_offering_user(
-    offering='<offering-uuid-or-url>',
+    offering='<resource-uuid-or-url>',
     user='<user-uuid-or-url>',
     username='<username>'
 )
@@ -329,4 +330,26 @@ POST <API-URL>/marketplace-offering-users/
     "user_uuid": "db157a5cf7f247eba161cd90eba9ac63",
     "username": "abc"
 }
+```
+
+## Granting user access to corresponding resources in batch manner
+
+A service provider can grant access mentioned in the previous section to all resources used in projects including a target user.
+For such access creation or update, `set_offerings_username` is used.
+The method requires the following arguments:
+
+- **service_provider_uuid** - UUID of a target service provider;
+- **user_uuid** - UUID of a target user;
+- **username** - the new username.
+
+```python
+result = client.set_offerings_username(
+    service_provider_uuid='<service-provider-uuid>',
+    user_uuid='<user-uuid>',
+    username='<username>',
+)
+
+# result =>  {
+#  'detail': 'Offering users have been set.'
+# }
 ```
