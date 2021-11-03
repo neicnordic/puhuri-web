@@ -32,8 +32,8 @@ Contact person for additional information: marina at sunet.se.
 - [MyAccessID AAI - Production Environment](https://proxy.myaccessid.org/.well-known/openid-configuration)
 - [MyAccessID AAI - Acceptance Environment](https://proxy.acc.myaccessid.org/.well-known/openid-configuration)
 - [GEANT Support](mailto:support+puhuri@eduteams.org)
-- [Profile management at MyAccessID - Production Environment](https://mms.myaccessid.org/fed-apps/profile/)
-- [Profile management at MyAccessID - Acceptance Environment](https://mms.acc.myaccessid.org/fed/gui/)
+- [Profile management at MyAccessID - Production Environment](https://mms.myaccessid.org/profile/)
+- [Profile management at MyAccessID - Acceptance Environment](https://mms.acc.myaccessid.org/profile/)
 
 # Puhuri CORE specifics
 
