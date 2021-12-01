@@ -23,7 +23,7 @@ use a different naming than agreed in Puhuri. Below is a mapping to reduce confu
 
 ## Puhuri Core SDK
 
-If you are integrating a python-based application, you might find useful a [python wrapper](SDK Guide) for typical operations.
+If you are integrating a python-based application, you might find useful a [python wrapper](SDK%20guide/initial-setup.md) for typical operations.
 
 ## Common operations
 
