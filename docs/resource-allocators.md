@@ -15,21 +15,20 @@ Resource allocator is expected to:
 Puhuri Core is based on [Waldur](https://github.com/waldur/waldur-mastermind/) orchestrator and as such some of the APIs
 use a different naming than agreed in Puhuri. Below is a mapping to reduce confusion.
 
-
 | Puhuri      | API / Waldur    |
 | ----------- | --------------- |
 | Resource    |  Offering       |
 | Resource component | Offering component |
 | Allocation  | Resource        |
 
-
 ## Puhuri Core SDK
 
-If you are integrating a python-based application, you might find useful a [python wrapper](SDK Guide) for typical operations.
+If you are integrating a python-based application, you might find useful a [python wrapper](SDK%20guide/initial-setup.md) for typical operations.
 
 ## Common operations
 
 Almost all operations require authentication. Authentication process is a two-step:
+
 1. Generation of authentication token using [Authentication API](API guide/authentication.md).
 2. Passing that token in the Authorization header along with all other REST API calls.
 
@@ -41,6 +40,7 @@ to see how a full traversal can be done.
 ## Project management
 
 ### Customer lookup
+
 Puhuri Core implements a multi-tenant model to allow different organizations to allocate shared resources simultaneously
 and independently from each other. Each such organizaton is a customer of Puhuri Core and is able to create its own
 projects. Project allows us to create new allocations as well as connect users with the project.
@@ -55,8 +55,8 @@ Examples:
 
 - [API call for customer lookup](API guide/project.md#lookup-allocator-customers-available-to-a-user)
 
-
 ### Project creation
+
 In order to create a new project in an organization, user needs to provide the following fields:
 
 - **`customer`** - URL of the project's organization
@@ -83,6 +83,7 @@ Examples:
 - [API call for project update](API guide/project.md#update-an-existing-project)
 
 ### Project lookup
+
 User can list projects and filter them using the following query parameters:
 
 - `name` - project's name (uses 'contains' logic for lookup)
@@ -151,7 +152,6 @@ Examples:
 - [API call for removing members from a project](API guide/project-permissions.md#removal-of-members-from-a-project)
 - [API call to listing project permissions](API guide/project-permissions.md#project-members-permissions-allocation)
 
-
 ## Resource allocation management
 
 Creating and managing resource allocations in Puhuri Core follows ordering logic.
@@ -185,7 +185,6 @@ API examples:
 
 - [Getting a list of offerings available for allocation](API guide/resource-allocation-management.md#getting-a-list-of-offerings)
 
-
 ### Selecting an offering (LUMI specific)
 
 In case of LUMI allocation, there are several offerings available for each allocator corresponding to the
@@ -206,7 +205,8 @@ Each of the offering will include a single plan.
 
 Full details of the Offering contain expected attributes that should be passed when creating an allocation.
 
-### Orders, order items and resources.
+### Orders, order items and resources
+
 To create a new allocation, an order must be created contain order item with requested attributes: project
 as well as details about the allocations.
 
@@ -221,7 +221,7 @@ i.e. `CREATE`, `UPDATE` or `TERMINATE`.
 As a result of successful processing of order item by Puhuri Core, it will create a new Resource. Its UUID will
 be available as a `marketplace_resource_uuid` field of the creation order item.
 
-In additipon, ``accepting_terms_of_service`` flag must be provided as a lightweight confirmation that allocator is
+In addition, ``accepting_terms_of_service`` flag must be provided as a lightweight confirmation that allocator is
 aware and agreeing with Terms of services of a specific Offering.
 
 Example of the order payload sent with `POST` to ``https://puhuri-core-beta.neic.no/api/marketplace-orders/``:
@@ -249,8 +249,8 @@ Example of the order payload sent with `POST` to ``https://puhuri-core-beta.neic
 }
 ```
 
-
 ### Change resource limits
+
 Send ``POST`` request to ``https://puhuri-core-beta.neic.no/api/marketplace-resources/<UUID_OF_A_RESOURCE>/update_limits/`` providing
 the new values of limits, for example:
 
@@ -281,15 +281,68 @@ Example integrations:
 - [Changing allocated limits in Puhuri Portal](https://github.com/waldur/waldur-mastermind/blob/7b2eba62e1e0dab945845f05030c7935e57f0d9c/src/waldur_mastermind/marketplace_remote/processors.py#L53).
 - [Deletion of a resource allocation in Puhuri Portal](https://github.com/waldur/waldur-mastermind/blob/7b2eba62e1e0dab945845f05030c7935e57f0d9c/src/waldur_mastermind/marketplace_remote/processors.py#L64).
 
-
 ### Advanced
+
 Information about Puhuri resources in Puhuri Core can change over time, for example, new components could be added.
 Puhuri Portal implements a method for dynamic import and upkeep of that information from Puhuri Core.
 
 As this is a more advanced topic, please check [implementation](https://github.com/waldur/waldur-mastermind/blob/7b2eba62e1e0dab945845f05030c7935e57f0d9c/src/waldur_mastermind/marketplace_remote/views.py#L84).
 If you have questions, we will be happy to help out! Please reach out to support@hpc.ut.ee.
 
-
 ## Reporting
-- Usage collection for each allocation - provided as Resource attributes
-- Aggregate reporting data
+
+### Getting usage data of a specific resource allocation
+
+To get reported usage for resources, send  ``GET`` request to ``https://puhuri-core-beta.neic.no/api/marketplace-component-usages/``. If you want to get usage data of a specific resource, please add a filter, e.g. ``https://puhuri-core-beta.neic.no/api/marketplace-component-usages/?resource_uuid=<UUID_OF_A_RESOURCE>``. Note that responses are paginated.
+
+Additional filters that can be used:
+
+- `date_before` - date of the returned usage records should be before or equal to provided, format YYYY-MM-DD, e.g. 2021-03-01.
+- `date_after` - date of the returned usage records should be later or equal to provided, format YYYY-MM-DD, e.g. 2021-03-01.
+- `offering_uuid` - return usage records only for a specified offering.
+- `type` - type of the usage record to return, e.g. 'cpu_k_hours'.
+
+Response will contain a list of usage records with a separate record for each component per month, for example:
+
+```json
+  {
+    "uuid": "15a7a55fc78d44f995a6735b1f0f0c86",
+    "created": "2021-11-26T20:30:21.348221Z",
+    "description": "",
+    "type": "cpu_k_hours",
+    "name": "CPU allocation",
+    "measured_unit": "CPU kH",
+    "usage": 12,
+    "date": "2021-11-26T20:30:21.342018Z",
+    "resource_name": "Sample allocation",
+    "resource_uuid": "4e4b8910b3df4ca0969871922eed8f3d",
+    "offering_name": "LUMI UoI / Fast Track Access for Industry Access",
+    "offering_uuid": "abe3c5e7cbe14d97a3208c56a22251f4",
+    "project_name": "University of Iceland / Sample project",
+    "project_uuid": "e1ffec53fd494d438fcb71daee1ae375",
+    "customer_name": "University of Iceland",
+    "customer_uuid": "6b4aba63ed47472e9cee84dac500cf11",
+    "recurring": false,
+    "billing_period": "2021-11-01"
+  },
+  {
+    "uuid": "2b90e7f5f91d41b7838bc0d45093dd23",
+    "created": "2021-11-26T20:30:21.383305Z",
+    "description": "",
+    "type": "gb_k_hours",
+    "name": "Storage allocation",
+    "measured_unit": "GB kH",
+    "usage": 34,
+    "date": "2021-11-26T20:30:21.342018Z",
+    "resource_name": "Sample allocation",
+    "resource_uuid": "4e4b8910b3df4ca0969871922eed8f3d",
+    "offering_name": "LUMI UoI / Fast Track Access for Industry Access",
+    "offering_uuid": "abe3c5e7cbe14d97a3208c56a22251f4",
+    "project_name": "University of Iceland / Sample project",
+    "project_uuid": "e1ffec53fd494d438fcb71daee1ae375",
+    "customer_name": "University of Iceland",
+    "customer_uuid": "6b4aba63ed47472e9cee84dac500cf11",
+    "recurring": false,
+    "billing_period": "2021-11-01"
+  }
+```
