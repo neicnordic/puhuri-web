@@ -1,4 +1,8 @@
 # Puhuri Portal notifications
+
+!!! warning
+    Notifications are in development. Early feedback is welcome, send email to ilja.livenson@ut.ee.
+
 | Notification type | Content | Initiator | Target group |
 --- | --- | --- | --- |
 | email | Allocation request | Project PI / Proxy-PI | Allocator |
