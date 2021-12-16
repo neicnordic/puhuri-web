@@ -3,9 +3,9 @@
 !!! warning
     User guide is in development. Early feedback is welcome, send email to ilja.livenson@ut.ee.
 
-### Only project PI or national allocator representative can send project and allocation modification requests. Only national allocation representative can approve these requests.
+Only project PI or national allocator representative can send project and allocation modification requests. Only (national) resource allocation representative can approve these requests.
 
-## To modify project allocation limits: 
+## Allocation modification
 
 1. Login to Puhuri Portal using MyAccessID.
 
@@ -26,7 +26,7 @@
 
 5. Now national resource allocator has to approve the changes.
 
-## To modify project information:
+## Modifying project information and end date
 
 1.Login to Puhuri Portal using MyAccessID.
    
