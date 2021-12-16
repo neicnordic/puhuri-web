@@ -34,6 +34,7 @@ Contact person for additional information: marina at sunet.se.
 - [GEANT Support](mailto:support+puhuri@eduteams.org)
 - [Profile management at MyAccessID - Production Environment](https://mms.myaccessid.org/profile/)
 - [Profile management at MyAccessID - Acceptance Environment](https://mms.acc.myaccessid.org/profile/)
+- [Demo SP for attribute release check](https://myaccessid.devtest.eduteams.org/)
 
 # Puhuri CORE specifics
 
