@@ -11,12 +11,12 @@ Organization in Puhuri Portal context means whatever grouping national resource 
 
 1.Login to Puhuri Portal using MyAccessID.
    
-![Login](../../assets/Login.PNG)
+ ![Login](../../assets/Login.PNG)
 
 2. Click on "Select workspace" and then “Add new organization” in the organization selection window.
 
-![Select organization](../../assets/Select%20workspace.PNG)
-![Select organization](../../assets/Add_organization.PNG)
+ ![Select organization](../../assets/Select%20workspace.PNG)
+ ![Select organization](../../assets/Add_organization.PNG)
 
 3. Fill necessary fields and click "Create organization"
  - Name - Name of the organization
@@ -26,5 +26,5 @@ Organization in Puhuri Portal context means whatever grouping national resource 
  - Logo - logo of the organization
 
 
-![Select organization](../../assets/Add_organization_data.PNG)
+ ![Select organization](../../assets/Add_organization_data.PNG)
 
