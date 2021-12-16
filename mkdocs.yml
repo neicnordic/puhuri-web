@@ -34,8 +34,7 @@ nav:
           - "SDK guide/allocation-management-sp.md"
   - Puhuri Portal:
       - User Guide:
-          - "puhuri_portal/User_Guide/add_organization.md"
-          - "puhuri_portal/User_Guide/project_creation.md"
+          - "puhuri_portal/User_Guide/organization_and_project_management.md"
           - "puhuri_portal/User_Guide/inviting_members.md"
           - "puhuri_portal/User_Guide/project_approval.md"
           - "puhuri_portal/User_Guide/project_modification.md"
