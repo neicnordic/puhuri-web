@@ -14,7 +14,7 @@
 2. Select allocating organization from the "Select workspace" list.
 3. Click on “Public services” -> “Public orders” and then click “Approve”
 
- ![Project approve](../../assets/Project_approve.PNG)
+ ![Project approve](../../assets/Project approval.png)
 
 ## Approving project and allocation modification requests
 
