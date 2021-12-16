@@ -42,4 +42,4 @@ Only project PI or national allocator representative can send project and alloca
 
  ![Project details update](../../assets/project_data_update.PNG)
 
-6. Now national resource allocator has to approve the changes.
+6. Now national resource allocator has to [approve the changes](project_approval.md)
