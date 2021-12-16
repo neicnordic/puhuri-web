@@ -33,7 +33,12 @@ nav:
           - "SDK guide/initial-setup.md"
           - "SDK guide/allocation-management-sp.md"
   - Puhuri Portal:
-      - "puhuri_portal/user_guide.md"
+      - User Guide:
+          - "puhuri_portal/add_organization.md"
+          - "puhuri_portal/project_creation.md"
+          - "puhuri_portal/inviting_members.md"
+          - "puhuri_portal/project_approval.md"
+          - "puhuri_portal/project_modification.md"
       - "puhuri_portal/notifications.md"
   - IdP Integration:
       - "idp_integration/index.md"
