@@ -6,6 +6,7 @@
 ### Management of project team
 
 Project team contains users with different roles:
+
 - Principal Investigator (PI) - The lead researcher and primary contact for the project, also organization owner
 - Co-Principal Investigator (Co-PI) - An individual recognized by the prime institution and the principal investigator (PI) as someone who shares scientific and administrative leadership responsibilities for a project with the PI.
 - Member - Users who work on one or more phases of the project and involved in doing assigned tasks.
