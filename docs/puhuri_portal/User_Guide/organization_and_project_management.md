@@ -36,10 +36,8 @@ who is project principal investigator (PI). National resource allocator can assi
 Project creation is allowed for Principal Investigators (PIs) and Resource Allocators in their organizations.
 
 Prerequisites for creating projects:
-
-- User must have a Puhuri account (logged in to Puhuri Portal using MyAccessID)
-- Allocator must set PI role to the user in certain organization
-
+    - User must have a Puhuri account (logged in to Puhuri Portal using MyAccessID)
+    - Allocator must set PI role to the user in certain organization
 
 1. Login to Puhuri Portal using MyAccessID.
    ![Login](../../assets/Login.PNG){ width="400" }
