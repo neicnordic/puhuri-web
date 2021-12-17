@@ -1,10 +1,10 @@
-# Updating projects and allocations
+# Projects and allocations management
 
 !!! warning
     User guide is in development. Early feedback is welcome, send email to ilja.livenson@ut.ee.
 
 !!! note
-    Only project PI or national allocator representative can send project and allocation modification requests. Only (national) resource allocation representative can approve these requests.
+    Only project PI or national allocator representative can send project and allocation update requests. Only (national) resource allocation representative can approve these requests.
 
 ## Allocation update process
 
