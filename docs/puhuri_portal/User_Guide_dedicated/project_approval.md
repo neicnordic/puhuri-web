@@ -4,7 +4,7 @@
     User guide is in development. Early feedback is welcome, send email to ilja.livenson@ut.ee.
 
 !!! note
-    Following process is only allowed to national resource allocator representatives!
+    Following processes are only allowed to national resource allocator representatives!
 
 ## Approving project and allocation creation requests
 
