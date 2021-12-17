@@ -33,11 +33,16 @@ nav:
           - "SDK guide/initial-setup.md"
           - "SDK guide/allocation-management-sp.md"
   - Puhuri Portal:
-      - User Guide:
-          - "puhuri_portal/User_Guide/organization_and_project_management.md"
-          - "puhuri_portal/User_Guide/inviting_members.md"
-          - "puhuri_portal/User_Guide/project_approval.md"
-          - "puhuri_portal/User_Guide/project_modification.md"
+      - User Guide (Dedicated):
+          - "puhuri_portal/User_Guide_dedicated/organization_and_project_management.md"
+          - "puhuri_portal/User_Guide_dedicated/inviting_members.md"
+          - "puhuri_portal/User_Guide_dedicated/project_approval.md"
+          - "puhuri_portal/User_Guide_dedicated/project_modification.md"
+      - User Guide (Shared):
+          - "puhuri_portal/user_guide_shared/organization_and_project_management_shared.md"
+          - "puhuri_portal/user_guide_shared/membership_management_shared.md"
+          - "puhuri_portal/user_guide_shared/project_approval_shared.md"
+          - "puhuri_portal/user_guide_shared/project_modification_shared.md"
       - "puhuri_portal/notifications.md"
   - IdP Integration:
       - "idp_integration/index.md"
