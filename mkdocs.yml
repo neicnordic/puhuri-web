@@ -36,13 +36,13 @@ nav:
       - User Guide (Dedicated):
           - "puhuri_portal/User_Guide_dedicated/organization_and_project_management.md"
           - "puhuri_portal/User_Guide_dedicated/inviting_members.md"
-          - "puhuri_portal/User_Guide_dedicated/project_approval.md"
           - "puhuri_portal/User_Guide_dedicated/project_modification.md"
+          - "puhuri_portal/User_Guide_dedicated/project_approval.md"
       - User Guide (Shared):
           - "puhuri_portal/user_guide_shared/organization_and_project_management_shared.md"
           - "puhuri_portal/user_guide_shared/membership_management_shared.md"
-          - "puhuri_portal/user_guide_shared/project_approval_shared.md"
           - "puhuri_portal/user_guide_shared/project_modification_shared.md"
+          - "puhuri_portal/user_guide_shared/project_approval_shared.md"
       - "puhuri_portal/notifications.md"
   - IdP Integration:
       - "idp_integration/index.md"
