@@ -41,16 +41,13 @@ Prerequisites for creating projects:
 - Allocator must set PI role to the user in certain organization
 
 1. Login to Puhuri Portal using MyAccessID.
-
    ![Login](../../assets/Login.PNG){ width="400" }
 
 2. Select your home organization.
-
    ![Select organization](../../assets/Select%20workspace.PNG)
    ![Select organization](../../assets/Select%20workspace_1.PNG)
 
 3. Click on "Add project".
-
    ![Add project](../../assets/Add%20project.PNG)
 
 4. Fill the necessary fields (fields marked with * are mandatory).
@@ -58,7 +55,6 @@ Prerequisites for creating projects:
     - Project name - The original title of the project.
     - Project description - A brief description about the project.
     - End date - this is the end date for using the computational resources.
-
    ![Project details](../../assets/Project%20details.PNG)
 
 
@@ -74,20 +70,17 @@ Below is an example of requesting an allocation from LUMI supercomputer:
 
 1. Select "Service catalog" from the sidebar menu and select offering that matches your plans.
    For LUMI, offerings correspond to access types of EuroHPC:
-
     - Extreme Scale Access
     - Regular Access
     - Benchmark Access
     - Development Access
     - Fast Track Access for Academia
     - Fast Track Access for Industry
-
   ![Project details](../../assets/Service%20catalog.PNG)
   ![Project details](../../assets/LUMI%20resource.PNG)
   ![Project details](../../assets/Available%20resources.PNG)
 
 6. Write the name for the resource allocation (NOTE: This name will be visible in accounting data.).
-
    ![Project details](../../assets/Resource%20config.PNG)
 
 7. Select correct plan (LUMI common) and write needed allocation quota (CPU, GPU and Storage).
@@ -97,7 +90,6 @@ Below is an example of requesting an allocation from LUMI supercomputer:
 9. Click on the "Add to cart".
 
 10. Check once more and click on "Request an approval" if you not a PI in a project or "Request" if you PI.
-
    ![Project details](../../assets/Approval%20request.PNG)
 
 After this, Resource allocator will request for resource and be able to approve or reject it.
