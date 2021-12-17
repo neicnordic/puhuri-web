@@ -22,7 +22,7 @@ Project team contains users with different roles:
    ![Select organization](../../assets/Add%20member.PNG)
 
 4. Select correct user, set the role and expiration date if necessary.
-   ![Add user](../../assets/shared_portal_add_member.PNG)
+   ![Add user](../../assets/shared_portal_add_member.PNG){ width="400" }
 
 5. Finally, click on "Add".
 6. User now will get invitation email with the acceptance link.
@@ -30,17 +30,17 @@ Project team contains users with different roles:
 ### New user don't have Puhuri account:
 
 1. Login to Puhuri Portal with MyAccessID.
-   ![Login](../../assets/Login.PNG)
+   ![Login](../../assets/Login.PNG){ width="400" }
 
 2. Select your organization.
    ![Select organization](../../assets/Select%20workspace.PNG)
-   ![Select organization](../../assets/Select%20workspace_1.PNG)
+   ![Select organization](../../assets/Select%20workspace_1.PNG){ width="400" }
 
 3. Click on "Invite team member". 
    ![Invite team member](../../assets/Organization%20overview.PNG)
 
 4. Insert user's email and set the role and project (in case of inviting Co-PI, Member or Guest) for the new user.
-   ![Invite user](../../assets/shared_portal_user_invite.PNG)
+   ![Invite user](../../assets/shared_portal_user_invite.PNG){ width="400" }
 
 5. Click "Invite user".
 6. User now will get invitation email with the acceptance link.
