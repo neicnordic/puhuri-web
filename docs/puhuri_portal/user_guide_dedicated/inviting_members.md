@@ -53,11 +53,11 @@ Project team contains users with different roles:
 ### If user does not have Puhuri account, then:
 
 1. Login to Puhuri Portal with MyAccessID.
-   ![Login](../../assets/Login.PNG)
+   ![Login](../../assets/Login.PNG){ width="400" }
 
 2. Select your organization.
    ![Select organization](../../assets/Select%20workspace.PNG)
-   ![Select organization](../../assets/Select%20workspace_1.PNG)
+   ![Select organization](../../assets/Select%20workspace_1.PNG){ width="400" }
 
 3. Click on "Invite team member". 
    ![Invite team member](../../assets/Organization%20overview.PNG)
