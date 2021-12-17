@@ -23,7 +23,7 @@
 
 6. Now national resource allocator has to [approve the changes.](project_approval.md)
 
-## Project information update process
+## Project end date update process
 
 1. Login to Puhuri Portal using MyAccessID.
    ![Login](../../assets/Login.PNG){ width="400" }
@@ -33,7 +33,7 @@
 4. Select correct project and click "Details".
    ![Project details update](../../assets/Projects_details.PNG)
 
-5. Update project data and "Update project details".
+5. Update project end date and "Update project details".
    ![Project details update](../../assets/project_data_update.PNG)
 
 6. Now national resource allocator has to [approve the changes.](project_approval.md)
