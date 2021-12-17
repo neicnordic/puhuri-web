@@ -21,7 +21,7 @@
 5. Set new limits and click "Submit".
    ![Allocation limits_change](../../assets/Limits_change.PNG)
 
-6. Now national resource allocator has to [approve the changes.](project_approval.md)
+6. Now national resource allocator has to [approve the changes.](https://puhuri.neic.no/puhuri_portal/user_guide_dedicated/project_approval/#approving-project-and-allocation-creation-requests)
 
 ## Project end date update process
 
@@ -39,4 +39,4 @@
 5. Update project end date and "Update project details".
    ![Project details update](../../assets/project_data_update.PNG)
 
-6. Now national resource allocator has to [approve the changes.](project_approval.md)
+6. Now national resource allocator has to [approve the changes.](https://puhuri.neic.no/puhuri_portal/user_guide_dedicated/project_approval/#approving-project-and-allocation-update-requests)
