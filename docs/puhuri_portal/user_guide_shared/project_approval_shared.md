@@ -15,7 +15,7 @@
 3. Click on “Public services” -> “Public orders” and then click “Approve”
    ![Project approve](../../assets/Project approval.png)
 
-## Approving project and allocation modification requests
+## Approving project and allocation update requests
 
 1. Login to Puhuri Portal using MyAccessID.
    ![Login](../../assets/Login.PNG){ width="400" }
