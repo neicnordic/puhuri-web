@@ -13,6 +13,7 @@ Project team contains users with different roles:
 - Guest - Users who are only able to see project related data, not able to modify it.
 
 ## Adding PI to organization.
+
 !!! note
     This is only allowed to national resource allocator representatives!
 
