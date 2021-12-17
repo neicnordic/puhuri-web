@@ -3,10 +3,11 @@
 !!! warning
     User guide is in development. Early feedback is welcome, send email to ilja.livenson@ut.ee.
 
-!!! note
-    Only project PI or national allocator representative can send project and allocation update requests. Only (national) resource allocation representative can approve these requests.
-
 ## Allocation update process
+
+!!! note
+    Only project PI or (national) resource allocation representative can send allocation update requests.
+    Only (national) resource allocation representative can approve these requests.
 
 1. Login to Puhuri Portal using MyAccessID.
    ![Login](../../assets/Login.PNG){ width="400" }
@@ -24,6 +25,10 @@
 6. Now national resource allocator has to [approve the changes.](project_approval.md)
 
 ## Project end date update process
+
+!!! note
+    Only project PI or (national) resource allocation representative can send project end date update requests.
+    Only (national) resource allocation representative can approve these requests.
 
 1. Login to Puhuri Portal using MyAccessID.
    ![Login](../../assets/Login.PNG){ width="400" }
