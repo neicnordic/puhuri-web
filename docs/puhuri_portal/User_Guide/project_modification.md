@@ -9,7 +9,7 @@
 ## Allocation update process
 
 1. Login to Puhuri Portal using MyAccessID.
-   ![Login](../../assets/Login.PNG)
+   ![Login](../../assets/Login.PNG){ width="400" }
 
 2. Select organization and then project from the "Select workspace" list.
 3. Select correct allocation you would like to change.
@@ -26,7 +26,7 @@
 ## Project information update process
 
 1. Login to Puhuri Portal using MyAccessID.
-   ![Login](../../assets/Login.PNG)
+   ![Login](../../assets/Login.PNG){ width="400" }
 
 2. Select organization and then project from the "Select workspace" list.
 3. Select "Projects" from the left side menu.

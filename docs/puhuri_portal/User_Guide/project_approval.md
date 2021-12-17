@@ -9,7 +9,7 @@
 ## Approving project and allocation creation requests
 
 1. Login to Puhuri Portal using MyAccessID.
-   ![Login](../../assets/Login.PNG)
+   ![Login](../../assets/Login.PNG){ width="400" }
 
 2. Select allocating organization from the "Select workspace" list.
 3. Click on “Public services” -> “Public orders” and then click “Approve”
@@ -18,7 +18,7 @@
 ## Approving project and allocation modification requests
 
 1. Login to Puhuri Portal using MyAccessID.
-   ![Login](../../assets/Login.PNG)
+   ![Login](../../assets/Login.PNG){ width="400" }
 
 2. Select allocating organization from the "Select workspace" list.
 3. Click on “Public services” -> “Project updates” and then click “Approve”

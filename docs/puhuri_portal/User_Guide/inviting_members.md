@@ -17,7 +17,7 @@ Project team contains users with different roles:
     This is only allowed to national resource allocator representatives!
 
 1. Login to Puhuri Portal with MyAccessID. 
-   ![Login](../../assets/Login.PNG)
+   ![Login](../../assets/Login.PNG){ width="400" }
 
 2. Select correct organization from "Select workspace".
 3. Select "Team" from left menu.
@@ -36,7 +36,7 @@ Project team contains users with different roles:
 ### If user already has Puhuri account connected with the organization, then:
 
 1. Login to Puhuri Portal with MyAccessID.
-   ![Login](../../assets/Login.PNG)
+   ![Login](../../assets/Login.PNG){ width="400" }
 
 2. Open project in Puhuri Portal.
 3. Select "Team" from left menu and click on "Add member".
