@@ -92,4 +92,4 @@ Below is an example of requesting an allocation from LUMI supercomputer:
 10. Check once more and click on "Request an approval" if you not a PI in a project or "Request" if you PI.
    ![Project details](../../assets/Approval%20request.PNG)
 
-After this, Resource allocator will request for resource and be able to approve or reject it.
+After this, Resource allocator will request for resource and be able to [approve or reject](project_approval.md) it.

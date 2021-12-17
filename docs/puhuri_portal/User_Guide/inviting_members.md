@@ -1,4 +1,4 @@
-# User guide for inviting members to projects
+# Project membership management
 
 !!! warning
     User guide is in development. Early feedback is welcome, send email to ilja.livenson@ut.ee.

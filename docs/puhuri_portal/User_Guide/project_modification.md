@@ -6,7 +6,7 @@
 !!! note
     Only project PI or national allocator representative can send project and allocation modification requests. Only (national) resource allocation representative can approve these requests.
 
-## Allocation modification
+## Allocation update process
 
 1. Login to Puhuri Portal using MyAccessID.
    ![Login](../../assets/Login.PNG)
@@ -23,7 +23,7 @@
 
 6. Now national resource allocator has to approve the changes.
 
-## Modifying project information and end date
+## Project information update process
 
 1. Login to Puhuri Portal using MyAccessID.
    ![Login](../../assets/Login.PNG)
