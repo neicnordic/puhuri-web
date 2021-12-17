@@ -7,7 +7,6 @@
 
 !!! note
     Only (national) resource allocation representative can send allocation update requests. 
-    Only (national) resource allocation representative can approve these requests.
 
 1. Login to Puhuri Portal using MyAccessID.
    ![Login](../../assets/Login.PNG){ width="400" }
@@ -28,7 +27,6 @@
 
 !!! note
     Only (national) resource allocation representative can send project end date update requests. 
-    Only (national) resource allocation representative can approve these requests.
 
 1. Login to Puhuri Portal using MyAccessID.
    ![Login](../../assets/Login.PNG){ width="400" }
