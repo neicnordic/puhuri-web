@@ -46,8 +46,8 @@ Project team contains users with different roles:
 4. Select correct user, set the role and expiration date if necessary.
    ![Add user](../../assets/Add%20user.PNG)
 
-6.Finally, click on "Add".
-7.User now will get invitation email with the acceptance link.
+5. Finally, click on "Add".
+6. User now will get invitation email with the acceptance link.
 
 ### If user does not have Puhuri account, then:
 
@@ -64,5 +64,5 @@ Project team contains users with different roles:
 4. Insert user's email and set the role and project (in case of inviting Co-PI, Member or Guest) for the new user.
    ![Invite user](../../assets/user_invite.PNG)
 
-5.Click "Invite user".
-6.User now will get invitation email with the acceptance link.
+5. Click "Invite user".
+6. User now will get invitation email with the acceptance link.

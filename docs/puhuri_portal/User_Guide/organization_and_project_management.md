@@ -40,6 +40,7 @@ Prerequisites for creating projects:
 - User must have a Puhuri account (logged in to Puhuri Portal using MyAccessID)
 - Allocator must set PI role to the user in certain organization
 
+
 1. Login to Puhuri Portal using MyAccessID.
    ![Login](../../assets/Login.PNG){ width="400" }
 
@@ -80,16 +81,16 @@ Below is an example of requesting an allocation from LUMI supercomputer:
   ![Project details](../../assets/LUMI%20resource.PNG)
   ![Project details](../../assets/Available%20resources.PNG)
 
-6. Write the name for the resource allocation (NOTE: This name will be visible in accounting data.).
+2. Write the name for the resource allocation (NOTE: This name will be visible in accounting data.).
    ![Project details](../../assets/Resource%20config.PNG)
 
-7. Select correct plan (LUMI common) and write needed allocation quota (CPU, GPU and Storage).
+3. Select correct plan (LUMI common) and write needed allocation quota (CPU, GPU and Storage).
 
-8. Write short description (optional) and choose correct science field (mandatory).
+4. Write short description (optional) and choose correct science field (mandatory).
 
-9. Click on the "Add to cart".
+5. Click on the "Add to cart".
 
-10. Check once more and click on "Request an approval" if you not a PI in a project or "Request" if you PI.
+6. Check once more and click on "Request an approval" if you not a PI in a project or "Request" if you PI.
    ![Project details](../../assets/Approval%20request.PNG)
 
 After this, Resource allocator will request for resource and be able to [approve or reject](project_approval.md) it.

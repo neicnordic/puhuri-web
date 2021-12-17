@@ -21,7 +21,7 @@
 5. Set new limits and click "Submit".
    ![Allocation limits_change](../../assets/Limits_change.PNG)
 
-6. Now national resource allocator has to approve the changes.
+6. Now national resource allocator has to [approve the changes.](project_approval.md)
 
 ## Project information update process
 
@@ -36,4 +36,4 @@
 5. Update project data and "Update project details".
    ![Project details update](../../assets/project_data_update.PNG)
 
-6. Now national resource allocator has to [approve the changes](project_approval.md)
+6. Now national resource allocator has to [approve the changes.](project_approval.md)
