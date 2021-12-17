@@ -7,7 +7,7 @@
 ## User guide for adding organizations
 
 !!! note
-    Following process is only allowed for national resource allocator representatives!
+    Organization creation is only allowed for national resource allocator representatives!
 
 Organization in Puhuri Portal context means whatever grouping national resource allocator would like to have.
 This can mean for example research group, institution, department or working group. Organization has an owner
@@ -19,7 +19,6 @@ who is project principal investigator (PI). National resource allocator can assi
    ![Login](../../assets/Login.PNG){ width="400" }
 
 2. Click on "Select workspace" and then “Add new organization” in the organization selection window.
-
    ![Select organization](../../assets/Select%20workspace.PNG)
    ![Select organization](../../assets/Add_organization.PNG)
 
@@ -29,7 +28,6 @@ who is project principal investigator (PI). National resource allocator can assi
     - Contact phone - contact person’s phone (optional)
     - Website URL - url of the organization (optional)
     - Logo - logo of the organization (optional)
-
    ![Select organization](../../assets/Add_organization_data.PNG)
 
 
