@@ -125,11 +125,13 @@ result = client.marketplace_order_item_approve(
 #}
 ```
 
-
 ## Termination (cancellation) of order items for allocations
 
-In case if a customer wants to cancel a created order item, it should use `marketplace_order_item_terminate`.
-This method changes the state of order item to `terminated`. This transition works only if the state is equal to `pending` or `executing`.
+A consumer can also terminate (cancel) created order item and subsequently interrupt the requested operation over allocation.
+For example, this option is suitable if the customer wants to cancel allocation deletion.
+For this, `marketplace_order_item_terminate` method should be used.
+It changes the state of the order item to `terminated`.
+**NB**: this transition is possible only if the item's state is equal to `pending` or `executing`.
 
 ```python
 
