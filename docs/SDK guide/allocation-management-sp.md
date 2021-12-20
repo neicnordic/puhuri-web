@@ -112,9 +112,12 @@ A service provider can change the state to `OK` (created successfully) using `ma
 In order to get a proper order item, SP owner can use `list_order_items` method. This action is for order item listing and supports filtering by state and allocation.
 
 ```python
-from waldur_client import WaldurClient
-
-order_items = client.list_order_items({'state': 'executing', 'resource_uuid': '<allocation-uuid>'})
+order_items = client.list_order_items(
+    {
+        'state': 'executing',
+        'marketplace_resource_uuid': '<allocation-uuid>'
+    }
+)
 
 order_item = order_items[0]
 
@@ -124,6 +127,34 @@ result = client.marketplace_order_item_approve(
 
 # result => {
 #   'details': 'Order item has been approved.'
+#}
+```
+
+## Termination (cancellation) of order items for allocations
+
+A consumer can also terminate (cancel) created order item and subsequently interrupt the requested operation over allocation.
+For example, this option is suitable if the customer wants to cancel allocation deletion.
+For this, `marketplace_order_item_terminate` method should be used.
+It changes the state of the order item to `terminated`.
+**NB**: this transition is possible only if the item's state is equal to `pending` or `executing`.
+
+```python
+order_items = client.list_order_items(
+    {
+        'state': 'executing',
+        'marketplace_resource_uuid': '<allocation-uuid>',
+        'type': 'Terminate',
+    }
+)
+
+order_item = order_items[0]
+
+result = client.marketplace_order_item_terminate(
+    order_item_uuid=order_item['uuid'],
+)
+
+# result => {
+#   'details': 'Order item termination has been scheduled.'
 #}
 ```
 
