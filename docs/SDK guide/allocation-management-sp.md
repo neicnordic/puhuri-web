@@ -112,7 +112,12 @@ A service provider can change the state to `OK` (created successfully) using `ma
 In order to get a proper order item, SP owner can use `list_order_items` method. This action is for order item listing and supports filtering by state and allocation.
 
 ```python
-order_items = client.list_order_items({'state': 'executing', 'resource_uuid': '<allocation-uuid>'})
+order_items = client.list_order_items(
+    {
+        'state': 'executing',
+        'marketplace_resource_uuid': '<allocation-uuid>'
+    }
+)
 
 order_item = order_items[0]
 
@@ -134,8 +139,15 @@ It changes the state of the order item to `terminated`.
 **NB**: this transition is possible only if the item's state is equal to `pending` or `executing`.
 
 ```python
+order_items = client.list_order_items(
+    {
+        'state': 'executing',
+        'marketplace_resource_uuid': '<allocation-uuid>',
+        'type': 'Terminate',
+    }
+)
 
-order_item = client.get_order_item('<order_item_uuid>')
+order_item = order_items[0]
 
 result = client.marketplace_order_item_terminate(
     order_item_uuid=order_item['uuid'],
