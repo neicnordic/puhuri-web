@@ -7,7 +7,6 @@ This page describes operations to be performed by service provider.
 Please, read [initial setup for Puhuri Core SDK](initial-setup.md) and
 please reach out to [support email](mailto:support@hpc.ut.ee) to get credentials for Puhuri Core.
 
-
 ## Getting a list of users
 
 `list_users` method is used to fetch all users in Puhuri Core.
@@ -383,4 +382,164 @@ result = client.set_offerings_username(
 # result =>  {
 #  'detail': 'Offering users have been set.'
 # }
+```
+
+## Getting service provider for an organization
+
+A user can get service provider details
+using `list_service_providers` with corresponding filter.
+This method is guaranteed to return a list with at most one service provider record.
+
+```python
+service_providers = client.list_service_providers({'customer_uuid': '<organization_uuid>'})
+lumi_service_provider = service_providers[0]
+
+# lumi_service_provider => {
+#     'created': '2021-09-24T13:42:05.448269Z',
+#     'customer': 'https://puhuri-core-beta.neic.no/api/customers/ad3fec96141a41e2958a9836a5bc1dae/',
+#     'customer_abbreviation': 'LUMI',
+#     'customer_country': 'FI',
+#     'customer_image': None,
+#     'customer_name': 'Large Unified Modern Infrastructure',
+#     'customer_native_name': '',
+#     'customer_uuid': 'ad3fec96141a41e2958a9836a5bc1dae',
+#     'description': '',
+#     'division': None,
+#     'enable_notifications': False,
+#     'image': None,
+#     'url': 'https://puhuri-core-beta.neic.no/api/marketplace-service-providers/08904a1c2e704f208e5146bef93e3220/',
+#     'uuid': '08904a1c2e704f208e5146bef93e3220'
+# }
+```
+
+## Listing users of service provider's resources
+
+A service provider owner can list users currently using its resources.
+For this, `list_service_provider_users` should be used. It accepts **service_provider_uuid**,
+which can be fetched using [list_service_providers](#getting-service-provider-for-an-organization).
+
+```python
+service_providers = client.list_service_providers({'customer_uuid': '<customer_uuid>'})
+service_provider = service_providers[0]
+service_provider_uuid = service_provider['uuid']
+
+result = client.list_service_provider_users(service_provider_uuid)
+
+# result => [
+#   ...
+#   {
+#       ...
+#       'first_name': 'John',
+#       'full_name': 'John Doe',
+#       'is_active': True,
+#       'is_staff': False,
+#       'is_support': False,
+#       'job_title': '...',
+#       'last_name': 'Doe',
+#       ...
+#   }
+#   ...
+# ]
+```
+
+## Listing ssh key for users of service provider's resources
+
+A service provider owner can list ssh keys of users currently using its resources.
+For this, `list_service_provider_ssh_keys` should be used. It accepts **service_provider_uuid**,
+which can be fetched using [list_service_providers](#getting-service-provider-for-an-organization).
+
+```python
+service_providers = client.list_service_providers({'customer_uuid': '<customer_uuid>'})
+service_provider = service_providers[0]
+service_provider_uuid = service_provider['uuid']
+
+result = client.list_service_provider_ssh_keys(service_provider_uuid)
+
+# result => [
+#   ...
+#   {
+#        'fingerprint': '...',
+#        'is_shared': False,
+#        'name': 'key',
+#        'public_key': 'ssh-rsa ...',
+#        'type': 'ssh-rsa',
+#        'url': '<key_url>',
+#        'user_uuid': '<user_uuid>',
+#        'uuid': '<key_uuid>'
+#   }
+#   ...
+# ]
+```
+
+## Listing projects with service provider's resources
+
+A service provider owner can list all projects, which have its resources.
+For this, `list_service_provider_projects` should be used. It accepts **service_provider_uuid**,
+which can be fetched using [list_service_providers](#getting-service-provider-for-an-organization).
+
+```python
+service_providers = client.list_service_providers({'customer_uuid': '<customer_uuid>'})
+service_provider = service_providers[0]
+service_provider_uuid = service_provider['uuid']
+
+result = client.list_service_provider_projects(service_provider_uuid)
+
+# result => [
+#   ...
+#   {
+#       'backend_id': '',
+#       'billing_price_estimate': {...},
+#       'created': '...',
+#       'customer': '<customer_url>',
+#       'customer_abbreviation': '<customer_abbreviation>',
+#       'customer_name': '<customer_name>',
+#       'customer_native_name': '<customer_native_name>',
+#       'customer_uuid': '<customer_uuid>',
+#       'description': '<customer_description>',
+#       'end_date': '...',
+#       'name': '<project_name>',
+#       'oecd_fos_2007_code': '<oecd_fos_2007_code>',
+#       'type': '<project_type>',
+#       'url': '<project_url>',
+#       'uuid': '<project_uuid>'
+#   }
+#   ...
+# ]
+```
+
+## Listing project permissions in projects using service provider's resources
+
+A service provider owner can also list all active projects permissions in projects, which have its resources.
+For this, `list_service_provider_project_permissions` should be used. It accepts **service_provider_uuid**,
+which can be fetched using [list_service_providers](#getting-service-provider-for-an-organization).
+
+```python
+service_providers = client.list_service_providers({'customer_uuid': '<customer_uuid>'})
+service_provider = service_providers[0]
+service_provider_uuid = service_provider['uuid']
+
+result = client.list_service_provider_project_permissions(service_provider_uuid)
+
+# result => [
+#   ...
+#   {
+#       'created': '...',
+#       'created_by': '...',
+#       'customer_name': '<customer_name>',
+#       'expiration_time': '...',
+#       'pk': ...,
+#       'project': '<project_url>',
+#       'project_name': '<project_name>',
+#       'project_uuid': '<project_uuid>',
+#       'role': '...',
+#       'url': '<permission_url>',
+#       'user': '<user_url>',
+#       'user_email': '<user_email>',
+#       'user_full_name': 'John Doe',
+#       'user_native_name': 'John Doe',
+#       'user_username': 'john-doe',
+#       'user_uuid': '<user_uuid>'
+#   }
+#   ...
+# ]
 ```
