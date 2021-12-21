@@ -7,7 +7,6 @@ This page describes operations to be performed by service provider.
 Please, read [initial setup for Puhuri Core SDK](initial-setup.md) and
 please reach out to [support email](mailto:support@hpc.ut.ee) to get credentials for Puhuri Core.
 
-
 ## Getting a list of users
 
 `list_users` method is used to fetch all users in Puhuri Core.
@@ -383,4 +382,23 @@ result = client.set_offerings_username(
 # result =>  {
 #  'detail': 'Offering users have been set.'
 # }
+```
+
+## List users using service provider's allocations
+
+A service provider can list users currently using its allocations.
+For this, `list_service_provider_users` should be used. It accepts **service_provider_uuid**,
+which can be fetched using `list_service_providers` with corresponding filter for organization.
+This method is guaranteed to return a list with at most one service provider record.
+
+```python
+service_providers = client.list_service_providers({'customer_uuid': '<customer_uuid>'})
+service_provider = service_providers[0]
+service_provider_uuid = service_provider['uuid']
+
+result = client.list_service_provider_users(service_provider_uuid)
+
+# result => [
+#     <users>
+# ]
 ```
