@@ -386,12 +386,12 @@ result = client.set_offerings_username(
 
 ## Getting service provider for an organization
 
-An organization (aka customer) can get service provider details
+A user can get service provider details
 using `list_service_providers` with corresponding filter.
 This method is guaranteed to return a list with at most one service provider record.
 
 ```python
-service_providers = client.list_service_providers({'customer_uuid': '<lumi_org_uuid>'})
+service_providers = client.list_service_providers({'customer_uuid': '<organization_uuid>'})
 lumi_service_provider = service_providers[0]
 
 # lumi_service_provider => {
