@@ -6,13 +6,13 @@ We process personal data only if there is a legal basis for it and only as long 
 
 1. Definitions and interpretation
     1. In this privacy policy, the following definitions are used:
-        1. Data - collectively any information that we will collect and you submit to the University of Tartu via the Website. This definition incorporates, where applicable, the definitions provided in General Data Protection Regulation (GDPR);
-        2. Cookies - a small text file placed on your computer by this Website when you visit certain parts of the Website and/or when you use certain features of the Website. Details of the cookies used by this Website are set out in the clause below (Cookies);
-        3. the University of Tartu, we or us -  the University of Tartu,  Ülikooli 18, 50090 Tartu, Estonia;
-        4. UK and EU Cookie Law - the Privacy and Electronic Communications (EC Directive) Regulations 2003 as amended by the Privacy and Electronic Communications (EC Directive) (Amendment) Regulations 2011;
-        5. User or you - any third party that accesses the Website and is not either (i) employed by  the University of Tartu and acting in the course of their employment or (ii) engaged as a consultant or otherwise providing services to the University of Tartu and accessing the Website in connection with the provision of such services; 
-        6. Website - Puhuri statistics webpage (https://puhuri-stats.neic.no) and any sub-domains of this site unless expressly excluded by their own privacy policy.
-        7. LUMI Consortium - LUMI is one of the EuroHPC pre-exascale supercomputers, which is hosted by the LUMI consortium. Consortium provides a high-quality, cost-efficient and environmentally sustainable HPC ecosystem based on true European collaboration.
+        1. **Data** - collectively any information that we will collect and you submit to the University of Tartu via the Website. This definition incorporates, where applicable, the definitions provided in General Data Protection Regulation (GDPR);
+        2. **Cookies** - a small text file placed on your computer by this Website when you visit certain parts of the Website and/or when you use certain features of the Website. Details of the cookies used by this Website are set out in the clause below (Cookies);
+        3. **the University of Tartu, we or us** -  the University of Tartu,  Ülikooli 18, 50090 Tartu, Estonia;
+        4. **UK and EU Cookie Law** - the Privacy and Electronic Communications (EC Directive) Regulations 2003 as amended by the Privacy and Electronic Communications (EC Directive) (Amendment) Regulations 2011;
+        5. **User or you** - any third party that accesses the Website and is not either (i) employed by  the University of Tartu and acting in the course of their employment or (ii) engaged as a consultant or otherwise providing services to the University of Tartu and accessing the Website in connection with the provision of such services; 
+        6. **Website** - Puhuri statistics webpage (https://puhuri-stats.neic.no) and any sub-domains of this site unless expressly excluded by their own privacy policy.
+        7. **LUMI Consortium** - LUMI is one of the EuroHPC pre-exascale supercomputers, which is hosted by the LUMI consortium. Consortium provides a high-quality, cost-efficient and environmentally sustainable HPC ecosystem based on true European collaboration.
    
     2. In this privacy policy, unless the context requires a different interpretation:
         1. the singular includes the plural and vice versa;
@@ -66,9 +66,9 @@ We process personal data only if there is a legal basis for it and only as long 
     3. All Cookies used by this Website are used in accordance with current UK and EU Cookie Law.
     4. Before the Website places Cookies on your computer, you will be presented with a message bar requesting your consent to set those Cookies. By giving your consent to the placing of Cookies, you are enabling the University of Tartu to provide a better experience and service to you. You may, if you wish, deny consent to the placing of Cookies; however certain features of the Website may not function fully or as intended.
     5. This Website may place the following Cookies:
-        1. Strictly necessary cookies - These are cookies that are required for the operation of our Website. They include, for example, cookies that enable you to log into secure areas of our Website, use a shopping cart or make use of e-billing services.
-        2. Analytical/performance cookies - They allow us to recognize and count the number of visitors and to see how visitors move around our Website when they are using it. This helps us to improve the way our Website works, for example, by ensuring that users are finding what they are looking for easily.
-        3. Functionality cookies - These are used to recognize you when you return to our Website. This enables us to personalize our content for you, greet you by name and remember your preferences (for example, your choice of language or region).
+        1. **Strictly necessary cookies** - These are cookies that are required for the operation of our Website. They include, for example, cookies that enable you to log into secure areas of our Website, use a shopping cart or make use of e-billing services.
+        2. **Analytical/performance cookies** - They allow us to recognize and count the number of visitors and to see how visitors move around our Website when they are using it. This helps us to improve the way our Website works, for example, by ensuring that users are finding what they are looking for easily.
+        3. **Functionality cookies** - These are used to recognize you when you return to our Website. This enables us to personalize our content for you, greet you by name and remember your preferences (for example, your choice of language or region).
     6. You can choose to enable or disable Cookies in your internet browser. By default, most internet browsers accept Cookies but this can be changed. For further details, please consult the help menu in your internet browser.
     7. You can choose to delete Cookies at any time; however, you may lose any information that enables you to access the Website more quickly and efficiently including, but not limited to, personalization settings.
     8. It is recommended that you ensure that your internet browser is up-to-date and that you consult the help and guidance provided by the developer of your internet browser if you are unsure about adjusting your privacy settings.
@@ -77,8 +77,8 @@ We process personal data only if there is a legal basis for it and only as long 
     1. Your personal data will be protected and processed according to European GDPR regulation 2016/679.
     
 11. Changes to this privacy policy
-    1.The University of Tartu reserves the right to change this privacy policy as we may deem necessary from time to time or as may be required by law. The most recent version of the privacy policy is posted on the Website and you are deemed to have accepted the terms of the privacy policy on your first use of the Website following the alterations.
+    1. The University of Tartu reserves the right to change this privacy policy as we may deem necessary from time to time or as may be required by law. The most recent version of the privacy policy is posted on the Website and you are deemed to have accepted the terms of the privacy policy on your first use of the Website following the alterations.
     2. We encourage you to review this privacy policy often to stay informed of changes that may affect you.
     
 13. Contacting Us
-    If you have any questions regarding this privacy policy or you would like to receive any stored Data we have about you, please contact us by email at support@hpc.ut.ee.
+    - If you have any questions regarding this privacy policy or you would like to receive any stored Data we have about you, please contact us by email at support@hpc.ut.ee.
