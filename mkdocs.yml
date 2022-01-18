@@ -18,8 +18,8 @@ nav:
       - "terminology.md"
       - "environments.md"
       - Documents:
-          - "ddocuments/statistics_pp.md"
-          - "ddocuments/statistics_tos.md"
+          - "documents/statistics_pp.md"
+          - "documents/statistics_tos.md"
   - Resource Allocators:
       - "resource-allocators.md"
       - "integration-with-puhuri-aai.md"
