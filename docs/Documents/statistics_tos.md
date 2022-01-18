@@ -5,10 +5,10 @@ The University of Tartu reserves the right to change, add or remove portions of 
 
 1. Definitions and interpretation
     1. In this Terms of Use, the following definitions are used:
-        1. The University of Tartu, we or us or service provider - the University of Tartu, Ülikooli 18, 50090 Tartu, Estonia;
-        2. https://puhuri-stats.neic.no – our webpage through which we offer our Service;
-        3. Service – any or all of the services we offer and which the User can use through https://puhuri-stats.neic.no.
-        4. User or you - any third party that accesses the https://puhuri-stats.neic.no and is not either (i) employed by the University of Tartu and acting in the course of their employment or (ii) engaged as a consultant or otherwise providing services to the University of Tartu and accessing the https://puhuri-stats.neic.no in connection with the provision of such services.
+        1. **The University of Tartu, we or us or service** - the University of Tartu, Ülikooli 18, 50090 Tartu, Estonia;
+        2. **https://puhuri-stats.neic.no** – our webpage through which we offer our Service;
+        3. **Service** – any or all of the services we offer and which the User can use through https://puhuri-stats.neic.no.
+        4. **User or you** - any third party that accesses the https://puhuri-stats.neic.no and is not either (i) employed by the University of Tartu and acting in the course of their employment or (ii) engaged as a consultant or otherwise providing services to the University of Tartu and accessing the https://puhuri-stats.neic.no in connection with the provision of such services.
       
     2. In this Terms of Use, unless the context requires a different interpretation:
         1. the singular includes the plural and vice versa;
