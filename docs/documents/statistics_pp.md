@@ -38,7 +38,7 @@ We process personal data only if there is a legal basis for it and only as long 
 
 4. Data sharing
     1. We do not sell, trade, or otherwise transfer to third parties your Data, unless we have prior written consent from you or we are required to do so under applicable law.
-    2. This does not include LUMI Consortium who helps us provide you with the services. Your Data is shared with Lumi Consortium for resource allocation purposes.
+    2. This does not include LUMI Consortium who helps us provide you with the services.
    
 5. Links to other websites
     1. The data protection policy does not deal with the way the processor processes data of legal persons or how other persons process personal data. Nor does the policy cover the processing of personal data on external websites to which there are links on the portal’s web pages.
@@ -62,7 +62,7 @@ We process personal data only if there is a legal basis for it and only as long 
    
 9. Cookies
     1. You may restrict your internet browser's use of Cookies.
-    2. This Website may place and access certain Cookies on your computer. the University of Tartu uses Cookies to improve your experience of using the Website and to improve our range of services. the University of Tartu has carefully chosen these Cookies and has taken steps to ensure that your privacy is protected and respected at all times.
+    2. This Website may place and access certain Cookies on your computer. The University of Tartu uses Cookies to improve your experience of using the Website and to improve our range of services. The University of Tartu has carefully chosen these Cookies and has taken steps to ensure that your privacy is protected and respected at all times.
     3. All Cookies used by this Website are used in accordance with current UK and EU Cookie Law.
     4. Before the Website places Cookies on your computer, you will be presented with a message bar requesting your consent to set those Cookies. By giving your consent to the placing of Cookies, you are enabling the University of Tartu to provide a better experience and service to you. You may, if you wish, deny consent to the placing of Cookies; however certain features of the Website may not function fully or as intended.
     5. This Website may place the following Cookies:
@@ -75,6 +75,7 @@ We process personal data only if there is a legal basis for it and only as long 
    
 10. Data Protection Regulation
     1. Your personal data will be protected and processed according to European GDPR regulation 2016/679.
+    2. Your personal data will be protected according to the [Code of Conduct for Service Providers](https://geant3plus.archive.geant.net/Pages/uri/V1.html), a common standard for the research and higher education sector to protect your privacy.
     
 11. Changes to this privacy policy
     1. The University of Tartu reserves the right to change this privacy policy as we may deem necessary from time to time or as may be required by law. The most recent version of the privacy policy is posted on the Website and you are deemed to have accepted the terms of the privacy policy on your first use of the Website following the alterations.
