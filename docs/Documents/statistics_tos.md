@@ -4,33 +4,33 @@ The University of Tartu reserves the right to change, add or remove portions of 
 
 
 1. Definitions and interpretation
-   1. In this Terms of Use, the following definitions are used:
-      1. The University of Tartu, we or us or service provider - the University of Tartu, Ülikooli 18, 50090 Tartu, Estonia;
-      2. https://puhuri-stats.neic.no – our webpage through which we offer our Service;
-      3. Service – any or all of the services we offer and which the User can use through https://puhuri-stats.neic.no.
-      4. User or you - any third party that accesses the https://puhuri-stats.neic.no and is not either (i) employed by the University of Tartu and acting in the course of their employment or (ii) engaged as a consultant or otherwise providing services to the University of Tartu and accessing the https://puhuri-stats.neic.no in connection with the provision of such services.
+    1. In this Terms of Use, the following definitions are used:
+        1. The University of Tartu, we or us or service provider - the University of Tartu, Ülikooli 18, 50090 Tartu, Estonia;
+        2. https://puhuri-stats.neic.no – our webpage through which we offer our Service;
+        3. Service – any or all of the services we offer and which the User can use through https://puhuri-stats.neic.no.
+        4. User or you - any third party that accesses the https://puhuri-stats.neic.no and is not either (i) employed by the University of Tartu and acting in the course of their employment or (ii) engaged as a consultant or otherwise providing services to the University of Tartu and accessing the https://puhuri-stats.neic.no in connection with the provision of such services.
       
-   2. In this Terms of Use, unless the context requires a different interpretation:
-      1. the singular includes the plural and vice versa;
-      2. references to sub-clauses, clauses, schedules or appendices are to sub-clauses, clauses, schedules or appendices of this Terms of Use;
-      3. a reference to a person includes firms, companies, government entities, trusts and partnerships;
-      4. "including" is understood to mean "including without limitation";
-      5. reference to any statutory provision includes any modification or amendment of it.
+    2. In this Terms of Use, unless the context requires a different interpretation:
+        1. the singular includes the plural and vice versa;
+        2. references to sub-clauses, clauses, schedules or appendices are to sub-clauses, clauses, schedules or appendices of this Terms of Use;
+        3. a reference to a person includes firms, companies, government entities, trusts and partnerships;
+        4. "including" is understood to mean "including without limitation";
+        5. reference to any statutory provision includes any modification or amendment of it.
 
-2. Who can use Services?
+3. Who can use Services?
    The main purpose of the Service is to provide statistics of the used computational resources, which are allocated using Puhuri, to the national resource allocators.
 
-3. How to use Services?
+4. How to use Services?
    To gain access to the Service you have to register yourself by creating an account in https://puhuri-stats.neic.no. For that, you must identify yourself with the MyAccessID (Access Management Service provided by GEANT) authentication system.
    Private organizations who cannot identify themselves with MyAccessID please contact us at support@hpc.ut.ee
 
-4. Service providers’ rights and responsibilities
+5. Service providers’ rights and responsibilities
    1. Users’ personal data will be processed in accordance with the Privacy Policy.
    2. The service provider can restrict or suspend Users access to Services, for administrative, operational, or security reasons, without prior notice and without compensation.
    3. The service provider can restrict access of Users who have violated the Terms of Use.
    4. The service provider provides users with user guides (published on the website) and additional guidance (by email, phone, in-person) when needed.
    
-5. Users’ rights and responsibilities
+6. Users’ rights and responsibilities
    1. Users must follow the Terms of Use, read and accept the Privacy Policy and follow all legal acts of Estonia and EU without exception when using Services.
    2. Users shall show consideration towards other users including by not causing harm to the Services.
    3. Users have an obligation to collaborate in the resolution of issues arising from your use of the Services.
