@@ -18,26 +18,26 @@ The University of Tartu reserves the right to change, add or remove portions of 
         5. reference to any statutory provision includes any modification or amendment of it.
 
 3. Who can use Services?
-   The main purpose of the Service is to provide statistics of the used computational resources, which are allocated using Puhuri, to the national resource allocators.
+    The main purpose of the Service is to provide statistics of the used computational resources, which are allocated using Puhuri, to the national resource allocators.
 
 4. How to use Services?
-   To gain access to the Service you have to register yourself by creating an account in https://puhuri-stats.neic.no. For that, you must identify yourself with the MyAccessID (Access Management Service provided by GEANT) authentication system.
-   Private organizations who cannot identify themselves with MyAccessID please contact us at support@hpc.ut.ee
+    To gain access to the Service you have to register yourself by creating an account in https://puhuri-stats.neic.no. For that, you must identify yourself with the MyAccessID (Access Management Service provided by GEANT) authentication system.
+    Private organizations who cannot identify themselves with MyAccessID please contact us at support@hpc.ut.ee
 
 5. Service providers’ rights and responsibilities
-   1. Users’ personal data will be processed in accordance with the Privacy Policy.
-   2. The service provider can restrict or suspend Users access to Services, for administrative, operational, or security reasons, without prior notice and without compensation.
-   3. The service provider can restrict access of Users who have violated the Terms of Use.
-   4. The service provider provides users with user guides (published on the website) and additional guidance (by email, phone, in-person) when needed.
+    1. Users’ personal data will be processed in accordance with the Privacy Policy.
+    2. The service provider can restrict or suspend Users access to Services, for administrative, operational, or security reasons, without prior notice and without compensation.
+    3. The service provider can restrict access of Users who have violated the Terms of Use.
+    4. The service provider provides users with user guides (published on the website) and additional guidance (by email, phone, in-person) when needed.
    
 6. Users’ rights and responsibilities
-   1. Users must follow the Terms of Use, read and accept the Privacy Policy and follow all legal acts of Estonia and EU without exception when using Services.
-   2. Users shall show consideration towards other users including by not causing harm to the Services.
-   3. Users have an obligation to collaborate in the resolution of issues arising from your use of the Services.
-   4. Users shall only use the Services for lawful purposes and not breach, attempt to breach, nor circumvent administrative or security controls.
-   5. Users must keep their login data private (e.g. passwords, private keys). Sharing of login credentials is strictly forbidden and also accessing Services with someone else's login credentials is strictly forbidden.
-   6. Users shall keep their registered information correct and up to date.
-   7. Users shall promptly report known or suspected security breaches, credential compromises and report any compromised credentials to the University of Tartu staff.
-   8. Users may not probe, scan or test the vulnerability of the Services.
-   9. Users may not reverse look-up, trace or seek to trace any information on any other Users of the Services.
-   10. Users are accountable for their actions and the consequences of those actions. Violations of Terms of Use, Privacy Policy, procedure, and security rules may result in applicable administrative sanctions or legal actions.
+    1. Users must follow the Terms of Use, read and accept the Privacy Policy and follow all legal acts of Estonia and EU without exception when using Services.
+    2. Users shall show consideration towards other users including by not causing harm to the Services.
+    3. Users have an obligation to collaborate in the resolution of issues arising from your use of the Services.
+    4. Users shall only use the Services for lawful purposes and not breach, attempt to breach, nor circumvent administrative or security controls.
+    5. Users must keep their login data private (e.g. passwords, private keys). Sharing of login credentials is strictly forbidden and also accessing Services with someone else's login credentials is strictly forbidden.
+    6. Users shall keep their registered information correct and up to date.
+    7. Users shall promptly report known or suspected security breaches, credential compromises and report any compromised credentials to the University of Tartu staff.
+    8. Users may not probe, scan or test the vulnerability of the Services.
+    9. Users may not reverse look-up, trace or seek to trace any information on any other Users of the Services.
+    10. Users are accountable for their actions and the consequences of those actions. Violations of Terms of Use, Privacy Policy, procedure, and security rules may result in applicable administrative sanctions or legal actions.
