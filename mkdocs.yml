@@ -15,9 +15,11 @@ nav:
   - About:
       - "architecture.md"
       - "branding.md"
-      - "documents.md"
       - "terminology.md"
       - "environments.md"
+      - Documents:
+          - "Documents/statistics_pp.md"
+          - "Documents/statistics_tos.md"
   - Resource Allocators:
       - "resource-allocators.md"
       - "integration-with-puhuri-aai.md"
