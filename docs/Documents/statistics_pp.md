@@ -1,4 +1,4 @@
-# Privacy Policy of the Puhuri statistics webpage on https://puhuri-stats.neic.no
+# Privacy Policy of the Puhuri statistics webpage
 
 This privacy policy applies between you, the User of Puhuri statistics webpage on https://puhuri-stats.neic.no, hereinafter Website) and the University of Tartu, the owner and provider of this Website. This privacy policy applies to our use of any Data collected by us or provided by you in relation to your use of the Website. Please read this privacy policy carefully.
 

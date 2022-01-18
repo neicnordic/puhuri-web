@@ -1,4 +1,4 @@
-# Terms of Use of the Puhuri statistics webpage on https://puhuri-stats.neic.no
+# Terms of Use of the Puhuri statistics webpage
 
 The University of Tartu reserves the right to change, add or remove portions of these Terms of Use, at any time. It is your responsibility to check these Terms of Use periodically for changes. The most recent version of the Terms of Use is posted on this website and you are deemed to have accepted the Terms of Use on your first use of the https://puhuri-stats.neic.no following the alterations.
 
