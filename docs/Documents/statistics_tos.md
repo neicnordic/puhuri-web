@@ -3,8 +3,7 @@
 The University of Tartu reserves the right to change, add or remove portions of these Terms of Use, at any time. It is your responsibility to check these Terms of Use periodically for changes. The most recent version of the Terms of Use is posted on this website and you are deemed to have accepted the Terms of Use on your first use of the https://puhuri-stats.neic.no following the alterations.
 
 
-1. Definitions and interpretation.
-
+1. Definitions and interpretation
    1. In this Terms of Use, the following definitions are used:
       1. The University of Tartu, we or us or service provider - the University of Tartu, Ülikooli 18, 50090 Tartu, Estonia;
       2. https://puhuri-stats.neic.no – our webpage through which we offer our Service;
