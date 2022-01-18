@@ -11,7 +11,7 @@ We process personal data only if there is a legal basis for it and only as long 
         3. **the University of Tartu, we or us** -  the University of Tartu,  Ülikooli 18, 50090 Tartu, Estonia;
         4. **UK and EU Cookie Law** - the Privacy and Electronic Communications (EC Directive) Regulations 2003 as amended by the Privacy and Electronic Communications (EC Directive) (Amendment) Regulations 2011;
         5. **User or you** - any third party that accesses the Website and is not either (i) employed by  the University of Tartu and acting in the course of their employment or (ii) engaged as a consultant or otherwise providing services to the University of Tartu and accessing the Website in connection with the provision of such services; 
-        6. **Website** - Puhuri statistics webpage (https://puhuri-stats.neic.no) and any sub-domains of this site unless expressly excluded by their own privacy policy.
+        6. **Website** - Puhuri statistics webpage ([https://puhuri-stats.neic.no](https://puhuri-stats.neic.no)) and any sub-domains of this site unless expressly excluded by their own privacy policy.
         7. **LUMI Consortium** - LUMI is one of the EuroHPC pre-exascale supercomputers, which is hosted by the LUMI consortium. Consortium provides a high-quality, cost-efficient and environmentally sustainable HPC ecosystem based on true European collaboration.
    
     2. In this privacy policy, unless the context requires a different interpretation:
@@ -81,4 +81,4 @@ We process personal data only if there is a legal basis for it and only as long 
     2. We encourage you to review this privacy policy often to stay informed of changes that may affect you.
     
 13. Contacting Us
-    - If you have any questions regarding this privacy policy or you would like to receive any stored Data we have about you, please contact us by email at support@hpc.ut.ee.
+    - If you have any questions regarding this privacy policy or you would like to receive any stored Data we have about you, please contact us by email at [support@hpc.ut.ee](mailto:support@hpc.ut.ee).

@@ -6,9 +6,9 @@ The University of Tartu reserves the right to change, add or remove portions of 
 1. Definitions and interpretation
     1. In this Terms of Use, the following definitions are used:
         1. **The University of Tartu, we or us or service** - the University of Tartu, Ülikooli 18, 50090 Tartu, Estonia;
-        2. **https://puhuri-stats.neic.no** – our webpage through which we offer our Service;
-        3. **Service** – any or all of the services we offer and which the User can use through https://puhuri-stats.neic.no.
-        4. **User or you** - any third party that accesses the https://puhuri-stats.neic.no and is not either (i) employed by the University of Tartu and acting in the course of their employment or (ii) engaged as a consultant or otherwise providing services to the University of Tartu and accessing the https://puhuri-stats.neic.no in connection with the provision of such services.
+        2. **[https://puhuri-stats.neic.no](https://puhuri-stats.neic.no)** – our webpage through which we offer our Service;
+        3. **Service** – any or all of the services we offer and which the User can use through [https://puhuri-stats.neic.no](https://puhuri-stats.neic.no).
+        4. **User or you** - any third party that accesses the [https://puhuri-stats.neic.no](https://puhuri-stats.neic.no) and is not either (i) employed by the University of Tartu and acting in the course of their employment or (ii) engaged as a consultant or otherwise providing services to the University of Tartu and accessing the [https://puhuri-stats.neic.no](https://puhuri-stats.neic.no) in connection with the provision of such services.
       
     2. In this Terms of Use, unless the context requires a different interpretation:
         1. the singular includes the plural and vice versa;
@@ -21,8 +21,8 @@ The University of Tartu reserves the right to change, add or remove portions of 
     The main purpose of the Service is to provide statistics of the used computational resources, which are allocated using Puhuri, to the national resource allocators.
 
 4. How to use Services?
-    To gain access to the Service you have to register yourself by creating an account in https://puhuri-stats.neic.no. For that, you must identify yourself with the MyAccessID (Access Management Service provided by GEANT) authentication system.
-    Private organizations who cannot identify themselves with MyAccessID please contact us at support@hpc.ut.ee
+    To gain access to the Service you have to register yourself by creating an account in [https://puhuri-stats.neic.no](https://puhuri-stats.neic.no). For that, you must identify yourself with the MyAccessID (Access Management Service provided by GEANT) authentication system.
+    Private organizations who cannot identify themselves with MyAccessID please contact us at [support@hpc.ut.ee](mailto:support@hpc.ut.ee)
 
 5. Service providers’ rights and responsibilities
     1. Users’ personal data will be processed in accordance with the Privacy Policy.
