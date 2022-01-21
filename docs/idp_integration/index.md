@@ -35,6 +35,9 @@ Contact person for additional information: marina at sunet.se.
 - [Profile management at MyAccessID - Production Environment](https://mms.myaccessid.org/profile/)
 - [Profile management at MyAccessID - Acceptance Environment](https://mms.acc.myaccessid.org/profile/)
 - [Demo SP for attribute release check](https://myaccessid.devtest.eduteams.org/)
+- [Registration of a new client in Production](https://webapp.prod.puhuri.eduteams.org/sp_request)
+- [Registration of a new client in Acceptance](https://webapp.acc.puhuri.eduteams.org/sp_request)
+
 
 # Puhuri CORE specifics
 
