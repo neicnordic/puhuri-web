@@ -50,6 +50,9 @@ Project team contains users with different roles:
 5. Finally, click on "Add".
 6. User now will get invitation email with the acceptance link.
 
+!!! note
+    Invitation is valid for 1 week!
+
 ### If user does not have Puhuri account, then:
 
 1. Login to Puhuri Portal with MyAccessID.
@@ -67,3 +70,6 @@ Project team contains users with different roles:
 
 5. Click "Invite user".
 6. User now will get invitation email with the acceptance link.
+
+!!! note
+    Invitation is valid for 1 week!
