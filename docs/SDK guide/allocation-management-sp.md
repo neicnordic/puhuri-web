@@ -279,7 +279,7 @@ if len(plan_periods) > 0:
 
     client.create_component_usages(
         plan_period_uuid=plan_period['uuid'],
-        usages=[ComponentUsage(component_type=comp_type, amount=10, description='Usage') for comp_type in component_types]
+        usages=[ComponentUsage(type=comp_type, amount=10, description='Usage') for comp_type in component_types]
     )
 
 result = client.marketplace_resource_get_plan_periods('<resource-uuid>')
