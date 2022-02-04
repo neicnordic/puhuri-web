@@ -384,16 +384,6 @@ result = client.set_offerings_username(
 # }
 ```
 
-## Listing associations between users and resources
-
-To list the created associations between users and resources, the service provider should use `list_remote_offering_users` method. It receives an optional `filters` argument, a dictionary containing filters for the associations. The possible items are:
-
-- `user_uuid` - UUID of a user associated with resources belonging to SP
-- `offering` - SP resource URL
-- `offering_uuid` - UUID of a resource
-- `created` - date after what the association was created; the format is `YYYY-MM-DD`, e.g. `2022-01-30`
-- `modified` - date after what the association was created; the format is the same as for the `created` field
-
 ## Getting service provider for an organization
 
 A user can get service provider details
