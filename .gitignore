@@ -2,3 +2,4 @@
 venv
 site
 utils/
+.DS_Store
