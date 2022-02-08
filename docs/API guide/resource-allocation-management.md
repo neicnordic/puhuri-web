@@ -125,70 +125,7 @@ X-XSS-Protection: 1; mode=block
         "name": "LUMI Denmark",
         "native_description": "",
         "native_name": "",
-        "options": {
-            "options": {
-                "nationality": {
-                    "help_text": "Due to potential limitations of access to HPC systems and software, please provide nationalities of expected users",
-                    "label": "Nationalities of users",
-                    "required": true,
-                    "type": "string"
-                },
-                "oecd_science_domain_configuration": {
-                    "choices": [
-                        "1.1 Mathematics",
-                        "1.2 Computer and information sciences",
-                        "1.3 Physical sciences",
-                        "1.4 Chemical sciences",
-                        "1.5 Earth and related environmental sciences",
-                        "1.6 Biological sciences",
-                        "1.7 Other natural sciences",
-                        "2.1 Civil engineering",
-                        "2.2 Electrical engineering, electronic engineering, information engineering",
-                        "2.3 Mechanical engineering",
-                        "2.4 Chemical engineering",
-                        "2.5 Materials engineering",
-                        "2.6 Medical engineering",
-                        "2.7 Environmental engineering",
-                        "2.8 Environmental biotechnology",
-                        "2.9 Industrial Biotechnology",
-                        "2.10 Nano-technology",
-                        "2.11 Other engineering and technologies",
-                        "3.1 Basic medicine",
-                        "3.2 Clinical medicine",
-                        "3.3 Health sciences",
-                        "3.4 Health biotechnology",
-                        "3.5 Other medical sciences",
-                        "4.1 Agriculture, forestry, and fisheries",
-                        "4.2 Animal and dairy science",
-                        "4.3 Veterinary science",
-                        "4.4 Agricultural biotechnology",
-                        "4.5 Other agricultural sciences",
-                        "5.1 Psychology",
-                        "5.2 Economics and business",
-                        "5.3 Educational sciences",
-                        "5.3 Sociology",
-                        "5.5 Law",
-                        "5.6 Political Science",
-                        "5.7 Social and economic geography",
-                        "5.8 Media and communications",
-                        "5.7 Other social sciences",
-                        "6.1 History and archaeology",
-                        "6.2 Languages and literature",
-                        "6.3 Philosophy, ethics and religion",
-                        "6.4 Art (arts, history of arts, performing arts, music)",
-                        "6.5 Other humanities"
-                    ],
-                    "help_text": "Please select your intended science domain in (OECD 2007 classification)",
-                    "label": "Science Domain",
-                    "required": true,
-                    "type": "select_string"
-                }
-            },
-            "order": [
-                "oecd_science_domain_configuration",
-                "nationality"
-            ]
-        },
+        "options": {},
         "order_item_count": 1.0,
         "paused_reason": "",
         "plans": [
@@ -255,8 +192,6 @@ $ http --pretty=format -v POST https://puhuri-core-beta.neic.no/api/marketplace-
             "offering": "https://puhuri-core-beta.neic.no/api/marketplace-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
             "attributes": {
                 "name": "Resource allocation1",
-                "nationality": "Some nationality",
-                "oecd_science_domain_configuration": "1.1 Mathematics"
             },
             "plan": "https://puhuri-core-beta.neic.no/api/marketplace-plans/c0fb33c79e9b48f69fcb6da26db5a28b/",
             "limits": {
@@ -283,8 +218,6 @@ User-Agent: HTTPie/2.4.0
         {
             "attributes": {
                 "name": "Resource allocation1",
-                "nationality": "Some nationality",
-                "oecd_science_domain_configuration": "1.1 Mathematics"
             },
             "limits": {
                 "cpu_k_hours": 3,
@@ -333,8 +266,6 @@ X-XSS-Protection: 1; mode=block
         {
             "attributes": {
                 "name": "Resource allocation1",
-                "nationality": "Some nationality",
-                "oecd_science_domain_configuration": "1.1 Mathematics"
             },
             "category_title": "HPC",
             "category_uuid": "5b61d0811cfe4ed6a004119795a4c532",
@@ -419,8 +350,6 @@ X-XSS-Protection: 1; mode=block
     "activation_price": 0,
     "attributes": {
         "name": "Resource allocation1",
-        "nationality": "Some nationality",
-        "oecd_science_domain_configuration": "1.1 Mathematics"
     },
     "can_terminate": false,
     "category_title": "HPC",

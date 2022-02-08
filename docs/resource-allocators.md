@@ -237,7 +237,6 @@ Example of the order payload sent with `POST` to ``https://puhuri-core-beta.neic
          "offering": "https://puhuri-core-beta.neic.no/api/marketplace-offerings/0980e9426d5247a0836ccfd64769d900/",
          "attributes": {
             "name": "test20",
-            "oecd_science_domain_configuration": "1.1 Mathematics"
          },
          "limits":{
             "gb_k_hours": 30,
