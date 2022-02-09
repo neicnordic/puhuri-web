@@ -74,7 +74,7 @@ Please note that the project becomes active at the moment of creation!
 Examples:
 
 - [API call for project creation](API guide/project.md#create-a-new-project)
-- [Project creation in Puhuri Portal](https://github.com/waldur/waldur-mastermind/blob/7b2eba62e1e0dab945845f05030c7935e57f0d9c/src/waldur_mastermind/marketplace_remote/processors.py#L13).
+- [Project creation in Puhuri Portal](https://github.com/waldur/waldur-mastermind/blob/54689ac472b1a07fa815a5ddebcf35ea888d3dcc/src/waldur_mastermind/marketplace_remote/utils.py#L122).
 
 ### Project update
 

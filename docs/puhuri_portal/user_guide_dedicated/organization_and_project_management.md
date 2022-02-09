@@ -13,7 +13,7 @@ Organization in Puhuri Portal context means whatever grouping national resource 
 This can mean for example research group, institution, department or working group. Organization has an owner
 who is project principal investigator (PI). National resource allocator can assign owners to organizations.
 
-## Create a new organization 
+## Create a new organization
 
 1. Login to Puhuri Portal using MyAccessID.
    ![Login](../../assets/Login.PNG){ width="400" }
