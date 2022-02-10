@@ -53,8 +53,9 @@ Prerequisites for creating projects:
 
     - Project name - The original title of the project.
     - Project description - A brief description about the project.
+    - OECD FoS code - OECD science field code
     - End date - this is the end date for using the computational resources.
-   ![Project details](../../assets/Project%20details.PNG)
+   ![Project details](../../assets/Create_prj_new.PNG)
 
 
 ## Requesting an allocation
@@ -80,11 +81,11 @@ Below is an example of requesting an allocation from LUMI supercomputer:
   ![Project details](../../assets/Available%20resources.PNG)
 
 2. Write the name for the resource allocation (NOTE: This name will be visible in accounting data.).
-   ![Project details](../../assets/Resource%20config.PNG)
+   ![Project details](../../assets/Offering_conf.PNG)
 
 3. Select correct plan (LUMI common) and write needed allocation quota (CPU, GPU and Storage).
 
-4. Write short description (optional) and choose correct science field (mandatory).
+4. Write short description (optional).
 
 5. Click on the "Add to cart".
 
