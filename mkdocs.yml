@@ -29,6 +29,8 @@ nav:
           - "API guide/project.md"
           - "API guide/project-permissions.md"
           - "API guide/resource-allocation-management.md"
+      - SDK Guide:
+          - "SDK guide/allocation-management-ra.md"
   - Service Providers:
       - "service-providers.md"
       - SDK Guide:
