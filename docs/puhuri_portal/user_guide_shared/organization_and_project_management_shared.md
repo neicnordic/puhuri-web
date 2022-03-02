@@ -13,7 +13,7 @@ Organization in Puhuri Portal context means whatever grouping national resource 
 This can mean for example research group, institution, department or working group. Organization has an owner
 who is project principal investigator (PI). National resource allocator can assign owners to organizations.
 
-## Create a new organization 
+## Create a new organization
 
 1. Login to Puhuri Portal using MyAccessID.
    ![Login](../../assets/Login.PNG){ width="400" }
@@ -53,6 +53,7 @@ Prerequisites for creating projects:
 
     - Project name - The original title of the project.
     - Project description - A brief description about the project.
+    - OECD FoS code - science domain relative to OECD classification system ([more info](https://joinup.ec.europa.eu/collection/eu-semantic-interoperability-catalogue/solution/field-science-and-technology-classification/about))
     - End date - this is the end date for using the computational resources.
    ![Project details](../../assets/Project%20details.PNG)
 

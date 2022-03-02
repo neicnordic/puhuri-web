@@ -53,6 +53,7 @@ Prerequisites for creating projects:
 
     - Project name - The original title of the project.
     - Project description - A brief description about the project.
+    - OECD FoS code - science domain relative to OECD classification system ([more info](https://joinup.ec.europa.eu/collection/eu-semantic-interoperability-catalogue/solution/field-science-and-technology-classification/about))
     - End date - this is the end date for using the computational resources.
    ![Project details](../../assets/Project%20details.PNG)
 
