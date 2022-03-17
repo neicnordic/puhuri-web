@@ -39,4 +39,4 @@
 5. Update project end date and "Update project details".
    ![Project details update](../../assets/project_data_update.PNG)
 
-6. Now national resource allocator has to [approve the changes.](https://puhuri.neic.no/puhuri_portal/user_guide_dedicated/project_approval/#approving-project-and-allocation-update-requests)
+6. Now the national resource allocator has to [approve the changes.](https://puhuri.neic.no/puhuri_portal/user_guide_dedicated/project_approval/#approving-project-and-allocation-update-requests)
