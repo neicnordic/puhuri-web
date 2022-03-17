@@ -74,7 +74,7 @@ Please note that the project becomes active at the moment of creation!
 Examples:
 
 - [API call for project creation](API guide/project.md#create-a-new-project)
-- [Project creation in Puhuri Portal](https://github.com/waldur/waldur-mastermind/blob/7b2eba62e1e0dab945845f05030c7935e57f0d9c/src/waldur_mastermind/marketplace_remote/processors.py#L13).
+- [Project creation in Puhuri Portal](https://github.com/waldur/waldur-mastermind/blob/54689ac472b1a07fa815a5ddebcf35ea888d3dcc/src/waldur_mastermind/marketplace_remote/utils.py#L122).
 
 ### Project update
 
@@ -237,7 +237,6 @@ Example of the order payload sent with `POST` to ``https://puhuri-core-beta.neic
          "offering": "https://puhuri-core-beta.neic.no/api/marketplace-offerings/0980e9426d5247a0836ccfd64769d900/",
          "attributes": {
             "name": "test20",
-            "oecd_science_domain_configuration": "1.1 Mathematics"
          },
          "limits":{
             "gb_k_hours": 30,

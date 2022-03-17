@@ -83,7 +83,7 @@ X-XSS-Protection: 1; mode=block
 ## Create a new project
 
 ```bash
-$ http --pretty=format -v POST https://puhuri-core-beta.neic.no/api/projects/ Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811" customer=https://puhuri-core-beta.neic.no/api/customers/d42a18b6b8ba4c2bb0591b3ff8fb181d/ name="Project name" description="Project description" backend_id="My unique string"
+$ http --pretty=format -v POST https://puhuri-core-beta.neic.no/api/projects/ Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811" customer=https://puhuri-core-beta.neic.no/api/customers/d42a18b6b8ba4c2bb0591b3ff8fb181d/ name="Project name" description="Project description" backend_id="My unique string" oecd_fos_2007_code="1.1"
 POST /api/projects/ HTTP/1.1
 Accept: application/json, */*;q=0.5
 Accept-Encoding: gzip, deflate
@@ -98,7 +98,8 @@ User-Agent: HTTPie/2.4.0
     "backend_id": "My unique string",
     "customer": "https://puhuri-core-beta.neic.no/api/customers/d42a18b6b8ba4c2bb0591b3ff8fb181d/",
     "description": "Project description",
-    "name": "Project name"
+    "name": "Project name",
+    "oecd_fos_2007_code": "1.1"
 }
 
 HTTP/1.1 201 Created
@@ -137,6 +138,7 @@ X-XSS-Protection: 1; mode=block
     "customer_uuid": "d42a18b6b8ba4c2bb0591b3ff8fb181d",
     "description": "Project description",
     "name": "Project name",
+    "oecd_fos_2007_code": "1.1",
     "type": null,
     "url": "https://puhuri-core-beta.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/",
     "uuid": "4475ac77fa3a491aacb3fb3a6dfadadf"
