@@ -11,7 +11,7 @@
 
 Organization in Puhuri Portal context means whatever grouping national resource allocator would like to have.
 This can mean for example research group, institution, department or working group. Organization has an owner
-who is project principal investigator (PI). Please note that PIs of the organization can see project information belonging to that organization and manage members of the projects. Therefore, if you want to avoid that, you must create different organizations for the PIs. National resource allocator can assign owners to organizations.
+who is project principal investigator (PI). Please note that PIs of the organization can see the project information belonging to that organization and can manage members of the projects. Therefore, if you want to avoid that, you must create a different organizations for the PIs. National resource allocator can assign owners to organizations.
 
 ## Create a new organization
 
