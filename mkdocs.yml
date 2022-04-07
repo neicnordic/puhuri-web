@@ -36,18 +36,6 @@ nav:
       - SDK Guide:
           - "SDK guide/initial-setup.md"
           - "SDK guide/allocation-management-sp.md"
-  - Puhuri Portal:
-      - User Guide (Dedicated):
-          - "puhuri_portal/user_guide_dedicated/organization_and_project_management.md"
-          - "puhuri_portal/user_guide_dedicated/inviting_members.md"
-          - "puhuri_portal/user_guide_dedicated/project_modification.md"
-          - "puhuri_portal/user_guide_dedicated/project_approval.md"
-      - User Guide (Shared):
-          - "puhuri_portal/user_guide_shared/organization_and_project_management_shared.md"
-          - "puhuri_portal/user_guide_shared/membership_management_shared.md"
-          - "puhuri_portal/user_guide_shared/project_modification_shared.md"
-          - "puhuri_portal/user_guide_shared/project_approval_shared.md"
-      - "puhuri_portal/notifications.md"
   - IdP Integration:
       - "idp_integration/index.md"
       - eduGAIN integration: idp_integration/requirements-edugain.md
@@ -55,3 +43,16 @@ nav:
       - Attributes: idp_integration/attributes.md
       - Use cases:
           - National Portal and LUMI: idp_integration/use-cases/national-portal-integration.md
+  - User Guides:
+      - "user_guides/myaccessid_registration.md"
+      - Dedicated Puhuri Portal:
+          - "user_guides/user_guide_dedicated/organization_and_project_management.md"
+          - "user_guides/user_guide_dedicated/inviting_members.md"
+          - "user_guides/user_guide_dedicated/project_modification.md"
+          - "user_guides/user_guide_dedicated/project_approval.md"
+      - Shared Puhuri Portal:
+          - "user_guides/user_guide_shared/organization_and_project_management_shared.md"
+          - "user_guides/user_guide_shared/membership_management_shared.md"
+          - "user_guides/user_guide_shared/project_modification_shared.md"
+          - "user_guides/user_guide_shared/project_approval_shared.md"
+      - "user_guides/notifications.md"
