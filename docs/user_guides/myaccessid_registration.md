@@ -3,7 +3,8 @@
 !!! warning
     User guide is in development. Early feedback is welcome, send email to ilja.livenson@ut.ee.
 
-Currently, MyAccessID provides 3 different ways to register account: 
+Currently, MyAccessID provides 3 different ways to register account:
+
 1. via academic institution available in eduGAIN
 2. via national identity provider (eIDAS)
 3. via eduID Sweden
