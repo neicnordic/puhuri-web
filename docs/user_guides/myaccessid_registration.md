@@ -53,6 +53,9 @@ Then you're forwarded to eduID Sweden login page where you can log in with alrea
 
 When selecting "Register", please use your email and follow the instructions.
 
+!!! note
+    Please remember to use your organizational email, not the private one.
+
 ![MyAccessID login](../assets/eduid register.PNG){ width="600" }
 
 You're asked to accept the eduID rules and prove that you're a human.
