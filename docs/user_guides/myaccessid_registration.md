@@ -62,6 +62,9 @@ You're asked to accept the eduID rules and prove that you're a human.
 
 You're asked to enter your first name, last name and other relevant information. Required information may change over time.
 
+!!! note
+    There is NO need to put an ID number, mobile phone or anything else in the “identity” or “advanced settings” tabs.
+
 ![MyAccessID login](../assets/eduid name.PNG){ width="600" }
 
 If everything is correct, you're redirected back to MyAccessID to accept Terms of Use documents and Privacy Policies.
