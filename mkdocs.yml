@@ -1,4 +1,8 @@
 site_name: Puhuri Documentation
+extra:
+  analytics:
+    provider: google
+    property: G-9MPBK2ZXGH
 theme:
   name: material
   favicon: assets/favicon.png
