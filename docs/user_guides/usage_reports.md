@@ -14,7 +14,7 @@ To check the current resource allocation limit:
 
 1. Make sure of being in your Project Workspace 
  
-  ![Plan Details_Button](../assets/plan_details_button.jpg){ width="600" }
+  ![Plan Details_Button](../assets/plan_details_button.jpg)
   
 2. Click "Plan Details" to see the plan details for Allocation components (CPU, GPU, and storage).
   
