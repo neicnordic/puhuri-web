@@ -18,4 +18,4 @@ To check the current resource allocation limit:
   
 2. Click "Plan Details" to see the plan details for Allocation components (CPU, GPU, and storage).
   
-  ![Plan Details](../assets/plan_details.jpg){ width="600" }
+  ![Plan Details](../assets/plan_details.jpg)
