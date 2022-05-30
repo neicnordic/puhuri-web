@@ -8,7 +8,7 @@ Currently, in Puhuri Portal you are able to see allocations monthly usage. Alloc
 2. Open your project in Puhuri Portal.
 3. Select the allocation that usage report you would like to see.
 4. Click "Usage" to display the report for this allocation. Use tabs "CPU Allocation", "GPU Allocation", and "Storage Allocation" to see the details. 
-   ![Usage](../assets/puhuri_usage.jpg){ width="600" }
+   ![Usage](../assets/puhuri_usage.jpg)
    
 To check the current resource allocation limit:
 
