@@ -55,6 +55,10 @@ Prerequisites for creating projects:
     - Project description - A brief description about the project.
     - OECD FoS code - OECD science field code ([more info](https://joinup.ec.europa.eu/collection/eu-semantic-interoperability-catalogue/solution/field-science-and-technology-classification/about))
     - End date - this is the end date for using the computational resources.
+
+!!! note
+    Resources go to terminating state after data retention period.
+    
    ![Project details](../../assets/Create_prj_new.PNG)
 
 
