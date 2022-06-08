@@ -57,7 +57,7 @@ Prerequisites for creating projects:
     - End date - this is the end date for using the computational resources.
 
 !!! note
-    Resources go to terminating state after data retention period.
+    "End date" meaning: the computation in this project is not anymore allowed but the data will be available throughout the data retention period defined by your         service provider (such as LUMI). During the data retention period, the resource state will be in status "Terminating".
     
    ![Project details](../../assets/Create_prj_new.PNG)
 
