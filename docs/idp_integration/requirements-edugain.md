@@ -34,7 +34,7 @@ Please refer to [Attribute formats](https://puhuri.neic.no/idp_integration/attri
 
 ## Level of Assurance requirements
 
-Access to services connected to PUHURI is allowed only with use of identities that fulfil certain identity assurance criteria. To express the required assurance levels, the REFEDS Assurance suite https://wiki.refeds.org/display/ASS is used. 
+Access to services connected to PUHURI is allowed only with use of identities that fulfil certain identity assurance criteria. To express the required assurance levels, the [REFEDS Assurance suite](https://wiki.refeds.org/display/ASS) is used. 
 
 Requirements are defined for two aspects of identity assurance: 
 
