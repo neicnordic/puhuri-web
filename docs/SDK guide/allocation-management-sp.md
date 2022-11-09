@@ -89,7 +89,7 @@ result = client.list_marketplace_resources(
 # result => {
 #   'limits': {'cpu_k_hours': 1000, 'gb_k_hours': 3000, 'gpu_k_hours': 1000},
 #   'name': 'Sample resource',
-#   'offering': 'https://puhuri-core-beta.neic.no/api/marketplace-offerings/cf4eb9c29fc74af4ade667fcb53633d5/',
+#   'offering': 'https://puhuri-core-beta.neic.no/api/marketplace-provider-offerings/cf4eb9c29fc74af4ade667fcb53633d5/',
 #   'plan': 'https://puhuri-core-beta.neic.no/api/marketplace-plans/1537de6e94f9427cafb74cb63fa21c72/',
 #   'project': 'https://puhuri-core-beta.neic.no/api/projects/8a158ebf1abf4c74a431b9c65a0d7829/',
 #   'state': 'Creating',
@@ -329,7 +329,7 @@ result = client.create_remote_offering_user(
 
 # result => {
 #  'created': '2021-08-12T15:22:18.993586Z',
-#  'offering': 'http://localhost:8000/api/marketplace-offerings/d47ca5bce71144579df29da3c290027e/',
+#  'offering': 'http://localhost:8000/api/marketplace-provider-offerings/d47ca5bce71144579df29da3c290027e/',
 #  'offering_name': 'Remote offering (really)',
 #  'offering_uuid': 'd47ca5bce71144579df29da3c290027e',
 #  'user': 'http://localhost:8000/api/users/db157a5cf7f247eba161cd90eba9ac63/',
@@ -353,7 +353,7 @@ POST <API-URL>/marketplace-offering-users/
 
 {
     "created": "2021-08-12T15:22:18.993586Z",
-    "offering": "http://localhost:8000/api/marketplace-offerings/d47ca5bce71144579df29da3c290027e/",
+    "offering": "http://localhost:8000/api/marketplace-provider-offerings/d47ca5bce71144579df29da3c290027e/",
     "offering_name": "Remote offering (really)",
     "offering_uuid": "d47ca5bce71144579df29da3c290027e",
     "user": "http://localhost:8000/api/users/db157a5cf7f247eba161cd90eba9ac63/",

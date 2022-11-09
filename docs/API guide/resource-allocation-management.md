@@ -17,8 +17,8 @@ User can fetch offerings and filter them by the following fields:
 - `type` - offering's type
 
 ```bash
-$ http --pretty=format -v https://puhuri-core-beta.neic.no/api/marketplace-offerings/ Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811" state==Active shared==true
-GET /api/marketplace-offerings/?state=Active&shared=true HTTP/1.1
+$ http --pretty=format -v https://puhuri-core-beta.neic.no/api/marketplace-public-offerings/ Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811" state==Active shared==true
+GET /api/marketplace-public-offerings/?state=Active&shared=true HTTP/1.1
 Accept: */*
 Accept-Encoding: gzip, deflate
 Authorization: Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811
@@ -40,7 +40,7 @@ Content-Length: 4779
 Content-Security-Policy: report-uri csp.hpc.ut.ee; form-action 'self';
 Content-Type: application/json
 Date: Fri, 09 Apr 2021 12:49:06 GMT
-Link: <https://puhuri-core-beta.neic.no/api/marketplace-offerings/?shared=true&state=Active>; rel="first", <https://puhuri-core-beta.neic.no/api/marketplace-offerings/?shared=true&state=Active>; rel="last"
+Link: <https://puhuri-core-beta.neic.no/api/marketplace-public-offerings/?shared=true&state=Active>; rel="first", <https://puhuri-core-beta.neic.no/api/marketplace-public-offerings/?shared=true&state=Active>; rel="last"
 Referrer-Policy: no-referrer-when-downgrade
 Strict-Transport-Security: max-age=31536000; preload
 Vary: Accept-Language, Cookie
@@ -167,7 +167,7 @@ X-XSS-Protection: 1; mode=block
         "terms_of_service": "",
         "thumbnail": null,
         "type": "Marketplace.Basic",
-        "url": "https://puhuri-core-beta.neic.no/api/marketplace-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
+        "url": "https://puhuri-core-beta.neic.no/api/marketplace-provider-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
         "uuid": "073a0ddd6eba4ff4a90b943ae3e1b7c9",
         "vendor_details": ""
     }
@@ -188,10 +188,10 @@ User can create an order item including requested allocation parameters.
 $ http --pretty=format -v POST https://puhuri-core-beta.neic.no/api/marketplace-orders/ Authorization:"Token 32e7682378fa394b0f8b2538c444b60129ebfb47" <<< '{
     "project": "https://puhuri-core-beta.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/",
     "items": [
-            {
-            "offering": "https://puhuri-core-beta.neic.no/api/marketplace-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
+        {
+            "offering": "https://puhuri-core-beta.neic.no/api/marketplace-provider-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
             "attributes": {
-                "name": "Resource allocation1",
+                "name": "Resource allocation1"
             },
             "plan": "https://puhuri-core-beta.neic.no/api/marketplace-plans/c0fb33c79e9b48f69fcb6da26db5a28b/",
             "limits": {
@@ -224,7 +224,7 @@ User-Agent: HTTPie/2.4.0
                 "gb_k_hours": 1,
                 "gpu_k_hours": 2
             },
-            "offering": "https://puhuri-core-beta.neic.no/api/marketplace-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
+            "offering": "https://puhuri-core-beta.neic.no/api/marketplace-provider-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
             "plan": "https://puhuri-core-beta.neic.no/api/marketplace-plans/c0fb33c79e9b48f69fcb6da26db5a28b/"
         }
     ],
@@ -279,7 +279,7 @@ X-XSS-Protection: 1; mode=block
                 "gpu_k_hours": 2
             },
             "modified": "2021-04-21T16:03:08.402139Z",
-            "offering": "https://puhuri-core-beta.neic.no/api/marketplace-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
+            "offering": "https://puhuri-core-beta.neic.no/api/marketplace-provider-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
             "offering_billable": true,
             "offering_description": "LUMI share of Denmark",
             "offering_name": "LUMI Denmark",
@@ -374,7 +374,7 @@ X-XSS-Protection: 1; mode=block
     "new_cost_estimate": 1.301,
     "new_plan_name": "LUMI Common",
     "new_plan_uuid": "c0fb33c79e9b48f69fcb6da26db5a28b",
-    "offering": "https://puhuri-core-beta.neic.no/api/marketplace-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
+    "offering": "https://puhuri-core-beta.neic.no/api/marketplace-provider-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
     "offering_billable": true,
     "offering_description": "LUMI share of Denmark",
     "offering_name": "LUMI Denmark",
