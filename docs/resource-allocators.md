@@ -234,7 +234,7 @@ Example of the order payload sent with `POST` to ``https://puhuri-core-beta.neic
    "project": "https://puhuri-core-beta.neic.no/api/projects/72fff2b5f09643bdb1fa30684427336b/",
    "items": [
       {
-         "offering": "https://puhuri-core-beta.neic.no/api/marketplace-provider-offerings/0980e9426d5247a0836ccfd64769d900/",
+         "offering": "https://puhuri-core-beta.neic.no/api/marketplace-public-offerings/0980e9426d5247a0836ccfd64769d900/",
          "attributes": {
             "name": "test20",
          },
