@@ -39,6 +39,6 @@ Contact person for additional information: marina at sunet.se.
 - [Registration of a new client in Acceptance](https://webapp.acc.puhuri.eduteams.org/sp_request)
 
 
-# Puhuri CORE specifics
+## Puhuri CORE specifics
 
 - [A miniscript for getting refresh token](../assets/get_tokens.sh). Replace client_id / client_secret with actual values.

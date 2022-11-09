@@ -20,7 +20,7 @@ GET <API-URL>/marketplace-offering-users/?user_uuid=<USER_UUID>&offering_uuid=<O
 {
     "created": "2022-01-19T19:40:10.328758Z", # When the association has been created
     "modified": "2022-01-31T18:02:10.328758Z", #
-    "offering": "<API-URL>/marketplace-offerings/<OFFERING_UUID>/", # URL of the offering
+    "offering": "<API-URL>/marketplace-provider-offerings/<OFFERING_UUID>/", # URL of the offering
     "offering_name": "Remote offering", # Name of the offering
     "offering_uuid": "<OFFERING_UUID>", # UUID of the offering
     "user": "http://localhost:8000/api/users/<USER_UUID>/", # URL of the user
@@ -70,7 +70,7 @@ X-XSS-Protection: 1; mode=block
     {
         "created": "2021-08-18T10:33:21.433472Z",
         "modified": "2022-02-04T19:35:19.382943Z",
-        "offering": "http://puhuri.example.com/api/marketplace-offerings/<OFFERING_UUID>/",
+        "offering": "http://puhuri.example.com/api/marketplace-provider-offerings/<OFFERING_UUID>/",
         "offering_name": "<OFFERING_NAME>",
         "offering_uuid": "<OFFERING_UUID>",
         "user": "http://puhuri.example.com/api/users/<USER_UUID>/",
