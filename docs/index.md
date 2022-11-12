@@ -6,7 +6,7 @@ This site is aimed at providing a high level technical information about Puhuri 
 
 ## Breaking changes
 
-* 15.11.2022: **api/marketplace-plans/** endpoint has been changed to **api/marketplace-public-plans/** for creating orders.  
+* 15.11.2022: **api/marketplace-plans/** endpoint has been changed to **api/marketplace-public-plans/** for creating orders.
 
 ## Outline
 
