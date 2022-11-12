@@ -150,7 +150,7 @@ X-XSS-Protection: 1; mode=block
                 "switch_price": 0,
                 "unit": "month",
                 "unit_price": "0.0000000",
-                "url": "https://puhuri-core-beta.neic.no/api/marketplace-plans/c0fb33c79e9b48f69fcb6da26db5a28b/",
+                "url": "https://puhuri-core-beta.neic.no/api/marketplace-public-plans/c0fb33c79e9b48f69fcb6da26db5a28b/",
                 "uuid": "c0fb33c79e9b48f69fcb6da26db5a28b"
             }
         ],
@@ -193,7 +193,7 @@ $ http --pretty=format -v POST https://puhuri-core-beta.neic.no/api/marketplace-
             "attributes": {
                 "name": "Resource allocation1"
             },
-            "plan": "https://puhuri-core-beta.neic.no/api/marketplace-plans/c0fb33c79e9b48f69fcb6da26db5a28b/",
+            "plan": "https://puhuri-core-beta.neic.no/api/marketplace-public-plans/c0fb33c79e9b48f69fcb6da26db5a28b/",
             "limits": {
                 "gb_k_hours": 1,
                 "gpu_k_hours": 2,
@@ -225,7 +225,7 @@ User-Agent: HTTPie/2.4.0
                 "gpu_k_hours": 2
             },
             "offering": "https://puhuri-core-beta.neic.no/api/marketplace-public-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
-            "plan": "https://puhuri-core-beta.neic.no/api/marketplace-plans/c0fb33c79e9b48f69fcb6da26db5a28b/"
+            "plan": "https://puhuri-core-beta.neic.no/api/marketplace-public-plans/c0fb33c79e9b48f69fcb6da26db5a28b/"
         }
     ],
     "project": "https://puhuri-core-beta.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/"
@@ -289,7 +289,7 @@ X-XSS-Protection: 1; mode=block
             "offering_type": "Marketplace.Basic",
             "offering_uuid": "073a0ddd6eba4ff4a90b943ae3e1b7c9",
             "output": "",
-            "plan": "https://puhuri-core-beta.neic.no/api/marketplace-plans/c0fb33c79e9b48f69fcb6da26db5a28b/",
+            "plan": "https://puhuri-core-beta.neic.no/api/marketplace-public-plans/c0fb33c79e9b48f69fcb6da26db5a28b/",
             "plan_description": "Default plan for all LUMI",
             "plan_name": "LUMI Common",
             "plan_unit": "month",
@@ -388,7 +388,7 @@ X-XSS-Protection: 1; mode=block
     "order_approved_by": "Demo Staff",
     "order_uuid": "d4ba1c23c3de47d6b0ad61bbfbaeed05",
     "output": "",
-    "plan": "https://puhuri-core-beta.neic.no/api/marketplace-plans/c0fb33c79e9b48f69fcb6da26db5a28b/",
+    "plan": "https://puhuri-core-beta.neic.no/api/marketplace-public-plans/c0fb33c79e9b48f69fcb6da26db5a28b/",
     "plan_description": "Default plan for all LUMI",
     "plan_name": "LUMI Common",
     "plan_unit": "month",

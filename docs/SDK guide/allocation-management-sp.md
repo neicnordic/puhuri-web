@@ -90,7 +90,7 @@ result = client.list_marketplace_resources(
 #   'limits': {'cpu_k_hours': 1000, 'gb_k_hours': 3000, 'gpu_k_hours': 1000},
 #   'name': 'Sample resource',
 #   'offering': 'https://puhuri-core-beta.neic.no/api/marketplace-provider-offerings/cf4eb9c29fc74af4ade667fcb53633d5/',
-#   'plan': 'https://puhuri-core-beta.neic.no/api/marketplace-plans/1537de6e94f9427cafb74cb63fa21c72/',
+#   'plan': 'https://puhuri-core-beta.neic.no/api/marketplace-public-plans/1537de6e94f9427cafb74cb63fa21c72/',
 #   'project': 'https://puhuri-core-beta.neic.no/api/projects/8a158ebf1abf4c74a431b9c65a0d7829/',
 #   'state': 'Creating',
 #   'url': 'https://puhuri-core-beta.neic.no/api/marketplace-resources/a1916bd53fd04b1ab1a4e700c926607b/'

@@ -4,7 +4,9 @@
 Puhuri platform is a set of integrated services for managing access to shared resources in a federated manner.
 This site is aimed at providing a high level technical information about Puhuri service for target stakeholders.
 
+## Breaking changes
 
+* 15.11.2022: **api/marketplace-plans/** endpoint has been changed to **api/marketplace-public-plans/** for creating orders.  
 
 ## Outline
 
