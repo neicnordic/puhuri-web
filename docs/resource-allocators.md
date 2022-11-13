@@ -243,7 +243,7 @@ Example of the order payload sent with `POST` to ``https://puhuri-core-beta.neic
             "cpu_k_hours": 1,
             "gpu_k_hours": 20
          },
-         "plan": "https://puhuri-core-beta.neic.no/api/marketplace-plans/14b28e3a1cbe44b395bad48de9f934d8/",
+         "plan": "https://puhuri-core-beta.neic.no/api/marketplace-public-plans/14b28e3a1cbe44b395bad48de9f934d8/",
          "accepting_terms_of_service": true
       }
    ]
