@@ -29,6 +29,9 @@ SAML Attributes MUST be sent using *urn:oasis:names:tc:SAML:2.0:attrname-format:
     - SAML attribute: *urn:oid:1.3.6.1.4.1.25178.1.2.9 (schacHomeOrganization)*
 - Assurance
     - SAML attribute: *urn:oid:1.3.6.1.4.1.5923.1.1.1.11 (eduPersonAssurance)*
+    - Assurance attribute is mandatory from March 1st, 2023
+    - The following letter was sent to the federations:
+  ![Assurance letter](../assets/assurance_letter.PNG)
 
 ## OIDC Claim Names
 
@@ -51,3 +54,6 @@ SAML Attributes MUST be sent using *urn:oasis:names:tc:SAML:2.0:attrname-format:
     - OIDC claim: *schac_home_organization*
 - Assurance
     - OIDC claim: *eduperson_assurance*
+    - Assurance attribute is mandatory from March 1st, 2023
+    - The following letter was sent to the federations:
+  ![Assurance letter](../assets/assurance_letter.PNG)
