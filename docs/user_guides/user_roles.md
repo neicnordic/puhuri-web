@@ -1,7 +1,7 @@
 
 ### User roles in Organization
 
-=== "Academic"
+=== "Dedicated Puhuri Portal"
 
     | | PI | Service Manager | co-PI | Member |
     | --- | :----: | :----: | :----: | :----: |
@@ -12,7 +12,7 @@
     | Approves Resource Requests (Orders) | :material-check: | :material-check: | | |
     | Manage Offerings (Service provider-specific) | :material-check: | :material-check: | |
 
-=== "Academic Shared"
+=== "Shared Puhuri Portal"
 
     | | Resource allocator | Service Manager | PI | co-PI | Member |
     | --- | :----: | :----: | :----: | :----: | :----: |
