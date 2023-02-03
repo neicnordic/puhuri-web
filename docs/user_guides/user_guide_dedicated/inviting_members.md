@@ -12,6 +12,8 @@ Project team contains users with different roles:
 - Member - Users who work on one or more phases of the project and involved in doing assigned tasks.
 - Guest - Users who are only able to see project related data, not able to modify it.
 
+Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User Rights based on Roles in the Organization.
+
 ## Adding PI to organization.
 
 !!! note
