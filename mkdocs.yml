@@ -14,6 +14,13 @@ markdown_extensions:
       linenums: true
   - pymdownx.superfences
   - admonition
+  - pymdownx.tasklist:
+        custom_checkbox: true
+        clickable_checkbox: true
+  - pymdownx.tabbed:
+        alternate_style: true
+
+
 nav:
   - "index.md"
   - About:
