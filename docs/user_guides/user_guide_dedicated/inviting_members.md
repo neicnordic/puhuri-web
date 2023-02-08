@@ -75,5 +75,5 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
     Invitation is valid for 1 week!
     
 
-!!! pied-piper "Feedback"
+!!! question "Feedback"
     We welcome feedback from our users - it helps us to continually improve. Please send an email with your suggestions to [support@puhuri.io](mailto:support@puhuri.io).
