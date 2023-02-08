@@ -94,6 +94,6 @@ After this, Resource allocator will request for resource and be able to [approve
 
 
 
-!!! note    
+!!! abstract "Feedback" 
     We welcome feedback from our users - it helps us to continually improve. Please send an email with your suggestions to [support@puhuri.io](mailto:support@puhuri.io).
 
