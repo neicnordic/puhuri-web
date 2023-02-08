@@ -1,7 +1,5 @@
 # Organization and project management
 
-!!! warning
-    User guide is in development. Early feedback is welcome, send email to ilja.livenson@ut.ee.
 
 
 ## User guide for adding organizations
@@ -93,3 +91,9 @@ Below is an example of requesting an allocation from LUMI supercomputer:
    ![Project details](../../assets/Approval%20request.PNG)
 
 After this, Resource allocator will request for resource and be able to [approve or reject](project_approval_shared.md) it.
+
+
+
+!!! note    
+    We welcome feedback from our users - it helps us to continually improve. Please send an email with your suggestions to [support@puhuri.io](mailto:support@puhuri.io).
+
