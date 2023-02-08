@@ -76,4 +76,4 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
     
 
 !!! abstract "Feedback"
-    We welcome feedback from our users - it helps us to continually improve. Please send an email with your suggestions to [support@puhuri.io](mailto:support@puhuri.io).
+    We welcome feedback from our users - it helps us to continually improve. Please send an email with your suggestions to [support@puhuri.io](http://mailto:support@puhuri.io).
