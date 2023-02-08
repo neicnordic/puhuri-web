@@ -1,7 +1,5 @@
 # Project membership management
 
-!!! warning
-    User guide is in development. Early feedback is welcome, send email to ilja.livenson@ut.ee.
 
 Project team contains users with different roles:
 
@@ -52,3 +50,8 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
 
 !!! note
     Invitation is valid for 1 week!
+    
+    
+!!! note    
+    We welcome feedback from our users - it helps us to continually improve. Please send an email with your suggestions to [support@puhuri.io](mailto:support@puhuri.io).
+
