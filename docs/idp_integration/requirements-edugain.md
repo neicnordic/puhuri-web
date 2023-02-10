@@ -12,21 +12,21 @@ IdPs MUST release the following attributes for user to successfully complete reg
 
 - **Email** 
 - **Name**, that can be sent as :
-  - **Common Name**,or 
-  - **Display Name**, or
-  - **Given Name** and **Family Name**
+  * **Common Name**,or 
+  * **Display Name**, or
+  * **Given Name** and **Family Name**
 - **Identifier**, that can be sent as: 
-  - **subject-id**, or
-  - **pairwise-id**, or
-  - **persistent name-id**, or
-  - **eduPersonPrincipalName***, or
-  - **eduPersonTargetedID**
+  * **subject-id**, or
+  * **pairwise-id**, or
+  * **persistent name-id**, or
+  * **eduPersonPrincipalName***, or
+  * **eduPersonTargetedID**
   
 IdPs are required to release also the following attributes for users to successfully use services connected to PUHURI: 
 
 - **Affiliation** 
 - **Home Organization**
-- **Assurance** - attribute will become mandatory in 2022 (date TBD) 
+- **Assurance** - attribute will become mandatory in 2023 (date TBD) 
 
 Please refer to [Attribute formats](https://puhuri.neic.no/idp_integration/attributes)  for specification of accepted attribute formats. 
 
@@ -44,8 +44,8 @@ Requirements are defined for two aspects of identity assurance:
 
 Level of assurance for an identity issued to a user is expressed at the time of user authentication by the IdP sending eduPersonAssurance attribute with following values: 
 
-- https://refeds.org/assurance/ID/UNIQUE; or https://refeds.org/assurance/ID/eppn-unique-no-reassign, and
-- https://refeds.org/assurance/IAP/medium or https://refeds.org/assurance/IAP/high
+- **https://refeds.org/assurance/ID/UNIQUE** or **https://refeds.org/assurance/ID/eppn-unique-no-reassign** and
+- **https://refeds.org/assurance/IAP/medium** or **https://refeds.org/assurance/IAP/high**
 
 ## Entity categories
 
