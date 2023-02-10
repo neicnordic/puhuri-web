@@ -1,7 +1,5 @@
 # Puhuri Portal notifications
 
-!!! warning
-    Notifications are in development. Early feedback is welcome, send email to ilja.livenson@ut.ee.
 
 | Notification type | Content | Initiator | Target group |
 --- | --- | --- | --- |
@@ -14,3 +12,7 @@
 | email | Allocation quota is full | Portal (auto-notification) | Project PI / Proxy-PI |
 | email | Allocation ending in 15 days | Portal (auto-notification) | Project members |
 | email | Project ending in 15 days | Portal (auto-notification) | Project members |
+
+
+!!! abstract "Feedback"  
+    We welcome feedback from our users - it helps us to continually improve. Please send an email with your suggestions to [support@puhuri.io](mailto:support@puhuri.io).

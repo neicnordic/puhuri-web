@@ -1,7 +1,5 @@
 # Projects and allocations management
 
-!!! warning
-    User guide is in development. Early feedback is welcome, send email to ilja.livenson@ut.ee.
 
 ## Allocation update process
 
@@ -40,3 +38,8 @@
    ![Project details update](../../assets/project_data_update.PNG)
 
 6. Now the national resource allocator has to [approve the changes.](https://puhuri.neic.no/puhuri_portal/user_guide_dedicated/project_approval/#approving-project-and-allocation-update-requests)
+
+
+!!! abstract "Feedback"   
+    We welcome feedback from our users - it helps us to continually improve. Please send an email with your suggestions to [support@puhuri.io](mailto:support@puhuri.io).
+

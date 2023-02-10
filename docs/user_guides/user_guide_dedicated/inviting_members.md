@@ -1,7 +1,5 @@
 # Project membership management
 
-!!! warning
-    User guide is in development. Early feedback is welcome, send email to ilja.livenson@ut.ee.
 
 ### Management of project team
 
@@ -11,6 +9,8 @@ Project team contains users with different roles:
 - Co-Principal Investigator (Co-PI) - An individual recognized by the prime institution and the principal investigator (PI) as someone who shares scientific and administrative leadership responsibilities for a project with the PI.
 - Member - Users who work on one or more phases of the project and involved in doing assigned tasks.
 - Guest - Users who are only able to see project related data, not able to modify it.
+
+Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User Rights based on Roles in the Organization.
 
 ## Adding PI to organization.
 
@@ -73,3 +73,7 @@ Project team contains users with different roles:
 
 !!! note
     Invitation is valid for 1 week!
+    
+
+!!! abstract "Feedback"
+    We welcome feedback from our users - it helps us to continually improve. Please send an email with your suggestions to [support@puhuri.io](mailto:support@puhuri.io).
