@@ -12,15 +12,15 @@ IdPs MUST release the following attributes for user to successfully complete reg
 
 - **Email** 
 - **Name**, that can be sent as :
-  - **Common Name**,or 
-  - **Display Name**, or
-  - **Given Name** and **Family Name**
+    - **Common Name**,or 
+    - **Display Name**, or
+    - **Given Name** and **Family Name**
 - **Identifier**, that can be sent as: 
-  - **subject-id**, or
-  - **pairwise-id**, or
-  - **persistent name-id**, or
-  - **eduPersonPrincipalName***, or
-  - **eduPersonTargetedID**
+    - **subject-id**, or
+    - **pairwise-id**, or
+    - **persistent name-id**, or
+    - **eduPersonPrincipalName***, or
+    - **eduPersonTargetedID**
   
 IdPs are required to release also the following attributes for users to successfully use services connected to PUHURI: 
 
