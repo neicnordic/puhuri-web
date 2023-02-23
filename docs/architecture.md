@@ -13,7 +13,7 @@ or from Puhuri Portal, which is provided as a reference solution. The registrati
 (Community Unique Identifier, CUID) for the user, which is used for referencing and linking user identity across the
 different components.
 
-![MyAccessID scheme](assets/AAI_PUHURI_MyAccessID.png)
+![MyAccessID scheme](assets/Puhuri_tech_drawing.png)
 
 The identity provider releases the attributes about User’s identity and affiliation, which is important for the
 resource providers to know. User can also register SSH public keys for easier access to the Linux-based systems that
