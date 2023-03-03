@@ -36,16 +36,20 @@ nav:
           - "documents/statistics_pp.md"
           - "documents/statistics_tos.md"
   - Resource Allocators:
-      - "resource-allocators.md"
-      - "integration-with-puhuri-aai.md"
-      - API Guide:
-          - "API guide/common.md"
-          - "API guide/authentication.md"
-          - "API guide/project.md"
-          - "API guide/project-permissions.md"
-          - "API guide/resource-allocation-management.md"
-      - SDK Guide:
-          - "SDK guide/allocation-management-ra.md"
+      - "resource-allocators-overview.md"
+      - Custom Portal Integration:
+          - "resource-allocators.md"
+          - API Guide:
+              - "API guide/common.md"
+              - "API guide/authentication.md"
+              - "API guide/project.md"
+              - "API guide/project-permissions.md"
+              - "API guide/resource-allocation-management.md"
+          - SDK Guide:
+              - "SDK guide/allocation-management-ra.md"
+          - "integration-with-puhuri-aai.md"
+      - "dedicated-puhuri-portal.md"
+      - "shared-puhuri-portal.md"
   - Service Providers:
       - "service-providers.md"
       - SDK Guide:
