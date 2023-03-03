@@ -45,8 +45,7 @@ nav:
               - "API guide/project.md"
               - "API guide/project-permissions.md"
               - "API guide/resource-allocation-management.md"
-          - SDK Guide:
-              - "SDK guide/allocation-management-ra.md"
+              - "API guide/listing-users-resources.md"
           - "integration-with-puhuri-aai.md"
       - "dedicated-puhuri-portal.md"
       - "shared-puhuri-portal.md"

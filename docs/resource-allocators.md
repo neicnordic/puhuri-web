@@ -25,8 +25,6 @@ use a different naming than agreed in Puhuri. Below is a mapping to reduce confu
 
 If you are integrating a python-based application, you might find useful a [python wrapper](SDK%20guide/initial-setup.md) for typical operations.
 
-You can also find allocation management documentation [here](SDK%20guide/allocation-management-ra.md).
-
 ## Common operations
 
 Almost all operations require authentication. Authentication process is a two-step:

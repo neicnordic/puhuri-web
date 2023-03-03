@@ -1,6 +1,4 @@
-# Allocation Lifecycle Management by Resource Allocator
-
-## Listing associations between users and resources
+# Listing associations between users and resources
 
 To list the created associations between users and resources, the service provider should use `list_remote_offering_users` method. It receives an optional `filters` argument, a dictionary containing filters for the associations. The possible items are:
 
