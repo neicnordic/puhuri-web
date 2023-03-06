@@ -3,7 +3,8 @@
 This page introduces the Puhuri components and high level architecture. 
 
 ## Puhuri Components
-![Components](assets/puhuri-components.png)
+
+![MyAccessID scheme](assets/Puhuri_tech_drawing.png)
 
 The diagram above shows a high level architecture of Puhuri. Puhuri links together Users with strong digital identity
 with Resources in a seamless way.
@@ -12,8 +13,6 @@ Puhuri is using MyAccessID AAI for user registration that can be started from Na
 or from Puhuri Portal, which is provided as a reference solution. The registration process creates a unique identifier
 (Community Unique Identifier, CUID) for the user, which is used for referencing and linking user identity across the
 different components.
-
-![MyAccessID scheme](assets/Puhuri_tech_drawing.png)
 
 The identity provider releases the attributes about User’s identity and affiliation, which is important for the
 resource providers to know. User can also register SSH public keys for easier access to the Linux-based systems that
