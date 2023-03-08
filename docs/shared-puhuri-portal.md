@@ -1,6 +1,6 @@
 # Shared Puhuri Portal
 
-FIXME: Write an introduction about what a Shared Puhuri Portal is
-(in contrast to a Dedicated Puhuri Portal and a National Portal).
+Shared Puhuri Portal is meant for resource allocators, who are not able to host allocation portal themselves or do not have a national allocation portal for resource management.
+Shared portal provides less customized version (like fixed access url, privacy policy etc) compared to the Puhuri dedicated portal to fit the needs of several resource allocators.
 
 See the [User Guide for Shared Puhuri Portal](user_guides/user_guide_shared/organization_and_project_management_shared.md)
