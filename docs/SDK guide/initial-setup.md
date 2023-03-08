@@ -2,7 +2,7 @@
 
 ## Installation
 
-Puhuri Core is based on Waldur, which exposes REST API. Puhuri Core SDK is a [python wrapper](https://github.com/waldur/ansible-waldur-module/blob/develop/waldur_client.py) for typical REST operations.
+Puhuri Core is based on Waldur, which exposes REST API. Puhuri Core SDK is a [python wrapper](https://github.com/waldur/python-waldur-client) for typical REST operations.
 
 It is packaged as a Python module and published in PyPI, so you can install it with standard tools like:
 
