@@ -82,4 +82,4 @@ We process personal data only if there is a legal basis for it and only as long 
     2. We encourage you to review this privacy policy often to stay informed of changes that may affect you.
     
 13. Contacting Us
-    - If you have any questions regarding this privacy policy or you would like to receive any stored Data we have about you, please contact us by email at [support@hpc.ut.ee](mailto:support@hpc.ut.ee).
+    - If you have any questions regarding this privacy policy or you would like to receive any stored Data we have about you, please contact us by email at [support@puhuri.io](mailto:support@puhuri.io).

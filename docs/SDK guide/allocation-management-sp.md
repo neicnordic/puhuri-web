@@ -5,7 +5,7 @@ This page describes operations to be performed by service provider.
 ## Prerequisites
 
 Please, read [initial setup for Puhuri Core SDK](initial-setup.md) and
-please reach out to [support email](mailto:support@hpc.ut.ee) to get credentials for Puhuri Core.
+please reach out to [support email](mailto:support@puhuri.io) to get credentials for Puhuri Core.
 
 ## Getting a list of users
 

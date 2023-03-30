@@ -48,7 +48,7 @@ projects. Project allows us to create new allocations as well as connect users w
 Hence, to create a project, one needs first to have a reference to the customer. The reference is a stable one and
 can be cached by a REST API client.
 
-Customers are created by Puhuri Core support team. Please reach out to [support@hpc.ut.ee](mailto:support@hpc.ut.ee)
+Customers are created by Puhuri Core support team. Please reach out to [support@puhuri.io](mailto:support@puhuri.io)
 if you think you should have one.
 
 Examples:
@@ -286,7 +286,7 @@ Information about Puhuri resources in Puhuri Core can change over time, for exam
 Puhuri Portal implements a method for dynamic import and upkeep of that information from Puhuri Core.
 
 As this is a more advanced topic, please check [implementation](https://github.com/waldur/waldur-mastermind/blob/7b2eba62e1e0dab945845f05030c7935e57f0d9c/src/waldur_mastermind/marketplace_remote/views.py#L84).
-If you have questions, we will be happy to help out! Please reach out to support@hpc.ut.ee.
+If you have questions, we will be happy to help out! Please reach out to [support@puhuri.io](mailto:support@puhuri.io).
 
 ## Reporting
 

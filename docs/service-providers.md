@@ -14,7 +14,7 @@ A typical flow of operations is as follows:
 
 Service Provider is in charge of managing Resource Allocators for its resources.
 Representative of the Service Provider should submit the initial list as well as updates to the support channel
-of Puhuri Core operator: [support@hpc.ut.ee](mailto:support@hpc.ut.ee).
+of Puhuri Core operator: [support@puhuri.io](mailto:support@puhuri.io).
 
 The following information must be provided for each Resource Allocator:
 

@@ -22,7 +22,7 @@ The University of Tartu reserves the right to change, add or remove portions of 
 
 4. How to use Services?
     To gain access to the Service you have to register yourself by creating an account in [https://puhuri-stats.neic.no](https://puhuri-stats.neic.no). For that, you must identify yourself with the MyAccessID (Access Management Service provided by GEANT) authentication system.
-    Private organizations who cannot identify themselves with MyAccessID please contact us at [support@hpc.ut.ee](mailto:support@hpc.ut.ee)
+    Private organizations who cannot identify themselves with MyAccessID please contact us at [support@puhuri.io](mailto:support@puhuri.io)
 
 5. Service providers’ rights and responsibilities
     1. Users’ personal data will be processed in accordance with the Privacy Policy.

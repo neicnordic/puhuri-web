@@ -14,7 +14,6 @@ This site is aimed at providing a high level technical information about Puhuri 
 - [Resource Allocators](resource-allocators-overview.md) is aimed at organization allocating shared resources.
 - [Identity Providers](idp_integration/index.md) is aimed at organization providing information about users' identities.
 - [Service Providers](service-providers.md) is aimed at organizations hosting shared resources.
-- [Documents](documents.md) contains document templates that parties are expected to agree and sign.
 - [Environments](environments.md) contains descriptions of development and production environments.
 
 
