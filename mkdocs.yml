@@ -64,6 +64,7 @@ nav:
   - User Guides:
       - "user_guides/myaccessid_registration.md"
       - "user_guides/myaccessid_account_linking.md"
+      - "user_guides/myaccessid-ssh-key.md"
       - Dedicated Puhuri Portal:
           - "user_guides/user_guide_dedicated/organization_and_project_management.md"
           - "user_guides/user_guide_dedicated/inviting_members.md"
