@@ -26,6 +26,16 @@ user might need in order to access the Resource.
 
 Puhuri Core has an offline access to MyAccessID user registry and uses it for keeping user information up to date.
 
+## Open-source
+
+Puhuri believes in transparency and sharing, as such all of the technical components we rely upon are open-source.
+
+- Puhuri Core and Portal - [Waldur](https://github.com/waldur)
+- Puhuri Support - [Zammad](https://github.com/zammad/zammad)
+- Puhuri Stats - [Grafana](https://github.com/grafana/grafana/)
+- Puhuri websites - [Jekyll](https://github.com/jekyll/jekyll/) and [MkDocs](https://github.com/mkdocs/mkdocs/)
+- Puhuri AAI (provided by Geant) - [Satosa](https://github.com/IdentityPython/SATOSA)
+
 ## Puhuri roles
 ![Roles](assets/puhuri-roles.png)
 
