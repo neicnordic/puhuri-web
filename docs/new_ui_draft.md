@@ -26,24 +26,24 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
 6. User now will get invitation email with the acceptance link.
 
 !!! note
-    Invitation is valid for 1 week!
+    Invitation is valid for 3 weeks!
 
 ### New user don't have Puhuri account:
 
 1. Open project in Puhuri Portal.
 2. Select "Team" from top menu and click on "Invitations".
-   ![Invite user](../../assets/invitation-1.jpg){ width="400" }
+   ![Invite user](../../assets/invitation-1.jpg)
 3. By clicking "Invite user" open "Invite by email" window.
-   ![Invite user](../../assets/invitation-2.jpg){ width="400" }
+   ![Invite user](../../assets/invitation-2.jpg)
 
 4. Insert user's email and set the role for the new user and continue.
 
 5. Fill in your custom message on the right side of the window and send the invitation.
-   ![Invite user](../../assets/invitation-3.jpg){ width="400" }
+   ![Invite user](../../assets/invitation-3.jpg)
 6. User now will get invitation email with the acceptance link.
 
 !!! note
-    Invitation is valid for 1 week!
+    Invitation is valid for 3 weeks!
     
     
 !!! abstract "Feedback"
