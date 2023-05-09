@@ -8,6 +8,8 @@ theme:
   favicon: assets/favicon.png
   features:
     - navigation.indexes
+extra_css:
+  - assets/file.css
 markdown_extensions:
   - attr_list
   - pymdownx.highlight:
