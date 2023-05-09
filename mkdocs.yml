@@ -3,8 +3,6 @@ extra:
   analytics:
     provider: google
     property: G-9MPBK2ZXGH
-extra_css:
-  - assets/css/styles.css
 theme:
   name: material
   favicon: assets/favicon.png
@@ -25,7 +23,20 @@ markdown_extensions:
 
   - pymdownx.tabbed:
         alternate_style: true
-
+plugins:
+  - glightbox:
+        touchNavigation: true
+        loop: false
+        effect: zoom
+        slide_effect: slide
+        width: 100%
+        height: auto
+        zoomable: true
+        draggable: true
+        skip_classes:
+            - custom-skip-class-name
+        auto_caption: false
+        caption_position: bottom
 
 nav:
   - "index.md"
