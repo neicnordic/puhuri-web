@@ -18,7 +18,7 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
 3. By clicking "Add member" open "Add project member" window.
 
 
-   ![Select organization](../../assets/add-member-1.jpg){: .pop-img :}
+   ![Select organization](../../assets/add-member-1.jpg)
 
 
 4. Select correct user, set the role and expiration date if necessary.
