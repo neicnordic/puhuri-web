@@ -16,10 +16,14 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
 1. Open project in Puhuri Portal.
 2. Select "Team" from top menu and click on "Users".
 3. By clicking "Add member" open "Add project member" window.
-   ![Select organization](../../assets/add-member-1.jpg)
+
+
+   ![Select organization](../../assets/add-member-1.jpg){: .pop-img :}
 
 
 4. Select correct user, set the role and expiration date if necessary.
+
+
    ![Select organization](../../assets/add-member-2.jpg)
 
 5. Finally, click on "Add".
@@ -32,8 +36,14 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
 
 1. Open project in Puhuri Portal.
 2. Select "Team" from top menu and click on "Invitations".
+
+
    ![Invite user](../../assets/invitation-1.jpg)
+   
+   
 3. By clicking "Invite user" open "Invite by email" window.
+
+
    ![Invite user](../../assets/invitation-2.jpg)
 
 4. Insert user's email and set the role for the new user and continue.
