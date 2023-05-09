@@ -3,6 +3,8 @@ extra:
   analytics:
     provider: google
     property: G-9MPBK2ZXGH
+extra_css:
+  - assets/css/styles.css
 theme:
   name: material
   favicon: assets/favicon.png
