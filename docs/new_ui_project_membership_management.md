@@ -13,7 +13,7 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
 
 ### New user has Puhuri account:
  
-1. Open project in Puhuri Portal.
+1. Open your project in Puhuri Portal.
 2. Select "Team" from top menu and click on "Users".
 3. By clicking "Add member" open "Add project member" window.
 
