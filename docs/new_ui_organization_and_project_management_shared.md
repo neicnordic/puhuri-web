@@ -68,11 +68,9 @@ Below is an example of requesting an allocation from LUMI supercomputer:
     - Development Access
     - Fast Track Access for Academia
     - Fast Track Access for Industry
-  ![Add Resource](../../assets/videos/how_to_add_resource.mp4)
 
 
 2. Write the name for the resource allocation (NOTE: This name will be visible in accounting data.).
-   ![Project details](../../assets/Offering_conf.PNG)
 
 3. Select correct plan (LUMI common) and write needed allocation quota (CPU, GPU and Storage).
 
@@ -81,7 +79,10 @@ Below is an example of requesting an allocation from LUMI supercomputer:
 5. Click on the "Add to cart".
 
 6. Check once more and click on "Request an approval" if you are not a PI in a project or "Request" if you are a PI.
-   ![Project details](../../assets/Approval%20request.PNG)
+
+<video controls width="100%" autoplay="true" muted loop >
+  <source src="../../assets/videos/how_to_add_resource.mp4" type="video/mp4">
+</video>
 
 After this, Resource allocator will get a request for resource and be able to [approve or reject](project_approval_shared.md) it.
 
