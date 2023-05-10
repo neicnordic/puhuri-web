@@ -42,7 +42,7 @@ plugins:
 
 nav:
   - "index.md"
-  - Resource Allocators:
+  - Puhuri for Resource Allocators:
       - "resource-allocators-overview.md"
       - Custom Portal Integration:
           - "resource-allocators.md"
@@ -56,7 +56,7 @@ nav:
           - "integration-with-puhuri-aai.md"
       - "dedicated-puhuri-portal.md"
       - "shared-puhuri-portal.md"
-  - Service Providers:
+  - Puhuri for Service Providers:
       - "service-providers.md"
       - SDK Guide:
           - "SDK guide/initial-setup.md"
