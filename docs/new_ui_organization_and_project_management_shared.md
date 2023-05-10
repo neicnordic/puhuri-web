@@ -15,8 +15,10 @@ who is project principal investigator (PI). National resource allocator can assi
 
 
 1. Click on "Dashboard" and then “Add organization” in the organization selection window.
+
+
    ![Select organization](../../assets/add_org.jpg)
-   ![Select organization](../../assets/add_org-2.jpg)
+
 
 2. Fill the form and click "Create organization":
     - Name - Name of the organization
@@ -25,7 +27,9 @@ who is project principal investigator (PI). National resource allocator can assi
     - Contact phone - contact person’s phone (optional)
     - Website URL - url of the organization (optional)
     - Logo - logo of the organization (optional)
-   ![Select organization](../../assets/Add_organization_data.PNG)
+
+
+   ![Select organization](../../assets/add_org-2.jpg)
 
 
 ## Creation of projects
@@ -48,7 +52,10 @@ Prerequisites for creating projects:
     - End date - this is the end date for using the computational resources.
     - Project image - Profile picture for the project (optional).
 
-   ![Select organization](../../assets/videos/how_to_add_project.mp4)
+
+<video controls width="100%" autoplay="true" muted loop >
+  <source src="../../assets/videos/how_to_add_project.mp4" type="video/mp4">
+</video>
 
 ## Requesting an allocation
 
