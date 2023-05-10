@@ -48,7 +48,10 @@ Prerequisites for creating projects:
     - End date - this is the end date for using the computational resources.
     - Project image - Profile picture for the project (optional).
 
-   ![Select organization](../../assets/videos/how_to_add_project.mp4)
+
+<video controls width="100%" autoplay="true" muted loop >
+  <source src="../../assets/videos/how_to_add_project.mp4" type="video/mp4">
+</video>
 
 ## Requesting an allocation
 
