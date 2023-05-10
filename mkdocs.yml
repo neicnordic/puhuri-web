@@ -42,14 +42,6 @@ plugins:
 
 nav:
   - "index.md"
-  - About:
-      - "architecture.md"
-      - "branding.md"
-      - "terminology.md"
-      - "environments.md"
-      - Documents:
-          - "documents/statistics_pp.md"
-          - "documents/statistics_tos.md"
   - Resource Allocators:
       - "resource-allocators-overview.md"
       - Custom Portal Integration:
@@ -92,3 +84,11 @@ nav:
           - "user_guides/user_guide_shared/project_approval_shared.md"
       - "user_guides/usage_reports.md"
       - "user_guides/user_roles.md"
+  - About:
+      - "architecture.md"
+      - "branding.md"
+      - "terminology.md"
+      - "environments.md"
+      - Documents:
+          - "documents/statistics_pp.md"
+          - "documents/statistics_tos.md"
