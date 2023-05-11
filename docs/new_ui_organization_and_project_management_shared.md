@@ -17,7 +17,7 @@ who is project principal investigator (PI). National resource allocator can assi
 1. Click on "Dashboard" and then “Add organization” in the organization selection window.
 
 
-   ![Select organization](../../assets/add_org.jpg)
+   ![Select organization](../../assets/add-org.jpg)
 
 
 2. Fill the form and click "Create organization":
@@ -29,7 +29,7 @@ who is project principal investigator (PI). National resource allocator can assi
     - Logo - logo of the organization (optional)
 
 
-   ![Select organization](../../assets/add_org-2.jpg)
+   ![Select organization](../../assets/add-org-2.jpg)
 
 
 ## Creation of projects
