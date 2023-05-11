@@ -54,7 +54,7 @@ Prerequisites for creating projects:
 
 
 <video controls width="100%" autoplay="true" muted loop >
-  <source src="../../assets/videos/how_to_add_project.mp4" type="video/mp4">
+  <source src="../../assets/videos/how_to_add_project_1.mp4" type="video/mp4">
 </video>
 
 ## Requesting an allocation
