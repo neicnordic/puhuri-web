@@ -49,7 +49,10 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
 4. Insert user's email and set the role for the new user and continue.
 
 5. Fill in your custom message on the right side of the window and send the invitation.
+
+
    ![Invite user](../../assets/invitation-3.jpg)
+   
 6. User now will get invitation email with the acceptance link.
 
 !!! note
