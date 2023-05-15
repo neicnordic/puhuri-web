@@ -16,7 +16,7 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
 1. Open your project in Puhuri Portal.
 2. Select "Team" from top menu and click on "Users".
 3. By clicking "Add member" open "Add project member" window. \
-  ![Select organization](../../assets/add-member-1.jpg){: .mt-1 }
+  ![Select organization](../../assets/add-member-1.jpg)
 
 4. Select correct user, set the role and expiration date if necessary.
 
