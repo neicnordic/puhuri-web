@@ -93,7 +93,7 @@ nav:
       - New Interface:
           - "user_guides/new_interface/interface.md"
           - "user_guides/new_interface/organization_and_project_management.md"
-          - "user_guides/new_interface/membership_management.md"
+          - "user_guides/new_interface/project_membership_management.md"
           - "user_guides/new_interface/project_modification.md"
           - "user_guides/new_interface/project_approval.md"
           - "user_guides/new_interface/usage_reports.md"
