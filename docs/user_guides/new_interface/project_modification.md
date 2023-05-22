@@ -18,7 +18,7 @@
 
 
 <video controls width="100%" autoplay="true" muted loop >
-  <source src="../../assets/videos/how_to_update_resource_limit.mp4" type="video/mp4">
+  <source src="../../../assets/videos/how_to_update_resource_limit.mp4" type="video/mp4">
 </video>
 
 ## Project end date update process
@@ -35,7 +35,7 @@
 6. Now national resource allocator has to [approve the changes.](https://puhuri.neic.no/puhuri_portal/user_guide_shared/project_approval_shared/#approving-project-and-allocation-update-requests)
 
 <video controls width="100%" autoplay="true" muted loop >
-  <source src="../../assets/videos/how_to_update_project_end_date.mp4" type="video/mp4">
+  <source src="../../../assets/videos/how_to_update_project_end_date.mp4" type="video/mp4">
 </video>
 
 !!! abstract "Feedback"   
