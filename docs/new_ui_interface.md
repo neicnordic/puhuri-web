@@ -9,7 +9,7 @@
 - You can see the information about the organization only If you are at the organization level. It means if you are only at the project level, you can not go to the organization level.
 
 #### Sidebar menu:
-- This is your main working tool in Puhuri Portal. Here you can manage your org. Pr. and resources (such as LUMI cluster or other HPC resources). The next chapter of this guide will provide the details for each menu item.
+- This is your main working tool in Puhuri Portal. Here you can manage your organizations, projects and resources (such as LUMI cluster or other HPC resources). The next chapter of this guide will provide the details for each menu item.
 
 #### Workspace menu (changes depending on sidebar menu): 
 -  Each page in Puhuri Portal has a navigation bar at the top of the screen. It enables a quick access to organization/project info and management.
