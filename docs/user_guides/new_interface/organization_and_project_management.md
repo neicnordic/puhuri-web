@@ -54,7 +54,7 @@ Prerequisites for creating projects:
 
 
 <video controls width="100%" autoplay="true" muted loop >
-  <source src="../../assets/videos/how_to_add_project_1.mp4" type="video/mp4">
+  <source src="../../../assets/videos/how_to_add_project_1.mp4" type="video/mp4">
 </video>
 
 ## Requesting an allocation
@@ -88,7 +88,7 @@ Below is an example of requesting an allocation from LUMI supercomputer:
 6. Check once more and click on "Request an approval" if you are not a PI in a project or "Request" if you are a PI.
 
 <video controls width="100%" autoplay="true" muted loop >
-  <source src="../../assets/videos/how_to_add_resource.mp4" type="video/mp4">
+  <source src="../../../assets/videos/how_to_add_resource.mp4" type="video/mp4">
 </video>
 
 After this, Resource allocator will get a request for resource and be able to [approve or reject](project_approval_shared.md) it.
