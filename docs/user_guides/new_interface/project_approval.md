@@ -7,14 +7,10 @@
 
 ## Approving project and allocation creation, update requests
 
-1. Click on  "Pending confirmations" button on the top-right side of your Dashboard. In this window, the lists of "Order items" of "Pending order confirmation" and "Pending provider confirmation", as well as "Project update requests" can be found.
-   
- ![Project approve](../../assets/pending_confirmations1.jpg)
-   
-
-2. Select the request to click “Approve” or "Reject". Also by clicking "Approve all" or "Reject all", the action can be done for all the requests at once.
-   
- ![Project approve](../../assets/pending_confirmations2.jpg)
+1. Click on  "Pending confirmations" button on the top-right side of your Dashboard. In this window, the lists of "Order items" of "Pending order confirmation" and "Pending provider confirmation", as well as "Project update requests" can be found.<br><br>
+![Project approve](../../assets/pending_confirmations1.jpg)<br><br>
+2. Select the request to click “Approve” or "Reject". Also by clicking "Approve all" or "Reject all", the action can be done for all the requests at once.<br><br>
+![Project approve](../../assets/pending_confirmations2.jpg)
 
 
 
