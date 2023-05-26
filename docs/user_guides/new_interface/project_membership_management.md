@@ -19,7 +19,7 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
 ![Select organization](../../assets/add-member-1.jpg)<br><br>
 4. Select correct user, set the role and expiration date if necessary.<br><br>
 ![Select organization](../../assets/add-member-2.jpg)<br><br>
-5. Finally, click on "Add".<br><br>
+5. Finally, click on "Add".
 6. User now will get invitation email with the acceptance link.<br><br>
 
 !!! note
