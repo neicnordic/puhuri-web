@@ -14,22 +14,16 @@ who is project principal investigator (PI). National resource allocator can assi
 ## Create a new organization
 
 
-1. Click on "Dashboard" and then “Add organization” in the organization selection window.
-
-
-   ![Select organization](../../assets/add-org.jpg)
-
-
+1. Click on "Dashboard" and then “Add organization” in the organization selection window.<br><br>
+![Select organization](../../assets/add-org.jpg)<br><br>
 2. Fill the form and click "Create organization":
     - Name - Name of the organization
     - Organization group - Resource Allocator that the organization belongs
     - Contact email - email of the person, who is responsible for the allocations in that organization
     - Contact phone - contact person’s phone (optional)
     - Website URL - url of the organization (optional)
-    - Logo - logo of the organization (optional)
-
-
-   ![Select organization](../../assets/add-org-2.jpg)
+    - Logo - logo of the organization (optional)<br><br>
+![Select organization](../../assets/add-org-2.jpg)
 
 
 ## Creation of projects
@@ -41,11 +35,8 @@ Prerequisites for creating projects:
     - Allocator must set PI role to the user in certain organization
 
 1. Select your home organization.
-
 2. Click on "Add project".
-
 3. Fill the necessary fields (fields marked with * are mandatory).
-
     - Project name - The original title of the project.
     - Project description - A brief description about the project.
     - OECD FoS code - OECD science field code ([more info](https://joinup.ec.europa.eu/collection/eu-semantic-interoperability-catalogue/solution/field-science-and-technology-classification/about))
@@ -74,17 +65,11 @@ Below is an example of requesting an allocation from LUMI supercomputer:
     - Benchmark Access
     - Development Access
     - Fast Track Access for Academia
-    - Fast Track Access for Industry
-
-
+    - Fast Track Access for Industry<br><br>
 2. Write the name for the resource allocation (NOTE: This name will be visible in accounting data.).
-
 3. Select correct plan (LUMI common) and write needed allocation quota (CPU, GPU and Storage).
-
 4. Write short description (optional).
-
 5. Click on the "Add to cart".
-
 6. Check once more and click on "Request an approval" if you are not a PI in a project or "Request" if you are a PI.
 
 <video controls width="100%" autoplay="true" muted loop >
