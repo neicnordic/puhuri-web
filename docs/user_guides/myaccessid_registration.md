@@ -71,6 +71,10 @@ If everything is correct, you're redirected back to MyAccessID to accept Terms o
 
 ![MyAccessID login](../assets/MyAccessID accept.PNG){ width="600" }
 
+### Raising the level of assurance with eduID account
+
+
+
 
 
 
