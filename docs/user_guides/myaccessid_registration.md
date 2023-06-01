@@ -81,7 +81,7 @@ To connect your identity to your eduID there are 3 options, to increase the auth
 
 Click on the third option "All other countries" to use Svipe ID cryptogtaphic identity verification method.
 
-![MyAccessID login](../assets/choose_identification_method_1.png){ width="600" } 
+![MyAccessID login](../assets/choose_identification_method_2.png){ width="600" } 
 
 After finishing the registration, if everything is correct, you will be redirected back to MyAccessID to accept Terms of Use documents and Privacy Policies.
 
