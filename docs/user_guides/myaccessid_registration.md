@@ -66,7 +66,7 @@ You're asked to enter your first name, last name and other relevant information.
 !!! note
     There is NO need to put an ID number, mobile phone or anything else in the “identity” or “advanced settings” tabs.
 
-![MyAccessID login](../assets/eduid name.png){ width="600" }
+![MyAccessID login](../assets/eduid name.PNG){ width="600" }
 
 ### Raising the level of assurance with eduID account
 
@@ -85,7 +85,7 @@ Click on the third option "All other countries" to use Svipe ID cryptogtaphic id
 
 After finishing the registration, if everything is correct, you will be redirected back to MyAccessID to accept Terms of Use documents and Privacy Policies.
 
-![MyAccessID login](../assets/MyAccessID accept.png){ width="600" }
+![MyAccessID login](../assets/MyAccessID accept.PNG){ width="600" }
 
 
 
