@@ -68,6 +68,10 @@ You're asked to enter your first name, last name and other relevant information.
 
 ![MyAccessID login](../assets/eduid name.PNG){ width="600" }
 
+After finishing the registration, if everything is correct, you will be redirected back to MyAccessID to accept Terms of Use documents and Privacy Policies.
+
+![MyAccessID login](../assets/MyAccessID accept.PNG){ width="600" }
+
 ### Raising the level of assurance with eduID account
 
 In the next step, by reviewing your information, click to the "Verify your identity" tab so you can verify your account.
@@ -75,17 +79,15 @@ In the next step, by reviewing your information, click to the "Verify your ident
 ![MyAccessID login](../assets/verify_identity_1.png){ width="600" }
 ![MyAccessID login](../assets/verify_identity_2.png){ width="600" }
 
-To connect your identity to your eduID there are 3 options, to increase the authentication level.
+To connect your identity to your eduID there are 3 options to increase the assurance level of authentication.
+
+1. Swedish Personal ID number - if you are a Swedish citizen you can utilize this option by your digital ID card or post or your phone number.
+2. EU citizen - if you are a citizen of one of the eIDAS countries you can use your electronic identification.
+3. All other countries - for the rest of the countries' citizens it is a valid option to make use of. It is based on SvipeID, which is cryptographic identity verification solution. You can easily follow the onscreen instructions to complete the verification process.
 
 ![MyAccessID login](../assets/choose_identification_method_1.png){ width="600" }
 
-Click on the third option "All other countries" to use Svipe ID cryptogtaphic identity verification method.
 
-![MyAccessID login](../assets/choose_identification_method_2.png){ width="600" } 
-
-After finishing the registration, if everything is correct, you will be redirected back to MyAccessID to accept Terms of Use documents and Privacy Policies.
-
-![MyAccessID login](../assets/MyAccessID accept.PNG){ width="600" }
 
 
 
