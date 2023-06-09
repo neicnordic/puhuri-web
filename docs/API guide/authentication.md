@@ -47,11 +47,12 @@ Content-Security-Policy: report-uri csp.hpc.ut.ee; form-action 'self';
 
 ## Authentication Token management
 
-You are also able to get token from the Puhuri Core web interface. Go to user workspace by selecting 'Manage' in the
-user drop-down.
+You are also able to get token from the Puhuri Core web interface.
+Select the user profile in the top-right corner and select Credentials
+and then API token:
 
-![side-bar](../assets/side-bar.png){: style="height:288px;width:220px"}
+![side-bar](../assets/user-profile-api-token.png)
 
-Scroll down to the Current API token field and click on the 'eye' icon to display the token.
+Click on the 'eye' icon in the API token field to display the token. You can also select the token lifetime on this page.
 
 ![api-token](../assets/api-token.png)
