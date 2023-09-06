@@ -83,7 +83,7 @@ To connect your identity to your eduID there are 3 options to increase the assur
 
 1. Swedish Personal ID number - if you are a Swedish citizen you can utilize this option by your digital ID card or post or your phone number.
 2. EU citizen - if you are a citizen of one of the eIDAS countries you can use your electronic identification.
-3. All other countries - for the rest of the countries' citizens it is a valid option to make use of. It is based on SvipeID, which is cryptographic identity verification solution. You can easily follow the onscreen instructions to complete the verification process.
+3. All other countries - for the rest of the countries' citizens it is a valid option to make use of. It is based on SvipeID, which is an application allowing for digital identity verification based on data read from the electronic system of a passport / ID card and verification of the user's face. You can easily follow the onscreen instructions to complete the verification process. Please click on (this link)[https://www.svipe.com/get-started] to get started with Svipe ID.
 
 ![MyAccessID login](../assets/choose_identification_method_1.png){ width="600" }
 
