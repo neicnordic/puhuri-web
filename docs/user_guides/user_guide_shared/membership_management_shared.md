@@ -49,7 +49,7 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
 6. User now will get invitation email with the acceptance link.
 
 !!! note
-    Invitation is valid for 1 week!
+    Invitation is valid for 3 weeks!
     
     
 !!! abstract "Feedback"
