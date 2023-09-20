@@ -32,14 +32,15 @@ Project creation is allowed for Principal Investigators (PIs) and Resource Alloc
 
 Prerequisites for creating projects:
     - User must have a Puhuri account (logged in to Puhuri Portal using MyAccessID)
-    - Allocator must set PI role to the user in certain organization
+    - Allocator must set PI role to the user in a certain organization
 
 1. Select your home organization.
 2. Click on "Add project".
-3. Fill the necessary fields (fields marked with * are mandatory).
+3. Fill in the necessary fields (fields marked with * are mandatory).
     - Project name - The original title of the project.
     - Project description - A brief description about the project.
     - OECD FoS code - OECD science field code ([more info](https://joinup.ec.europa.eu/collection/eu-semantic-interoperability-catalogue/solution/field-science-and-technology-classification/about))
+    - Please indicate whether the project is intended for industrial applications.
     - End date - this is the end date for using the computational resources.
     - Project image - Profile picture for the project (optional).
 
