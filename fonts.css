@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  src: local('RobotoFlex_VariableFont'), url(../assets/fonts/RobotoFlex_VariableFont.ttf) format('truetype');
+}
