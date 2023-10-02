@@ -14,7 +14,7 @@
 
 4. Set new limits and click "Request for a change".
 
-5. Now national resource allocator has to [approve the changes.](https://puhuri.neic.no/puhuri_portal/user_guide_shared/project_approval_shared/#approving-project-and-allocation-creation-requests)
+5. Now national resource allocator has to [approve the changes.](https://puhuri.neic.no/user_guides/new_interface/project_approval/)
 
 
 <video controls width="100%" autoplay="true" muted loop >
