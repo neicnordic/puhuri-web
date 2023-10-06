@@ -89,7 +89,7 @@ X-XSS-Protection: 1; mode=block
 ```
 
 ## Project members permissions allocation
-User create a role for a user in a project.
+User creates a role for a user in a project.
 
 ```bash
 $ http --pretty=format -v POST https://puhuri-core-beta.neic.no/api/project-permissions/ Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811" role=member project=https://puhuri-core-beta.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/ user=https://puhuri-core-beta.neic.no/api/users/3f2cadfbb2b145fd8cf18d549dcd7329/
