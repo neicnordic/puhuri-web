@@ -92,116 +92,95 @@ X-XSS-Protection: 1; mode=block
 User creates a role for a user in a project.
 
 ```bash
-$ http --pretty=format -v POST https://puhuri-core-beta.neic.no/api/project-permissions/ Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811" role=member project=https://puhuri-core-beta.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/ user=https://puhuri-core-beta.neic.no/api/users/3f2cadfbb2b145fd8cf18d549dcd7329/
-POST /api/project-permissions/ HTTP/1.1
+$ http --pretty=format -v POST https://puhuri-core-beta.neic.no/api/projects/2477fb6fad594922ac2f5ba195807502/add_user/ Authorization:"Token b0dd9a5eb32a158b2739d57d2b359aeb30aef246" role=PROJECT.ADMIN user=d213b473874c44d0bb5e2588b091160d
+POST /api/projects/2477fb6fad594922ac2f5ba195807502/add_user/ HTTP/1.1
 Accept: application/json, */*;q=0.5
 Accept-Encoding: gzip, deflate
-Authorization: Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811
+Authorization: Token b0dd9a5eb32a158b2739d57d2b359aeb30aef246
 Connection: keep-alive
-Content-Length: 200
+Content-Length: 69
 Content-Type: application/json
 Host: puhuri-core-beta.neic.no
-User-Agent: HTTPie/2.4.0
+User-Agent: HTTPie/3.2.2
 
 {
-    "project": "https://puhuri-core-beta.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/",
-    "role": "member",
-    "user": "https://puhuri-core-beta.neic.no/api/users/3f2cadfbb2b145fd8cf18d549dcd7329/"
+    "role": "PROJECT.ADMIN",
+    "user": "d213b473874c44d0bb5e2588b091160d"
 }
 
 HTTP/1.1 201 Created
-Access-Control-Allow-Credentials: true
-Access-Control-Allow-Headers: Accept, Accept-Encoding, Authorization, Content-Type, Origin, User-Agent, X-CSRFToken, X-Requested-With
-Access-Control-Allow-Methods: DELETE, GET, OPTIONS, PATCH, POST, PUT
-Access-Control-Allow-Origin: *
-Access-Control-Expose-Headers: Link, X-Result-Count
-Allow: GET, POST, HEAD, OPTIONS
-Content-Language: en
-Content-Length: 721
-Content-Security-Policy: report-uri csp.hpc.ut.ee; form-action 'self';
-Content-Type: application/json
-Date: Fri, 09 Apr 2021 10:37:47 GMT
-Location: https://puhuri-core-beta.neic.no/api/project-permissions/10/
-Referrer-Policy: no-referrer-when-downgrade
-Strict-Transport-Security: max-age=31536000; preload
-Vary: Accept-Language, Cookie
-X-Content-Type-Options: nosniff
-X-Frame-Options: SAMEORIGIN
-X-XSS-Protection: 1; mode=block
+access-control-allow-credentials: true
+access-control-allow-headers: Accept, Accept-Encoding, Authorization, Content-Type, Origin, User-Agent, X-CSRFToken, X-Requested-With, sentry-trace, baggage
+access-control-allow-methods: DELETE, GET, OPTIONS, PATCH, POST, PUT
+access-control-allow-origin: *
+access-control-expose-headers: Link, X-Result-Count
+allow: POST, OPTIONS
+content-language: en
+content-length: 24
+content-security-policy: report-uri https://csp.hpc.ut.ee/log; form-action 'self'; frame-ancestors 'self';
+content-type: application/json
+date: Sun, 08 Oct 2023 17:28:49 GMT
+referrer-policy: strict-origin-when-cross-origin
+strict-transport-security: max-age=31536000; preload
+vary: Accept-Language, Cookie
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
 
 {
-    "created": "2021-04-09T10:37:47.246607Z",
-    "created_by": "https://puhuri-core-beta.neic.no/api/users/3f2cadfbb2b145fd8cf18d549dcd7329/",
-    "customer_name": "Danish e-Infrastructure Cooperation",
-    "expiration_time": null,
-    "pk": 10,
-    "project": "https://puhuri-core-beta.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/",
-    "project_name": "New project name",
-    "project_uuid": "4475ac77fa3a491aacb3fb3a6dfadadf",
-    "role": "member",
-    "url": "https://puhuri-core-beta.neic.no/api/project-permissions/10/",
-    "user": "https://puhuri-core-beta.neic.no/api/users/3f2cadfbb2b145fd8cf18d549dcd7329/",
-    "user_email": "admin@example.com",
-    "user_full_name": "Demo Staff",
-    "user_native_name": "",
-    "user_username": "admin",
-    "user_uuid": "3f2cadfbb2b145fd8cf18d549dcd7329"
+    "expiration_time": null
 }
 ```
 
 ## List project permissions
 
 ```bash
-$ http --pretty=format -v https://puhuri-core-beta.neic.no/api/project-permissions/ project==4475ac77fa3a491aacb3fb3a6dfadadf Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811"
-GET /api/project-permissions/?project=4475ac77fa3a491aacb3fb3a6dfadadf HTTP/1.1
+$ http --pretty=format -v https://puhuri-core-beta.neic.no/api/projects/2477fb6fad594922ac2f5ba195807502/list_users/ Authorization:"Token b0dd9a5eb32a158b2739d57d2b359aeb30aef246" 
+GET /api/projects/2477fb6fad594922ac2f5ba195807502/list_users/ HTTP/1.1
 Accept: */*
 Accept-Encoding: gzip, deflate
-Authorization: Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811
+Authorization: Token b0dd9a5eb32a158b2739d57d2b359aeb30aef246
 Connection: keep-alive
 Host: puhuri-core-beta.neic.no
-User-Agent: HTTPie/2.4.0
+User-Agent: HTTPie/3.2.2
 
 
 
 HTTP/1.1 200 OK
-Access-Control-Allow-Credentials: true
-Access-Control-Allow-Headers: Accept, Accept-Encoding, Authorization, Content-Type, Origin, User-Agent, X-CSRFToken, X-Requested-With
-Access-Control-Allow-Methods: DELETE, GET, OPTIONS, PATCH, POST, PUT
-Access-Control-Allow-Origin: *
-Access-Control-Expose-Headers: Link, X-Result-Count
-Allow: GET, POST, HEAD, OPTIONS
-Content-Language: en
-Content-Length: 723
-Content-Security-Policy: report-uri csp.hpc.ut.ee; form-action 'self';
-Content-Type: application/json
-Date: Fri, 09 Apr 2021 10:37:47 GMT
-Link: <https://puhuri-core-beta.neic.no/api/project-permissions/?project=4475ac77fa3a491aacb3fb3a6dfadadf>; rel="first", <https://puhuri-core-beta.neic.no/api/project-permissions/?project=4475ac77fa3a491aacb3fb3a6dfadadf>; rel="last"
-Referrer-Policy: no-referrer-when-downgrade
-Strict-Transport-Security: max-age=31536000; preload
-Vary: Accept-Language, Cookie
-X-Content-Type-Options: nosniff
-X-Frame-Options: SAMEORIGIN
-X-Result-Count: 1
-X-XSS-Protection: 1; mode=block
+access-control-allow-credentials: true
+access-control-allow-headers: Accept, Accept-Encoding, Authorization, Content-Type, Origin, User-Agent, X-CSRFToken, X-Requested-With, sentry-trace, baggage
+access-control-allow-methods: DELETE, GET, OPTIONS, PATCH, POST, PUT
+access-control-allow-origin: *
+access-control-expose-headers: Link, X-Result-Count
+allow: GET, HEAD, OPTIONS
+content-language: en
+content-length: 484
+content-security-policy: report-uri https://csp.hpc.ut.ee/log; form-action 'self'; frame-ancestors 'self';
+content-type: application/json
+date: Sun, 08 Oct 2023 17:29:53 GMT
+link: <https://puhuri-core-beta.neic.no/api/projects/2477fb6fad594922ac2f5ba195807502/list_users/>; rel="first", <https://puhuri-core-beta.neic.no/api/projects/2477fb6fad594922ac2f5ba195807502/list_users/>; rel="last"
+referrer-policy: strict-origin-when-cross-origin
+strict-transport-security: max-age=31536000; preload
+vary: Accept-Language, Cookie
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-result-count: 1
+x-xss-protection: 1; mode=block
 
 [
     {
-        "created": "2021-04-09T10:37:47.246607Z",
-        "created_by": "https://puhuri-core-beta.neic.no/api/users/3f2cadfbb2b145fd8cf18d549dcd7329/",
-        "customer_name": "Danish e-Infrastructure Cooperation",
+        "created": "2023-10-08T17:28:49.565755Z",
+        "created_by_full_name": "Demo User",
+        "created_by_uuid": "d213b473874c44d0bb5e2588b091160d",
         "expiration_time": null,
-        "pk": 10,
-        "project": "https://puhuri-core-beta.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/",
-        "project_name": "New project name",
-        "project_uuid": "4475ac77fa3a491aacb3fb3a6dfadadf",
-        "role": "member",
-        "url": "https://puhuri-core-beta.neic.no/api/project-permissions/10/",
-        "user": "https://puhuri-core-beta.neic.no/api/users/3f2cadfbb2b145fd8cf18d549dcd7329/",
-        "user_email": "admin@example.com",
-        "user_full_name": "Demo Staff",
-        "user_native_name": "",
-        "user_username": "admin",
-        "user_uuid": "3f2cadfbb2b145fd8cf18d549dcd7329"
+        "role_name": "PROJECT.ADMIN",
+        "role_uuid": "f734dc56c95e4f8880293defef00079e",
+        "user_email": "demo.user@example.com",
+        "user_full_name": "Demo User",
+        "user_image": null,
+        "user_username": "1af2bdea-73db-4790-baa5-5b487b6625f5@myaccessid.org",
+        "user_uuid": "d213b473874c44d0bb5e2588b091160d",
+        "uuid": "afdda66296c9490ebed72fce4a00d27a"
     }
 ]
 ```
@@ -210,33 +189,37 @@ X-XSS-Protection: 1; mode=block
 User can remove the permissions calling DELETE verb on permission's URL.
 
 ```bash
-$ http --pretty=format -v DELETE https://puhuri-core-beta.neic.no/api/project-permissions/10/ Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811"
-DELETE /api/project-permissions/10/ HTTP/1.1
-Accept: */*
+$ http --pretty=format -v POST https://puhuri-core-beta.neic.no/api/projects/2477fb6fad594922ac2f5ba195807502/delete_user/ Authorization:"Token b0dd9a5eb32a158b2739d57d2b359aeb30aef246" role=PROJECT.ADMIN user=d213b473874c44d0bb5e2588b091160d
+POST /api/projects/2477fb6fad594922ac2f5ba195807502/delete_user/ HTTP/1.1
+Accept: application/json, */*;q=0.5
 Accept-Encoding: gzip, deflate
-Authorization: Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811
+Authorization: Token b0dd9a5eb32a158b2739d57d2b359aeb30aef246
 Connection: keep-alive
-Content-Length: 0
+Content-Length: 69
+Content-Type: application/json
 Host: puhuri-core-beta.neic.no
-User-Agent: HTTPie/2.4.0
+User-Agent: HTTPie/3.2.2
 
+{
+    "role": "PROJECT.ADMIN",
+    "user": "d213b473874c44d0bb5e2588b091160d"
+}
 
-
-HTTP/1.1 204 No Content
-Access-Control-Allow-Credentials: true
-Access-Control-Allow-Headers: Accept, Accept-Encoding, Authorization, Content-Type, Origin, User-Agent, X-CSRFToken, X-Requested-With
-Access-Control-Allow-Methods: DELETE, GET, OPTIONS, PATCH, POST, PUT
-Access-Control-Allow-Origin: *
-Access-Control-Expose-Headers: Link, X-Result-Count
-Allow: GET, PUT, PATCH, DELETE, HEAD, OPTIONS
-Content-Language: en
-Content-Length: 0
-Content-Security-Policy: report-uri csp.hpc.ut.ee; form-action 'self';
-Date: Fri, 09 Apr 2021 10:38:37 GMT
-Referrer-Policy: no-referrer-when-downgrade
-Strict-Transport-Security: max-age=31536000; preload
-Vary: Accept-Language, Cookie
-X-Content-Type-Options: nosniff
-X-Frame-Options: SAMEORIGIN
-X-XSS-Protection: 1; mode=block
+HTTP/1.1 200 OK
+access-control-allow-credentials: true
+access-control-allow-headers: Accept, Accept-Encoding, Authorization, Content-Type, Origin, User-Agent, X-CSRFToken, X-Requested-With, sentry-trace, baggage
+access-control-allow-methods: DELETE, GET, OPTIONS, PATCH, POST, PUT
+access-control-allow-origin: *
+access-control-expose-headers: Link, X-Result-Count
+allow: POST, OPTIONS
+content-language: en
+content-length: 0
+content-security-policy: report-uri https://csp.hpc.ut.ee/log; form-action 'self'; frame-ancestors 'self';
+date: Sun, 08 Oct 2023 17:31:32 GMT
+referrer-policy: strict-origin-when-cross-origin
+strict-transport-security: max-age=31536000; preload
+vary: Accept-Language, Cookie
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
 ```
