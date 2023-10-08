@@ -124,27 +124,14 @@ we recommed for clarity to have one active project role per user in a project.
 
 The list of fields for creation are:
 
-- `user` - a user's URL, looked up from a previous step
-- `project` - a URL of a project where the permission needs to be created.
-- `role` - a role of the user. 'member', 'admin' and 'manager' are supported. TODO: add reference to Puhuri terminology.
+- `user` - a user's UUID, looked up from a previous step.
+- `role` - a role of the user. Both role UUID and name are supported. By default the system roles 'PROJECT.MEMBER', 'PROJECT.ADMIN' and 'PROJECT.MANAGER' are supported. TODO: add reference to Puhuri terminology.
+- `expiration_time` - an optional field, if provided, it should contain date or ISO 8601 datetime.
 
-Each permission has a unique URL. To remove the permission, REST API client needs to send a DELETE HTTP request
-to that URL.
+To remove the permission, REST API client needs to send a HTTP request using the same payload as for permission creation,
+but to `delete_user` endpoint .
 
-It is also possible to list available project permissions along with a various filters. Users can list permissions for
-all projects in their visibility range. To limit the permission set to a specific project
-or user, the following filters are supported:
-
-Possible query params for filtering:
-
-- `project` - a projects's UUID
-- `project_url` - a projects's URL
-- `user` - a user's UUID
-- `user_url` - a user's URL
-- `username` - a user's username (aka CUID)
-- `full_name` - a user's full name
-- `customer` - an organization's UUID
-- `role` - a role's name
+It is also possible to list available project permissions along with a `role` filter.
 
 Examples:
 
