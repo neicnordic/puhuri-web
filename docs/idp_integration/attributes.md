@@ -29,7 +29,7 @@ SAML Attributes MUST be sent using *urn:oasis:names:tc:SAML:2.0:attrname-format:
     - SAML attribute: *urn:oid:1.3.6.1.4.1.25178.1.2.9 (schacHomeOrganization)*
 - Assurance
     - SAML attribute: *urn:oid:1.3.6.1.4.1.5923.1.1.1.11 (eduPersonAssurance)*
-    - Assurance attribute is mandatory from March 1st, 2023
+    - Assurance attribute will become mandatory in 2023 (date TBD).
     - The following letter was sent to the federations:
   [Assurance letter](../assets/Letter%20for%20Identity%20providers.pdf)
 
