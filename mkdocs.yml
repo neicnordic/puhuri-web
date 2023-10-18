@@ -77,25 +77,26 @@ nav:
           - National Portal and LUMI: idp_integration/use-cases/national-portal-integration.md
           - KeyCloak: idp_integration/use-cases/keycloak-integration.md
   - User Guides:
-      - "user_guides/myaccessid_registration.md"
-      - "user_guides/myaccessid_account_linking.md"
-      - "user_guides/myaccessid-ssh-key.md"
       - "user_guides/interface.md"
       - "user_guides/organization_and_project_management.md"
       - "user_guides/project_membership_management.md"
       - "user_guides/project_modification.md"
       - "user_guides/project_approval.md"
       - "user_guides/usage_reports.md"
-      - Dedicated Puhuri Portal:
-          - "user_guides/user_guide_dedicated/organization_and_project_management.md"
-          - "user_guides/user_guide_dedicated/inviting_members.md"
-          - "user_guides/user_guide_dedicated/project_modification.md"
-          - "user_guides/user_guide_dedicated/project_approval.md"
-      - Shared Puhuri Portal:
-          - "user_guides/user_guide_shared/organization_and_project_management_shared.md"
-          - "user_guides/user_guide_shared/membership_management_shared.md"
-          - "user_guides/user_guide_shared/project_modification_shared.md"
-          - "user_guides/user_guide_shared/project_approval_shared.md"
-
+      - "user_guides/myaccessid_registration.md"
+      - "user_guides/myaccessid_account_linking.md"
+      - "user_guides/myaccessid-ssh-key.md"
       - "user_guides/usage_reports.md"
       - "user_guides/user_roles.md"
+      - Old Interface:
+          - Dedicated Puhuri Portal:
+              - "user_guides/user_guide_dedicated/organization_and_project_management.md"
+              - "user_guides/user_guide_dedicated/inviting_members.md"
+              - "user_guides/user_guide_dedicated/project_modification.md"
+              - "user_guides/user_guide_dedicated/project_approval.md"
+          - Shared Puhuri Portal:
+              - "user_guides/user_guide_shared/organization_and_project_management_shared.md"
+              - "user_guides/user_guide_shared/membership_management_shared.md"
+              - "user_guides/user_guide_shared/project_modification_shared.md"
+              - "user_guides/user_guide_shared/project_approval_shared.md"
+
