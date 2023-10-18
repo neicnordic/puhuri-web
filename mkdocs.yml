@@ -94,8 +94,8 @@ nav:
               - "user_guides/old_interface/user_guide_dedicated/project_modification.md"
               - "user_guides/old_interface/user_guide_dedicated/project_approval.md"
           - Shared Puhuri Portal:
-              - "user_guides/user_guide_shared/organization_and_project_management_shared.md"
-              - "user_guides/user_guide_shared/membership_management_shared.md"
-              - "user_guides/user_guide_shared/project_modification_shared.md"
-              - "user_guides/user_guide_shared/project_approval_shared.md"
+              - "user_guides/old_interface/user_guide_shared/organization_and_project_management_shared.md"
+              - "user_guides/old_interface/user_guide_shared/membership_management_shared.md"
+              - "user_guides/old_interface/user_guide_shared/project_modification_shared.md"
+              - "user_guides/old_interface/user_guide_shared/project_approval_shared.md"
 
