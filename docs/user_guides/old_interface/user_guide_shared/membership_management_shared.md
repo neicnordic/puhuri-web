@@ -14,15 +14,15 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
 ### New user has Puhuri account:
 
 1. Login to Puhuri Portal with MyAccessID.
-   ![Login](../../assets/Login.PNG){ width="400" }
+   ![Login](../../../assets/Login.PNG){ width="400" }
 
 2. Open project in Puhuri Portal.
 3. Select "Team" from left menu and click on "Add member".
-   ![Select organization](../../assets/Team.PNG)
-   ![Select organization](../../assets/Add%20member.PNG)
+   ![Select organization](../../../assets/Team.PNG)
+   ![Select organization](../../../assets/Add%20member.PNG)
 
 4. Select correct user, set the role and expiration date if necessary.
-   ![Add user](../../assets/shared_portal_add_member.PNG){ width="400" }
+   ![Add user](../../../assets/shared_portal_add_member.PNG){ width="400" }
 
 5. Finally, click on "Add".
 6. User now will get invitation email with the acceptance link.
@@ -33,17 +33,17 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
 ### New user don't have Puhuri account:
 
 1. Login to Puhuri Portal with MyAccessID.
-   ![Login](../../assets/Login.PNG){ width="400" }
+   ![Login](../../../assets/Login.PNG){ width="400" }
 
 2. Select your organization.
-   ![Select organization](../../assets/Select%20workspace.PNG)
-   ![Select organization](../../assets/Select%20workspace_1.PNG){ width="400" }
+   ![Select organization](../../../assets/Select%20workspace.PNG)
+   ![Select organization](../../../assets/Select%20workspace_1.PNG){ width="400" }
 
 3. Click on "Invite team member". 
-   ![Invite team member](../../assets/Organization%20overview.PNG)
+   ![Invite team member](../../../assets/Organization%20overview.PNG)
 
 4. Insert user's email and set the role and project (in case of inviting Co-PI, Member or Guest) for the new user.
-   ![Invite user](../../assets/shared_portal_user_invite.PNG){ width="400" }
+   ![Invite user](../../../assets/shared_portal_user_invite.PNG){ width="400" }
 
 5. Click "Invite user".
 6. User now will get invitation email with the acceptance link.

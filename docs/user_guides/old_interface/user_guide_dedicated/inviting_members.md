@@ -18,34 +18,34 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
     This is only allowed to national resource allocator representatives!
 
 1. Login to Puhuri Portal with MyAccessID. 
-   ![Login](../../assets/Login.PNG){ width="400" }
+   ![Login](../../../assets/Login.PNG){ width="400" }
 
 2. Select correct organization from "Select workspace".
 3. Select "Team" from left menu.
-   ![Team](../../assets/Team.PNG)
+   ![Team](../../../assets/Team.PNG)
 
 4a. If user already has Puhuri account, then click "Add PI" and select user from the drop-down list.
-    ![Add PI](../../assets/Add_PI.PNG)
-    ![Add PI popup](../../assets/Add_PI_popup.PNG){ width="400" }
+    ![Add PI](../../../assets/Add_PI.PNG)
+    ![Add PI popup](../../../assets/Add_PI_popup.PNG){ width="400" }
 
 4b. If user do not have Puhuri account, then "Invitations" and "Invite user".
-    ![Invite PI](../../assets/Invite_PI.PNG)
-    ![Invite PI](../../assets/user_invite.PNG){ width="400" }
+    ![Invite PI](../../../assets/Invite_PI.PNG)
+    ![Invite PI](../../../assets/user_invite.PNG){ width="400" }
 
 ## Adding project members
 
 ### If user already has Puhuri account connected with the organization, then:
 
 1. Login to Puhuri Portal with MyAccessID.
-   ![Login](../../assets/Login.PNG){ width="400" }
+   ![Login](../../../assets/Login.PNG){ width="400" }
 
 2. Open project in Puhuri Portal.
 3. Select "Team" from left menu and click on "Add member".
-   ![Select organization](../../assets/Team.PNG)
-   ![Select organization](../../assets/Add%20member.PNG)
+   ![Select organization](../../../assets/Team.PNG)
+   ![Select organization](../../../assets/Add%20member.PNG)
 
 4. Select correct user, set the role and expiration date if necessary.
-   ![Add user](../../assets/Add%20user.PNG){ width="400" }
+   ![Add user](../../../assets/Add%20user.PNG){ width="400" }
 
 5. Finally, click on "Add".
 6. User now will get invitation email with the acceptance link.
@@ -56,17 +56,17 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
 ### If user does not have Puhuri account, then:
 
 1. Login to Puhuri Portal with MyAccessID.
-   ![Login](../../assets/Login.PNG){ width="400" }
+   ![Login](../../../assets/Login.PNG){ width="400" }
 
 2. Select your organization.
-   ![Select organization](../../assets/Select%20workspace.PNG)
-   ![Select organization](../../assets/Select%20workspace_1.PNG){ width="400" }
+   ![Select organization](../../../assets/Select%20workspace.PNG)
+   ![Select organization](../../../assets/Select%20workspace_1.PNG){ width="400" }
 
 3. Click on "Invite team member". 
-   ![Invite team member](../../assets/Organization%20overview.PNG)
+   ![Invite team member](../../../assets/Organization%20overview.PNG)
 
 4. Insert user's email and set the role and project (in case of inviting Co-PI, Member or Guest) for the new user.
-   ![Invite user](../../assets/user_invite.PNG){ width="400" }
+   ![Invite user](../../../assets/user_invite.PNG){ width="400" }
 
 5. Click "Invite user".
 6. User now will get invitation email with the acceptance link.

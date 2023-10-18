@@ -14,11 +14,11 @@ who is project principal investigator (PI). National resource allocator can assi
 ## Create a new organization
 
 1. Login to Puhuri Portal using MyAccessID.
-   ![Login](../../assets/Login.PNG){ width="400" }
+   ![Login](../../../assets/Login.PNG){ width="400" }
 
 2. Click on "Select workspace" and then “Add new organization” in the organization selection window.
-   ![Select organization](../../assets/Select%20workspace.PNG)
-   ![Select organization](../../assets/Add_organization.PNG)
+   ![Select organization](../../../assets/Select%20workspace.PNG)
+   ![Select organization](../../../assets/Add_organization.PNG)
 
 3. Fill the form and click "Create organization":
     - Name - Name of the organization
@@ -26,7 +26,7 @@ who is project principal investigator (PI). National resource allocator can assi
     - Contact phone - contact person’s phone (optional)
     - Website URL - url of the organization (optional)
     - Logo - logo of the organization (optional)
-   ![Select organization](../../assets/Add_organization_data.PNG)
+   ![Select organization](../../../assets/Add_organization_data.PNG)
 
 
 ## Creation of projects
@@ -38,14 +38,14 @@ Prerequisites for creating projects:
     - Allocator must set PI role to the user in certain organization
 
 1. Login to Puhuri Portal using MyAccessID.
-   ![Login](../../assets/Login.PNG){ width="400" }
+   ![Login](../../../assets/Login.PNG){ width="400" }
 
 2. Select your home organization.
-   ![Select organization](../../assets/Select%20workspace.PNG)
-   ![Select organization](../../assets/Select%20workspace_1.PNG)
+   ![Select organization](../../../assets/Select%20workspace.PNG)
+   ![Select organization](../../../assets/Select%20workspace_1.PNG)
 
 3. Click on "Add project".
-   ![Add project](../../assets/Add%20project.PNG)
+   ![Add project](../../../assets/Add%20project.PNG)
 
 4. Fill the necessary fields (fields marked with * are mandatory).
 
@@ -74,12 +74,12 @@ Below is an example of requesting an allocation from LUMI supercomputer:
     - Development Access
     - Fast Track Access for Academia
     - Fast Track Access for Industry
-  ![Project details](../../assets/Service%20catalog.PNG)
-  ![Project details](../../assets/LUMI%20resource.PNG)
-  ![Project details](../../assets/Available%20resources.PNG)
+  ![Project details](../../../assets/Service%20catalog.PNG)
+  ![Project details](../../../assets/LUMI%20resource.PNG)
+  ![Project details](../../../assets/Available%20resources.PNG)
 
 2. Write the name for the resource allocation (NOTE: This name will be visible in accounting data.).
-   ![Project details](../../assets/Offering_conf.PNG)
+   ![Project details](../../../assets/Offering_conf.PNG)
 
 3. Select correct plan (LUMI common) and write needed allocation quota (CPU, GPU and Storage).
 
@@ -88,7 +88,7 @@ Below is an example of requesting an allocation from LUMI supercomputer:
 5. Click on the "Add to cart".
 
 6. Check once more and click on "Request an approval" if you not a PI in a project or "Request" if you PI.
-   ![Project details](../../assets/Approval%20request.PNG)
+   ![Project details](../../../assets/Approval%20request.PNG)
 
 After this, Resource allocator will request for resource and be able to [approve or reject](project_approval_shared.md) it.
 
