@@ -89,10 +89,10 @@ nav:
       - "user_guides/user_roles.md"
       - Old Interface:
           - Dedicated Puhuri Portal:
-              - "user_guides/user_guide_dedicated/organization_and_project_management.md"
-              - "user_guides/user_guide_dedicated/inviting_members.md"
-              - "user_guides/user_guide_dedicated/project_modification.md"
-              - "user_guides/user_guide_dedicated/project_approval.md"
+              - "user_guides/old_interface/user_guide_dedicated/organization_and_project_management.md"
+              - "user_guides/old_interface/user_guide_dedicated/inviting_members.md"
+              - "user_guides/old_interface/user_guide_dedicated/project_modification.md"
+              - "user_guides/old_interface/user_guide_dedicated/project_approval.md"
           - Shared Puhuri Portal:
               - "user_guides/user_guide_shared/organization_and_project_management_shared.md"
               - "user_guides/user_guide_shared/membership_management_shared.md"
