@@ -55,7 +55,7 @@ SAML Attributes MUST be sent using *urn:oasis:names:tc:SAML:2.0:attrname-format:
     - OIDC claim: *schac_home_organization*
 - Assurance
     - OIDC claim: *eduperson_assurance*
-    - Assurance attribute is mandatory from March 1st, 2023
+    - Assurance attribute will become mandatory in 2023 (date TBD).
     - The following letter was sent to the federations:
   [Assurance letter](../assets/Letter%20for%20Identity%20providers.pdf)
 
