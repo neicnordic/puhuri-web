@@ -4,9 +4,8 @@
 Project team contains users with different roles:
 
 - Co-Principal Investigator (Co-PI) - An individual recognized by the prime institution and the principal investigator (PI) as someone who shares scientific and administrative leadership responsibilities for a project with the PI.
-- Member - Users who work on one or more phases of the project and involved in doing assigned tasks.
-- Guest - Users who are only able to see project related data, not able to modify it.
-
+- Member - Users who work on one or more phases of the project and are involved in executing assigned tasks.
+- Guest - Users who are only able to see the project-related data but are not able to modify.
 Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User Rights based on Roles in the Organization.
 
 ## Adding project members
