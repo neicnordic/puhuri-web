@@ -3,7 +3,7 @@
 
 === "Puhuri Portal"
 
-    | | Resource allocator | PI | co-PI | Member |
+    | Activity Name | Resource allocator | PI | co-PI | Member |
     | --- | :----: | :----: | :----: | :----: |
     | Team Management | :material-check: | :material-check: | | |
     | Project Management | :material-check: || | |
