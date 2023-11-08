@@ -1,7 +1,5 @@
 # Organization and project management
 
-
-
 ## User guide for adding organizations
 
 !!! note
@@ -13,12 +11,9 @@ who is project principal investigator (PI). National resource allocator can assi
 
 ## Create a new organization
 
-
 1. Click on "Dashboard" and then “Add organization” in the organization selection window.
 
-
    ![Select organization](../../assets/add-org.jpg)
-
 
 2. Fill the form and click "Create organization":
     - Name - Name of the organization
@@ -28,9 +23,7 @@ who is project principal investigator (PI). National resource allocator can assi
     - Website URL - url of the organization (optional)
     - Logo - logo of the organization (optional)
 
-
    ![Select organization](../../assets/add-org-2.jpg)
-
 
 ## Creation of projects
 
@@ -51,7 +44,6 @@ Prerequisites for creating projects:
     - OECD FoS code - OECD science field code ([more info](https://joinup.ec.europa.eu/collection/eu-semantic-interoperability-catalogue/solution/field-science-and-technology-classification/about))
     - End date - this is the end date for using the computational resources.
     - Project image - Profile picture for the project (optional).
-
 
 <video controls width="100%" autoplay="true" muted loop >
   <source src="../../assets/videos/how_to_add_project_1.mp4" type="video/mp4">
@@ -76,7 +68,6 @@ Below is an example of requesting an allocation from LUMI supercomputer:
     - Fast Track Access for Academia
     - Fast Track Access for Industry
 
-
 2. Write the name for the resource allocation (NOTE: This name will be visible in accounting data.).
 
 3. Select correct plan (LUMI common) and write needed allocation quota (CPU, GPU and Storage).
@@ -92,8 +83,6 @@ Below is an example of requesting an allocation from LUMI supercomputer:
 </video>
 
 After this, Resource allocator will get a request for resource and be able to [approve or reject](project_approval_shared.md) it.
-
-
 
 !!! abstract "Feedback" 
     We welcome feedback from our users - it helps us to continually improve. Please send an email with your suggestions to [support@puhuri.io](mailto:support@puhuri.io).

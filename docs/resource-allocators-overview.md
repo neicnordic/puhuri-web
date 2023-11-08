@@ -6,7 +6,6 @@ As a Resource Allocator using Puhuri, you can choose between different ways to h
 - [Dedicated Puhuri Portal](dedicated-puhuri-portal.md)
 - [Shared Puhuri Portal](shared-puhuri-portal.md)
 
-
 ## Puhuri portal hosting
 
 - self-host Puhuri Portal (docker-compose or Helm-based);
@@ -53,7 +52,7 @@ you need to make sure that the following record is added in the DNS:
 Puhuri Portal exposes services on encrypted endpoints, for HTTPS to validate without issues, its certificate must match
 the domain name.
 
-Currently two options are supported:
+Currently, two options are supported:
 
 - Getting certificates using Letsencrypt and http01 validation schema;
 - Using custom certificates provided by the organization. Please reach out to support@puhuri.io for details on secure

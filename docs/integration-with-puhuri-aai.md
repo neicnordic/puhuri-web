@@ -74,8 +74,6 @@ Email addresses for administrative, security and technical contacts or teams res
 
     - **`SAML2 Metadata (URL)`** - This textbox is only visible if you have NOT selected that the SP is available in eduGAIN. Provide the URL pointing to the SAML2 metadata of the service.
 
-
-
 - **Registering an OIDC Service Provider**
 
     - **`Flow`** - Choose the OpenID Connect / OAuth2 flow applicable for your service. Options are Authorization Code and Implicit. The use of Authorization Code is strongly recommended.

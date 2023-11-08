@@ -29,7 +29,6 @@ Contact email will be used for establishing a communication channel from operato
 and managing integration accounts. Contact phone will be used for emergencies only. URL of organization is
 optional and will be used for better understanding of the background of the allocator.
 
-
 ## LUMI Use-case
 
 TODO: Add interactions between components.

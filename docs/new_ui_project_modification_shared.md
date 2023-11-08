@@ -1,6 +1,5 @@
 # Projects and allocations management
 
-
 ## Allocation update process
 
 !!! note
@@ -15,7 +14,6 @@
 4. Set new limits and click "Request for a change".
 
 5. Now national resource allocator has to [approve the changes.](https://puhuri.neic.no/puhuri_portal/user_guide_shared/project_approval_shared/#approving-project-and-allocation-creation-requests)
-
 
 <video controls width="100%" autoplay="true" muted loop >
   <source src="../../assets/videos/how_to_update_resource_limit.mp4" type="video/mp4">
@@ -40,4 +38,3 @@
 
 !!! abstract "Feedback"   
     We welcome feedback from our users - it helps us to continually improve. Please send an email with your suggestions to [support@puhuri.io](mailto:support@puhuri.io).
-

@@ -1,6 +1,5 @@
 # Project membership management
 
-
 Project team contains users with different roles:
 
 - Co-Principal Investigator (Co-PI) - An individual recognized by the prime institution and the principal investigator (PI) as someone who shares scientific and administrative leadership responsibilities for a project with the PI.
@@ -20,7 +19,6 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
 
 4. Select correct user, set the role and expiration date if necessary.
 
-
    ![Select organization](../../assets/add-member-2.jpg)
 
 5. Finally, click on "Add".
@@ -33,12 +31,9 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
 1. Open project in Puhuri Portal.
 2. Select "Team" from top menu and click on "Invitations".
 
-
    ![Invite user](../../assets/invitation-1.jpg)
-   
-   
-3. Clicking "Invite user" opens "Invite by email" window.
 
+3. Clicking "Invite user" opens "Invite by email" window.
 
    ![Invite user](../../assets/invitation-2.jpg)
 
@@ -46,14 +41,12 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
 
 5. Fill in your custom message (if needed) on the right side of the window and send the invitation.
 
-
    ![Invite user](../../assets/invitation-3.jpg)
    
 6. User will now get invitation email with the acceptance link.
 
 !!! note
     Invitation is valid for 3 weeks!
-    
     
 !!! abstract "Feedback"
     We welcome feedback from our users - it helps us to continually improve. Please send an email with your suggestions to [support@puhuri.io](mailto:support@puhuri.io).
