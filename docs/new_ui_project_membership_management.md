@@ -15,7 +15,7 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
  
 1. Open your project in Puhuri Portal.
 2. Select "Team" from top menu and click on "Users".
-3. By clicking "Add member" open "Add project member" window. \
+3. Clicking "Add member" opens "Add project member" window. \
   ![Select organization](../../assets/add-member-1.jpg)
 
 4. Select correct user, set the role and expiration date if necessary.
@@ -24,7 +24,6 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
    ![Select organization](../../assets/add-member-2.jpg)
 
 5. Finally, click on "Add".
-6. User now will get invitation email with the acceptance link.
 
 !!! note
     Invitation is valid for 3 weeks!
@@ -38,19 +37,19 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
    ![Invite user](../../assets/invitation-1.jpg)
    
    
-3. By clicking "Invite user" open "Invite by email" window.
+3. Clicking "Invite user" opens "Invite by email" window.
 
 
    ![Invite user](../../assets/invitation-2.jpg)
 
 4. Insert user's email and set the role for the new user and continue.
 
-5. Fill in your custom message on the right side of the window and send the invitation.
+5. Fill in your custom message (if needed) on the right side of the window and send the invitation.
 
 
    ![Invite user](../../assets/invitation-3.jpg)
    
-6. User now will get invitation email with the acceptance link.
+6. User will now get invitation email with the acceptance link.
 
 !!! note
     Invitation is valid for 3 weeks!
