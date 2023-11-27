@@ -2,10 +2,37 @@
 
 Project team contains users with different roles:
 
-- Co-Principal Investigator (Co-PI) - An individual recognized by the prime institution and the principal investigator (PI) as someone who shares scientific and administrative leadership responsibilities for a project with the PI.
-- Member - Users who work on one or more phases of the project and are involved in executing assigned tasks.
-- Guest - Users who are only able to see the project-related data but are not able to modify it.
+- Principal Investigator (PI)  - An individual recognized by the prime institution who is responsible for the scientific and administrative leadership of the project.
+- Co-Principal Investigator (co-PI) is a collaborator who shares leadership and responsibility for a research project with the primary Principal Investigator (PI).
+- Member is a user who works on one or more phases of the project and is involved in executing assigned tasks.
+- Guest is a user who is only able to see the project-related data but cannot modify it.
+  
 Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User Rights based on Roles in the Organization.
+
+## If User’s Home Organization changes
+
+1. <b>Informing Changes:</b>
+
+If a user changes their organization, it is their responsibility to notify the Principal Investigator (PI).
+If the PI's organization changes, they should inform the Resource Allocation Body (RA), as specified in the service provider's terms of use.
+
+2. <b>Evaluation and Approval:</b>
+
+The PI and/or RA will assess whether continued usage is allowed.
+
+3. <b>Account Transition:</b>
+
+Users must register a new account due to identity provider changes.
+The new user account needs to be added to the project by the PI or co-PI.
+
+4. <b>Data Migration:</b>
+
+Before closing the old account, users should migrate files to the home organization.
+Data can be copied back when the new account is opened.
+
+5. <b>Usage Restrictions:</b>
+
+If LUMI usage is disallowed, the PI or RA should remove the user from the project team.
 
 ## Adding project members
 
