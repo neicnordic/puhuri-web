@@ -11,26 +11,26 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
 
 ## If User’s Home Organization changes
 
-1. <b>Informing Changes:</b>
+- <b>Informing Changes:</b>
 
 If a user changes their organization, it is their responsibility to notify the Principal Investigator (PI).
 If the PI's organization changes, they should inform the Resource Allocation Body (RA), as specified in the service provider's terms of use.
 
-1. <b>Evaluation and Approval:</b>
+- <b>Evaluation and Approval:</b>
 
 The PI and/or RA will assess whether continued usage is allowed.
 
-1. <b>Account Transition:</b>
+- <b>Account Transition:</b>
 
 Users must register a new account due to identity provider changes.
 The new user account needs to be added to the project by the PI or co-PI.
 
-1. <b>Data Migration:</b>
+- <b>Data Migration:</b>
 
 Before closing the old account, users should migrate files to the home organization.
 Data can be copied back when the new account is opened.
 
-1. <b>Usage Restrictions:</b>
+- <b>Usage Restrictions:</b>
 
 If LUMI usage is disallowed, the PI or RA should remove the user from the project team.
 
