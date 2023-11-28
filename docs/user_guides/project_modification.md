@@ -13,7 +13,7 @@
 
 4. Set new limits and click "Request for a change".
 
-5. Now, the national resource allocator has to [approve the changes.](https://puhuri.neic.no/user_guides/new_interface/project_approval/)
+5. Now, the national resource allocator has to [approve the changes.](https://puhuri.neic.no/user_guides/project_approval/)
 
 <video controls width="100%" autoplay="true" muted loop >
   <source src="../../../assets/videos/how_to_update_resource_limit.mp4" type="video/mp4">
