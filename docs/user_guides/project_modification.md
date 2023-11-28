@@ -30,7 +30,7 @@
 
 3. Update the project end date and any other details if needed, and click "Update project details".
 
-4. Now, the national resource allocator has to [approve the changes.](https://puhuri.neic.no/user_guides/new_interface/project_approval/)
+4. Now, the national resource allocator has to [approve the changes.](https://puhuri.neic.no/user_guides/project_approval/)
 
 <video controls width="100%" autoplay="true" muted loop >
   <source src="../../../assets/videos/how_to_update_project_end_date.mp4" type="video/mp4">
