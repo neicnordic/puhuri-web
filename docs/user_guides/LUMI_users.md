@@ -28,4 +28,4 @@ If LUMI usage is disallowed, the PI or RA should remove the user from the projec
 
 ## LUMI Project Lifecycle
 
-   ![Lumi users](../assets/lumiuser_flow.png)
+   ![Lumi users](../assets/lumi_user_flow.png)
