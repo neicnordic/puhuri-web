@@ -77,8 +77,39 @@ Below is an example of requesting an allocation from LUMI supercomputer:
   <source src="../../../assets/videos/how_to_add_resource.mp4" type="video/mp4">
 </video>
 
-After this, Resource allocator will get a request for resource and be able to [approve or reject](project_approval_shared.md) it.
+After this, the Resource allocator will get a request for the resource and be able to [approve or reject](project_approval_shared.md) it.
 
+## Applicable to LUMI only
+
+## If User’s Home Organization/Employer changes
+
+- <b>Informing Changes:</b>
+
+If a user changes their organization, it is their responsibility to notify the Principal Investigator (PI).
+If the PI's organization changes, they should inform the Resource Allocation Body (RA), as specified in the service provider's terms of use.
+
+- <b>Evaluation and Approval:</b>
+
+The PI and/or RA will assess whether continued usage is allowed. If the continued usage is allowed, then:
+
+- <b>Account Transition:</b>
+
+Users must register a new account due to identity provider changes.
+The new user account needs to be added to the project by the RA, PI, or co-PI.
+
+- <b>Data Migration:</b>
+
+Before closing the old account, users should migrate files to the home organization.
+Data can be copied back when the new account is opened.
+
+- <b>Usage Restrictions:</b>
+
+If LUMI usage is disallowed, the PI or RA should remove the user from the project team. Please note: once the user account is disconnected from all projects, the user will lose access to LUMI.
+
+
+## LUMI Project Lifecycle
+
+   ![Lumi users](../assets/lumi_user_flow.png)
 
 
 !!! abstract "Feedback" 
