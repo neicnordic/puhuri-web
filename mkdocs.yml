@@ -68,6 +68,7 @@ nav:
       - SDK Guide:
           - "SDK guide/initial-setup.md"
           - "SDK guide/allocation-management-sp.md"
+          - "SDK guide/order-api-changes.md"
   - IdP Integration:
       - "idp_integration/index.md"
       - eduGAIN integration: idp_integration/requirements-edugain.md
