@@ -9,7 +9,7 @@ This site is aimed at providing a high level technical information about Puhuri 
 ### Breaking change in Order API
 
 In December 2023 a change affecting order management API will be released. The exact date will be announced once
-integrations with service providers are validated. [See more details](SDK Guide/order-api-changes/).
+integrations with service providers are validated. [See more details](SDK Guide/order-api-changes.md).
 
 Puhuri Core Beta and Puhuri Core Dev are running the new version, you are welcome to validate your integrations
 and reach out to [support@puhuri.io](mailto:support@puhuri.io) in case of issues.
