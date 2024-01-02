@@ -112,6 +112,12 @@ If LUMI usage is disallowed, the PI or RA should remove the user from the projec
    ![Lumi users](../assets/lumi_user_flow.png)
 
 
+
+## User Account Lifecycle
+
+![Lumi users](../assets/user_account_life_cycle.png)
+
+
 !!! abstract "Feedback" 
     We welcome feedback from our users - it helps us to continually improve. Please send an email with your suggestions to [support@puhuri.io](mailto:support@puhuri.io).
 
