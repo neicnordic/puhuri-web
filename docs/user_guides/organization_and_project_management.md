@@ -113,7 +113,7 @@ If LUMI usage is disallowed, the PI or RA should remove the user from the projec
 
 
 
-## User Account Lifecycle
+## LUMI User Account Lifecycle
 
 ![Lumi users](../assets/user_account_life_cycle.png)
 
