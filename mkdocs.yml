@@ -25,6 +25,7 @@ markdown_extensions:
   - pymdownx.tabbed:
         alternate_style: true
 plugins:
+  - search
   - glightbox:
         touchNavigation: true
         loop: false
