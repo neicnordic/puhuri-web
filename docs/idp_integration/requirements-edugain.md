@@ -26,7 +26,7 @@ IdPs are required to release also the following attributes for users to successf
 
 - **Affiliation** 
 - **Home Organization**
-- **Assurance** - attribute will become mandatory in 2023 (date TBD) 
+- **Assurance** - attribute will become mandatory
 
 Please refer to [Attribute formats](https://puhuri.neic.no/idp_integration/attributes)  for specification of accepted attribute formats. 
 
