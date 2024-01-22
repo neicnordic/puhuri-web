@@ -97,63 +97,53 @@ result = client.list_marketplace_resources(
 # }
 ```
 
-## Approving/rejecting order items for allocations
+## Approving/rejecting allocation order by service provider
 
-A consumer can request allocation creation, update or termination using `OrderItem` entity.
-The service provider can either approve or reject it using
-`marketplace_order_item_approve` and `marketplace_order_item_reject` correspondingly.
-Both methods obtain **`order_item_uuid`** - UUID of an order item for the allocation.
-Only users with service provider owner and manager roles can perform these actions.
+The service provider can either approve or reject order using
+`marketplace_order_approve_by_provider` and `marketplace_order_reject_by_provider` correspondingly.
+Both of these methods expect as its only argument UUID of an order for the allocation.
 
-For example, a consumer requested an allocation using `OrderItem` with `CREATE` type. After that, an empty allocation with `CREATING` state was appeared.
-A service provider can change the state to `OK` (created successfully) using `marketplace_order_item_approve` or
-`Terminated` (creation rejected) using `marketplace_order_item_reject`.
-In order to get a proper order item, SP owner can use `list_order_items` method. This action is for order item listing and supports filtering by state and allocation.
+For example, a consumer requested an allocation using `Order` with `CREATE` type. After that, an empty allocation with `CREATING` state has appeared.
+A service provider can change the state to `ok` (created successfully) using `marketplace_order_approve_by_provider` or
+`rejected` (creation rejected) using `marketplace_order_reject_by_provider`.
+In order to get a proper order, SP owner can use `list_orders` method. This action is for order listing and supports filtering by state and allocation.
 
 ```python
-order_items = client.list_order_items(
+orders = client.list_orders(
     {
         'state': 'executing',
-        'marketplace_resource_uuid': '<allocation-uuid>'
+        'resource_uuid': '<allocation-uuid>'
     }
 )
 
-order_item = order_items[0]
+order = orders[0]
 
-result = client.marketplace_order_item_approve(
-    order_item_uuid=order_item['uuid'],
-)
-
-# result => {
-#   'details': 'Order item has been approved.'
-#}
+client.marketplace_order_approve_by_provider(order['uuid'])
 ```
 
-## Termination (cancellation) of order items for allocations
+## Cancellation of orders for allocations
 
-A consumer can also terminate (cancel) created order item and subsequently interrupt the requested operation over allocation.
+A consumer can also cancel created order and subsequently interrupt the requested operation over allocation.
 For example, this option is suitable if the customer wants to cancel allocation deletion.
-For this, `marketplace_order_item_terminate` method should be used.
-It changes the state of the order item to `terminated`.
-**NB**: this transition is possible only if the item's state is equal to `pending` or `executing`.
+For this, `marketplace_order_cancel` method should be used.
+It changes the state of the order to `canceled`.
+**NB**: this transition is possible only if the order's state is equal to `pending-consumer` or `pending-provider` and offering type is basic or support.
 
 ```python
-order_items = client.list_order_items(
+orders = client.list_orders(
     {
         'state': 'executing',
-        'marketplace_resource_uuid': '<allocation-uuid>',
+        'resource_uuid': '<allocation-uuid>',
         'type': 'Terminate',
     }
 )
 
-order_item = order_items[0]
+order = orders[0]
 
-result = client.marketplace_order_item_terminate(
-    order_item_uuid=order_item['uuid'],
-)
+result = client.marketplace_order_cancel(order['uuid'])
 
 # result => {
-#   'details': 'Order item termination has been scheduled.'
+#   'details': 'order termination has been scheduled.'
 #}
 ```
 

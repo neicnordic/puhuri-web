@@ -126,7 +126,7 @@ X-XSS-Protection: 1; mode=block
         "native_description": "",
         "native_name": "",
         "options": {},
-        "order_item_count": 1.0,
+        "order_count": 1.0,
         "paused_reason": "",
         "plans": [
             {
@@ -175,32 +175,27 @@ X-XSS-Protection: 1; mode=block
 ```
 
 ## Creation of a resource allocation
-User can create an order item including requested allocation parameters.
+User can create an order providing requested allocation parameters.
 
 - **`project`** - project's UUID
-- **`items`** - list of required allocations including:
-    - **`offering`** - respectful offering's URL
-    - **`attributes`** - specific attributes for the offering
-    - **`plan`** - plan's URL (if offering is billable)
-    - **`limits`** - a set of resource limits for an allocation
+- **`offering`** - respectful offering's URL
+- **`attributes`** - specific attributes for the offering
+- **`plan`** - plan's URL (if offering is billable)
+- **`limits`** - a set of resource limits for an allocation
 
 ```bash
 $ http --pretty=format -v POST https://puhuri-core-beta.neic.no/api/marketplace-orders/ Authorization:"Token 32e7682378fa394b0f8b2538c444b60129ebfb47" <<< '{
     "project": "https://puhuri-core-beta.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/",
-    "items": [
-        {
-            "offering": "https://puhuri-core-beta.neic.no/api/marketplace-public-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
-            "attributes": {
-                "name": "Resource allocation1"
-            },
-            "plan": "https://puhuri-core-beta.neic.no/api/marketplace-public-plans/c0fb33c79e9b48f69fcb6da26db5a28b/",
-            "limits": {
-                "gb_k_hours": 1,
-                "gpu_k_hours": 2,
-                "cpu_k_hours": 3
-            }
-        }
-    ]
+    "offering": "https://puhuri-core-beta.neic.no/api/marketplace-public-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
+    "attributes": {
+        "name": "Resource allocation1"
+    },
+    "plan": "https://puhuri-core-beta.neic.no/api/marketplace-public-plans/c0fb33c79e9b48f69fcb6da26db5a28b/",
+    "limits": {
+        "gb_k_hours": 1,
+        "gpu_k_hours": 2,
+        "cpu_k_hours": 3
+    }
 }'
 
 POST /api/marketplace-orders/ HTTP/1.1
@@ -214,20 +209,16 @@ Host: puhuri-core-beta.neic.no
 User-Agent: HTTPie/2.4.0
 
 {
-    "items": [
-        {
-            "attributes": {
-                "name": "Resource allocation1",
-            },
-            "limits": {
-                "cpu_k_hours": 3,
-                "gb_k_hours": 1,
-                "gpu_k_hours": 2
-            },
-            "offering": "https://puhuri-core-beta.neic.no/api/marketplace-public-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
-            "plan": "https://puhuri-core-beta.neic.no/api/marketplace-public-plans/c0fb33c79e9b48f69fcb6da26db5a28b/"
-        }
-    ],
+    "attributes": {
+        "name": "Resource allocation1",
+    },
+    "limits": {
+        "cpu_k_hours": 3,
+        "gb_k_hours": 1,
+        "gpu_k_hours": 2
+    },
+    "offering": "https://puhuri-core-beta.neic.no/api/marketplace-public-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
+    "plan": "https://puhuri-core-beta.neic.no/api/marketplace-public-plans/c0fb33c79e9b48f69fcb6da26db5a28b/"
     "project": "https://puhuri-core-beta.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/"
 }
 
@@ -261,49 +252,43 @@ X-XSS-Protection: 1; mode=block
     "created_by_full_name": "Demo Staff",
     "created_by_username": "admin",
     "customer_uuid": "d42a18b6b8ba4c2bb0591b3ff8fb181d",
-    "file": "https://puhuri-core-beta.neic.no/api/marketplace-orders/d4ba1c23c3de47d6b0ad61bbfbaeed05/pdf/",
-    "items": [
-        {
-            "attributes": {
-                "name": "Resource allocation1",
-            },
-            "category_title": "HPC",
-            "category_uuid": "5b61d0811cfe4ed6a004119795a4c532",
-            "cost": "1.3010000000",
-            "created": "2021-04-21T16:03:08.402139Z",
-            "error_message": "",
-            "error_traceback": "",
-            "limits": {
-                "cpu_k_hours": 3,
-                "gb_k_hours": 1,
-                "gpu_k_hours": 2
-            },
-            "modified": "2021-04-21T16:03:08.402139Z",
-            "offering": "https://puhuri-core-beta.neic.no/api/marketplace-public-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
-            "offering_billable": true,
-            "offering_description": "LUMI share of Denmark",
-            "offering_name": "LUMI Denmark",
-            "offering_shared": true,
-            "offering_terms_of_service": "",
-            "offering_thumbnail": null,
-            "offering_type": "Marketplace.Basic",
-            "offering_uuid": "073a0ddd6eba4ff4a90b943ae3e1b7c9",
-            "output": "",
-            "plan": "https://puhuri-core-beta.neic.no/api/marketplace-public-plans/c0fb33c79e9b48f69fcb6da26db5a28b/",
-            "plan_description": "Default plan for all LUMI",
-            "plan_name": "LUMI Common",
-            "plan_unit": "month",
-            "plan_uuid": "c0fb33c79e9b48f69fcb6da26db5a28b",
-            "provider_name": "Danish e-Infrastructure Cooperation",
-            "provider_uuid": "d42a18b6b8ba4c2bb0591b3ff8fb181d",
-            "state": "pending",
-            "type": "Create",
-            "uuid": "f980c6ae5dc746c5bf5bbf1e31ff7d7e"
-        }
-    ],
+    "attributes": {
+        "name": "Resource allocation1",
+    },
+    "category_title": "HPC",
+    "category_uuid": "5b61d0811cfe4ed6a004119795a4c532",
+    "cost": "1.3010000000",
+    "created": "2021-04-21T16:03:08.402139Z",
+    "error_message": "",
+    "error_traceback": "",
+    "limits": {
+        "cpu_k_hours": 3,
+        "gb_k_hours": 1,
+        "gpu_k_hours": 2
+    },
+    "modified": "2021-04-21T16:03:08.402139Z",
+    "offering": "https://puhuri-core-beta.neic.no/api/marketplace-public-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
+    "offering_billable": true,
+    "offering_description": "LUMI share of Denmark",
+    "offering_name": "LUMI Denmark",
+    "offering_shared": true,
+    "offering_terms_of_service": "",
+    "offering_thumbnail": null,
+    "offering_type": "Marketplace.Basic",
+    "offering_uuid": "073a0ddd6eba4ff4a90b943ae3e1b7c9",
+    "output": "",
+    "plan": "https://puhuri-core-beta.neic.no/api/marketplace-public-plans/c0fb33c79e9b48f69fcb6da26db5a28b/",
+    "plan_description": "Default plan for all LUMI",
+    "plan_name": "LUMI Common",
+    "plan_unit": "month",
+    "plan_uuid": "c0fb33c79e9b48f69fcb6da26db5a28b",
+    "provider_name": "Danish e-Infrastructure Cooperation",
+    "provider_uuid": "d42a18b6b8ba4c2bb0591b3ff8fb181d",
+    "state": "pending-provider",
+    "type": "Create",
+    "uuid": "f980c6ae5dc746c5bf5bbf1e31ff7d7e"
     "project": "https://puhuri-core-beta.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/",
     "project_uuid": "4475ac77fa3a491aacb3fb3a6dfadadf",
-    "state": "executing",
     "total_cost": "1.3010000000",
     "url": "https://puhuri-core-beta.neic.no/api/marketplace-orders/d4ba1c23c3de47d6b0ad61bbfbaeed05/",
     "uuid": "d4ba1c23c3de47d6b0ad61bbfbaeed05"
@@ -313,11 +298,11 @@ X-XSS-Protection: 1; mode=block
 If a token belongs to a staff user, the order can be approved automatically.
 Otherwise, there is additional need for manual approval.
 
-After that, order item should be pulled until resource UUID is present (`marketplace_resource_uuid` field).
+After that, order should be pulled until resource UUID is present (`marketplace_resource_uuid` field).
 
 ```bash
-$ http --pretty=format -v https://puhuri-core-beta.neic.no/api/marketplace-order-items/f980c6ae5dc746c5bf5bbf1e31ff7d7e/ Authorization:"Token 32e7682378fa394b0f8b2538c444b60129ebfb47"
-GET /api/marketplace-order-items/f980c6ae5dc746c5bf5bbf1e31ff7d7e/ HTTP/1.1
+$ http --pretty=format -v https://puhuri-core-beta.neic.no/api/marketplace-orders/f980c6ae5dc746c5bf5bbf1e31ff7d7e/ Authorization:"Token 32e7682378fa394b0f8b2538c444b60129ebfb47"
+GET /api/marketplace-orders/f980c6ae5dc746c5bf5bbf1e31ff7d7e/ HTTP/1.1
 Accept: */*
 Accept-Encoding: gzip, deflate
 Authorization: Token 32e7682378fa394b0f8b2538c444b60129ebfb47
@@ -386,7 +371,6 @@ X-XSS-Protection: 1; mode=block
     "old_cost_estimate": 1.301,
     "order_approved_at": "2021-04-21T16:03:08.430238Z",
     "order_approved_by": "Demo Staff",
-    "order_uuid": "d4ba1c23c3de47d6b0ad61bbfbaeed05",
     "output": "",
     "plan": "https://puhuri-core-beta.neic.no/api/marketplace-public-plans/c0fb33c79e9b48f69fcb6da26db5a28b/",
     "plan_description": "Default plan for all LUMI",
@@ -406,7 +390,11 @@ X-XSS-Protection: 1; mode=block
 }
 ```
 
-### TODO: add order item approval example
+### Order approval and rejection
+
+In order to approve order by consumer, you shall issue POST request against `/api/marketplace-orders/{UUID}/approve_by_consumer/` endpoint. Similarly in order to approve order by provider, you shall issue POST request against `/api/marketplace-orders/{UUID}/approve_by_provider/` endpoint. Otherwise, you shall issue POST request against `/api/marketplace-orders/{UUID}/reject_by_consumer/` or `/api/marketplace-orders/{UUID}/reject_by_provider/` endpoint. 
+
+Of course, these endpoints are available only if you have service provider or service consumer permission against corresponding offerings.
 
 ## Modification of a resource allocation
 
