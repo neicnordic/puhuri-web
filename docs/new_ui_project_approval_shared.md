@@ -5,7 +5,7 @@
 
 ## Approving project and allocation creation, update requests
 
-1. Click on  "Pending confirmations" button on the top-right side of your Dashboard. In this window, the lists of "Order items" of "Pending order confirmation" and "Pending provider confirmation", as well as "Project update requests" can be found. 
+1. Click on  "Pending confirmations" button on the top-right side of your Dashboard. In this window, the lists of "Pending order confirmation" and "Pending provider confirmation", as well as "Project update requests" can be found. 
    
    ![Project approve](../../assets/pending_confirmations1.jpg)
 

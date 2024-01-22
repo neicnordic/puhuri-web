@@ -144,8 +144,7 @@ Examples:
 Creating and managing resource allocations in Puhuri Core follows ordering logic.
 
 All operations on resources, which lead to changes in allocations - e.g. creation, modification of allocated limits
-or termination - are wrapped in an order. It is possible to have multiple actions of the same type in one order.
-Such actions are called Order items.
+or termination - are wrapped in an order.
 
 ### Listing offerings
 
@@ -192,21 +191,16 @@ Each of the offering will include a single plan.
 
 Full details of the Offering contain expected attributes that should be passed when creating an allocation.
 
-### Orders, order items and resources
+### Orders and resources
 
-To create a new allocation, an order must be created contain order item with requested attributes: project
+To create a new allocation, an order must be created with requested attributes: project
 as well as details about the allocations.
 
-Order might require additional approval - in this case upon creation its status will be `REQUESTED FOR APPROVAL`, which
+Order might require additional approvals - in this case upon creation its status will be `pending-consumer` or `pending-provider`, which
 can transition to `REJECTED` if order is rejected.
 Otherwise it will be switched to `EXECUTING`, ending either in `DONE` if all is good or `ERRED`, if error happens during the processing.
 
-Within an order, an order item is expected correspondingly to a single allocation to be created.
-You can provide multiple order items within a single order, but all of them have to be of the same type,
-i.e. `CREATE`, `UPDATE` or `TERMINATE`.
-
-As a result of successful processing of order item by Puhuri Core, it will create a new Resource. Its UUID will
-be available as a `marketplace_resource_uuid` field of the creation order item.
+Resource UUID is available as a `marketplace_resource_uuid` field of the creation order.
 
 In addition, ``accepting_terms_of_service`` flag must be provided as a lightweight confirmation that allocator is
 aware and agreeing with Terms of services of a specific Offering.
@@ -217,21 +211,17 @@ Example of the order payload sent with `POST` to ``https://puhuri-core-beta.neic
 
 {
    "project": "https://puhuri-core-beta.neic.no/api/projects/72fff2b5f09643bdb1fa30684427336b/",
-   "items": [
-      {
-         "offering": "https://puhuri-core-beta.neic.no/api/marketplace-public-offerings/0980e9426d5247a0836ccfd64769d900/",
-         "attributes": {
-            "name": "test20",
-         },
-         "limits":{
-            "gb_k_hours": 30,
-            "cpu_k_hours": 1,
-            "gpu_k_hours": 20
-         },
-         "plan": "https://puhuri-core-beta.neic.no/api/marketplace-public-plans/14b28e3a1cbe44b395bad48de9f934d8/",
-         "accepting_terms_of_service": true
-      }
-   ]
+   "offering": "https://puhuri-core-beta.neic.no/api/marketplace-public-offerings/0980e9426d5247a0836ccfd64769d900/",
+   "attributes": {
+      "name": "test20",
+   },
+   "limits":{
+      "gb_k_hours": 30,
+      "cpu_k_hours": 1,
+      "gpu_k_hours": 20
+   },
+   "plan": "https://puhuri-core-beta.neic.no/api/marketplace-public-plans/14b28e3a1cbe44b395bad48de9f934d8/",
+   "accepting_terms_of_service": true
 }
 ```
 
