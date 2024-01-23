@@ -79,9 +79,11 @@ nav:
           - National Portal and LUMI: idp_integration/use-cases/national-portal-integration.md
           - KeyCloak: idp_integration/use-cases/keycloak-integration.md
   - User Guides:
-      - "user_guides/myaccessid_registration.md"
-      - "user_guides/myaccessid_account_linking.md"
-      - "user_guides/myaccessid-ssh-key.md"
+      - Account Management:
+          - "user_guides/account_creation_removal.md"
+          - "user_guides/myaccessid_registration.md"
+          - "user_guides/myaccessid_account_linking.md"
+          - "user_guides/myaccessid-ssh-key.md"
       - "user_guides/interface.md"
       - "user_guides/organization_and_project_management.md"
       - "user_guides/project_membership_management.md"
