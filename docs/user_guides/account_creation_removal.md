@@ -4,7 +4,7 @@
 
 To establish an account on Puhuri Portal, the Resource Allocator or Principal Investigator (PI) must extend an invitation to the project or organization.
 Upon receiving the invitation, users can log in and initiate the creation of their MyAccessID account following [this user guideline](https://puhuri.neic.no/user_guides/myaccessid_registration), providing the necessary information.
-Subsequently, upon completing this process, users will find themselves seamlessly integrated into Puhuri Portal. Following acceptance of the terms and conditions of Puhuri Portal, the account in Puhuri Portal is automatically synchronized with MyAccessID.
+Subsequently, upon completing this process, users will find themselves seamlessly integrated into Puhuri Portal. Following acceptance of the terms and conditions of Puhuri Portal, the account in Puhuri Portal is automatically synchronized with MyAccessID (and with LUMI cluster if LUMI user).
 
 ## Account Removal:
 
