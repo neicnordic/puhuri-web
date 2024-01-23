@@ -1,6 +1,6 @@
 # Account Creation and Removal
 
-## Creating Your Account:
+## Account Creation:
 
 To establish an account on Puhuri Portal, the Resource Allocator or Principal Investigator (PI) must extend an invitation to the project or organization.
 Upon receiving the invitation, users can log in and initiate the creation of their MyAccessID account following [this user guideline](https://puhuri.neic.no/user_guides/myaccessid_registration), providing the necessary information.
