@@ -3,7 +3,7 @@
 ## Creating Your Account:
 
 To establish an account on Puhuri Portal, the Resource Allocator or Principal Investigator (PI) must extend an invitation to the project or organization.
-Upon receiving the invitation, users can log in and initiate the creation of their MyAccessID account following (this user guideline)[https://puhuri.neic.no/user_guides/myaccessid_registration/], providing the necessary information.
+Upon receiving the invitation, users can log in and initiate the creation of their MyAccessID account following [this user guideline](https://puhuri.neic.no/user_guides/myaccessid_registration), providing the necessary information.
 Subsequently, upon completing this process, users will find themselves seamlessly integrated into Puhuri Portal. Following acceptance of the terms and conditions of Puhuri Portal, the account in Puhuri Portal is automatically synchronized with MyAccessID.
 
 ## Account Removal:
@@ -20,6 +20,6 @@ When the need arises to remove the account from Puhuri Portal, follow these step
 
 ### Remove the account from MyAccessID
 
-To request the removal of your MyAccessID account, a separate email should be directed to the MyAccessID support team at this address: (support+myaccessid@eduteams.org)[mailto:support+myaccessid@eduteams.org].
+To request the removal of your MyAccessID account, a separate email should be directed to the MyAccessID support team at this address: [support+myaccessid@eduteams.org](mailto:support+myaccessid@eduteams.org).
 
 This two-step process ensures a comprehensive account removal procedure while maintaining the integrity of your associated accounts.
