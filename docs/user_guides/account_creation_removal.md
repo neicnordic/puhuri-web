@@ -11,9 +11,10 @@ Subsequently, upon completing this process, users will find themselves seamlessl
 ### Remove the account from Puhuri Portal
 
 To remove the account from Puhuri Portal, follow these steps:
-*  Navigate to the dashboard.
-*  Click on “Manage” and locate the “Account Removal” button at the bottom of the page.
-*  Utilize this button to request the removal of your Puhuri account from our support team.
+
+*    Navigate to the dashboard.
+*    Click on “Manage” and locate the “Account Removal” button at the bottom of the page.
+*    Utilize this button to request the removal of your Puhuri account from our support team.
 
 !!! note
        It’s important to note that while this process removes your account in Puhuri Portal, it does not impact your MyAccessID account.
