@@ -11,27 +11,6 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
 
 ## Adding project members
 
-### New user has Puhuri account:
-
-1. Open your project in Puhuri Portal.
-
-2. Select "Team" from the top menu and click on "Users".
-
-3. Clicking "Add member" opens the "Add project member" window.<br><br>
-
-    ![Select organization](../../assets/add-member-1.jpg)<br><br>
-
-4. Select the correct user, set the role and expiration date if necessary.<br><be>
-
-    ![Select organization](../../assets/add-member-2.jpg)<br><br>
-
-5. Finally, click on "Add".
-
-!!! note
-    The invitation is valid for 3 weeks!
-
-### New user don't have Puhuri account:
-
 1. Open project in Puhuri Portal.<br><br>
 2. Select "Team" from the top menu and click on "Invitations".<br><be>
 
