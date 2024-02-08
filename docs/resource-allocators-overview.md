@@ -23,7 +23,6 @@ In addition to English, Puhuri Portal can be used in additional languages. Curre
 - Czech
 - Danish
 - Dutch
-- Dutch
 - Estonian
 - French
 - Italian
