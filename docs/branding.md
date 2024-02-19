@@ -2,7 +2,7 @@
 
 ## Logos
 
-Puhuri logo with NeIC:
+Puhuri logo:
 
 ![Puhuri logo](assets/Puhuri_logo-transp_bg.png)
 [Download here](https://puhuri.neic.no/assets/Puhuri_logo-transp_bg.png)
