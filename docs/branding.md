@@ -2,7 +2,12 @@
 
 ## Logos
 
-Puhuri logo:
+Puhuri logo with NeIC:
+
+![Puhuri logo](assets/Puhuri_logo-transp_bg.png)
+[Download here](https://puhuri.neic.no/assets/Puhuri_logo-transp_bg.png)
+
+Puhuri logo with NeIC:
 
 ![Puhuri logo](assets/Puhuri_neic_original_transparent-back.png)
 [Download here](https://puhuri.neic.no/assets/Puhuri_neic_original_transparent-back.png)
@@ -38,3 +43,7 @@ Puhuri Core logo for dark background:
 Font and colors:
 
 ![Logo](assets/Puhuri_logo_user_guide-01.png)
+
+## License
+
+Puhuri logos are published under a CC-BY-NC-ND license. The ownership of the logos belongs to the University of Tartu.
