@@ -12,11 +12,6 @@ Puhuri logo with NeIC:
 ![Puhuri logo](assets/Puhuri_neic_original_transparent-back.png)
 [Download here](https://puhuri.neic.no/assets/Puhuri_neic_original_transparent-back.png)
 
-Puhuri logo (negative):
-
-![Puhuri logo](assets/Puhur_neic_negative_transparent-back_example.png)
-[Download here](https://puhuri.neic.no/assets/Puhuri_neic_negative_transparent-back.png)
-
 Puhuri Portal logo for light background:
 
 ![Portal Dark](assets/Puhuri_Portal_black.png)
