@@ -21,10 +21,10 @@ Puhuri aims to facilitate easy and efficient access to high-performance computin
 
 Please see [https://neic.no/puhuri/](https://neic.no/puhuri/)
 
-![Puhuri logo](assets/Puhuri_logo-transp_bg.png){: align=right width=200}
-
-The content of this website is available under CC BY 4.0 unless otherwise noted.
+![Puhuri logo](assets/Puhuri_logo-transp_bg.png){: width=200}
 
 Supported by:
 
-![NeIC logo](assets/NEIC_logo_screen_black_w400px.png){ align=right width=200}
+![NeIC logo](assets/NEIC_logo_screen_black_w400px.png){ width=200}
+
+The content of this website is available under CC BY 4.0 unless otherwise noted.
