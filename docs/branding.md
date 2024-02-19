@@ -41,4 +41,4 @@ Font and colors:
 
 ## License
 
-Puhuri logos are published under a CC-BY-NC-ND license. The ownership of the logos belongs to the University of Tartu.
+Puhuri logos are published under a CC BY-NC-ND 4.0 license. The owner of the logos and copyright belongs to the University of Tartu.
