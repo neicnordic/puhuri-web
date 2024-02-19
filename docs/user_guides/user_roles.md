@@ -11,5 +11,5 @@
     | Resource Request Approval (Orders) | :material-check: | | | |
 
 
-<b> Organization reader </b> - is an individual with the right to view the organization and project information connected to the organization. This user cannot modify any information.    
+<b> Organization reader </b> is an individual with the right to view the organization and project information connected to the organization. This user cannot modify any information.    
 <b> Member </b> obtains a user account in resource (such as in LUMI) through Puhuri but has no rights to manage anything in the Puhuri self-service environment.
