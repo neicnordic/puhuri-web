@@ -3,7 +3,7 @@
 ## Allocation update process
 
 !!! note
-    Only (national) resource allocation representatives can send allocation update requests. 
+    Only (national) resource allocation representatives can approve allocation update requests. 
 
 1. Select the organization and then the project from the "Organization / Project Selection" list on the left menu.
 
@@ -22,7 +22,7 @@
 ## Project end date update process
 
 !!! note
-    Only (national) resource allocation representatives can send project end-date update requests. 
+    Only (national) resource allocation representatives can approve project end-date update requests. 
 
 1. Select the organization and then the project from the "Organization / Project Selection" list on the left menu.
 
