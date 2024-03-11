@@ -9,7 +9,7 @@ Currently, MyAccessID provides 3 different ways to register an account:
 ### Create an account using your home academic institution
 
 To use this option, your home organization must be available in eduGAIN.
-To check that, type your home organization name to search field on MyAccessID login page.
+To check that, type your home organization name into the search field on the MyAccessID login page.
 
 ![MyAccessID login](../assets/MyAccessID login.PNG){ width="500" }
 
@@ -73,21 +73,25 @@ After finishing the registration, if everything is correct, you will be redirect
 ![MyAccessID login](../assets/MyAccessID accept.PNG){ width="600" }
 
 ### Raising the level of assurance with the eduID account
+ 
+As of today, not raising the level of assurance still allows you to access the resource. If your Level of Assurance attribute is not good enough, you will see the warning during the authentication process, but clicking "Proceed to the service" still allows access.
 
-In the next step, by reviewing your information, click to the "Verify your identity" tab so you can verify your account.
+In the next step, by reviewing your information, click the "Verify your identity" tab to verify your account.
 
 ![MyAccessID login](../assets/verify_identity_1.png){ width="600" }
 ![MyAccessID login](../assets/verify_identity_2.png){ width="600" }
 
-To connect your identity to your eduID, there are 3 options to increase the assurance level of authentication.
+To connect your identity to your eduID, there are currently 2 options out of 3 available to increase the assurance level of authentication.
+
+![MyAccessID login](../assets/Account_verification_new.png){ width="600" }
 
 1. Swedish Personal ID number - if you are a Swedish citizen you can utilize this option by your digital ID card or post or your phone number.
 2. EU citizen - if you are a citizen of one of the eIDAS countries you can use your electronic identification. Please note that you can use eIDAS identification to connect to MyAccessID directly.
 
 !!! warning
-    Option for all other countries is currently unavailable. EduID is working on finding a solution for identity vetting for the rest of the countries' citizens.
+    The third option for "All other countries" is currently unavailable. EduID is working on finding a solution for identity vetting for the rest of the countries' citizens.
 
-![MyAccessID login](../assets/choose_identification_method_1.png){ width="600" }
+
 
 
 
