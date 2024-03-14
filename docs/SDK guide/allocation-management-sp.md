@@ -243,8 +243,7 @@ result = client.marketplace_resource_get_team(
 A usage of a resource allocation can be submitted by a corresponding service provider.
 For this, the following methods are used:
 
-- `get_marketplace_offering` - getting offering with components info.
-  Arguments:
+- `get_marketplace_offering` - getting offering with components info. Arguments:
 
     - **`offering_uuid`** - UUID of an offering
 
@@ -252,25 +251,21 @@ For this, the following methods are used:
 
     - **`resource_uuid`** - UUID of a resource
 
-- `create_component_usages` - creating or updating components usage for the current plan
-
-    - **`plan_period_uuid`** - UUID of a plan period
+- `create_component_usages` - creating or updating components usage for the current plan. Arguments:
     - **`usages`** - list of `ComponentUsage` instances
+    - **`resource`** - UUID of a resource
 
 ```python
-from waldur_client import WaldurClient, ComponentUsage
+from waldur_client import ComponentUsage
 
 offering = client.get_marketplace_offering(offering_uuid='<offering-uuid>')
 component_types = [component['type'] for component in offering['components']]
-plan_periods = client.marketplace_resource_get_plan_periods(resource_uuid='<resource-uuid>')
+component_usages = [ComponentUsage(type=comp_type, amount=10, description='Usage') for comp_type in component_types]
 
-if len(plan_periods) > 0:
-    plan_period = plan_periods[0]
-
-    client.create_component_usages(
-        plan_period_uuid=plan_period['uuid'],
-        usages=[ComponentUsage(type=comp_type, amount=10, description='Usage') for comp_type in component_types]
-    )
+client.create_component_usages(
+    usages=component_usages,
+    resource='<resource-uuid>',
+)
 
 result = client.marketplace_resource_get_plan_periods('<resource-uuid>')
 
