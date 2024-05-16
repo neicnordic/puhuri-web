@@ -73,10 +73,12 @@ After finishing the registration, if everything is correct, you will be redirect
 ![MyAccessID login](../assets/MyAccessID accept.PNG){ width="600" }
 
 ### Raising the level of assurance with the eduID account
- 
-As of today, not raising the level of assurance still allows you to access the resource. If your Level of Assurance attribute is not good enough, you will see the warning during the authentication process, but clicking "Proceed to the service" still allows access.
 
-In the next step, by reviewing your information, click the "Verify your identity" tab to verify your account.
+!!! note
+    As of today, not raising the level of assurance still allows you to access the resource. If your Level of Assurance attribute is not good enough, you will see the warning during the authentication process, but clicking "Proceed to the service" still allows access.
+ 
+
+In the next step, to raise the level of assurance, click the "Verify your identity" tab to verify your account by reviewing your information.
 
 ![MyAccessID login](../assets/verify_identity_1.png){ width="600" }
 ![MyAccessID login](../assets/verify_identity_2.png){ width="600" }
