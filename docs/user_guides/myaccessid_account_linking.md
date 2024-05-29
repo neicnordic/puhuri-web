@@ -16,7 +16,11 @@ The first column shows the email connected to specific identity, second column s
 The first row in that table (excl headings) shows that your identity belongs to MyAccessID and next to that you can find the unique identifier connected to your MyAccessID account and this will be shared with the connected service provider if you're using MyAccessID AAI service.
 The row after that contains your current home organization (IdP) information.
 
-To add more linked identities, please click on "Link a New Account" and follow the on-screen process as you normally do, when you login with MyAccessID, but this time choose some other Identity Provider. It could be some other academic institution or eIDAS option.
+To add more linked identities, please log into your **primary account** and click on "Link a New Account”. Please follow the steps as prompted to log into your secondary MyAccessID account, but this time, choose the identity provider that you used for **secondary account authentication** (options are your organization, eIDAS, or eduID Sweden).
+
+!!! note
+      Always log in with this primary account first before linking any additional identities. Consistently using your primary account for initial logins ensures a unified identity across services. Remember the authentication methods for all linked accounts to avoid login errors.
+         
 
    ![Linked accounts page with marker](../assets/Linked_accounts.png)
    ![MyAccessID login](../assets/MyAccessID%20login.PNG)
