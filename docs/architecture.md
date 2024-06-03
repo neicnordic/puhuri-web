@@ -4,7 +4,7 @@ This page introduces the Puhuri components and high level architecture.
 
 ## Puhuri Components
 
-![MyAccessID scheme](assets/Puhuri_tech_drawing.png)
+![MyAccessID scheme](assets/Puhuri tech drawing 2024.jpeg)
 
 The diagram above shows a high level architecture of Puhuri. Puhuri links together Users with strong digital identity
 with Resources in a seamless way.
