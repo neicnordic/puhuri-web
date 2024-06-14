@@ -5,15 +5,10 @@
 !!! note
     Only (national) resource allocation representatives can approve allocation update requests. 
 
-1. Select the organization and then the project from the "Organization / Project Selection" list on the left menu.
-
-2. Select the correct allocation you would like to change.
-
-3. Select "Actions" and then "Change limits".
-
-4. Set new limits and click "Request for a change".
-
-5. Now, the national resource allocator has to [approve the changes.](https://puhuri.neic.no/user_guides/project_approval/)
+1. Navigate to the project dashboard and select "Resources" from the top menu.
+2. Select the correct allocation by hoovering on that until the "Action" button appears on the right, click on that and select "Change limits".<br>![Limits update 1](../../assets/Resource_limits_update_2024_1.png)<br>
+3. Set new limits and click "Submit".<br>![Limits update 2](../../assets/Resource_limits_update_2024_2.png)<br>
+4. Now, the national resource allocator has to [approve the changes.](https://puhuri.neic.no/user_guides/project_approval/)
 
 <video controls width="100%" autoplay="true" muted loop >
   <source src="../../../assets/videos/how_to_update_resource_limit.mp4" type="video/mp4">
@@ -24,13 +19,9 @@
 !!! note
     Only (national) resource allocation representatives can approve project end-date update requests. 
 
-1. Select the organization and then the project from the "Organization / Project Selection" list on the left menu.
-
-2. Select the correct project and click "Manage".
-
-3. Update the project end date and any other details if needed, and click "Update project details".
-
-4. Now, the national resource allocator has to [approve the changes.](https://puhuri.neic.no/user_guides/project_approval/)
+1. Navigate to the project dashboard and click "Manage" on the right.<br>![Project update 1](../../assets/Project_update_2024_1.png)<br>
+2. Make needed changes and click "Update project details".<br>![Project update 2](../../assets/Project_update_2024_2.png)<br>
+3. Now, the national resource allocator has to [approve the changes.](https://puhuri.neic.no/user_guides/project_approval/)
 
 <video controls width="100%" autoplay="true" muted loop >
   <source src="../../../assets/videos/how_to_update_project_end_date.mp4" type="video/mp4">
