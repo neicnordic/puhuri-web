@@ -7,7 +7,7 @@
 
 1. Navigate to the project dashboard and select "Resources" from the top menu.
 2. Select the correct allocation by hoovering on that until the "Action" button appears on the right, click on that and select "Change limits".<br>![Limits update 1](../../assets/Resource_limits_update_2024_1.png)<br>
-3. Set new limits and click "Submit".<br>![Limits update 2](../../assets/Resource_limits_update_2024_2.png)<br>
+3. Set new limits and click "Submit" (if you are Resource Allocator) or click "Request for a change" (if you belong to the project team).<br>![Limits update 2](../../assets/Resource_limits_update_2024_2.png)<br><br>![Limits update 2](../../assets/Resource_limits_update_2024_3.png)<br>
 4. Now, the national resource allocator has to [approve the changes.](https://puhuri.neic.no/user_guides/project_approval/)
 
 <video controls width="100%" autoplay="true" muted loop >
