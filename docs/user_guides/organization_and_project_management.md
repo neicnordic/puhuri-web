@@ -1,7 +1,5 @@
 # Organization and project management
 
-
-
 ## User guide for adding organizations
 
 !!! note
@@ -13,18 +11,14 @@ who is project principal investigator (PI). National resource allocator can assi
 
 ## Create a new organization
 
-
-1. Click on "Dashboard" and then “Add organization” in the organization selection window.<br><br>
-![Select organization](../../assets/add-org.jpg)<br><br>
-2. Fill the form and click "Create organization":
-    - Name - Name of the organization
-    - Organization group - Resource Allocator that the organization belongs
-    - Contact email - email of the person, who is responsible for the allocations in that organization
-    - Contact phone - contact person’s phone (optional)
-    - Website URL - url of the organization (optional)
-    - Logo - logo of the organization (optional)<br><br>
-![Select organization](../../assets/add-org-2.jpg)
-
+1. Login to the portal and click "Organizations" in the left-side menu and then “Add organization” on the right side.<br>
+![Select organization](../../assets/Organizations_homepage_2024_1.png)<br>
+2. A popup opens and enter the name for the new organization and also contact email.<br>
+![Select organization](../../assets/Organization_creation_2024_2.png)<br>
+3. Click "Create organization".
+4. Now, an organization management page opens, where you can add additional information about organization.
+5. Management view is divided into sections and after editing a section, click "Save changes".<br>
+![Select organization](../../assets/Organization_creation_2024_3.png)<br>
 
 ## Creation of projects
 
@@ -34,8 +28,9 @@ Prerequisites for creating projects:
     - User must have a Puhuri account (logged in to Puhuri Portal using MyAccessID)
     - Allocator must set PI role to the user in a certain organization
 
-1. Select your home organization.
-2. Click on "Add project".
+1. Select your home organization dashboard.
+2. Click on "Add project" on the right side.<br>
+![Select organization](../../assets/Project_creation_2024_1.png)<br>
 3. Fill in the necessary fields (fields marked with * are mandatory).
     - Project name - The original title of the project.
     - Project description - A brief description about the project.
@@ -43,7 +38,8 @@ Prerequisites for creating projects:
     - Please indicate whether the project is intended for industrial applications.
     - End date - this is the end date for using the computational resources.
     - Project image - Profile picture for the project (optional).
-
+  
+<br>![Select organization](../../assets/Project_creation_2024_2.png)<br>
 
 <video controls width="100%" autoplay="true" muted loop >
   <source src="../../../assets/videos/how_to_add_project_1.mp4" type="video/mp4">
@@ -59,7 +55,8 @@ Request can be initiated by any user, however it must be approved:
 
 Below is an example of requesting an allocation from LUMI supercomputer:
 
-1. Select "Add resource" or "Go to Marketplace" from the sidebar menu and select offering that matches your plans.
+1. Open your project dashboard and select "Resources" from the top menu. Click on "Add resources" on the right side.<br>![Select organization](../../assets/Resource_management_2024_1.png)<br>
+2. This will open a service catalogue where you can select the correct offering that matches your plans.<br>![Select organization](../../assets/Resource_management_2024_2.png)<br>
    For LUMI, offerings correspond to access types of EuroHPC:
     - Extreme Scale Access
     - Regular Access
@@ -67,17 +64,16 @@ Below is an example of requesting an allocation from LUMI supercomputer:
     - Development Access
     - Fast Track Access for Academia
     - Fast Track Access for Industry<br><br>
-2. Write the name for the resource allocation (NOTE: This name will be visible in accounting data.).
-3. Select correct plan (LUMI common) and write needed allocation quota (CPU, GPU and Storage).
-4. Write short description (optional).
-5. Click on the "Add to cart".
-6. Check once more and click on "Request an approval" if you are not a PI in a project or "Request" if you are a PI.
+3. When you have found the correct offering, click "Deploy". <br>![Select organization](../../assets/Resource_management_2024_3.png)<br>
+4. This will open the offering configuration page, where you can set the allocation quota limits (CPU, GPU and Storage), add resource name, set whether the project is AI-related etc.<br>![Select organization](../../assets/Resource_management_2024_4.png)<br>
+5. When all set, click "Create" on the right side.<br>![Select organization](../../assets/Resource_management_2024_5.png)<br>
+6. A confirmation popup opens, click "Yes".<br>![Select organization](../../assets/Resource_management_2024_6.png)<br>
+7. After this, the Resource allocator will get a request for the resource and be able to [approve or reject](project_approval_shared.md) it.
+8. Now, resource dashboard opens, where you can see the approval status, resource usage and limits information.<br>![Select organization](../../assets/Resource_management_2024_7.png)<br>
 
 <video controls width="100%" autoplay="true" muted loop >
   <source src="../../../assets/videos/how_to_add_resource.mp4" type="video/mp4">
 </video>
-
-After this, the Resource allocator will get a request for the resource and be able to [approve or reject](project_approval_shared.md) it.
 
 ## Applicable to LUMI only
 
