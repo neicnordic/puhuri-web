@@ -5,20 +5,25 @@
 !!! note
     Organization creation is only allowed for national resource allocator representatives!
 
-Organization in Puhuri Portal context means whatever grouping national resource allocator would like to have.
-This can mean for example research group, institution, department or working group. Organization has an owner
-who is project principal investigator (PI). National resource allocator can assign owners to organizations.
+Organization in the Puhuri Portal context means whatever grouping the national resource allocator would like to have.
+This can mean, for example, a research group, institution, department, or working group. The organization has an owner
+who is project principal investigator (PI). National resource allocators can assign owners to organizations.
 
 ## Create a new organization
 
 1. Login to the portal and click "Organizations" in the left-side menu and then “Add organization” on the right side.<br>
 ![Organization creation 1](../../assets/Organizations_homepage_2024_1.png)<br>
-2. A popup opens and enter the name for the new organization and also contact email.<br>
+2. A popup opens, and enters the name of the new organization and also the contact email.<br>
 ![Organization creation 2](../../assets/Organization_creation_2024_2.png)<br>
 3. Click "Create organization".
-4. Now, an organization management page opens, where you can add additional information about organization.
-5. Management view is divided into sections and after editing a section, click "Save changes".<br>
+4. Now, an organization management page opens, where you can add additional information about the organization.
+5. Management view is divided into sections, and after editing a section, click "Save changes".<br>
 ![Organization creation 3](../../assets/Organization_creation_2024_3.png)<br>
+
+<video controls width="100%" autoplay="true" muted loop >
+  <source src="../../../assets/videos/create_org.mp4" type="video/mp4">
+</video>
+
 
 ## Creation of projects
 
