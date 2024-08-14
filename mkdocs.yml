@@ -47,6 +47,7 @@ nav:
       - "branding.md"
       - "terminology.md"
       - "environments.md"
+      - "toms.md"
       - Documents:
           - "documents/statistics_pp.md"
           - "documents/statistics_tos.md"
