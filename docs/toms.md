@@ -9,10 +9,10 @@ This document describes technical and organisational measures to ensure informat
 In providing the service, the UTHPC will comply with the requirements of the [E-ITS](https://eits.ria.ee/).
 
 2. **Introduction and scope** 
-   1. UTHPC technical and organisational measures are based on the requirements and rules established by the University and the obligations arising from the Contract.  
-   2. The basis for ensuring information security at UTHPC is the continuous assessment and implementation of information security measures and the training of UTHPC employees.  
-   3. All UTHPC employees must familiarise themselves and follow UTHPC technical and organisational measures.  
-   4. Technical and organisational measures apply to all data and information assets belonging to UTHPC that UTHPC uses to achieve its objectives or that are connected to networks managed by UTHPC.   
+    1. UTHPC technical and organisational measures are based on the requirements and rules established by the University and the obligations arising from the Contract.  
+    2. The basis for ensuring information security at UTHPC is the continuous assessment and implementation of information security measures and the training of UTHPC employees.  
+    3. All UTHPC employees must familiarise themselves and follow UTHPC technical and organisational measures.  
+    4. Technical and organisational measures apply to all data and information assets belonging to UTHPC that UTHPC uses to achieve its objectives or that are connected to networks managed by UTHPC.   
 
 4. **Principles**  
    1. UTHPC, as the owner of the information assets, selects adequate and appropriate measures to protect them.  
