@@ -1,4 +1,4 @@
-## Technical and Organizational Measures of Puhuri Core and Puhuri Portal
+# Technical and Organizational Measures of Puhuri Core and Puhuri Portal
 
 1. **Overview**
 
