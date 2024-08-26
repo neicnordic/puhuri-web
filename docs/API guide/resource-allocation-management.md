@@ -188,7 +188,14 @@ $ http --pretty=format -v POST https://puhuri-core-beta.neic.no/api/marketplace-
     "project": "https://puhuri-core-beta.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/",
     "offering": "https://puhuri-core-beta.neic.no/api/marketplace-public-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
     "attributes": {
-        "name": "Resource allocation1"
+        "name": "Resource allocation1",
+        "used_ai_tech": [
+            "Deep Learning",
+            "Machine Learning",
+        ],
+        "is_industry": true,
+        "is_commercial": false,
+        "is_training": false
     },
     "plan": "https://puhuri-core-beta.neic.no/api/marketplace-public-plans/c0fb33c79e9b48f69fcb6da26db5a28b/",
     "limits": {
@@ -218,8 +225,17 @@ User-Agent: HTTPie/2.4.0
         "gpu_k_hours": 2
     },
     "offering": "https://puhuri-core-beta.neic.no/api/marketplace-public-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
-    "plan": "https://puhuri-core-beta.neic.no/api/marketplace-public-plans/c0fb33c79e9b48f69fcb6da26db5a28b/"
-    "project": "https://puhuri-core-beta.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/"
+    "plan": "https://puhuri-core-beta.neic.no/api/marketplace-public-plans/c0fb33c79e9b48f69fcb6da26db5a28b/",
+    "project": "https://puhuri-core-beta.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/",
+    "attributes": {
+        "used_ai_tech": [
+            "Deep Learning",
+            "Machine Learning",
+        ],
+        "is_industry": true,
+        "is_commercial": false,
+        "is_training": false
+    }
 }
 
 HTTP/1.1 201 Created
@@ -392,7 +408,7 @@ X-XSS-Protection: 1; mode=block
 
 ### Order approval and rejection
 
-In order to approve order by consumer, you shall issue POST request against `/api/marketplace-orders/{UUID}/approve_by_consumer/` endpoint. Similarly in order to approve order by provider, you shall issue POST request against `/api/marketplace-orders/{UUID}/approve_by_provider/` endpoint. Otherwise, you shall issue POST request against `/api/marketplace-orders/{UUID}/reject_by_consumer/` or `/api/marketplace-orders/{UUID}/reject_by_provider/` endpoint. 
+In order to approve order by consumer, you shall issue POST request against `/api/marketplace-orders/{UUID}/approve_by_consumer/` endpoint. Similarly in order to approve order by provider, you shall issue POST request against `/api/marketplace-orders/{UUID}/approve_by_provider/` endpoint. Otherwise, you shall issue POST request against `/api/marketplace-orders/{UUID}/reject_by_consumer/` or `/api/marketplace-orders/{UUID}/reject_by_provider/` endpoint.
 
 Of course, these endpoints are available only if you have service provider or service consumer permission against corresponding offerings.
 
