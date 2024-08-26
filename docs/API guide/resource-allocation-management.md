@@ -218,6 +218,13 @@ User-Agent: HTTPie/2.4.0
 {
     "attributes": {
         "name": "Resource allocation1",
+        "used_ai_tech": [
+            "Deep Learning",
+            "Machine Learning",
+        ],
+        "is_industry": true,
+        "is_commercial": false,
+        "is_training": false
     },
     "limits": {
         "cpu_k_hours": 3,
@@ -227,15 +234,6 @@ User-Agent: HTTPie/2.4.0
     "offering": "https://puhuri-core-beta.neic.no/api/marketplace-public-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
     "plan": "https://puhuri-core-beta.neic.no/api/marketplace-public-plans/c0fb33c79e9b48f69fcb6da26db5a28b/",
     "project": "https://puhuri-core-beta.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/",
-    "attributes": {
-        "used_ai_tech": [
-            "Deep Learning",
-            "Machine Learning",
-        ],
-        "is_industry": true,
-        "is_commercial": false,
-        "is_training": false
-    }
 }
 
 HTTP/1.1 201 Created
@@ -270,6 +268,13 @@ X-XSS-Protection: 1; mode=block
     "customer_uuid": "d42a18b6b8ba4c2bb0591b3ff8fb181d",
     "attributes": {
         "name": "Resource allocation1",
+        "used_ai_tech": [
+            "Deep Learning",
+            "Machine Learning",
+        ],
+        "is_industry": true,
+        "is_commercial": false,
+        "is_training": false
     },
     "category_title": "HPC",
     "category_uuid": "5b61d0811cfe4ed6a004119795a4c532",
@@ -351,6 +356,13 @@ X-XSS-Protection: 1; mode=block
     "activation_price": 0,
     "attributes": {
         "name": "Resource allocation1",
+        "used_ai_tech": [
+            "Deep Learning",
+            "Machine Learning",
+        ],
+        "is_industry": true,
+        "is_commercial": false,
+        "is_training": false
     },
     "can_terminate": false,
     "category_title": "HPC",
