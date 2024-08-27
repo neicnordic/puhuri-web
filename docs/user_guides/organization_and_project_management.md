@@ -80,6 +80,19 @@ Below is an example of requesting an allocation from LUMI supercomputer:
   <source src="../../../assets/videos/how_to_add_resource.mp4" type="video/mp4">
 </video>
 
+## Complementing resource options
+
+To fulfil the reporting requirements, projects must have defined the following attributes:
+
+- Industrial project
+- Commercial project
+- AI-related project with a specific field
+- Training project
+
+To set those flags, please open your project and resource in the portal and select "Options" from the top menu. Then, you will see four different flags. You can toggle them on and off by clicking "Edit" on the right. For the AI, it is necessary to set the exact method.
+
+![Resource options](../../assets/Resource_options.jpg)
+
 ## Applicable to LUMI only
 
 ## If User’s Home Organization/Employer changes
