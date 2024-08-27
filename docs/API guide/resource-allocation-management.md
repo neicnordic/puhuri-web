@@ -191,7 +191,7 @@ $ http --pretty=format -v POST https://puhuri-core-beta.neic.no/api/marketplace-
         "name": "Resource allocation1",
         "used_ai_tech": [
             "Deep Learning",
-            "Machine Learning",
+            "Machine Learning"
         ],
         "is_industry": true,
         "is_commercial": false,
@@ -220,7 +220,7 @@ User-Agent: HTTPie/2.4.0
         "name": "Resource allocation1",
         "used_ai_tech": [
             "Deep Learning",
-            "Machine Learning",
+            "Machine Learning"
         ],
         "is_industry": true,
         "is_commercial": false,
@@ -270,7 +270,7 @@ X-XSS-Protection: 1; mode=block
         "name": "Resource allocation1",
         "used_ai_tech": [
             "Deep Learning",
-            "Machine Learning",
+            "Machine Learning"
         ],
         "is_industry": true,
         "is_commercial": false,
@@ -358,7 +358,7 @@ X-XSS-Protection: 1; mode=block
         "name": "Resource allocation1",
         "used_ai_tech": [
             "Deep Learning",
-            "Machine Learning",
+            "Machine Learning"
         ],
         "is_industry": true,
         "is_commercial": false,
@@ -466,6 +466,66 @@ X-XSS-Protection: 1; mode=block
     "description": "New resource description",
     "name": "New resource name"
 }
+```
+
+## Modification of resource allocation options
+
+```bash
+http -v POST https://puhuri-core-beta.neic.no/api/marketplace-resources/b97e82d0fc2445d493cf5659a3085608/update_options/ Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811" <<< '{
+    "options": {
+        "used_ai_tech": [
+            "Deep Learning",
+            "Machine Learning"
+        ],
+        "is_training": false
+    }
+}'
+POST /api/marketplace-resources/53cb5c0a34cc41f5ad36b74c760e39f6/update_options/ HTTP/1.1
+Accept: application/json, */*;q=0.5
+Accept-Encoding: gzip, deflate
+Authorization: Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811
+Connection: keep-alive
+Content-Length: 153
+Content-Type: application/json
+Host: puhuri-portal-demo.neic.no
+User-Agent: HTTPie/3.2.2
+
+{
+    "options": {
+        "is_training": false,
+        "used_ai_tech": [
+            "Deep Learning",
+            "Machine Learning"
+        ]
+    }
+}
+
+
+HTTP/1.1 200 OK
+access-control-allow-credentials: true
+access-control-allow-headers: Accept, Accept-Encoding, Authorization, Content-Type, Origin, User-Agent, X-CSRFToken, X-Requested-With, X-Impersonated-User-Uuid, sentry-trace, baggage
+access-control-allow-methods: DELETE, GET, OPTIONS, PATCH, POST, PUT
+access-control-allow-origin: *
+access-control-expose-headers: Link, X-Result-Count
+allow: POST, OPTIONS
+content-language: en
+content-length: 43
+content-security-policy: report-uri https://csp.hpc.ut.ee/log; form-action 'self'; frame-ancestors 'self';
+content-type: application/json
+date: Tue, 27 Aug 2024 09:18:29 GMT
+referrer-policy: strict-origin-when-cross-origin
+strict-transport-security: max-age=31536000; preload
+vary: Accept-Language, Cookie
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-rate-limit-limit: 500
+x-rate-limit-remaining: 488
+x-xss-protection: 1; mode=block
+
+{
+    "status": "Resource options are submitted"
+}
+
 ```
 
 ## Termination of a resource allocation
