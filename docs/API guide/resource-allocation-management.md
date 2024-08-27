@@ -188,7 +188,14 @@ $ http --pretty=format -v POST https://puhuri-core-beta.neic.no/api/marketplace-
     "project": "https://puhuri-core-beta.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/",
     "offering": "https://puhuri-core-beta.neic.no/api/marketplace-public-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
     "attributes": {
-        "name": "Resource allocation1"
+        "name": "Resource allocation1",
+        "used_ai_tech": [
+            "Deep Learning",
+            "Machine Learning"
+        ],
+        "is_industry": true,
+        "is_commercial": false,
+        "is_training": false
     },
     "plan": "https://puhuri-core-beta.neic.no/api/marketplace-public-plans/c0fb33c79e9b48f69fcb6da26db5a28b/",
     "limits": {
@@ -211,6 +218,13 @@ User-Agent: HTTPie/2.4.0
 {
     "attributes": {
         "name": "Resource allocation1",
+        "used_ai_tech": [
+            "Deep Learning",
+            "Machine Learning"
+        ],
+        "is_industry": true,
+        "is_commercial": false,
+        "is_training": false
     },
     "limits": {
         "cpu_k_hours": 3,
@@ -218,8 +232,8 @@ User-Agent: HTTPie/2.4.0
         "gpu_k_hours": 2
     },
     "offering": "https://puhuri-core-beta.neic.no/api/marketplace-public-offerings/073a0ddd6eba4ff4a90b943ae3e1b7c9/",
-    "plan": "https://puhuri-core-beta.neic.no/api/marketplace-public-plans/c0fb33c79e9b48f69fcb6da26db5a28b/"
-    "project": "https://puhuri-core-beta.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/"
+    "plan": "https://puhuri-core-beta.neic.no/api/marketplace-public-plans/c0fb33c79e9b48f69fcb6da26db5a28b/",
+    "project": "https://puhuri-core-beta.neic.no/api/projects/4475ac77fa3a491aacb3fb3a6dfadadf/",
 }
 
 HTTP/1.1 201 Created
@@ -254,6 +268,13 @@ X-XSS-Protection: 1; mode=block
     "customer_uuid": "d42a18b6b8ba4c2bb0591b3ff8fb181d",
     "attributes": {
         "name": "Resource allocation1",
+        "used_ai_tech": [
+            "Deep Learning",
+            "Machine Learning"
+        ],
+        "is_industry": true,
+        "is_commercial": false,
+        "is_training": false
     },
     "category_title": "HPC",
     "category_uuid": "5b61d0811cfe4ed6a004119795a4c532",
@@ -335,6 +356,13 @@ X-XSS-Protection: 1; mode=block
     "activation_price": 0,
     "attributes": {
         "name": "Resource allocation1",
+        "used_ai_tech": [
+            "Deep Learning",
+            "Machine Learning"
+        ],
+        "is_industry": true,
+        "is_commercial": false,
+        "is_training": false
     },
     "can_terminate": false,
     "category_title": "HPC",
@@ -392,7 +420,7 @@ X-XSS-Protection: 1; mode=block
 
 ### Order approval and rejection
 
-In order to approve order by consumer, you shall issue POST request against `/api/marketplace-orders/{UUID}/approve_by_consumer/` endpoint. Similarly in order to approve order by provider, you shall issue POST request against `/api/marketplace-orders/{UUID}/approve_by_provider/` endpoint. Otherwise, you shall issue POST request against `/api/marketplace-orders/{UUID}/reject_by_consumer/` or `/api/marketplace-orders/{UUID}/reject_by_provider/` endpoint. 
+In order to approve order by consumer, you shall issue POST request against `/api/marketplace-orders/{UUID}/approve_by_consumer/` endpoint. Similarly in order to approve order by provider, you shall issue POST request against `/api/marketplace-orders/{UUID}/approve_by_provider/` endpoint. Otherwise, you shall issue POST request against `/api/marketplace-orders/{UUID}/reject_by_consumer/` or `/api/marketplace-orders/{UUID}/reject_by_provider/` endpoint.
 
 Of course, these endpoints are available only if you have service provider or service consumer permission against corresponding offerings.
 
@@ -438,6 +466,83 @@ X-XSS-Protection: 1; mode=block
     "description": "New resource description",
     "name": "New resource name"
 }
+```
+
+## Modification of resource allocation options
+
+As an RA, you can update options of an allocations. For now, Puhuri supports:
+
+1. `is_industry`, possible values: true/false; true if the PI or a member of a project is from a company;
+2. `is_training`, possible values: true/false; true if aimed at training of the users;
+3. `used_ai_tech`, (AI methods used in the calculations), choices:
+   - "Audio (speech recognition/speech synthesis/etc)",
+   - "Decision management: Classified and statistical learning methods",
+   - "Deep Learning",
+   - "Generative Language Modeling",
+   - "Machine Learning",
+   - "Natural Language Processing",
+   - "Other",
+   - "Robotic process automation",
+   - "Virtual agents",
+   - "Vision (image recognition/image generation/text recognition OCR/etc)"
+4. `is_commercial`, possible values: true/false; true if aimed at commercial usage (commercial projects are pay-per-use industrial projects).
+
+```bash
+http -v POST https://puhuri-core-beta.neic.no/api/marketplace-resources/b97e82d0fc2445d493cf5659a3085608/update_options/ Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811" <<< '{
+    "options": {
+        "used_ai_tech": [
+            "Deep Learning",
+            "Machine Learning"
+        ],
+        "is_training": false
+    }
+}'
+POST /api/marketplace-resources/53cb5c0a34cc41f5ad36b74c760e39f6/update_options/ HTTP/1.1
+Accept: application/json, */*;q=0.5
+Accept-Encoding: gzip, deflate
+Authorization: Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811
+Connection: keep-alive
+Content-Length: 153
+Content-Type: application/json
+Host: puhuri-portal-demo.neic.no
+User-Agent: HTTPie/3.2.2
+
+{
+    "options": {
+        "is_training": false,
+        "used_ai_tech": [
+            "Deep Learning",
+            "Machine Learning"
+        ]
+    }
+}
+
+
+HTTP/1.1 200 OK
+access-control-allow-credentials: true
+access-control-allow-headers: Accept, Accept-Encoding, Authorization, Content-Type, Origin, User-Agent, X-CSRFToken, X-Requested-With, X-Impersonated-User-Uuid, sentry-trace, baggage
+access-control-allow-methods: DELETE, GET, OPTIONS, PATCH, POST, PUT
+access-control-allow-origin: *
+access-control-expose-headers: Link, X-Result-Count
+allow: POST, OPTIONS
+content-language: en
+content-length: 43
+content-security-policy: report-uri https://csp.hpc.ut.ee/log; form-action 'self'; frame-ancestors 'self';
+content-type: application/json
+date: Tue, 27 Aug 2024 09:18:29 GMT
+referrer-policy: strict-origin-when-cross-origin
+strict-transport-security: max-age=31536000; preload
+vary: Accept-Language, Cookie
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-rate-limit-limit: 500
+x-rate-limit-remaining: 488
+x-xss-protection: 1; mode=block
+
+{
+    "status": "Resource options are submitted"
+}
+
 ```
 
 ## Termination of a resource allocation
