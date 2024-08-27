@@ -9,7 +9,7 @@ User can fetch offerings and filter them by the following fields:
 - `customer_uuid` - organization's UUID
 - `allowed_customer_uuid` - allowed organization's UUID
 - `service_manager_uuid` - service manager's UUID
-- `attributes` - a set of attributes (key-value pairs)
+- `attributes` - a set of attributes (key-value pairs) identifying the allocation. Check [below](#lumi-resource-options) for LUMI specific attributes.
 - `state` - offering's state (`Active`, `Draft`, `Paused`, `Archived`), should be `Active`
 - `category_uuid` - category's UUID
 - `billable` - signalizing if an offering is billable or not, should be `true`
@@ -470,22 +470,8 @@ X-XSS-Protection: 1; mode=block
 
 ## Modification of resource allocation options
 
-As an RA, you can update options of an allocations. For now, Puhuri supports:
-
-1. `is_industry`, possible values: true/false; true if the PI or a member of a project is from a company;
-2. `is_training`, possible values: true/false; true if aimed at training of the users;
-3. `used_ai_tech`, (AI methods used in the calculations), choices:
-   - "Audio (speech recognition/speech synthesis/etc)",
-   - "Decision management: Classified and statistical learning methods",
-   - "Deep Learning",
-   - "Generative Language Modeling",
-   - "Machine Learning",
-   - "Natural Language Processing",
-   - "Other",
-   - "Robotic process automation",
-   - "Virtual agents",
-   - "Vision (image recognition/image generation/text recognition OCR/etc)"
-4. `is_commercial`, possible values: true/false; true if aimed at commercial usage (commercial projects are pay-per-use industrial projects).
+As an RA, you can update options of an allocations. Update happens through a special endpoint on a resource.
+Check [below](#lumi-resource-options) for LUMI specific attributes.
 
 ```bash
 http -v POST https://puhuri-core-beta.neic.no/api/marketplace-resources/b97e82d0fc2445d493cf5659a3085608/update_options/ Authorization:"Token 787de6b7c581ab6d9d42fe9ec12ac9f1811c5811" <<< '{
@@ -586,3 +572,23 @@ X-XSS-Protection: 1; mode=block
 }
 
 ```
+
+## LUMI Resource Options
+
+LUMI has agreed on the following schema for the resource options. The attributes can be passed during creation of
+the resource or by updating existing resources.
+
+1. `is_industry`, possible values: true/false; true if the PI or a member of a project is from a company;
+2. `is_training`, possible values: true/false; true if aimed at training of the users;
+3. `used_ai_tech`, (AI methods used in the calculations), choices:
+    - "Audio (speech recognition/speech synthesis/etc)",
+    - "Decision management: Classified and statistical learning methods",
+    - "Deep Learning",
+    - "Generative Language Modeling",
+    - "Machine Learning",
+    - "Natural Language Processing",
+    - "Other",
+    - "Robotic process automation",
+    - "Virtual agents",
+    - "Vision (image recognition/image generation/text recognition OCR/etc)"
+4. `is_commercial`, possible values: true/false; true if aimed at commercial usage (commercial projects are pay-per-use industrial projects).
