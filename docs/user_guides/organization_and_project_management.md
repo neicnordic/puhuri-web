@@ -89,14 +89,17 @@ Below is an example of requesting an allocation from LUMI supercomputer:
 ## Applicable to LUMI only
 
 The following attributes are mandatory to flag for LUMI projects and resources:
-- Project End date<br>
 
-To set the end date for existing project, please open your project in the portal and select on project dasbhoard the tab "Edit" to update the respective fields.
-- Resoruce usecase type if applicable:
-    - AI-related use (multiple can be selected)
-    - Industrial project
-    - Commercial project
-    - Training project
+- <b>Project End date:</b>
+
+To set the end date for the existing project, please open your project in the portal and select on the project dashboard the tab "Edit" to update the respective fields.
+
+- <b>Resource use-case type if applicable:<b>
+
+    * AI-related use (multiple can be selected)
+    * Industrial project
+    * Commercial project
+    * Training project
       
 To set those flags for existing projects, please open your project and resource in the portal and select "Options" from the top menu. Then, you will see four different flags. You can toggle them on and off by clicking "Edit" on the right. For the AI, it is necessary to set the exact method(s).
 
