@@ -94,7 +94,7 @@ The following attributes are mandatory to flag for LUMI projects and resources:
 
 To set the end date for the existing project, please open your project in the portal and select on the project dashboard the tab "Edit" to update the respective fields.
 
-- <b>Resource use-case type if applicable:<b>
+- <b>Resource use-case type if applicable:</b>
 
     * AI-related use (multiple can be selected)
     * Industrial project
