@@ -40,9 +40,13 @@ Prerequisites for creating projects:
     - Project name - The original title of the project.
     - Project description - A brief description about the project.
     - OECD FoS code - OECD science field code ([more info](https://joinup.ec.europa.eu/collection/eu-semantic-interoperability-catalogue/solution/field-science-and-technology-classification/about))
-    - Please indicate whether the project is intended for industrial applications.
+4. Click button "Create"<br>
+Once the project is crated, you can add the project start and end date.
+5. Choose on Project dashboard "Edit" tab and update the respective fields.
+    - Start date - this is the start date when the computational resources will become available. If not chosen, the project will start from the moment the resource is activated. 
     - End date - this is the end date for using the computational resources.
     - Project image - Profile picture for the project (optional).
+
   
 <br>![Project creation 2](../../assets/Project creation_2024_2.png)<br>
 
@@ -70,7 +74,7 @@ Below is an example of requesting an allocation from LUMI supercomputer:
     - Fast Track Access for Academia
     - Fast Track Access for Industry<br><br>
 3. When you have found the correct offering, click "Deploy". <br>![Resource management 3](../../assets/Resource_management_2024_3.png)<br>
-4. This will open the offering configuration page, where you can set the allocation quota limits (CPU, GPU and Storage), add resource name, set whether the project is AI-related etc.<br>![Resource management 4](../../assets/Resource_management_2024_4.png)<br>
+4. This will open the offering configuration page, where you can set the allocation quota limits (CPU, GPU and Storage), add resource name, set whether the project is AI-related, for testing, etc.<br>![Resource management 4](../../assets/Resource_management_2024_4.png)<br>
 5. When all set, click "Create" on the right side.<br>![Resource management 5](../../assets/Resource_management_2024_5.png)<br>
 6. A confirmation popup opens, click "Yes".<br>![Resource management 6](../../assets/Resource_management_2024_6.png)<br>
 7. After this, the Resource allocator will get a request for the resource and be able to [approve or reject](project_approval_shared.md) it.
@@ -80,20 +84,21 @@ Below is an example of requesting an allocation from LUMI supercomputer:
   <source src="../../../assets/videos/how_to_add_resource.mp4" type="video/mp4">
 </video>
 
-## Complementing resource options
-
-To fulfil the reporting requirements, projects must have defined the following attributes:
-
-- Industrial project
-- Commercial project
-- AI-related project with a specific field
-- Training project
-
-To set those flags, please open your project and resource in the portal and select "Options" from the top menu. Then, you will see four different flags. You can toggle them on and off by clicking "Edit" on the right. For the AI, it is necessary to set the exact method.
-
 ![Resource options](../../assets/Resource_options.jpg)
 
 ## Applicable to LUMI only
+
+The following attributes are mandatory to flag for LUMI projects and resources:
+- Project End date<br>
+
+To set the end date for existing project, please open your project in the portal and select on project dasbhoard the tab "Edit" to update the respective fields.
+- Resoruce usecase type if applicable:
+    - AI-related use (multiple can be selected)
+    - Industrial project
+    - Commercial project
+    - Training project
+      
+To set those flags for existing projects, please open your project and resource in the portal and select "Options" from the top menu. Then, you will see four different flags. You can toggle them on and off by clicking "Edit" on the right. For the AI, it is necessary to set the exact method(s).
 
 ## If User’s Home Organization/Employer changes
 
