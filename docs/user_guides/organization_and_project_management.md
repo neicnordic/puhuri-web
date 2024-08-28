@@ -84,8 +84,6 @@ Below is an example of requesting an allocation from LUMI supercomputer:
   <source src="../../../assets/videos/how_to_add_resource.mp4" type="video/mp4">
 </video>
 
-![Resource options](../../assets/Resource_options.jpg)
-
 ## Applicable to LUMI only
 
 The following attributes are mandatory to flag for LUMI projects and resources:
@@ -102,6 +100,8 @@ To set the end date for the existing project, please open your project in the po
     * Training project
       
 To set those flags for existing projects, please open your project and resource in the portal and select "Options" from the top menu. Then, you will see four different flags. You can toggle them on and off by clicking "Edit" on the right. For the AI, it is necessary to set the exact method(s).
+
+![Resource options](../../assets/Resource_options.jpg)
 
 ## If User’s Home Organization/Employer changes
 
