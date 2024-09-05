@@ -37,8 +37,8 @@ Prerequisites for creating projects:
     - Project name - The original title of the project.
     - Project description - A brief description about the project.
     - OECD FoS code - OECD science field code ([more info](https://joinup.ec.europa.eu/collection/eu-semantic-interoperability-catalogue/solution/field-science-and-technology-classification/about))
-4. Click the button "Create"<br>
-Once the project is created, you can add the project start and end date.
+4. Click the button "Create".
+    - Once the project is created, you can add the project start and end date.
 5. Choose on Project dashboard "Edit" tab and update the respective fields.
     - Start date - this is the start date when the computational resources will become available. If not chosen, the project will start from the moment the resource is activated. 
     - End date - this is the end date for using the computational resources.
