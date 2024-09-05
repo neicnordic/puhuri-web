@@ -7,21 +7,19 @@
 
 Organization in the Puhuri Portal context means whatever grouping the national resource allocator would like to have.
 This can mean, for example, a research group, institution, department, or working group. The organization has an owner
-who is project principal investigator (PI). National resource allocators can assign owners to organizations.
+who is the project principal investigator (PI). National resource allocators can assign owners to organizations.
 
 ## Create a new organization
 
-1. Login to the portal and click "Organizations" in the left-side menu and then “Add organization” on the right side.<br>
-![Organization creation 1](../../assets/Organizations_homepage_2024_1.png)<br>
-2. A popup opens, and enters the name of the new organization and also the contact email.<br>
-![Organization creation 2](../../assets/Organization_creation_2024_2.png)<br>
+1. Login to the portal and click "Organizations" in the left-side menu and then “Add organization” on the right side.
+2. A popup opens, and enters the name of the new organization and also the contact email.
 3. Click "Create organization".
 4. Now, an organization management page opens, where you can add additional information about the organization.
-5. Management view is divided into sections, and after editing a section, click "Save changes".<br>
-![Organization creation 3](../../assets/Organization_creation_2024_3.png)<br>
+5. Management view is divided into sections, and after editing a section, click "Save changes".
+
 
 <video controls width="100%" autoplay="true" muted loop >
-  <source src="../../../assets/videos/create_org.mp4" type="video/mp4">
+  <source src="../../../assets/videos/create_organization.mp4" type="video/mp4">
 </video>
 
 
@@ -34,24 +32,20 @@ Prerequisites for creating projects:
     - Allocator must set PI role to the user in a certain organization
 
 1. Select your home organization dashboard.
-2. Click on "Add project" on the right side.<br>
-![Project creation 1](../../assets/Project_creation_2024_1.png)<br>
+2. Click on "Add project" on the right side.
 3. Fill in the necessary fields (fields marked with * are mandatory).
     - Project name - The original title of the project.
     - Project description - A brief description about the project.
     - OECD FoS code - OECD science field code ([more info](https://joinup.ec.europa.eu/collection/eu-semantic-interoperability-catalogue/solution/field-science-and-technology-classification/about))
-4. Click button "Create"<br>
-Once the project is crated, you can add the project start and end date.
+4. Click the button "Create"<br>
+Once the project is created, you can add the project start and end date.
 5. Choose on Project dashboard "Edit" tab and update the respective fields.
     - Start date - this is the start date when the computational resources will become available. If not chosen, the project will start from the moment the resource is activated. 
     - End date - this is the end date for using the computational resources.
     - Project image - Profile picture for the project (optional).
 
-  
-<br>![Project creation 2](../../assets/Project creation_2024_2.png)<br>
-
 <video controls width="100%" autoplay="true" muted loop >
-  <source src="../../../assets/videos/how_to_add_project_1.mp4" type="video/mp4">
+  <source src="../../../assets/videos/create_project.mp4" type="video/mp4">
 </video>
 
 ## Requesting an allocation
