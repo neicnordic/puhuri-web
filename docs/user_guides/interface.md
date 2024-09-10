@@ -5,22 +5,22 @@
 #### Dashboard 
 -  The Dashboard is the first page displayed by default upon logging into the Puhuri Portal. It provides an overview of your profile, associated organizations, and active projects.
 
-#### Sidebar menu:
+##### Sidebar menu:
 -  The Sidebar Menu is your primary navigation tool within the Puhuri Portal. Here, you can manage your organizations, projects, and resources(such as the LUMI cluster or other HPC resources).  Detailed explanations of each menu item are provided in the next chapter of this guide.
 
-#### Service catalog:
+##### Service catalog:
 -  The Service Catalogue lists available resources.
   
-#### Calls:
+##### Calls:
 -  The Calls section gives access to public and open resource competitions. Users can submit project proposals, which reviewers will evaluate. If approved, users receive resource access, usually at no cost.
   
-#### Workspace Menu (Dynamic based on sidebar selection):
+##### Workspace Menu (Dynamic based on sidebar selection):
 - Each page in the Puhuri Portal features a top navigation bar, providing quick access to organization and project information, as well as management tools.
 
 #### Workspace: 
 - Displays dashboards related to the selected organization, project, or user.
 
-#### User related actions:
+##### User related actions:
 - Contains all key action fields a user may need.
 
 ##### Issues 
@@ -33,7 +33,7 @@
 - Key links include User Dashboard, Affiliations, Credentials, Notifications, and options to adjust interface Language and Color Mode.
 
 
-#### Get help: 
+##### Get help: 
 - By selecting Support, you can access user documentation or contact support via email. You can also create a support request through the Issues section.
 
 
