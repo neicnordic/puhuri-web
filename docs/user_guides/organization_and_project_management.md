@@ -58,8 +58,8 @@ Request can be initiated by any user, however it must be approved:
 
 Below is an example of requesting an allocation from LUMI supercomputer:
 
-1. Open your project dashboard and select "Resources" from the top menu. Click on "Add resources" on the right side.<br>![Resource management 1](../../assets/Resource_management_2024_1.png)<br>
-2. This will open a service catalogue where you can select the correct offering that matches your plans.<br>![Resource management 2](../../assets/Resource_management_2024_2.png)<br>
+1. Open your project dashboard and select "Resources" from the top menu. Click on "Add resources" on the right side.
+2. This will open a service catalogue where you can select the correct offering that matches your plans.
    For LUMI, offerings correspond to access types of EuroHPC:
     - Extreme Scale Access
     - Regular Access
@@ -67,12 +67,12 @@ Below is an example of requesting an allocation from LUMI supercomputer:
     - Development Access
     - Fast Track Access for Academia
     - Fast Track Access for Industry<br><br>
-3. When you have found the correct offering, click "Deploy". <br>![Resource management 3](../../assets/Resource_management_2024_3.png)<br>
-4. This will open the offering configuration page, where you can set the allocation quota limits (CPU, GPU and Storage), add resource name, set whether the project is AI-related, for testing, etc.<br>![Resource management 4](../../assets/Resource_management_2024_4.png)<br>
-5. When all set, click "Create" on the right side.<br>![Resource management 5](../../assets/Resource_management_2024_5.png)<br>
-6. A confirmation popup opens, click "Yes".<br>![Resource management 6](../../assets/Resource_management_2024_6.png)<br>
+3. When you have found the correct offering, click "Deploy". 
+4. This will open the offering configuration page, where you can set the allocation quota limits (CPU, GPU and Storage), add resource name, set whether the project is AI-related, for testing, etc.
+5. When all set, click "Create" on the right side.
+6. A confirmation popup opens, click "Yes".
 7. After this, the Resource allocator will get a request for the resource and be able to [approve or reject](project_approval_shared.md) it.
-8. Now, resource dashboard opens, where you can see the approval status, resource usage and limits information.<br>![Resource management 7](../../assets/Resource_management_2024_7.png)<br>
+8. Now, the resource dashboard opens, showing the approval status, resource usage, and limits information.
 
 <video controls width="100%" autoplay="true" muted loop >
   <source src="../../../assets/videos/how_to_add_resource.mp4" type="video/mp4">
@@ -110,8 +110,8 @@ The PI and/or RA will assess whether continued usage is allowed. If the continue
 
 - <b>Account Transition:</b>
 
-Users must register a new account due to identity provider changes.
-The new user account needs to be added to the project by the RA, PI, or co-PI.
+Users must register for a new account due to changes in their identity provider.
+The new user account must be added to the project by the RA, PI, or co-PI.
 
 - <b>Data Migration:</b>
 
