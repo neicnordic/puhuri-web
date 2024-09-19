@@ -27,5 +27,20 @@
   <source src="../../../assets/videos/how_to_update_project_end_date.mp4" type="video/mp4">
 </video>
 
+
+## Approving project and allocation creation, update requests
+
+!!! note
+    The following processes are only allowed for national resource allocator representatives!
+
+1. Click on  the "Pending confirmations" button on the top-right side of your Dashboard. In this window, the lists of "Pending order confirmation" and "Pending provider confirmation", as well as "Project update requests" can be found.
+2. Select the request to click “Approve” or "Reject". Also, by clicking "Approve all" or "Reject all", the action can be done for all the requests simultaneously.
+
+<video controls width="100%" autoplay="true" muted loop >
+  <source src="../../../assets/videos/approval.mp4" type="video/mp4">
+</video>
+
+
+
 !!! abstract "Feedback"   
     We welcome feedback from our users - it helps us to improve continually. Please email your suggestions to [support@puhuri.io](mailto:support@puhuri.io).
