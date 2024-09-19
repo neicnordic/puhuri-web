@@ -8,7 +8,7 @@
 1. Navigate to the project dashboard and select "Resources" from the top menu.
 2. Select the correct allocation, click the "Action" button on the right, and select "Change limits."
 3. Set new limits and click "Submit" (if you are a Resource Allocator) or click "Request for a change" (if you belong to the project team).
-4. Now, the national resource allocator has to [approve the changes.](# approving-project-and-allocation-creation-update-requests)
+4. Now, the national resource allocator has to [approve the changes.](#approving-project-and-allocation-creation-update-requests)
 
 <video controls width="100%" autoplay="true" muted loop >
   <source src="../../../assets/videos/allocation_update.mp4" type="video/mp4">
@@ -21,7 +21,7 @@
 
 1. Navigate to the project dashboard and click "Edit" on the right.
 2. Make needed changes.
-3. The national resource allocator must [approve the changes.](# approving-project-and-allocation-creation-update-requests)
+3. The national resource allocator must [approve the changes.](#approving-project-and-allocation-creation-update-requests)
 
 <video controls width="100%" autoplay="true" muted loop >
   <source src="../../../assets/videos/how_to_update_project_end_date.mp4" type="video/mp4">
