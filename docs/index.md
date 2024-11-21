@@ -19,7 +19,11 @@ Puhuri aims to facilitate easy and efficient access to high-performance computin
 
 ## Contacts
 
-Please see [https://neic.no/puhuri/](https://neic.no/puhuri/)
+You can reach us by sending an email to [support@puhuri.io](mailto:support@puhuri.io)
+
+In case of security-related issues, please get in touch with us at [security@puhuri.io](mailto:security@puhuri.io)
+
+Please see also [https://neic.no/puhuri/](https://neic.no/puhuri/)
 
 ![Puhuri logo](assets/Puhuri_logo-transp_bg.png){: width=200}
 
