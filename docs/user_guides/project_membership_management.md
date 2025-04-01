@@ -8,6 +8,9 @@ Project team contains users with different roles:
   
 Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User Rights based on Roles in the Organization.
 
+ **Important:** The project will not sync properly with LUMI if there is no Principal Investigator (PI) assigned.  
+> If no team member has the PI role, the project information in LUMI will remain incomplete.  
+
 ## Adding project members
 
 1. Open your project dashboard in the Puhuri Portal and find the "Team" on the project dashboard top menu. Click the "Invitations" to see the list of the sent invitations in this project. Here click the "+ Add" button.
