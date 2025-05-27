@@ -23,7 +23,7 @@ Depending on whether IdP is available in eduGAIN, following possibilities exist:
 
 ## Questions?
 
-Contact person for additional information: marina at sunet.se.
+Contact email for additional information: support@puhuri.io
 
 ## Technical details
 
