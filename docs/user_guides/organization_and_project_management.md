@@ -78,6 +78,23 @@ Below is an example of requesting an allocation from LUMI supercomputer:
   <source src="../../../assets/videos/how_to_add_resource.mp4" type="video/mp4">
 </video>
 
+## Bulk Import
+
+Use Bulk Import to create multiple projects at once.
+
+1. Open your organization dashboard.
+
+2. In the Projects section, click on “Bulk Import” (right‑hand side).
+
+3. Select one of the following:
+
+    - Projects only – create projects without any resources.
+    - Projects with resources – create projects and their resources. Choose an offering type, then click on “Next” to generate the correct template.
+
+4. Download the template, fill in all required fields, and upload it. Click on “Next”.
+
+5. Review the project metadata, then click on “Import & create”.
+
 ## Applicable to LUMI only
 
 The following attributes are mandatory to flag for LUMI projects and resources:
