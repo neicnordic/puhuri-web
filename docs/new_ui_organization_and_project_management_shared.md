@@ -84,6 +84,24 @@ Below is an example of requesting an allocation from LUMI supercomputer:
 
 After this, Resource allocator will get a request for resource and be able to [approve or reject](project_approval_shared.md) it.
 
+## Bulk Import
+
+Use Bulk Import to create multiple projects at once.
+
+1. Open your organization dashboard.
+
+2. In the Projects section, click on “Bulk Import” (right‑hand side).
+
+3. Select one of the following:
+
+    - Projects only – create projects without any resources.
+    - Projects with resources – create projects and their resources. Choose an offering type, then click on “Next” to generate the correct template.
+
+4. Download the template, fill in all required fields, and upload it. Click on “Next”.
+
+5. Review the project metadata, then click on “Import & create”.
+
+
 !!! abstract "Feedback" 
     We welcome feedback from our users - it helps us to continually improve. Please send an email with your suggestions to [support@puhuri.io](mailto:support@puhuri.io).
 
