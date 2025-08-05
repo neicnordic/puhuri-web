@@ -15,7 +15,7 @@ This site aims to provide high-level technical information about the Puhuri serv
 
 ## Introduction
 
-Puhuri aims to facilitate easy and efficient access to high-performance computing (HPC) and related services throughout Europe to benefit researchers and industrial users. The key objective is to minimise service providers' administrative costs while simultaneously improving the usability of these services. This will be achieved by establishing federated services for Authentication and Authorisation Infrastructure (AAI) and resource allocation services. Please read more from the [Puhuri Whitepaper]([https://wiki.neic.no/w/ext/img_auth.php/8/80/Puhuri_Whitepaper.pdf](https://wiki.neic.no/w/ext/img_auth.php/7/75/Whitepaper_.pdf)).
+Puhuri aims to facilitate easy and efficient access to high-performance computing (HPC) and related services throughout Europe to benefit researchers and industrial users. The key objective is to minimise service providers' administrative costs while simultaneously improving the usability of these services. This will be achieved by establishing federated services for Authentication and Authorisation Infrastructure (AAI) and resource allocation services. Please read more from the [Puhuri Whitepaper](https://wiki.neic.no/w/ext/img_auth.php/7/75/Whitepaper_.pdf).
 
 ## Contacts
 
