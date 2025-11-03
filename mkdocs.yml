@@ -85,6 +85,7 @@ nav:
           - "user_guides/myaccessid_registration.md"
           - "user_guides/myaccessid_account_linking.md"
           - "user_guides/myaccessid-ssh-key.md"
+      - "user_guides/call_management.md"
       - "user_guides/interface.md"
       - "user_guides/organization_and_project_management.md"
       - "user_guides/project_membership_management.md"
