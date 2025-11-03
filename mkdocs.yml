@@ -63,7 +63,7 @@ nav:
               - "API guide/resource-allocation-management.md"
               - "API guide/listing-users-resources.md"
           - "integration-with-puhuri-aai.md"
-      - "dedicated-puhuri-portal.md"
+      - "dedicated-portal.md"
       - "shared-puhuri-portal.md"
   - Puhuri for Service Providers:
       - "service-providers.md"
