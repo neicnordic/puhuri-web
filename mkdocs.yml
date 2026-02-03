@@ -9,6 +9,7 @@ extra_css:
   - fonts.css
 extra_javascript:
   - analytics.js
+  - chatbot_loader.js
 markdown_extensions:
   - attr_list
   - pymdownx.highlight:
