@@ -13,14 +13,28 @@ Please see [this page](https://puhuri.neic.no/user_guides/user_roles/) for User 
 
 ## Adding project members
 
-1. Open your project dashboard in the Puhuri Portal and find the "Team" on the project dashboard top menu. Click the "Invitations" to see the list of the sent invitations in this project. Here click the "+ Add" button.
-2. An invitation popup opens, where you can enter the new user email and set the role in the project. Click "Continue".
-3. Fill in your custom message on the right side of the window (if needed) and send the invitation.
-4. Now, you can close the window or create a new invitation. 
+You can add project members in two places: the project dashboard or the organization dashboard.
+
+### Using the project dashboard
+
+1. Open your project dashboard in the Puhuri Portal and go to the Team tab. Click "+ Add" to view the two available options: inviting a user by email or adding an existing user by username (some restrictions may apply).
+2. In the invitation dialog, enter the user’s email or username and assign a project role. Click Continue.
+3. (Optional) Add a custom message, then send the invitation.
+4. To view sent invitations, open the Invitations tab.
 
 <video controls width="100%" autoplay="true" muted loop >
   <source src="../../../assets/videos/send_invitation.mp4" type="video/mp4">
 </video>
+
+
+### Using the organization dashboard
+
+1. Open your organization dashboard in the Puhuri Portal and find the "Team" tab. Click on the "+ Add" button to view the three options for inviting project members: "Invite by mail", "Member", and "Group invitation".
+2. The first two options are the same as in the project dashboard. "Group invitation" is available only on the organization dashboard.
+3. In the group invitation dialog, you can create a private link to share with multiple users. Depending on the assigned role, additional options are available, such as automatically approving requests. 
+
+![Group invitation](../assets/team_group_invite_options.png)
+
 
 !!! note
     The invitation is valid for 3 weeks!
