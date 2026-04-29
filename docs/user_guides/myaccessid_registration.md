@@ -42,8 +42,8 @@ If you did not find your flag, please proceed to Option 3 below.
 
 For users who do not have  an academic identity or supported eIDAS digital identity, it is possible to register a new digital identity with eduID Sweden by selecting this option on the MyAccessID login page. Click on "Add another institution" to see this option.<br>
 
-![eduID login location](../assets/eduID_login_option_location.png){ width="475"}
-![eduID login button](../assets/eduID_login_button.png){ width="450"}
+![eduID login location](../assets/eduID_login_option_location.png)
+![eduID login button](../assets/eduID_login_button.png)
 
 Then you're forwarded to the eduID Sweden login page where you can log in with an existing account or create a new one.
 
